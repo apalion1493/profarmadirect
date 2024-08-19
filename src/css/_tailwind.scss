@@ -13,7 +13,7 @@
 
 @layer components {
 	.container {
-		@apply px-4 w-full minsm:max-w-[672px] minmd:max-w-[800px] minlg:max-w-[1056px] minxl:max-w-xl;
+		@apply px-4 w-full minsm:max-w-[672px] minmd:max-w-[800px] minlg:max-w-[1056px] minxl:max-w-[1344px];
 	}
 }
 
@@ -25,6 +25,10 @@
 		scroll-behavior: smooth;
 		@apply text-DarkBlue100 bg-pageBg;
 	}
+}
+
+.row {
+	@apply -mx-4 grid grid-cols-12 lg:mx-0;
 }
 
 section {
