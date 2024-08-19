@@ -27,15 +27,22 @@ module.exports = {
             '100-auto': '100% auto',
         },
         fontFamily: {
-            sans: ['Sora', 'sans-serif'],
+            sans: ['Montserrat', 'sans-serif'],
         },
         fontSize: {
             none: ['0px', '0px'],
-            base: ['16px', '140%'],
-
+            base: ['18px', '130%'],
+            h1: ['70px', '100%'],
+            h2: ['48px', '100%'],
+            h3: ['40px', '130%'],
+            h4: ['32px', '130%'],
+            Top1: ['24px', '130%'],
+            Top2: ['22px', '130%'],
+            Top3: ['20px', '130%'],
+            body: ['16px', '130%'],
         },
         screens: {
-            xl: {max: '1345px'},
+            xl: {max: '1344px'},
             lg: {max: '1023px'},
             md: {max: '767px'},
             sm: {max: '639px'},
@@ -44,7 +51,7 @@ module.exports = {
             minsm: {min: '640px'},
             minmd: {min: '768px'},
             minlg: {min: '1024px'},
-            minxl: {min: '1346px'},
+            minxl: {min: '1345px'},
         },
         container: {
             center: true,
@@ -61,8 +68,18 @@ module.exports = {
             },
             colors: {
                 transparent: 'transparent',
-                primary: '#2E3436',
-                secondary: 'rgba(25, 24, 27, 0.05)',
+                pageBg: '#F9FBFF',
+                blue10: '#3D65FF1A',
+                blue20: '#3D65FF33',
+                blue100: '#3D65FF',
+                DarkBlue10: '#05093E1A',
+                DarkBlue100: '#060B52',
+                DarkBlue50: '#05093E80',
+                Grey: '#BFC6D6',
+                LagunaBlue: '#32CDD7',
+                LightBlue: '#EFF6FF',
+                SkyBlue: '#80E0FF',
+                White20: '#FFFFFF33',
             },
             letterSpacing: {
 
