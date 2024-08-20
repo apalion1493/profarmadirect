@@ -12,6 +12,50 @@
     })
 
 
+    <section>
+        @@include('components/button.html', {
+            'title': 'button'
+        })
+        <br>
+        <br>
+        @@include('components/Link.html', {
+        'title': 'Link',
+        'url': '#'
+        })
+
+        <br>
+        <br>
+
+        @@include('components/Link.html', {
+        'title': 'Link',
+        'style': 'btn-medium hoverColor',
+        'url': '#'
+        })
+
+        <br>
+        <br>
+
+        @@include('components/Link.html', {
+        'title': 'Link',
+        'style': 'btn-small hoverColor',
+        'url': '#'
+        })
+
+        <br>
+        <br>
+
+        @@include('components/Link.html', {
+        'title': 'Link',
+        'style': 'categories',
+        'url': '#'
+        })
+
+        <br>
+        <br>
+        @@include('components/Condition-card.html')
+
+    </section>
+
     @@include('components/Footer.html')
 </main>
 

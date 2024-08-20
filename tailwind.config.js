@@ -40,6 +40,7 @@ module.exports = {
             Top2: ['22px', '130%'],
             Top3: ['20px', '130%'],
             body: ['16px', '130%'],
+            body2: ['14px', '120%'],
         },
         screens: {
             xl: {max: '1344px'},
@@ -64,7 +65,7 @@ module.exports = {
         },
         extend: {
             boxShadow: {
-                'color-1': '0px 0px 25px 0px rgba(0, 0, 0, 0.15);'
+                '3xl': '0px 1px 5px 1px rgba(61, 101, 255, 0.12)'
             },
             colors: {
                 transparent: 'transparent',
