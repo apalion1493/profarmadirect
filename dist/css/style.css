@@ -1527,6 +1527,10 @@ html {
   width: 1.5rem;
   height: 1.5rem;
 }
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
 .h-10 {
   height: 2.5rem;
 }
@@ -1538,6 +1542,9 @@ html {
 }
 .h-\[91px\] {
   height: 91px;
+}
+.h-44 {
+  height: 11rem;
 }
 .max-h-44 {
   max-height: 11rem;
@@ -1634,6 +1641,9 @@ html {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-1 {
+  gap: 0.25rem;
+}
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
@@ -1656,6 +1666,10 @@ html {
 .gap-y-2 {
   row-gap: 0.5rem;
 }
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1676,6 +1690,12 @@ html {
 }
 .whitespace-nowrap {
   white-space: nowrap;
+}
+.text-balance {
+  text-wrap: balance;
+}
+.text-pretty {
+  text-wrap: pretty;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -2798,6 +2818,9 @@ input[type=search]::-webkit-search-results-decoration {
 @media (max-width: 767px) {
   .md\:hidden {
     display: none;
+  }
+  .md\:h-64 {
+    height: 16rem;
   }
   .md\:overflow-y-scroll {
     overflow-y: scroll;
