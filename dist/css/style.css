@@ -1499,6 +1499,12 @@ html {
 .mt-auto {
   margin-top: auto;
 }
+.mt-\[72px\] {
+  margin-top: 72px;
+}
+.mb-20 {
+  margin-bottom: 5rem;
+}
 .block {
   display: block;
 }
@@ -1561,6 +1567,9 @@ html {
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.min-h-dvh {
+  min-height: 100dvh;
 }
 .w-6 {
   width: 1.5rem;
@@ -1843,6 +1852,10 @@ html {
   padding-top: 18px;
   padding-bottom: 18px;
 }
+.py-\[134px\] {
+  padding-top: 134px;
+  padding-bottom: 134px;
+}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1940,6 +1953,10 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-DarkBlue100 {
+  --tw-text-opacity: 1;
+  color: rgb(6 11 82 / var(--tw-text-opacity));
 }
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
