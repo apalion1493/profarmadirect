@@ -74,6 +74,7 @@ module.exports = {
                 blue20: '#3D65FF33',
                 blue100: '#3D65FF',
                 DarkBlue10: '#05093E1A',
+                DarkBlue30: '#05093E4D',
                 DarkBlue100: '#060B52',
                 DarkBlue50: '#05093E80',
                 Grey: '#BFC6D6',
@@ -83,7 +84,7 @@ module.exports = {
                 White20: '#FFFFFF33',
             },
             letterSpacing: {
-
+                '018': '-0.18px'
             },
             padding: {
                 '1/4': '25%',
