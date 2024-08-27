@@ -1457,9 +1457,6 @@ html {
 .z-\[10000\] {
   z-index: 10000;
 }
-.z-\[1px\] {
-  z-index: 1px;
-}
 .z-\[1\] {
   z-index: 1;
 }
@@ -1468,6 +1465,10 @@ html {
 }
 .col-span-7 {
   grid-column: span 7 / span 7;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -1588,6 +1589,9 @@ html {
 }
 .w-6 {
   width: 1.5rem;
+}
+.w-\[536px\] {
+  width: 536px;
 }
 .w-\[80px\] {
   width: 80px;
@@ -1782,6 +1786,10 @@ html {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+.bg-Backgroung {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 251 255 / var(--tw-bg-opacity));
+}
 .bg-DarkBlue100 {
   --tw-bg-opacity: 1;
   background-color: rgb(6 11 82 / var(--tw-bg-opacity));
@@ -1841,6 +1849,10 @@ html {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .py-14 {
   padding-top: 3.5rem;
@@ -1934,6 +1946,10 @@ html {
   font-size: 16px;
   line-height: 130%;
 }
+.text-body2 {
+  font-size: 14px;
+  line-height: 120%;
+}
 .text-h1 {
   font-size: 70px;
   line-height: 100%;
@@ -2005,6 +2021,11 @@ html {
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-4xl {
+  --tw-shadow: 0px 1px 8px 1px rgba(5, 9, 62, 0.09);
+  --tw-shadow-colored: 0px 1px 8px 1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow-lg {
@@ -2607,6 +2628,26 @@ input[type=search]::-webkit-search-results-decoration {
   display: block;
   height: 40px;
   width: 40px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Flag-UK {
+  background: url("../img/icons/Flag-UK.svg");
+  display: block;
+  height: 59px;
+  width: 89px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Flag-german {
+  background: url("../img/icons/Flag-german.svg");
+  display: block;
+  height: 59px;
+  width: 89px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;

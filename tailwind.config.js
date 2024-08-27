@@ -65,7 +65,8 @@ module.exports = {
         },
         extend: {
             boxShadow: {
-                '3xl': '0px 1px 5px 1px rgba(61, 101, 255, 0.12)'
+                '3xl': '0px 1px 5px 1px rgba(61, 101, 255, 0.12)',
+                '4xl': '0px 1px 8px 1px rgba(5, 9, 62, 0.09)',
             },
             colors: {
                 transparent: 'transparent',
@@ -82,6 +83,7 @@ module.exports = {
                 LightBlue: '#EFF6FF',
                 SkyBlue: '#80E0FF',
                 White20: '#FFFFFF33',
+                Backgroung: '#F9FBFF',
             },
             letterSpacing: {
                 '018': '-0.18px'

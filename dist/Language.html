@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .loaded {
+            opacity: 1
+        }
+    </style>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Language</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .loader-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .loader {
+            border-top-color: transparent;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .fade-out {
+            animation: fadeOut 0.1s forwards;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.1s forwards;
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+
+    <script>
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     setTimeout(() => {
+        //         const loader = document.getElementById('loader');
+        //         const content = document.getElementById('content');
+        //         const body = document.querySelector('body');
+        //         loader.classList.add('fade-out');
+        //         loader.addEventListener('animationend', () => {
+        //             loader.classList.add('hidden');
+        //             content.classList.remove('hidden');
+        //             body.classList.remove('loader-wrapper')
+        //
+        //             content.classList.add('fade-in');
+        //         }, { once: true });
+        //     }, 500);
+        // });
+
+    </script>
+</head>
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden bg-LightBlue relative">
+    <header class="py-10 w-full">
+        <div class="container flex justify-center">
+            <a href="#">
+                <img width="350" height="36" src="img/Logo.svg" alt="Profarmadirect Logo">
+            </a>
+        </div>
+    </header>
+    <section class="flex items-center py-[134px] flex-1 z-10">
+        <div class="container flex">
+            <div class="p-8 rounded-[20px] w-[536px] mx-auto shadow-4xl flex flex-col items-center bg-Backgroung"> <!--blur-[31px]-->
+                <span class="uppercase text-body2 text-blue100 font-bold block mb-2">Welcome</span>
+                <p class="text-top2 font-bold text-Top2">Select your location</p>
+                <div class="mt-8 flex items-center justify-center gap-x-8 w-full">
+                    <a class="p-8 flex flex-col items-center bg-LightBlue rounded-[20px] border border-DarkBlue10 flex-1 h-full transition-all hover:shadow-3xl" href="#">
+                        <i class="mb-8 block Flag-UK"></i>
+                        <span class="text-base font-semibold text-center">United Kingdom</span>
+                    </a>
+                    <a class="p-8 flex flex-col items-center bg-LightBlue rounded-[20px] border border-DarkBlue10 flex-1 h-full transition-all hover:shadow-3xl" href="#">
+                        <i class="mb-8 block Flag-german"></i>
+                        <span class="text-base font-semibold text-center">Deutschland</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="./js/scripts.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('data', () => ({
+
+        }))
+    })
+
+    function fetchResults() {
+        this.results = []
+        if (this.query.length > 0) {
+            // Имитация поиска. Поменять на реальный API вызов или логику поиска.
+            this.results = [
+                {id: 1, title: 'Result 1'},
+                {id: 2, title: 'Result 2'},
+                {id: 3, title: 'Result 3'},
+            ]
+        }
+        this.showResults = this.results.length > 0
+    }
+
+    function selectResult(result) {
+        this.query = result.title
+        this.showResults = false
+    }
+
+
+</script>
+</body>
+
+</html>
