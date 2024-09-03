@@ -14,8 +14,12 @@
             </a>
         </div>
     </header>
-    <section class="flex items-center py-[134px] flex-1 z-10">
-        <div class="container flex">
+    <section class="flex items-center py-[134px] flex-1 z-10 relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full rounded-b-[32px] overflow-hidden">
+            <img class="w-full max-h-[501px] object-cover object-top" src="img/bg-img-1.jpeg" alt="">
+            <span class="bg-gradient-main absolute top-0 left-0 w-full h-full min-h-dvh z-10 block"></span>
+        </div>
+        <div class="container flex relative z-20">
             <div class="p-8 rounded-[20px] w-[536px] mx-auto shadow-4xl flex flex-col items-center bg-Backgroung"> <!--blur-[31px]-->
                 <span class="uppercase text-body2 text-blue100 font-bold block mb-2">Welcome</span>
                 <p class="text-top2 font-bold text-Top2">Select your location</p>
