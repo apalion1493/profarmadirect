@@ -292,3 +292,28 @@
   background: url("../img/bg-color-1.svg");
   @apply block w-full h-[370px] bg-100-auto bg-center bg-no-repeat;
 }
+
+.bg-color-2 {
+  background: url("../img/bg-color-2.svg");
+  @apply block w-full h-[400px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.user-input-icon {
+  background-size: 20px 20px;
+  background: url("../img/icons/User-icon20.svg") no-repeat 16px 50%;
+}
+
+.mail-input-icon {
+  background-size: 20px 20px;
+  background: url("../img/icons/Mail-icon20.svg") no-repeat 16px 50%;
+}
+
+.phone-input-icon {
+  background-size: 20px 20px;
+  background: url("../img/icons/Phone-icon20.svg") no-repeat 16px 50%;
+}
+
+.question-input-icon {
+  background-size: 20px 20px;
+  background: url("../img/icons/Question-icon20.svg") no-repeat 16px 50%;
+}

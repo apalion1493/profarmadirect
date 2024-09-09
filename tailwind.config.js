@@ -67,6 +67,7 @@ module.exports = {
             boxShadow: {
                 '3xl': '0px 1px 5px 1px rgba(61, 101, 255, 0.12)',
                 '4xl': '0px 1px 8px 1px rgba(5, 9, 62, 0.09)',
+                '5xl': ' 0px 1px 9px 2px rgba(61, 101, 255, 0.12);',
             },
             borderRadius: {
                 '4xl': '32px',
@@ -87,6 +88,7 @@ module.exports = {
                 SkyBlue: '#80E0FF',
                 White20: '#FFFFFF33',
                 Backgroung: '#F9FBFF',
+                Error: '#F25F5F',
             },
             letterSpacing: {
                 '018': '-0.18px'
