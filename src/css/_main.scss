@@ -34,7 +34,11 @@
     @apply w-full;
   }
 
-  @apply h-14 px-8 min-w-[129px] w-fit flex items-center justify-center rounded-[32px] text-white text-base font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100;
+  &.btn-icons {
+    @apply bg-LightBlue text-blue100 hover:bg-blue100 hover:text-white
+  }
+
+  @apply h-14 px-8 min-w-[129px] w-fit flex items-center justify-center rounded-4xl text-white text-base font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100;
 }
 
 // Button with arrow Style End
@@ -77,4 +81,20 @@
 
 .bg-gradient-main {
   background: linear-gradient(0deg, rgba(5, 9, 62, 0.40) 0%, rgba(5, 9, 62, 0.40) 100%);
+}
+
+.main-title {
+  @apply text-h2 font-bold
+}
+
+.section {
+  @apply my-16
+}
+
+.Border-wave {
+  background: url("../img/icons/Border-wave.svg") repeat-x center;
+  background-size: 41px 10px;
+  display: block;
+  width: 100%;
+  height: 10px;
 }

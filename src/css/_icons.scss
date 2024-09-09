@@ -173,6 +173,11 @@
   @apply block h-[40px] w-[40px] bg-100-auto bg-center bg-no-repeat;
 }
 
+.Organic-icon48 {
+  background: url("../img/icons/Organic-icon40.png");
+  @apply block h-[48px] w-[48px] bg-100-auto bg-center bg-no-repeat;
+}
+
 .Password-icon20 {
   background: url("../img/icons/Password-icon20.svg");
   @apply block h-[20px] w-[20px] bg-100-auto bg-center bg-no-repeat;
@@ -238,6 +243,11 @@
   @apply block h-[40px] w-[40px] bg-100-auto bg-center bg-no-repeat;
 }
 
+.Support-icon48 {
+  background: url("../img/icons/Support-icon40.png");
+  @apply block h-[48px] w-[48px] bg-100-auto bg-center bg-no-repeat;
+}
+
 .Treatment-Orders-icon20 {
   background: url("../img/icons/Treatment-Orders-icon20.svg");
   @apply block h-[20px] w-[20px] bg-100-auto bg-center bg-no-repeat;
@@ -276,4 +286,9 @@
 .Flag-german {
   background: url("../img/icons/Flag-german.svg");
   @apply block h-[59px] w-[89px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.bg-color-1 {
+  background: url("../img/bg-color-1.svg");
+  @apply block w-full h-[370px] bg-100-auto bg-center bg-no-repeat;
 }

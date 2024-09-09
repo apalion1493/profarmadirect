@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'About Us'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    @@include('components/Header.html', {
+    'commonStyle': ' ',
+    })
+
+    <section class="section">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-6">
+                    <div class="flex flex-col">
+                        @@include('components/Title-small.html', {
+                        'Title': 'ABOUT US',
+                        'Style': 'mb-3'
+                        })
+                        <h1 class="main-title mb-8">
+                            About Us
+                        </h1>
+                        <div class="text-DarkBlue50 -tracking-018 font-medium text-base mb-10">
+                            <p>Welcome to Profarma Direct in Lancashire, a modern online pharmacy committed to providing
+                                top-quality pharmaceutical care. Our team of highly skilled pharmacists and healthcare
+                                professionals is dedicated to meeting your healthcare needs with personalised
+                                prescriptions
+                                and lifestyle medicine.</p>
+                            <br>
+                            <p>As an online pharmacy, we focus on delivering convenience and excellence in
+                                pharmaceutical
+                                services. Our website serves as a platform for accessing medications and medical
+                                equipment,
+                                all supplied by our trusted mail-order pharmacy.</p>
+                        </div>
+                        <div class="flex items-center gap-x-12">
+                            <div class="flex flex-col">
+                                <span class="uppercase text-h1 font-bold text-DarkBlue100">
+                                    10<span class="text-blue100">K</span>
+                                </span>
+                                <p class="-tracking-018 text-base font-medium text-DarkBlue50">Deliveries</p>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="uppercase text-h1 font-bold text-DarkBlue100">
+                                    500<span class="text-blue100">+</span>
+                                </span>
+                                <p class="-tracking-018 text-base font-medium text-DarkBlue50">Happy Customers</p>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="uppercase text-h1 font-bold text-DarkBlue100">
+                                    5<span class="text-blue100">K</span><span class="inline-block ml-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="82" height="56"
+                                             viewBox="0 0 82 56" fill="none">
+                                          <path d="M5.2882 21.4332C11.6632 17.8082 25.3382 8.85823 29.0382 2.05823C22.4965 20.3915 8.1882 56.4082 3.2882 53.8082C-2.8368 50.5582 14.2882 27.3082 25.0382 20.8082C35.7882 14.3082 24.4131 27.1832 23.0381 28.8082C21.6631 30.4332 34.5381 20.4332 35.4131 23.1832C36.2881 25.9332 40.5381 20.1832 42.6631 20.8082C44.7881 21.4332 43.2881 24.8082 49.0381 22.3082C54.7881 19.8082 56.9131 22.0582 60.5381 21.4332C64.1631 20.8082 70.5381 19.3082 74.2881 20.8082C77.2881 22.0082 79.6214 19.8915 80.4131 18.6832"
+                                                stroke="#3D65FF" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </span>
+                                <p class="-tracking-018 text-base font-medium text-DarkBlue50">Prescribing Recipes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6 flex items-center h-full">
+                    <div class="flex justify-center relative w-full h-[461px] max-w-[560px] ml-auto">
+                        <img height="413" class="relative h-[413px] z-10 rounded-4xl" src="img/doctor-team-meeting.jpg"
+                             alt="doctor team meeting">
+                        <div class="bg-color-1 rounded-4xl absolute bottom-0 left-0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <span class="Border-wave"></span>
+            <div class="row py-16 gap-x-8">
+                <div class="col-span-4">
+                    <div class="flex flex-col">
+                        @@include('components/Title-small.html', {
+                        'Title': 'mission&vision',
+                        'Style': 'mb-3'
+                        })
+                        <h2 class="main-title mb-6">
+                            Our Vision
+                        </h2>
+                        <p class="text-DarkBlue50 -tracking-018 font-medium text-base">Our mission is to deliver
+                            affordable,
+                            high-quality medications with exceptional convenience and care through our online pharmacy
+                            service.</p>
+                    </div>
+                </div>
+                <div class="col-span-8">
+                    <div class="grid grid-cols-12 gap-x-12">
+                        <div class="col-span-4">
+                            @@include('components/info-card-2.html', {
+                            'style': 'h-full',
+                            'icon': 'Health-icon48',
+                            'title': 'Health',
+                            'text': 'Your health is our first priority, shop online with our Online Pharmacy.',
+                            })
+                        </div>
+                        <div class="col-span-4">
+                            @@include('components/info-card-2.html', {
+                            'style': 'h-full',
+                            'icon': 'Support-icon48',
+                            'title': 'Support',
+                            'text': 'Support available at our online pharmacy anytime you need help.',
+                            })
+                        </div>
+                        <div class="col-span-4">
+                            @@include('components/info-card-2.html', {
+                            'style': 'h-full',
+                            'icon': 'Organic-icon48',
+                            'title': 'Organic Products',
+                            'text': 'Our pharmacy offers only authentic items for online purchase.',
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="Border-wave"></span>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-12">
+                    <div class="flex flex-col">
+                        @@include('components/Title-small.html', {
+                        'Title': 'Pharma information',
+                        'Style': 'mb-3'
+                        })
+                        <h2 class="main-title mb-10">
+                            Welcome To Profarma Direct!
+                        </h2>
+                        <div class="text-DarkBlue50 -tracking-018 font-medium text-base mb-10">
+                            <p>As an online pharmacy, we focus on delivering convenience and excellence in
+                                pharmaceutical services. Our website serves as a platform for accessing medications and
+                                medical equipment, all supplied by our trusted mail-order pharmacy.
+                                When you opt for an online prescription, you have the choice of using our integrated
+                                online prescription service or other available telemedicine options, ensuring easy and
+                                efficient access to the care you need.</p>
+                            <br>
+                            <p>Our dedicated team, consisting of pharmacists, doctors, logistics specialists, and IT
+                                experts, works tirelessly to enhance your purchasing experience. We regularly update our
+                                portal’s offerings to provide you with a seamless and comprehensive range of healthcare
+                                items and medications. Rest assured, your privacy is always a top priority for us.
+                                Thank you for selecting ProFarma Direct in Lancashire as your trusted healthcare
+                                partner. We are eager to collaborate with you on your journey towards optimal health and
+                                well-being.</p>
+                            <br>
+                            <p>Should you have any questions or require further information, please don’t hesitate to
+                                contact us.
+                                <br>Feel free to explore the diverse range of services we offer.</p>
+                        </div>
+                        @@include('components/Link-icon.html', {
+                        'title': 'Contact Us',
+                        'style': 'btn-icons',
+                        'url': '#'
+                        })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>
