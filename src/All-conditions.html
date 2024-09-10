@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'All Conditions'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    @@include('components/Header.html', {
+    'commonStyle': ' ',
+    })
+
+    <section class="section">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-1"></div>
+                <div class="col-span-10">
+                    <div class="flex flex-col mb-10">
+                        @@include('components/Title-small.html', {
+                        'Title': 'OUR CONDITIONS',
+                        'Style': 'mb-3 text-center'
+                        })
+                        <h1 class="main-title text-center mb-10">
+                            All Conditions
+                        </h1>
+                        <p class="text-DarkBlue50 -tracking-018 font-medium text-base text-center">From acne to warts
+                            and verrucas, we offer treatments for a whole host of conditions and medical problems.
+                            Whether you need a quick over-the-counter fix for a mild infection, or a prescription
+                            maintenance drug for a lifelong illness, you can find the medication you need quickly and
+                            simply by browsing our list of conditions from A-Z.</p>
+                    </div>
+                </div>
+                <div class="col-span-1"></div>
+            </div>
+            <div class="row sb gap-x-8 gap-y-10">
+                <div class="col-span-3">
+                    @@include('components/Condition-card.html', {
+                    'Style': '',
+                    'Icon': 'Skin-Care-icon48',
+                    'Title': 'Skin Care',
+                    })
+                </div>
+                <div class="col-span-3">
+                    @@include('components/Condition-card.html', {
+                    'Style': '',
+                    'Icon': 'General-Health-icon48',
+                    'Title': 'General Health',
+                    })
+                </div>
+                <div class="col-span-3">
+                    @@include('components/Condition-card.html', {
+                    'Style': '',
+                    'Icon': 'Digestion-icon48',
+                    'Title': 'Digestion',
+                    })
+                </div>
+                <div class="col-span-3">
+                    @@include('components/Condition-card.html', {
+                    'Style': '',
+                    'Icon': 'Mens-Health-icon48',
+                    'Title': 'Men’s Health',
+                    })
+                </div>
+                <div class="col-span-3">
+                    @@include('components/Condition-card.html', {
+                    'Style': '',
+                    'Icon': 'Sexual-Health-icon48',
+                    'Title': 'Sexual Health',
+                    })
+                </div>
+                <div class="col-span-3">
+                    @@include('components/Condition-card.html', {
+                    'Style': '',
+                    'Icon': 'Womens-Health-icon48',
+                    'Title': 'Womens Health',
+                    })
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>

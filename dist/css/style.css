@@ -1439,6 +1439,9 @@ html {
 .left-1\/2 {
   left: 50%;
 }
+.left-5 {
+  left: 1.25rem;
+}
 .left-\[21px\] {
   left: 21px;
 }
@@ -1487,11 +1490,17 @@ html {
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
+.col-span-10 {
+  grid-column: span 10 / span 10;
+}
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 .col-span-4 {
   grid-column: span 4 / span 4;
@@ -2477,6 +2486,16 @@ input[type=search]::-webkit-search-results-decoration {
   background-repeat: no-repeat;
 }
 
+.Digestion-icon48 {
+  background: url("../img/icons/Delivery-icon40.png");
+  display: block;
+  height: 48px;
+  width: 48px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .Dowlnoad-icon20 {
   background: url("../img/icons/Dowlnoad-icon20.svg");
   display: block;
@@ -2532,6 +2551,16 @@ input[type=search]::-webkit-search-results-decoration {
   display: block;
   height: 40px;
   width: 40px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.General-Health-icon48 {
+  background: url("../img/icons/General-Health-icon40.png");
+  display: block;
+  height: 48px;
+  width: 48px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -2662,6 +2691,16 @@ input[type=search]::-webkit-search-results-decoration {
   display: block;
   height: 40px;
   width: 40px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Mens-Health-icon48 {
+  background: url("../img/icons/Mens-Health-icon40.png");
+  display: block;
+  height: 48px;
+  width: 48px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -2807,11 +2846,31 @@ input[type=search]::-webkit-search-results-decoration {
   background-repeat: no-repeat;
 }
 
+.Sexual-Health-icon48 {
+  background: url("../img/icons/Sexual-Health-icon40.png");
+  display: block;
+  height: 48px;
+  width: 48px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .Skin-Care-icon40 {
   background: url("../img/icons/Skin-Care-icon40.png");
   display: block;
   height: 40px;
   width: 40px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Skin-Care-icon48 {
+  background: url("../img/icons/Skin-Care-icon40.png");
+  display: block;
+  height: 48px;
+  width: 48px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -2892,6 +2951,16 @@ input[type=search]::-webkit-search-results-decoration {
   display: block;
   height: 40px;
   width: 40px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Womens-Health-icon48 {
+  background: url("../img/icons/Womens-Health-icon40.png");
+  display: block;
+  height: 48px;
+  width: 48px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
