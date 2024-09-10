@@ -1673,6 +1673,9 @@ html {
 .w-full {
   width: 100%;
 }
+.max-w-\[464px\] {
+  max-width: 464px;
+}
 .max-w-\[560px\] {
   max-width: 560px;
 }
@@ -2374,6 +2377,16 @@ input[type=search]::-webkit-search-results-decoration {
   background-repeat: no-repeat;
 }
 
+.Call-icon48 {
+  background: url("../img/icons/Call-icon40.png");
+  display: block;
+  height: 48px;
+  width: 48px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .Cart-icon20 {
   background: url("../img/icons/Cart-icon20.svg");
   display: block;
@@ -2504,6 +2517,16 @@ input[type=search]::-webkit-search-results-decoration {
   background-repeat: no-repeat;
 }
 
+.Email-icon48 {
+  background: url("../img/icons/Email-icon40.png");
+  display: block;
+  height: 48px;
+  width: 48px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .General-Health-icon40 {
   background: url("../img/icons/General-Health-icon40.png");
   display: block;
@@ -2559,6 +2582,16 @@ input[type=search]::-webkit-search-results-decoration {
   display: block;
   height: 40px;
   width: 40px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Location-icon48 {
+  background: url("../img/icons/Location-icon40.png");
+  display: block;
+  height: 48px;
+  width: 48px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
