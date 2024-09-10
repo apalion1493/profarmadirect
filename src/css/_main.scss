@@ -102,3 +102,23 @@
   width: 100%;
   height: 10px;
 }
+
+// Text Content Start
+.text-content {
+  p {
+    @apply text-base -tracking-018 text-DarkBlue50 font-medium
+  }
+
+  ol {
+    @apply list-decimal text-base -tracking-018 text-DarkBlue50 font-medium pl-6
+  }
+
+  ul {
+    @apply list-disc text-base -tracking-018 text-DarkBlue50 font-medium pl-6
+  }
+
+  h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+    @apply font-bold mb-4 block
+  }
+}
+// Text Content End
