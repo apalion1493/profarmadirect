@@ -1561,8 +1561,14 @@ html {
 .ml-auto {
   margin-left: auto;
 }
+.mr-2 {
+  margin-right: 0.5rem;
+}
 .mt-1 {
   margin-top: 0.25rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
 }
 .mt-16 {
   margin-top: 4rem;
@@ -1696,6 +1702,9 @@ html {
 }
 .max-w-xs {
   max-width: 20rem;
+}
+.max-w-\[634px\] {
+  max-width: 634px;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -2096,6 +2105,10 @@ html {
 .text-none {
   font-size: 0px;
   line-height: 0px;
+}
+.text-h3 {
+  font-size: 40px;
+  line-height: 130%;
 }
 .font-bold {
   font-weight: 700;
@@ -3120,6 +3133,10 @@ input[type=search]::-webkit-search-results-decoration {
   background-color: rgb(61 101 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.button.big-btn-1 {
+  width: 100%;
+  max-width: 475px;
 }
 
 .bg-gradient-main {
