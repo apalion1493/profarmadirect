@@ -603,31 +603,6 @@
   top: 0;
 }
 
-h1, .h1 {
-  font-size: 70px;
-  line-height: 100%;
-}
-
-h2, .h2 {
-  font-size: 48px;
-  line-height: 100%;
-}
-
-h3, .h3 {
-  font-size: 40px;
-  line-height: 130%;
-}
-
-h4, .h4 {
-  font-size: 32px;
-  line-height: 130%;
-}
-
-p {
-  font-size: 18px;
-  line-height: 130%;
-}
-
 /*! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
  */
 
@@ -2399,6 +2374,41 @@ input[type=search]::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
 
+h1, .h1 {
+  font-size: 70px;
+  line-height: 100%;
+}
+
+h2, .h2 {
+  font-size: 48px;
+  line-height: 100%;
+}
+
+h3, .h3 {
+  font-size: 40px;
+  line-height: 130%;
+}
+
+h4, .h4 {
+  font-size: 32px;
+  line-height: 130%;
+}
+
+h5, .h5 {
+  font-size: 24px;
+  line-height: 130%;
+}
+
+h6, .h6 {
+  font-size: 20px;
+  line-height: 130%;
+}
+
+p {
+  font-size: 18px;
+  line-height: 130%;
+}
+
 .Approve-icon {
   background: url("../img/icons/Approve-icon40.png");
   display: block;
@@ -3267,10 +3277,16 @@ input[type=search]::-webkit-search-results-decoration {
   letter-spacing: 0.18px;
   color: #05093E80;
 }
-.text-content h1, .text-content h2, .text-content h3, .text-content h4, .text-content h5, .text-content .h1, .text-content .h2, .text-content .h3, .text-content .h4, .text-content .h5 {
+.text-content h1, .text-content h2, .text-content h3, .text-content h4, .text-content h5, .text-content h6, .text-content .h1, .text-content .h2, .text-content .h3, .text-content .h4, .text-content .h5, .text-content .h6 {
   margin-bottom: 1rem;
   display: block;
   font-weight: 700;
+}
+
+.text-content--tou h1, .text-content--tou h2, .text-content--tou h3, .text-content--tou h4, .text-content--tou h5, .text-content--tou h6, .text-content--tou .h1, .text-content--tou .h2, .text-content--tou .h3, .text-content--tou .h4, .text-content--tou .h5, .text-content--tou .h6 {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(6 11 82 / var(--tw-text-opacity));
 }
 
 .active-tag {

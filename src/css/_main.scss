@@ -105,6 +105,7 @@
 
 // Text Content Start
 .text-content {
+
   p {
     @apply text-base -tracking-018 text-DarkBlue50 font-medium
   }
@@ -117,8 +118,14 @@
     @apply list-disc text-base -tracking-018 text-DarkBlue50 font-medium pl-6
   }
 
-  h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     @apply font-bold mb-4 block
+  }
+}
+
+.text-content--tou {
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    @apply text-DarkBlue100 font-semibold
   }
 }
 // Text Content End
