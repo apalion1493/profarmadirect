@@ -343,6 +343,11 @@
   @apply block w-full h-[400px] bg-100-auto bg-center bg-no-repeat;
 }
 
+.bg-color-3 {
+  background: url("../img/bg-color-3.svg");
+  @apply block w-full h-full bg-cover bg-bottom bg-no-repeat;
+}
+
 .user-input-icon {
   background-size: 20px 20px;
   background: url("../img/icons/User-icon20.svg") no-repeat 16px 50%;

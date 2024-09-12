@@ -122,3 +122,14 @@
   }
 }
 // Text Content End
+
+//
+.active-tag {
+
+  span {
+    @apply text-blue100 font-semibold
+  }
+
+  @apply border-blue100
+}
+//
