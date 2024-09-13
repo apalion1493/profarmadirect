@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Search Results'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    @@include('components/Header.html', {
+    'commonStyle': ' ',
+    })
+
+    <section class="pt-16 pb-12">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-12">
+                    <div class="flex flex-col items-center max-w-[450px] mx-auto">
+                        @@include('components/Title-small.html', {
+                        'Title': 'Search',
+                        'Style': 'mb-3'
+                        })
+                        <h1 class="main-title text-center">
+                            Search Results
+                        </h1>
+                        <p class="text-center font-medium text-body text-DarkBlue50 mt-5">Products not Found!</p>
+                        <i class="Research-icon mt-12"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-2"></div>
+                <div class="col-span-8">
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-h4 font-bold mb-5">Don't find the right medicine?</h4>
+                        <p class="text-center font-medium text-body text-DarkBlue50">Сontact us by filling out the form below and we will
+                            <br> contact to help you choose the right medicine!</p>
+                    </div>
+                </div>
+                <div class="col-span-2"></div>
+                <div class="col-span-12">
+                    <div class="pb-[120px] relative">
+                        <div class="rounded-4xl w-full bg-color-2 absolute bottom-0 left-0 right-0"></div>
+                        <div class="row gap-x-8 relative z-10">
+                            <div class="col-span-2"></div>
+                            <div class="col-span-8">
+                                <form class="p-12 grid grid-cols-2 gap-x-8 gap-y-10 rounded-4xl overflow-hidden shadow-5xl bg-white mt-8"
+                                      action="">
+                                    <div class="col-span-1">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'NameId',
+                                        'label': 'Full Name',
+                                        'styleInput': 'user-input-icon input-icon',
+                                        'type': 'text',
+                                        'placeholder': 'Your Name',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-1">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'EmailId',
+                                        'label': 'Email',
+                                        'styleInput': 'mail-input-icon input-icon',
+                                        'type': 'email',
+                                        'placeholder': 'example@youremail.com',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-1">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'NumId',
+                                        'label': 'Phone Number',
+                                        'styleInput': 'phone-input-icon input-icon',
+                                        'type': 'text',
+                                        'placeholder': '(123) 456 - 789',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-1">
+                                        @@include('components/select.html', {
+                                        'common-style': '',
+                                        'idSelect': 'SelectIdState',
+                                        'label': 'State',
+                                        'NameSelect': 'States list',
+                                        })
+                                    </div>
+                                    <div class="col-span-2">
+                                        @@include('components/textarea.html', {
+                                        'common-style': '',
+                                        'idTextarea': 'SubjectId',
+                                        'label': 'Message',
+                                        'styleTextarea': '',
+                                        'type': 'text',
+                                        'placeholder': 'Write your message...'
+                                        })
+                                    </div>
+                                    <div class="col-span-2">
+                                        @@include('components/button-icon.html', {
+                                        'title': 'Send Message',
+                                        'type': 'submit',
+                                        'ariaLabel': 'Send Message Button'
+                                        })
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-span-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>

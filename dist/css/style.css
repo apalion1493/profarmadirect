@@ -1560,6 +1560,9 @@ html {
 .mt-3 {
   margin-top: 0.75rem;
 }
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .mt-8 {
   margin-top: 2rem;
 }
@@ -1597,10 +1600,6 @@ html {
 .size-4 {
   width: 1rem;
   height: 1rem;
-}
-.size-5 {
-  width: 1.25rem;
-  height: 1.25rem;
 }
 .size-6 {
   width: 1.5rem;
@@ -1666,6 +1665,9 @@ html {
 .min-h-screen {
   min-height: 100vh;
 }
+.w-5 {
+  width: 1.25rem;
+}
 .w-6 {
   width: 1.5rem;
 }
@@ -1687,9 +1689,6 @@ html {
 }
 .w-full {
   width: 100%;
-}
-.w-5 {
-  width: 1.25rem;
 }
 .min-w-\[140px\] {
   min-width: 140px;
@@ -1722,9 +1721,6 @@ html {
   flex: 1 1 0%;
 }
 .flex-shrink-0 {
-  flex-shrink: 0;
-}
-.shrink-0 {
   flex-shrink: 0;
 }
 .-translate-x-1\/2 {
@@ -1926,6 +1922,10 @@ html {
 .border-DarkBlue10 {
   border-color: #05093E1A;
 }
+.border-LagunaBlue {
+  --tw-border-opacity: 1;
+  border-color: rgb(50 205 215 / var(--tw-border-opacity));
+}
 .border-LightBlue {
   --tw-border-opacity: 1;
   border-color: rgb(239 246 255 / var(--tw-border-opacity));
@@ -1946,10 +1946,6 @@ html {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-.border-LagunaBlue {
-  --tw-border-opacity: 1;
-  border-color: rgb(50 205 215 / var(--tw-border-opacity));
 }
 .bg-Backgroung {
   --tw-bg-opacity: 1;
@@ -2088,6 +2084,9 @@ html {
 }
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+.pb-12 {
+  padding-bottom: 3rem;
 }
 .pb-14 {
   padding-bottom: 3.5rem;
@@ -2396,6 +2395,18 @@ textarea.input {
   padding-right: 1rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+select.select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background-image: url("../img/Dropdown-icon.svg");
+  color: #05093E80;
+}
+
+.select option:first-child {
+  color: red;
 }
 
 input[type=search]::-webkit-search-decoration,
@@ -3158,6 +3169,16 @@ p {
 .question-input-icon {
   background-size: 20px 20px;
   background: url("../img/icons/Question-icon20.svg") no-repeat 16px 50%;
+}
+
+.Research-icon {
+  background: url("../img/Research-icon.svg");
+  display: block;
+  height: 100px;
+  width: 100px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .button {

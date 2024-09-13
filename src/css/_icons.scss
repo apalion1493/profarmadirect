@@ -367,3 +367,8 @@
   background-size: 20px 20px;
   background: url("../img/icons/Question-icon20.svg") no-repeat 16px 50%;
 }
+
+.Research-icon {
+  background: url("../img/Research-icon.svg");
+  @apply block h-[100px] w-[100px] bg-100-auto bg-center bg-no-repeat;
+}

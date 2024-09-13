@@ -61,6 +61,18 @@ textarea.input {
   @apply h-[161px] px-4 py-6
 }
 
+select.select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background-image: url("../img/Dropdown-icon.svg");
+  @apply text-DarkBlue50
+}
+
+.select option:first-child{
+  color: red;
+}
+
 input[type='search']::-webkit-search-decoration,
 input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-results-button,
