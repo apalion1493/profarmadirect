@@ -1560,6 +1560,9 @@ html {
 .mt-3 {
   margin-top: 0.75rem;
 }
+.mt-4 {
+  margin-top: 1rem;
+}
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -3151,6 +3154,16 @@ p {
   background-repeat: no-repeat;
 }
 
+.bg-color-4 {
+  background: url("../img/bg-color-2.svg");
+  display: block;
+  height: 292px;
+  width: 100%;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .user-input-icon {
   background-size: 20px 20px;
   background: url("../img/icons/User-icon20.svg") no-repeat 16px 50%;
@@ -3159,6 +3172,11 @@ p {
 .mail-input-icon {
   background-size: 20px 20px;
   background: url("../img/icons/Mail-icon20.svg") no-repeat 16px 50%;
+}
+
+.lock-input-icon {
+  background-size: 20px 20px;
+  background: url("../img/icons/Lock-icon20.svg") no-repeat 16px 50%;
 }
 
 .phone-input-icon {

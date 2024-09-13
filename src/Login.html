@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Login'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    @@include('components/Header.html', {
+    'commonStyle': ' ',
+    })
+
+    <section class="section">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-12">
+                    <div class="flex flex-col items-center max-w-[450px] mx-auto">
+                        @@include('components/Title-small.html', {
+                        'Title': 'Login',
+                        'Style': 'mb-3'
+                        })
+                        <h1 class="main-title text-center">
+                            Login Details
+                        </h1>
+                        <p class="text-center font-medium text-body text-DarkBlue50 mt-5">Don’t have an account? <a
+                                href="#" class="text-DarkBlue100 font-semibold hover:underline">Click here</a> to register.</p>
+                    </div>
+                </div>
+                <div class="col-span-12">
+                    <div class="pb-[120px] relative">
+                        <div class="rounded-4xl w-full bg-color-4 absolute bottom-0 left-0 right-0"></div>
+                        <div class="row gap-x-8 relative z-10">
+                            <div class="col-span-2"></div>
+                            <div class="col-span-8">
+                                <form class="p-12 grid grid-cols-2 gap-x-8 gap-y-10 rounded-4xl overflow-hidden shadow-5xl bg-white mt-8"
+                                      action="">
+                                    <div class="col-span-1">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'NameId',
+                                        'label': 'Username',
+                                        'styleInput': 'user-input-icon input-icon',
+                                        'type': 'text',
+                                        'placeholder': 'Your Name',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-1">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'passwordId',
+                                        'label': 'Password',
+                                        'styleInput': 'lock-input-icon input-icon',
+                                        'type': 'password',
+                                        'placeholder': '**********',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-2">
+                                        @@include('components/button-icon.html', {
+                                        'title': 'Continue',
+                                        'type': 'submit',
+                                        'ariaLabel': 'Continue Button',
+                                        'style': '',
+                                        })
+
+                                        <a class="text-body font-medium mt-4 inline-block text-DarkBlue50 hover:underline" href="#">Forgot Password?</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-span-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>
