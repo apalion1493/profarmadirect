@@ -33,7 +33,7 @@ module.exports = {
             none: ['0px', '0px'],
             base: ['18px', '130%'],
             h1: ['70px', '100%'],
-            h2: ['48px', '100%'],
+            h2: ['48px', '120%'],
             h3: ['40px', '130%'],
             h4: ['32px', '130%'],
             Top1: ['24px', '130%'],
@@ -67,7 +67,8 @@ module.exports = {
             boxShadow: {
                 '3xl': '0px 1px 5px 1px rgba(61, 101, 255, 0.12)',
                 '4xl': '0px 1px 8px 1px rgba(5, 9, 62, 0.09)',
-                '5xl': ' 0px 1px 9px 2px rgba(61, 101, 255, 0.12);',
+                '5xl': '0px 1px 9px 2px rgba(61, 101, 255, 0.12)',
+                '6xl': '0px 1px 5px 1px rgba(61, 101, 255, 0.12)',
             },
             borderRadius: {
                 '4xl': '32px',

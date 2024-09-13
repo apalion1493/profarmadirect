@@ -7,3 +7,4 @@ https://apalion1493.github.io/profarmadirect/dist/All-conditions.html <br/>
 https://apalion1493.github.io/profarmadirect/dist/Request-Prescription.html <br/>
 https://apalion1493.github.io/profarmadirect/dist/Blog-post.html <br/>
 https://apalion1493.github.io/profarmadirect/dist/Terms-of-Use.html <br/> 
+https://apalion1493.github.io/profarmadirect/dist/FAQs.html <br/> 
