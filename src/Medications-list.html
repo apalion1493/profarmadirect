@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'A-Z Medications'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    @@include('components/Header.html', {
+    'commonStyle': ' ',
+    })
+
+    <section x-data="{
+                activeFilters: [],
+                toggleFilter(event) {
+                    const value = event.target.value;
+                    if (event.target.checked) {
+                      this.activeFilters.push(value);
+                    } else {
+                      this.activeFilters = this.activeFilters.filter(item => item !== value);
+                    }
+                },
+                isVisible(letter) {
+                    return this.activeFilters.length === 0 || this.activeFilters.includes(letter);
+                }
+              }"
+             class="section">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-12">
+                    <div class="flex flex-col items-center max-w-[944px] mx-auto">
+                        @@include('components/Title-small.html', {
+                        'Title': 'A-Z',
+                        'Style': 'mb-3'
+                        })
+                        <h1 class="main-title text-center">
+                            A-Z Medications
+                        </h1>
+                        <p class="text-center font-medium text-base -tracking-018 text-DarkBlue50 mt-5">Explore our comprehensive range of medications, covering everything from A to Z, at our pharmacy. We pride ourselves on offering a diverse selection to meet your healthcare needs, ensuring
+                            high-quality options for every condition.</p>
+                    </div>
+                </div>
+                <div class="col-span-12">
+                    <div class="checkboxes-alphabet-list">
+                        <label><input type="checkbox" value="A" @change="toggleFilter($event)"> A</label>
+                        <label><input type="checkbox" value="B" @change="toggleFilter($event)"> B</label>
+                        <label><input type="checkbox" value="C" @change="toggleFilter($event)"> C</label>
+                        <label><input type="checkbox" value="D" @change="toggleFilter($event)"> D</label>
+                        <label><input type="checkbox" value="E" @change="toggleFilter($event)"> E</label>
+                        <label><input type="checkbox" value="F" @change="toggleFilter($event)"> F</label>
+                        <label><input type="checkbox" value="G" @change="toggleFilter($event)"> G</label>
+                        <label><input type="checkbox" value="H" @change="toggleFilter($event)"> H</label>
+                        <label><input type="checkbox" value="I" @change="toggleFilter($event)"> I</label>
+                        <label><input type="checkbox" value="J" @change="toggleFilter($event)"> J</label>
+                        <label><input type="checkbox" value="K" @change="toggleFilter($event)"> K</label>
+                        <label><input type="checkbox" value="L" @change="toggleFilter($event)"> L</label>
+                        <label><input type="checkbox" value="M" @change="toggleFilter($event)"> M</label>
+                        <label><input type="checkbox" value="N" @change="toggleFilter($event)"> N</label>
+                        <label><input type="checkbox" value="O" @change="toggleFilter($event)"> O</label>
+                        <label><input type="checkbox" value="P" @change="toggleFilter($event)"> P</label>
+                        <label><input type="checkbox" value="Q" @change="toggleFilter($event)"> Q</label>
+                        <label><input type="checkbox" value="R" @change="toggleFilter($event)"> R</label>
+                        <label><input type="checkbox" value="S" @change="toggleFilter($event)"> S</label>
+                        <label><input type="checkbox" value="T" @change="toggleFilter($event)"> T</label>
+                        <label><input type="checkbox" value="U" @change="toggleFilter($event)"> U</label>
+                        <label><input type="checkbox" value="V" @change="toggleFilter($event)"> V</label>
+                        <label><input type="checkbox" value="W" @change="toggleFilter($event)"> W</label>
+                        <label><input type="checkbox" value="X" @change="toggleFilter($event)"> X</label>
+                        <label><input type="checkbox" value="Y" @change="toggleFilter($event)"> Y</label>
+                        <label><input type="checkbox" value="Z" @change="toggleFilter($event)"> Z</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-10">
+                <div class="col-span-12">
+                    <div class="flex flex-wrap gap-8 alphabet-list">
+                        <div class="" x-show="isVisible('A')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'A',
+                            })
+                        </div>
+                        <div x-show="isVisible('B')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'B',
+                            })
+                        </div>
+                        <div x-show="isVisible('C')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'C',
+                            })
+                        </div>
+                        <div x-show="isVisible('D')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'D',
+                            })
+                        </div>
+                        <div x-show="isVisible('E')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'E',
+                            })
+                        </div>
+                        <div x-show="isVisible('F')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'F',
+                            })
+                        </div>
+                        <div x-show="isVisible('G')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'G',
+                            })
+                        </div>
+                        <div x-show="isVisible('H')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'H',
+                            })
+                        </div>
+                        <div x-show="isVisible('I')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'I',
+                            })
+                        </div>
+                        <div x-show="isVisible('J')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'J',
+                            })
+                        </div>
+                        <div x-show="isVisible('K')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'K',
+                            })
+                        </div>
+                        <div x-show="isVisible('L')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'L',
+                            })
+                        </div>
+                        <div x-show="isVisible('M')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'M',
+                            })
+                        </div>
+                        <div x-show="isVisible('N')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'N',
+                            })
+                        </div>
+                        <div x-show="isVisible('O')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'O',
+                            })
+                        </div>
+                        <div x-show="isVisible('P')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'P',
+                            })
+                        </div>
+                        <div x-show="isVisible('Q')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'Q',
+                            })
+                        </div>
+                        <div x-show="isVisible('R')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'R',
+                            })
+                        </div>
+                        <div x-show="isVisible('S')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'S',
+                            })
+                        </div>
+                        <div x-show="isVisible('T')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'T',
+                            })
+                        </div>
+                        <div x-show="isVisible('U')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'U',
+                            })
+                        </div>
+                        <div x-show="isVisible('V')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'V',
+                            })
+                        </div>
+                        <div x-show="isVisible('W')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'W',
+                            })
+                        </div>
+                        <div x-show="isVisible('X')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'X',
+                            })
+                        </div>
+                        <div x-show="isVisible('Y')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'Y',
+                            })
+                        </div>
+                        <div x-show="isVisible('Z')">
+                            @@include('components/Alphabet-card.html', {
+                            'style': '',
+                            'Title': 'Z',
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>

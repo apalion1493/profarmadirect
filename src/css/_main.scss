@@ -140,3 +140,20 @@
   @apply border-blue100
 }
 //
+
+.alphabet-list > div {
+  flex: 1 0 23%;
+  max-width: 23%;
+}
+
+.checkboxes-alphabet-list {
+  input {
+    @apply hidden
+  }
+
+  label {
+    @apply w-10 min-w-10 h-10 flex items-center justify-center border border-DarkBlue30 rounded-full overflow-hidden bg-Backgroung cursor-pointer
+  }
+
+  @apply flex flex-wrap gap-2 mx-auto w-full justify-center mt-10
+}
