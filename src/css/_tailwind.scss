@@ -15,6 +15,10 @@
   .container {
     @apply px-4 w-full minsm:max-w-[672px] minmd:max-w-[800px] minlg:max-w-[1056px] minxl:max-w-[1344px];
   }
+
+  .w-full {
+    width: 100% !important;
+  }
 }
 
 @layer base {
@@ -48,9 +52,25 @@ section {
       @apply pl-[44px]
     }
 
+  &--radio {
+    label {
+      @apply ml-2
+    }
+
+    @apply text-DarkBlue50
+  }
+
   @apply px-4 py-[10px] bg-white flex items-center rounded-2xl text-body font-medium h-14
   w-full text-DarkBlue100 border border-DarkBlue10 transition-all focus:shadow-3xl
   focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-DarkBlue10
+}
+
+.input-radio-block {
+  &:checked {
+    background-image: url("../img/icons/Check-box-active-icon20.svg");
+  }
+
+  @apply relative h-5 w-5 appearance-none rounded-full border border-blue100 bg-white disabled:cursor-not-allowed focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit
 }
 
 .input[type="search"]::placeholder {
@@ -78,6 +98,31 @@ input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-results-button,
 input[type='search']::-webkit-search-results-decoration {
   -webkit-appearance: none;
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-checkbox input[type='checkbox'] {
+  @apply hidden;
+}
+
+.custom-checkbox input[type='checkbox']:checked + .checkmark {
+  @apply flex;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
 }
 
 
