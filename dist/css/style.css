@@ -1495,6 +1495,9 @@ html {
 .col-span-8 {
   grid-column: span 8 / span 8;
 }
+.col-span-9 {
+  grid-column: span 9 / span 9;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1629,11 +1632,11 @@ html {
 .h-\[280px\] {
   height: 280px;
 }
-.h-\[281px\] {
-  height: 281px;
-}
 .h-\[290px\] {
   height: 290px;
+}
+.h-\[291px\] {
+  height: 291px;
 }
 .h-\[38px\] {
   height: 38px;
@@ -1659,8 +1662,11 @@ html {
 .h-full {
   height: 100%;
 }
-.h-\[291px\] {
-  height: 291px;
+.h-\[540px\] {
+  height: 540px;
+}
+.h-\[552px\] {
+  height: 552px;
 }
 .max-h-44 {
   max-height: 11rem;
@@ -1682,6 +1688,9 @@ html {
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.min-h-\[290px\] {
+  min-height: 290px;
 }
 .w-14 {
   width: 3.5rem;
@@ -1875,6 +1884,10 @@ html {
 }
 .gap-y-8 {
   row-gap: 2rem;
+}
+.gap-x-\[10px\] {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;

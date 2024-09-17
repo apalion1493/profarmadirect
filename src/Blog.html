@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Blog'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    @@include('components/Header.html', {
+    'commonStyle': ' ',
+    })
+
+    <section class="section">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-3">
+                    <div class="flex flex-col gap-y-8">
+                        <div class="flex flex-col">
+                            <span>Category</span>
+                            <span>_____</span>
+                            <ul class="flex flex-wrap gap-x-[10px] gap-y-3">
+                                <li class="flex items-center justify-center">
+                                    <a href="#">Posts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-9">
+                    <div class="row gap-8">
+                        <div class="col-span-6">
+                            @@include('components/Blog-card.html', {
+                            'Style': '',
+                            'URL': '#',
+                            'Image': 'https://penguinui.s3.amazonaws.com/component-assets/card-img-2.webp',
+                            'AltText': 'Text Img',
+                            'Title': '5 steps to prepare for a Pediatrician appointment',
+                            'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque.',
+                            'Tag': 'News',
+                            })
+                        </div>
+                        <div class="col-span-6">
+                            @@include('components/Blog-card.html', {
+                            'Style': '',
+                            'URL': '#',
+                            'Image': 'img/doctor-team-meeting.jpg',
+                            'AltText': 'Text Img',
+                            'Title': '5 steps to prepare for a Pediatrician appointment',
+                            'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque.',
+                            'Tag': 'News',
+                            })
+                        </div>
+                        <div class="col-span-6">
+                            @@include('components/Blog-card.html', {
+                            'Style': '',
+                            'URL': '#',
+                            'Image': 'img/doctor-team-meeting.jpg',
+                            'AltText': 'Text Img',
+                            'Title': '5 steps to prepare for a Pediatrician appointment',
+                            'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque.',
+                            'Tag': 'News',
+                            })
+                        </div>
+                        <div class="col-span-6">
+                            @@include('components/Blog-card.html', {
+                            'Style': '',
+                            'URL': '#',
+                            'Image': 'img/doctor-team-meeting.jpg',
+                            'AltText': 'Text Img',
+                            'Title': '5 steps to prepare for a Pediatrician appointment',
+                            'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque.',
+                            'Tag': 'News',
+                            })
+                        </div>
+                        <div class="col-span-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>
