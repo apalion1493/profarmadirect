@@ -1659,6 +1659,9 @@ html {
 .h-full {
   height: 100%;
 }
+.h-\[291px\] {
+  height: 291px;
+}
 .max-h-44 {
   max-height: 11rem;
 }
