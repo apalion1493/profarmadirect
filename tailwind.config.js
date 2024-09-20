@@ -73,6 +73,7 @@ module.exports = {
             borderRadius: {
                 '4xl': '32px',
                 '5xl': '40px',
+                '6xl': '20px',
             },
             colors: {
                 transparent: 'transparent',

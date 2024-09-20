@@ -157,3 +157,23 @@
 
   @apply flex flex-wrap gap-2 mx-auto w-full justify-center mt-10
 }
+
+// Pagination Start
+
+.pagination-button {
+  &--disabled {
+    @apply bg-transparent
+  }
+
+  @apply w-12 h-12 min-w-12 flex items-center justify-center rounded-full overflow-hidden border border-Grey text-none bg-blue100 disabled:bg-transparent hover:cursor-pointer
+}
+
+// Pagination End
+
+.inactive-tag {
+  span {
+    @apply text-DarkBlue50 font-medium
+  }
+
+  @apply border-DarkBlue10
+}
