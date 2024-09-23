@@ -344,7 +344,7 @@
 }
 
 .bg-color-3 {
-  background: url("../img/bg-color-3.svg");
+  background: url("../img/Bg-color-3.svg");
   @apply block w-full h-full bg-cover bg-bottom bg-no-repeat;
 }
 
@@ -386,4 +386,14 @@
 .Shopping-cart-icon {
   background: url("../img/icons/Shopping-cart-icon.svg");
   @apply block h-[28px] w-[28px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.phone-header-icon20 {
+  background: url("../img/icons/phone-header-icon.svg");
+  @apply block h-[20px] w-[20px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.Mail-header-iocn20 {
+  background: url("../img/icons/Mail-header-iocn.svg");
+  @apply block h-[20px] w-[20px] bg-100-auto bg-center bg-no-repeat;
 }
