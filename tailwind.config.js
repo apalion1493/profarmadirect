@@ -41,6 +41,7 @@ module.exports = {
             Top3: ['20px', '130%'],
             body: ['16px', '130%'],
             body2: ['14px', '120%'],
+            body3: ['8px', '120%'],
         },
         screens: {
             xl: {max: '1344px'},

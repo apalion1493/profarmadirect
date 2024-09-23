@@ -82,64 +82,155 @@
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
     <header class="w-full relative">
-    <nav x-data="{ mobileMenuIsOpen: false }" @click.away="mobileMenuIsOpen = false" class="flex flex-col" aria-label="Header menu">
+    <nav x-data="{ mobileMenuIsOpen: false }" @click.away="mobileMenuIsOpen = false" class="flex flex-col"
+         aria-label="Header menu">
         <!-- Brand Logo -->
         <div class="w-full bg-DarkBlue100 text-white py-[18px]">
             <div class="container">
-                <ul class="flex items-center gap-x-8">
-                    <li>
-                        <a class="text-body font-semibold" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="text-body font-semibold" href="index.html">Conditions</a>
-                    </li>
-                    <li>
-                        <a class="text-body font-semibold" href="index.html">Shop</a>
-                    </li>
-                    <li>
-                        <a class="text-body font-semibold" href="index.html">A-Z Medications</a>
-                    </li>
-                    <li>
-                        <a class="text-body font-semibold" href="index.html">About Us</a>
-                    </li>
-                    <li>
-                        <a class="text-body font-semibold" href="index.html">Blog</a>
-                    </li>
-                    <li>
-                        <a class="text-body font-semibold" href="index.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="w-full bg-LightBlue py-6 border-b border-blue10">
-            <div class="container flex items-center gap-x-12">
-                <a class="" href="#">
-                    <img src="" alt="Profarma Main Logo">
-                </a>
-                <div class="flex items-center gap-x-4 w-full">
-                    <input type="search">
-                    <a class="button" href="#">Login</a>
+                <div class="flex items-center justify-between">
+                    <ul class="flex items-center gap-x-8">
+                        <li>
+                            <a class="text-body font-semibold" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-body font-semibold" href="index.html">Conditions</a>
+                        </li>
+                        <li>
+                            <a class="text-body font-semibold" href="index.html">Shop</a>
+                        </li>
+                        <li>
+                            <a class="text-body font-semibold" href="index.html">A-Z Medications</a>
+                        </li>
+                        <li>
+                            <a class="text-body font-semibold" href="index.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-body font-semibold" href="index.html">Blog</a>
+                        </li>
+                        <li>
+                            <a class="text-body font-semibold" href="index.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="flex items-center">
+                        <a href="#">
+                            <i class="phone-input-icon"></i>
+                            <span>07425 899611</span>
+                        </a>
+                        <a href="#">
+                            <i></i>
+                            <span>info@profarmadirect.com</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        
-        
+        <div class="w-full bg-LightBlue py-6 border-b border-blue10">
+            <div class="container flex items-center gap-x-4">
+                <a class="min-w-[272px]" href="#">
+                    <img width="272" src="../img/Logo.svg" alt="Profarma Main Logo">
+                </a>
+                <div class="flex items-center ml-12 w-full relative">
+                    <div style="display: none" x-data="{ query: '', results: [], showResults: false, showForm: false }"
+                         @click.away="showResults = false; showForm = false"
+                         class='flex flex-col w-full pl-1/24 lg:pl-0 transition-all' :style="{display: 'flex'}"
+                         :class='showForm ? "z-[12] lg:pr-0 lg:z-[32] w-full" : "lg:pr-[56px] w-[200px]"'>
+                        <label for="header-search" class="text-none absolute -z-10">Search</label>
+                        <div class='flex items-center relative'>
+                            <div :class='showForm ? "py-2 pl-6 lg:pl-4 pr-16 border opacity-100" : " border-0 p-0 opacity-0"'
+                                 class='flex items-center rounded-[40px] lg:pr-[56px] h-[56px] w-full  overflow-hidden transition-all bg-white border-border-2 relative'>
+                                <div class="relative w-full">
+                                    <input type="search" id="header-search" name="Search bar"
+                                           placeholder="Type your drug name..." x-model="query"
+                                           @input.debounce.300="fetchResults" @focus="showResults = true"
+                                           class="w-full bg-white border-0 focus:ring-0 focus:bg-transparent focus:border-0 text-base outline-none p-0 leading-8 transition-colors duration-200 ease-in-out appearance-none">
+                                </div>
+                            </div>
+                            <button :class='showForm ? "active right-2 clicked w-10 h-10 min-w-10 top-1/2 -translate-y-1/2" : "right-0 top-0"'
+                                    class="w-14 min-w-14 h-14 flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
+                                    @click="showForm = !showForm; showResults = false" aria-label="Search button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                    <path class="group-hover:fill-blue100 transition-all" d="M0.5 10.0438C0.5 4.77292 4.77292 0.5 10.0438 0.5C15.3147 0.5 19.5876 4.77292 19.5876 10.0438C19.5876 15.3147 15.3147 19.5876 10.0438 19.5876C4.77292 19.5876 0.5 15.3147 0.5 10.0438ZM10.0438 2.04764C5.62766 2.04764 2.04764 5.62766 2.04764 10.0438C2.04764 14.4599 5.62766 18.0399 10.0438 18.0399C14.4599 18.0399 18.0399 14.4599 18.0399 10.0438C18.0399 5.62766 14.4599 2.04764 10.0438 2.04764Z" fill="white"/>
+                                    <path class="group-hover:fill-blue100 transition-all" d="M15.8016 15.8016C16.1038 15.4994 16.5938 15.4994 16.896 15.8016L21.2734 20.179C21.5755 20.4812 21.5755 20.9712 21.2734 21.2734C20.9712 21.5755 20.4812 21.5755 20.179 21.2734L15.8016 16.896C15.4994 16.5938 15.4994 16.1038 15.8016 15.8016Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div x-show="showResults && query.length > 0"
+                             class="absolute left-0 top-full mt-2 pl-1/24 w-full z-10 lg:pl-0">
+                            <div
+                                    class='bg-white border border-gray-200 rounded-lg shadow-shadow-2 p-6 md:px-4 md:py-5'>
+                                <ul class='flex flex-col gap-y-4'>
+                                    <template x-for="result in results" :key="result.id">
+                                        <li class="text-body3 hover:bg-gray-100 cursor-pointer">
+                                            <div>
+                                                <div>
+                                                    <img src="" alt="">
+                                                    <div>
+                                                        <span x-text="result.title"></span>
+                                                        <p x-text="result.price"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </template>
+                                </ul>
+                                <a class='text-danger uppercase font-semibold text-body6 tracking-[0.5px] mt-6 block'
+                                   href="#">More results</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <a class="button" href="#">Login</a>
+                    <div class=" items-center gap-x-4 hidden">
+                        <a class="button" href="#">My Account</a>
+                        <a class="w-14 min-w-14 h-14 relative flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                <path class="group-hover:fill-blue100 transition-all" d="M11.3334 27.5C12.622 27.5 13.6667 26.4554 13.6667 25.1667C13.6667 23.878 12.622 22.8334 11.3334 22.8334C10.0447 22.8334 9.00005 23.878 9.00005 25.1667C9.00005 26.4554 10.0447 27.5 11.3334 27.5Z" fill="white"/>
+                                <path class="group-hover:fill-blue100 transition-all" d="M22.6667 27.5C23.9554 27.5 25 26.4554 25 25.1667C25 23.878 23.9554 22.8334 22.6667 22.8334C21.378 22.8334 20.3334 23.878 20.3334 25.1667C20.3334 26.4554 21.378 27.5 22.6667 27.5Z" fill="white"/>
+                                <path class="group-hover:fill-blue100 transition-all" d="M0.167995 0.945345C0.474347 0.485816 1.09522 0.361642 1.55475 0.667995L7.55475 4.66799C7.76791 4.8101 7.9184 5.0286 7.97518 5.27842L11.1316 19.1667H22.9185L25.6636 9.83338H14.3334C13.7811 9.83338 13.3334 9.38566 13.3334 8.83338C13.3334 8.28109 13.7811 7.83338 14.3334 7.83338H27C27.3152 7.83338 27.6119 7.98195 27.8007 8.23428C27.9895 8.48662 28.0483 8.8132 27.9594 9.11555L24.6261 20.4489C24.5009 20.8745 24.1103 21.1667 23.6667 21.1667H10.3334C9.86648 21.1667 9.46172 20.8436 9.35825 20.3883L6.11334 6.11076L0.445345 2.3321C-0.0141836 2.02574 -0.138358 1.40487 0.167995 0.945345Z" fill="white"/>
+                                <path class="group-hover:fill-blue100 transition-all" d="M13.3334 14.8334C13.3334 14.2811 13.7811 13.8334 14.3334 13.8334H25C25.5523 13.8334 26 14.2811 26 14.8334C26 15.3857 25.5523 15.8334 25 15.8334H14.3334C13.7811 15.8334 13.3334 15.3857 13.3334 14.8334Z" fill="white"/>
+                            </svg>
+                            <span class="min-w-4 h-4 flex items-center justify-center text-white font-bold text-body3 absolute top-0 right-0 bg-DarkBlue100 rounded-full">10</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Mobile Menu Button -->
-        <button @click="mobileMenuIsOpen = !mobileMenuIsOpen" :aria-expanded="mobileMenuIsOpen" :class="mobileMenuIsOpen ? 'fixed top-6 right-6 z-20' : null" type="button" class="flex text-slate-700 dark:text-slate-300 minmd:hidden" aria-label="mobile menu" aria-controls="mobileMenu">
-            <svg x-cloak x-show="!mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        <button @click="mobileMenuIsOpen = !mobileMenuIsOpen" :aria-expanded="mobileMenuIsOpen"
+                :class="mobileMenuIsOpen ? 'fixed top-6 right-6 z-20' : null" type="button"
+                class="flex text-slate-700 dark:text-slate-300 minmd:hidden" aria-label="mobile menu"
+                aria-controls="mobileMenu">
+            <svg x-cloak x-show="!mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true"
+                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
             </svg>
-            <svg x-cloak x-show="mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            <svg x-cloak x-show="mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true"
+                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
             </svg>
         </button>
         <!-- Mobile Menu -->
-        <ul x-cloak x-show="mobileMenuIsOpen" x-transition:enter="transition motion-reduce:transition-none ease-out duration-300" x-transition:enter-start="-translate-y-full" x-transition:enter-end="translate-y-0" x-transition:leave="transition motion-reduce:transition-none ease-out duration-300" x-transition:leave-start="translate-y-0" x-transition:leave-end="-translate-y-full" id="mobileMenu" class="fixed max-h-svh overflow-y-auto inset-x-0 top-0 z-10 flex flex-col divide-y divide-slate-300 rounded-b-xl border-b border-slate-300 bg-slate-100 px-6 pb-6 pt-20 dark:divide-slate-700 dark:border-slate-700 dark:bg-slate-800 md:hidden">
-            <li class="py-4"><a href="#" class="w-full text-lg font-bold text-blue-700 focus:underline dark:text-blue-600" aria-current="page">Products</a></li>
-            <li class="py-4"><a href="#" class="w-full text-lg font-medium text-slate-700 focus:underline dark:text-slate-300">Pricing</a></li>
-            <li class="py-4"><a href="#" class="w-full text-lg font-medium text-slate-700 focus:underline dark:text-slate-300">Blog</a></li>
-            <li class="py-4"><a href="#" class="w-full text-lg font-medium text-slate-700 focus:underline dark:text-slate-300">Login</a></li>
+        <ul x-cloak x-show="mobileMenuIsOpen"
+            x-transition:enter="transition motion-reduce:transition-none ease-out duration-300"
+            x-transition:enter-start="-translate-y-full" x-transition:enter-end="translate-y-0"
+            x-transition:leave="transition motion-reduce:transition-none ease-out duration-300"
+            x-transition:leave-start="translate-y-0" x-transition:leave-end="-translate-y-full" id="mobileMenu"
+            class="fixed max-h-svh overflow-y-auto inset-x-0 top-0 z-10 flex flex-col divide-y divide-slate-300 rounded-b-xl border-b border-slate-300 bg-slate-100 px-6 pb-6 pt-20 dark:divide-slate-700 dark:border-slate-700 dark:bg-slate-800 md:hidden">
+            <li class="py-4"><a href="#"
+                                class="w-full text-lg font-bold text-blue-700 focus:underline dark:text-blue-600"
+                                aria-current="page">Products</a></li>
+            <li class="py-4"><a href="#"
+                                class="w-full text-lg font-medium text-slate-700 focus:underline dark:text-slate-300">Pricing</a>
+            </li>
+            <li class="py-4"><a href="#"
+                                class="w-full text-lg font-medium text-slate-700 focus:underline dark:text-slate-300">Blog</a>
+            </li>
+            <li class="py-4"><a href="#"
+                                class="w-full text-lg font-medium text-slate-700 focus:underline dark:text-slate-300">Login</a>
+            </li>
         </ul>
     </nav>
 
@@ -420,20 +511,17 @@
         }))
     })
 
-
-
-    // function fetchResults() {
-    //     this.results = []
-    //     if (this.query.length > 0) {
-    //         // Имитация поиска. Поменять на реальный API вызов или логику поиска.
-    //         this.results = [
-    //             {id: 1, title: 'Result 1'},
-    //             {id: 2, title: 'Result 2'},
-    //             {id: 3, title: 'Result 3'},
-    //         ]
-    //     }
-    //     this.showResults = this.results.length > 0
-    // }
+    function fetchResults() {
+        this.results = []
+        if (this.query.length > 0) {
+            // Имитация поиска. Поменять на реальный API вызов или логику поиска.
+            this.results = [
+                {id: 1, title: 'Differin 0.1% Cream', price: '£16.43'},
+                {id: 2, title: 'Cardura (Doxazosin Mesylate)', price: '£28.99'},
+            ]
+        }
+        this.showResults = this.results.length > 0
+    }
     //
     // function selectResult(result) {
     //     this.query = result.title
