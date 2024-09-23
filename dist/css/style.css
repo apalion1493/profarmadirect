@@ -1929,6 +1929,9 @@ html {
 .gap-y-8 {
   row-gap: 2rem;
 }
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -3906,5 +3909,16 @@ p {
 @media (min-width: 768px) {
   .minmd\:hidden {
     display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .minlg\:cursor-alias {
+    cursor: alias;
+  }
+  .minlg\:cursor-none {
+    cursor: none;
+  }
+  .minlg\:cursor-auto {
+    cursor: auto;
   }
 }
