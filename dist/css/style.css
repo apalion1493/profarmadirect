@@ -1710,14 +1710,14 @@ html {
 .min-h-\[416px\] {
   min-height: 416px;
 }
+.min-h-\[600px\] {
+  min-height: 600px;
+}
 .min-h-dvh {
   min-height: 100dvh;
 }
 .min-h-screen {
   min-height: 100vh;
-}
-.min-h-\[600px\] {
-  min-height: 600px;
 }
 .w-10 {
   width: 2.5rem;
@@ -2340,6 +2340,9 @@ html {
 .capitalize {
   text-transform: capitalize;
 }
+.leading-100 {
+  line-height: 100%;
+}
 .leading-8 {
   line-height: 2rem;
 }
@@ -2348,9 +2351,6 @@ html {
 }
 .leading-\[130\%\] {
   line-height: 130%;
-}
-.leading-100 {
-  line-height: 100%;
 }
 .-tracking-018 {
   letter-spacing: 0.18px;
@@ -2920,6 +2920,16 @@ p {
   background-repeat: no-repeat;
 }
 
+.General-Health-icon32 {
+  background: url("../img/icons/General-Health-icon40.png");
+  display: block;
+  height: 32px;
+  width: 32px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .Health-icon40 {
   background: url("../img/icons/Health-icon40.png");
   display: block;
@@ -3320,6 +3330,16 @@ p {
   background-repeat: no-repeat;
 }
 
+.Womens-Health-icon32 {
+  background: url("../img/icons/Womens-Health-icon40.png");
+  display: block;
+  height: 32px;
+  width: 32px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .Flag-UK {
   background: url("../img/icons/Flag-UK.svg");
   display: block;
@@ -3440,6 +3460,66 @@ p {
   display: block;
   height: 20px;
   width: 20px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.alcohol-gel-icon48 {
+  background: url("../img/icons/alcohol-gel48.png");
+  display: block;
+  height: 48px;
+  width: 48px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.alcohol-gel-icon40 {
+  background: url("../img/icons/alcohol-gel48.png");
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.alcohol-gel-icon32 {
+  background: url("../img/icons/alcohol-gel48.png");
+  display: block;
+  height: 32px;
+  width: 32px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.small-intestine32 {
+  background: url("../img/icons/small-intestine32.png");
+  display: block;
+  height: 32px;
+  width: 32px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Mars-icon-32 {
+  background: url("../img/icons/Mars-icon-32.png");
+  display: block;
+  height: 32px;
+  width: 32px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Gender-icon-32 {
+  background: url("../img/icons/Gender-icon-32.png");
+  display: block;
+  height: 32px;
+  width: 32px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;

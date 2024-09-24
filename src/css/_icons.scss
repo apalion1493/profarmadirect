@@ -123,6 +123,11 @@
   @apply block h-[48px] w-[48px] bg-100-auto bg-center bg-no-repeat;
 }
 
+.General-Health-icon32 {
+  background: url("../img/icons/General-Health-icon40.png");
+  @apply block h-[32px] w-[32px] bg-100-auto bg-center bg-no-repeat;
+}
+
 .Health-icon40 {
   background: url("../img/icons/Health-icon40.png");
   @apply block h-[40px] w-[40px] bg-100-auto bg-center bg-no-repeat;
@@ -323,6 +328,11 @@
   @apply block h-[48px] w-[48px] bg-100-auto bg-center bg-no-repeat;
 }
 
+.Womens-Health-icon32 {
+  background: url("../img/icons/Womens-Health-icon40.png");
+  @apply block h-[32px] w-[32px] bg-100-auto bg-center bg-no-repeat;
+}
+
 .Flag-UK {
   background: url("../img/icons/Flag-UK.svg");
   @apply block h-[59px] w-[89px] bg-100-auto bg-center bg-no-repeat;
@@ -396,4 +406,34 @@
 .Mail-header-iocn20 {
   background: url("../img/icons/Mail-header-iocn.svg");
   @apply block h-[20px] w-[20px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.alcohol-gel-icon48 {
+  background: url("../img/icons/alcohol-gel48.png");
+  @apply block h-[48px] w-[48px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.alcohol-gel-icon40 {
+  background: url("../img/icons/alcohol-gel48.png");
+  @apply block h-[40px] w-[40px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.alcohol-gel-icon32 {
+  background: url("../img/icons/alcohol-gel48.png");
+  @apply block h-[32px] w-[32px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.small-intestine32 {
+  background: url("../img/icons/small-intestine32.png");
+  @apply block h-[32px] w-[32px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.Mars-icon-32 {
+  background: url("../img/icons/Mars-icon-32.png");
+  @apply block h-[32px] w-[32px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.Gender-icon-32 {
+  background: url("../img/icons/Gender-icon-32.png");
+  @apply block h-[32px] w-[32px] bg-100-auto bg-center bg-no-repeat;
 }
