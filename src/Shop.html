@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Shop'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen">
+    @@include('components/Header.html', {
+    'commonStyle': ' ',
+    })
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-12 flex justify-center">
+                    <div class="flex flex-col items-center">
+                        @@include('components/Title-small.html', {
+                        'Title': 'SHOP',
+                        'Style': 'mb-3'
+                        })
+                        <h1 class="main-title">
+                            Pharmacy Shop
+                        </h1>
+                        <p class="text-base -tracking-018 font-medium max-w-[916px] text-center text-DarkBlue50 mt-5">
+                            Discover a wide range of skincare products at our pharmacy. From gentle cleansers to
+                            hydrating moisturizers and targeted treatments, our selection caters to various skin types
+                            and concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-16 mt-10">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-12">
+                    <div class="row gap-8">
+                        <div class="col-span-3">
+                            @@include('components/Product-card.html')
+                        </div>
+                        <div class="col-span-3">
+                            @@include('components/Product-card.html')
+                        </div>
+                        <div class="col-span-3">
+                            @@include('components/Product-card.html')
+                        </div>
+                        <div class="col-span-3">
+                            @@include('components/Product-card.html')
+                        </div>
+                        <div class="col-span-3">
+                            @@include('components/Product-card.html')
+                        </div>
+                        <div class="col-span-3">
+                            @@include('components/Product-card.html')
+                        </div>
+                        <div class="col-span-3">
+                            @@include('components/Product-card.html')
+                        </div>
+                        <div class="col-span-3">
+                            @@include('components/Product-card.html')
+                        </div>
+                        <div class="col-span-12">
+                            @@include('components/Pagination.html')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>

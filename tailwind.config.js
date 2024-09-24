@@ -65,6 +65,9 @@ module.exports = {
             },
         },
         extend: {
+            lineHeight: {
+                '100': '100%'
+            },
             boxShadow: {
                 '3xl': '0px 1px 5px 1px rgba(61, 101, 255, 0.12)',
                 '4xl': '0px 1px 8px 1px rgba(5, 9, 62, 0.09)',

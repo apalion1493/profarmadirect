@@ -12,3 +12,4 @@ https://apalion1493.github.io/profarmadirect/dist/Search-Results.html <br/>
 https://apalion1493.github.io/profarmadirect/dist/Login.html <br/> 
 https://apalion1493.github.io/profarmadirect/dist/Registration.html <br/> 
 https://apalion1493.github.io/profarmadirect/dist/Blog.html <br/> 
+https://apalion1493.github.io/profarmadirect/dist/Shop.html <br/> 

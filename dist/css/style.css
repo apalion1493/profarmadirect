@@ -1521,6 +1521,9 @@ html {
 .mb-12 {
   margin-bottom: 3rem;
 }
+.mb-16 {
+  margin-bottom: 4rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1595,12 +1598,6 @@ html {
 }
 .mt-auto {
   margin-top: auto;
-}
-.mt-0 {
-  margin-top: 0px;
-}
-.mb-16 {
-  margin-bottom: 4rem;
 }
 .block {
   display: block;
@@ -1719,6 +1716,9 @@ html {
 .min-h-screen {
   min-height: 100vh;
 }
+.min-h-\[600px\] {
+  min-height: 600px;
+}
 .w-10 {
   width: 2.5rem;
 }
@@ -1789,6 +1789,9 @@ html {
 .max-w-\[672px\] {
   max-width: 672px;
 }
+.max-w-\[916px\] {
+  max-width: 916px;
+}
 .max-w-\[944px\] {
   max-width: 944px;
 }
@@ -1800,9 +1803,6 @@ html {
 }
 .max-w-xs {
   max-width: 20rem;
-}
-.max-w-\[916px\] {
-  max-width: 916px;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -2019,12 +2019,6 @@ html {
 }
 .border-0 {
   border-width: 0px;
-}
-.border-\[1\.5px\] {
-  border-width: 1.5px;
-}
-.border-\[2px\] {
-  border-width: 2px;
 }
 .border-b {
   border-bottom-width: 1px;
@@ -2354,6 +2348,9 @@ html {
 }
 .leading-\[130\%\] {
   line-height: 130%;
+}
+.leading-100 {
+  line-height: 100%;
 }
 .-tracking-018 {
   letter-spacing: 0.18px;
