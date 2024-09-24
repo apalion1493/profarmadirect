@@ -11,37 +11,116 @@
     'commonStyle': ' ',
     })
 
-    <section class="section">
+    <section class="pt-16">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-12 flex justify-center">
+                    <div class="flex flex-col items-center mb-12">
+                        @@include('components/Title-small.html', {
+                        'Title': 'BLOG',
+                        'Style': 'mb-3'
+                        })
+                        <h1 class="main-title">
+                            News & articles
+                        </h1>
+                        <p class="text-base -tracking-018 font-medium max-w-[916px] text-center text-DarkBlue50 mt-5">Discover insightful articles about medications, healthcare tips, and wellness advice on our blog page in our online pharmacy platform. Explore expert advice to improve your health.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-16">
         <div class="container">
             <div class="row gap-x-8">
                 <div class="col-span-3">
-                    <div class="flex flex-col gap-y-8 sticky top-3">
-                        <div class="flex flex-col py-6 px-5 border border-blue10 bg-white rounded-6xl">
-                            <span>Category</span>
-                            <span>_____</span>
-                            <ul class="flex flex-wrap gap-x-2 gap-y-3">
-                                <li class="flex items-center justify-center">
-                                    @@include('components/Tag-1.html', {
-                                    'Style': '',
-                                    'URL': '#',
-                                    'Title': 'Posts',
-                                    })
-                                </li>
-                                <li class="flex items-center justify-center">
-                                    @@include('components/Tag-1.html', {
-                                    'Style': 'inactive-tag',
-                                    'URL': '#',
-                                    'Title': 'Articles',
-                                    })
-                                </li>
-                                <li class="flex items-center justify-center">
-                                    @@include('components/Tag-1.html', {
-                                    'Style': 'inactive-tag',
-                                    'URL': '#',
-                                    'Title': 'News',
-                                    })
-                                </li>
-                            </ul>
+                    <div class="flex flex-col sticky top-3">
+                        <div class="flex flex-col gap-y-8 py-6 px-5 border border-blue10 bg-white rounded-6xl">
+                            <div class="flex flex-col">
+                                <span class="text-Top3 font-bold mb-3 block text-DarkBlue100">Category</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="2" viewBox="0 0 43 2" fill="none">
+                                    <path d="M0 1H42.5" stroke="#3D65FF" stroke-width="2"/>
+                                </svg>
+                                <ul class="flex flex-wrap gap-x-2 gap-y-3 mt-5">
+                                    <li class="flex items-center justify-center">
+                                        @@include('components/Tag-1.html', {
+                                        'Style': '',
+                                        'URL': '#',
+                                        'Title': 'Posts',
+                                        })
+                                    </li>
+                                    <li class="flex items-center justify-center">
+                                        @@include('components/Tag-1.html', {
+                                        'Style': 'inactive-tag',
+                                        'URL': '#',
+                                        'Title': 'Articles',
+                                        })
+                                    </li>
+                                    <li class="flex items-center justify-center">
+                                        @@include('components/Tag-1.html', {
+                                        'Style': 'inactive-tag',
+                                        'URL': '#',
+                                        'Title': 'News',
+                                        })
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-Top3 font-bold mb-3 block text-DarkBlue100">Tags</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="2" viewBox="0 0 43 2" fill="none">
+                                    <path d="M0 1H42.5" stroke="#3D65FF" stroke-width="2"/>
+                                </svg>
+                                <ul class="flex flex-wrap gap-x-2 gap-y-3 mt-5">
+                                    <li class="flex items-center justify-center">
+                                        @@include('components/Tag-1.html', {
+                                        'Style': '',
+                                        'URL': '#',
+                                        'Title': 'Weight Loss',
+                                        })
+                                    </li>
+                                    <li class="flex items-center justify-center">
+                                        @@include('components/Tag-1.html', {
+                                        'Style': 'inactive-tag',
+                                        'URL': '#',
+                                        'Title': 'Erection',
+                                        })
+                                    </li>
+                                    <li class="flex items-center justify-center">
+                                        @@include('components/Tag-1.html', {
+                                        'Style': 'inactive-tag',
+                                        'URL': '#',
+                                        'Title': 'Skin',
+                                        })
+                                    </li>
+                                    <li class="flex items-center justify-center">
+                                        @@include('components/Tag-1.html', {
+                                        'Style': 'inactive-tag',
+                                        'URL': '#',
+                                        'Title': 'Perios',
+                                        })
+                                    </li>
+                                    <li class="flex items-center justify-center">
+                                        @@include('components/Tag-1.html', {
+                                        'Style': 'inactive-tag',
+                                        'URL': '#',
+                                        'Title': 'Astma',
+                                        })
+                                    </li>
+                                    <li class="flex items-center justify-center">
+                                        @@include('components/Tag-1.html', {
+                                        'Style': 'inactive-tag',
+                                        'URL': '#',
+                                        'Title': 'Hair Loss',
+                                        })
+                                    </li>
+                                    <li class="flex items-center justify-center">
+                                        @@include('components/Tag-1.html', {
+                                        'Style': 'inactive-tag',
+                                        'URL': '#',
+                                        'Title': 'Smoking',
+                                        })
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
