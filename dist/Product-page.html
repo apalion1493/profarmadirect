@@ -10,7 +10,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Home</title>
+    <title>Product Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -80,7 +80,7 @@
 </head>
 
 <body class="">
-<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+<main id="content" class="flex flex-col items-center min-h-screen">
     <header class="w-full relative">
     <nav x-data="{ mobileMenuIsOpen: false }" @click.away="mobileMenuIsOpen = false" class="flex flex-col"
          aria-label="Header menu">
@@ -307,113 +307,180 @@
 
 </header>
 
-
     <section>
-        <button class="button @@style" type="@@type" aria-label="@@ariaLabel">
-    <span>button</span>
-</button>
-        <br>
-        <br>
-        <a class="button @@style" href="#">
-    <span class="">Link</span>
-</a>
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-5">
+                    <div class="sticky top-3 flex flex-col">
+                        <div>Breadcrumbs</div>
+                        <div>
+                            galerey
+                        </div>
+                    </div>
+                    <div class="col-span-7">
+                        <div class="flex flex-col">
 
-        <br>
-        <br>
-
-        <a class="button btn-medium hoverColor" href="#">
-    <span class="">Link</span>
-</a>
-
-        <br>
-        <br>
-
-        <a class="button btn-small hoverColor" href="#">
-    <span class="">Link</span>
-</a>
-
-        <br>
-        <br>
-
-        <a class="button categories" href="#">
-    <span class="">Link</span>
-</a>
-
-        <br>
-        <br>
-        <article class="group flex max-w-sm flex-col text-slate-700 relative pt-[46px] @@Style">
-    <!-- Image -->
-    <div class="w-[91px] h-[91px] absolute top-0 left-5 flex items-center justify-center bg-LightBlue border border-LightBlue transition-all group-hover:border-blue20 overflow-hidden rounded-full">
-        <i class="@@Icon"></i>
-    </div>
-    <!-- Content -->
-    <div class="flex flex-col gap-4 pt-16 p-6 bg-white border border-DarkBlue10 rounded-[20px] transition-all group-hover:shadow-3xl">
-        <span class="mb-4 block font-bold text-Top2">@@Title</span>
-        <ul class="flex flex-col gap-y-2 mb-4">
-            <li>
-                <a class="text-base text-DarkBlue50 hover:underline" href="#">Acne (12)</a>
-            </li>
-            <li>
-                <a class="text-base text-DarkBlue50 hover:underline" href="#">Rosacea (1)</a>
-            </li>
-        </ul>
-
-        <!-- Button -->
-        <a class="button mt-auto btn-medium" href="#">
-    <span class="">View Products</span>
-</a>
-    </div>
-</article>
-
-        <br>
-        <br>
-        <article class="flex flex-col w-full items-center py-8 px-6 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-12">
+                    <div class="flex flex-col gap-y-5">
+                        <div x-data="{ isExpanded: true }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                            <button id="controlsAccordionItem3" type="button"
+                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    aria-controls="accordionItem3" @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? '1'  : '2'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                Description:
+                                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue" :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z" fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z" fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div x-cloak x-show="isExpanded" id="accordionItem3"
+                                 aria-labelledby="controlsAccordionItem3" x-collapse>
+                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the skin. It works by normalizing the growth of skin cells and reducing inflammation, helping to prevent the formation of acne lesions such as blackheads, whiteheads, and pimples.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                            <button id="controlsAccordionItem4" type="button"
+                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    aria-controls="accordionItem4" @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? '1'  : '2'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                How it works
+                                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue" :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z" fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z" fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div x-cloak x-show="isExpanded" id="accordionItem4"
+                                 aria-labelledby="controlsAccordionItem4" x-collapse>
+                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the skin. It works by normalizing the growth of skin cells and reducing inflammation, helping to prevent the formation of acne lesions such as blackheads, whiteheads, and pimples.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                            <button id="controlsAccordionItem5" type="button"
+                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    aria-controls="accordionItem5" @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? '1'  : '2'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                Wornings
+                                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue" :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z" fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z" fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div x-cloak x-show="isExpanded" id="accordionItem5"
+                                 aria-labelledby="controlsAccordionItem5" x-collapse>
+                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the skin. It works by normalizing the growth of skin cells and reducing inflammation, helping to prevent the formation of acne lesions such as blackheads, whiteheads, and pimples.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                            <button id="controlsAccordionItem6" type="button"
+                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    aria-controls="accordionItem6" @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? '1'  : '2'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                Ingredients
+                                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue" :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z" fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z" fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div x-cloak x-show="isExpanded" id="accordionItem6"
+                                 aria-labelledby="controlsAccordionItem6" x-collapse>
+                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the skin. It works by normalizing the growth of skin cells and reducing inflammation, helping to prevent the formation of acne lesions such as blackheads, whiteheads, and pimples.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <span class="Border-wave"></span>
+            <div class="row py-14 gap-x-8 gap-y-10">
+                <div class="col-span-12">
+                    <div class="flex flex-col items-center">
+                        <span class="uppercase text-body2 text-blue100 font-bold block mb-3">How it works</span>
+                        <h2 class="main-title">
+                            How it works
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-span-4">
+                    <article class="flex flex-col w-full items-center py-8 px-6 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl">
     <div class="rounded-full w-[91px] h-[91px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
         <i class="Consultation-icon40"></i>
     </div>
     <span class="text-center font-bold block mb-4 text-Top2">Consultattion</span>
     <p class="text-center text-base text-DarkBlue50">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
 </article>
-
-        <br>
-        <br>
-        <article class="rounded-[20px] w-full h-[552px] border border-blue20 bg-white transition-all hover:shadow-3xl @@Style">
-    <a href="@@URL" class="flex flex-col h-full">
-        <div class="h-[290px] min-h-[290px] rounded-t-[20px] overflow-hidden flex items-center justify-center">
-            <img src="@@Image" class="object-cover w-full h-full" alt="@@AltText" />
-        </div>
-        <div class="flex flex-col px-6 py-8 h-full">
-            <span class="text-Top2 font-bold block mb-3">@@Title</span>
-            <p class="text-DarkBlue50 text-base mb-8">
-                @@Text
-            </p>
-            <span class="flex items-center gap-x-3 mt-auto">
-                <span>@@Tag</span>
-                <time datetime="2023-07-17">July 17, 2023</time>
-            </span>
-        </div>
-    </a>
-</article>
-
-
-        <br>
-        <br>
-        <article class="group flex max-w-sm flex-col text-slate-700 relative pt-[46px] @@style">
-    <!-- Image -->
-    <div class="w-[80px] h-[80px] absolute top-0 left-[21px] flex items-center justify-center bg-LightBlue border border-LightBlue transition-all group-hover:border-blue20 overflow-hidden rounded-full">
-        <i class="@@icon"></i>
+                </div>
+                <div class="col-span-4">
+                    <article class="flex flex-col w-full items-center py-8 px-6 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl">
+    <div class="rounded-full w-[91px] h-[91px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
+        <i class="Consultation-icon40"></i>
     </div>
-    <!-- Content -->
-    <div class="flex flex-col pt-16 px-5 pb-6 bg-white border border-DarkBlue10 rounded-[20px] transition-all group-hover:shadow-3xl h-full">
-        <span class="mb-2 block font-bold text-Top2">@@title</span>
-        <p class="text-base text-DarkBlue50">@@text</p>
-    </div>
+    <span class="text-center font-bold block mb-4 text-Top2">Consultattion</span>
+    <p class="text-center text-base text-DarkBlue50">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
 </article>
-
-
-        <br>
-        <br>
-        <article
+                </div>
+                <div class="col-span-4">
+                    <article class="flex flex-col w-full items-center py-8 px-6 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl">
+    <div class="rounded-full w-[91px] h-[91px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
+        <i class="Consultation-icon40"></i>
+    </div>
+    <span class="text-center font-bold block mb-4 text-Top2">Consultattion</span>
+    <p class="text-center text-base text-DarkBlue50">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
+</article>
+                </div>
+            </div>
+            <span class="Border-wave"></span>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-12">
+                    <div class="flex flex-col">
+                        <span class="uppercase text-body2 text-blue100 font-bold block mb-3">SHOP</span>
+                        <h2 class="main-title mb-10">
+                            Related Products
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-span-12">
+                    <div class="flex gap-x-8">
+                        <article
         class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
     <!-- Image -->
     <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
@@ -435,28 +502,76 @@
 </a>
     </div>
 </article>
-
-
-
-        <br>
-        <br>
-        <br>
-        <div class="form-group flex flex-col items-start ">
-    <label class="mb-3 font-semibold text-body" for="NameId">Full Name</label>
-    <input
-        class="input  "
-        type="text" id="NameId" placeholder="Your Name">
-    <small class="self-end text-body2 font-semibold text-Error mt-1 ">Name is required</small>
-</div>
-
-        <div class="form-group flex flex-col items-start ">
-    <label class="mb-3 font-semibold text-body" for="NameId">Full Name</label>
-    <input
-        class="input user-input-icon input-icon "
-        type="text" id="NameId" placeholder="Your Name">
-    <small class="self-end text-body2 font-semibold text-Error mt-1 ">Name is required</small>
-</div>
-
+                        <article
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+    <!-- Image -->
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+        <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
+             alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
+    </div>
+    <!-- Content -->
+    <div class="flex flex-col px-5 pb-8">
+        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+        <!-- Header -->
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
+        <div class="flex flex-col mb-8">
+            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        </div>
+        <!-- Button -->
+        <a class="button width-full" href="#">
+    <span class="">Learn More</span>
+</a>
+    </div>
+</article>
+                        <article
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+    <!-- Image -->
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+        <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
+             alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
+    </div>
+    <!-- Content -->
+    <div class="flex flex-col px-5 pb-8">
+        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+        <!-- Header -->
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
+        <div class="flex flex-col mb-8">
+            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        </div>
+        <!-- Button -->
+        <a class="button width-full" href="#">
+    <span class="">Learn More</span>
+</a>
+    </div>
+</article>
+                        <article
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+    <!-- Image -->
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+        <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
+             alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
+    </div>
+    <!-- Content -->
+    <div class="flex flex-col px-5 pb-8">
+        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+        <!-- Header -->
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
+        <div class="flex flex-col mb-8">
+            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        </div>
+        <!-- Button -->
+        <a class="button width-full" href="#">
+    <span class="">Learn More</span>
+</a>
+    </div>
+</article>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="w-full mt-auto overflow-hidden rounded-t-[40px] bg-DarkBlue100 text-Grey pt-20 pb-10">

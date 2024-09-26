@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Product Page'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen">
+    @@include('components/Header.html', {
+    'commonStyle': ' ',
+    })
+
+    <section>
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-5">
+                    <div class="sticky top-3 flex flex-col">
+                        <div>Breadcrumbs</div>
+                        <div>
+                            galerey
+                        </div>
+                    </div>
+                    <div class="col-span-7">
+                        <div class="flex flex-col">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-12">
+                    <div class="flex flex-col gap-y-5">
+                        <div x-data="{ isExpanded: true }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                            <button id="controlsAccordionItem3" type="button"
+                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    aria-controls="accordionItem3" @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? '1'  : '2'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                Description:
+                                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue" :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z" fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z" fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div x-cloak x-show="isExpanded" id="accordionItem3"
+                                 aria-labelledby="controlsAccordionItem3" x-collapse>
+                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the skin. It works by normalizing the growth of skin cells and reducing inflammation, helping to prevent the formation of acne lesions such as blackheads, whiteheads, and pimples.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                            <button id="controlsAccordionItem4" type="button"
+                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    aria-controls="accordionItem4" @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? '1'  : '2'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                How it works
+                                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue" :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z" fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z" fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div x-cloak x-show="isExpanded" id="accordionItem4"
+                                 aria-labelledby="controlsAccordionItem4" x-collapse>
+                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the skin. It works by normalizing the growth of skin cells and reducing inflammation, helping to prevent the formation of acne lesions such as blackheads, whiteheads, and pimples.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                            <button id="controlsAccordionItem5" type="button"
+                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    aria-controls="accordionItem5" @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? '1'  : '2'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                Wornings
+                                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue" :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z" fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z" fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div x-cloak x-show="isExpanded" id="accordionItem5"
+                                 aria-labelledby="controlsAccordionItem5" x-collapse>
+                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the skin. It works by normalizing the growth of skin cells and reducing inflammation, helping to prevent the formation of acne lesions such as blackheads, whiteheads, and pimples.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                            <button id="controlsAccordionItem6" type="button"
+                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    aria-controls="accordionItem6" @click="isExpanded = ! isExpanded"
+                                    :class="isExpanded ? '1'  : '2'"
+                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                Ingredients
+                                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue" :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z" fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z" fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div x-cloak x-show="isExpanded" id="accordionItem6"
+                                 aria-labelledby="controlsAccordionItem6" x-collapse>
+                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the skin. It works by normalizing the growth of skin cells and reducing inflammation, helping to prevent the formation of acne lesions such as blackheads, whiteheads, and pimples.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <span class="Border-wave"></span>
+            <div class="row py-14 gap-x-8 gap-y-10">
+                <div class="col-span-12">
+                    <div class="flex flex-col items-center">
+                        @@include('components/Title-small.html', {
+                        'Title': 'How it works',
+                        'Style': 'mb-3'
+                        })
+                        <h2 class="main-title">
+                            How it works
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-span-4">
+                    @@include('components/Information-card.html')
+                </div>
+                <div class="col-span-4">
+                    @@include('components/Information-card.html')
+                </div>
+                <div class="col-span-4">
+                    @@include('components/Information-card.html')
+                </div>
+            </div>
+            <span class="Border-wave"></span>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-12">
+                    <div class="flex flex-col">
+                        @@include('components/Title-small.html', {
+                        'Title': 'SHOP',
+                        'Style': 'mb-3'
+                        })
+                        <h2 class="main-title mb-10">
+                            Related Products
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-span-12">
+                    <div class="flex gap-x-8">
+                        @@include('components/Product-card.html')
+                        @@include('components/Product-card.html')
+                        @@include('components/Product-card.html')
+                        @@include('components/Product-card.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>
