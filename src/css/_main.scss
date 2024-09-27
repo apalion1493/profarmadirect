@@ -184,7 +184,6 @@
 
 // swiper Start
 
-
 .swiper-custom {
   .swiper-pagination-bullet {
     @apply w-6 h-6 opacity-100 bg-DarkBlue10
@@ -244,6 +243,10 @@
   }
 }
 
-
+.swiper-zoom-container {
+  img {
+    @apply hover:cursor-zoom-in
+  }
+}
 
 // swiper End
