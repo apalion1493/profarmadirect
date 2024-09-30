@@ -11,8 +11,199 @@
     'commonStyle': ' ',
     })
 
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-span-12">
+                    <div class="flex flex-col">
 
-    <section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-10">
+                    <div class="flex flex-col">
+                        @@include('components/Title-small.html', {
+                        'Title': 'OUR CONDITIONS',
+                        'Style': 'mb-3'
+                        })
+                        <h2 class="main-title mb-10">
+                            Conditions
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    @@include('components/button.html', {
+                    'title': 'button'
+                    })
+                </div>
+            </div>
+            <div class="row gap-x-8">
+                <div class="col-span-3">
+                    @@include('components/Condition-card.html', {
+                    'Style': '',
+                    'Icon': 'Skin-Care-icon48',
+                    'Title': 'Skin Care',
+                    })
+                </div>
+                <div class="col-span-3">
+                    @@include('components/Condition-card.html', {
+                    'Style': '',
+                    'Icon': 'General-Health-icon48',
+                    'Title': 'General Health',
+                    })
+                </div>
+                <div class="col-span-3">
+                    @@include('components/Condition-card.html', {
+                    'Style': '',
+                    'Icon': 'Digestion-icon48',
+                    'Title': 'Digestion',
+                    })
+                </div>
+                <div class="col-span-3">
+                    @@include('components/Condition-card.html', {
+                    'Style': '',
+                    'Icon': 'Mens-Health-icon48',
+                    'Title': 'Men’s Health',
+                    })
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-6">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="col-span-6">
+                    <div class="max-w-[560px] ml-auto flex flex-col">
+                        @@include('components/Title-small.html', {
+                        'Title': 'About us',
+                        'Style': 'mb-3'
+                        })
+                        <h3 class="main-title mb-10">
+                            Profarma Direct
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section spt-16">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-12">
+                    <div class="flex flex-col">
+                        <div class="flex flex-col items-center mx-auto max-w-[560px]">
+                            @@include('components/Title-small.html', {
+                            'Title': 'Contact us',
+                            'Style': 'mb-3'
+                            })
+                            <h1 class="main-title text-center mb-10">
+                                Get in touch
+                            </h1>
+                            <p class="text-DarkBlue50 -tracking-018 font-medium text-base text-center">Lorem ipsum dolor
+                                sit amet consectetur commodo aliquam
+                                augue duis aliquet ipsum donec tempus ac inter.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12">
+                    <div class="pb-[120px] relative">
+                        <div class="rounded-4xl w-full bg-color-2 absolute bottom-0 left-0 right-0"></div>
+                        <div class="row gap-x-8 relative z-10">
+                            <div class="col-span-2"></div>
+                            <div class="col-span-8">
+                                <form class="p-12 grid grid-cols-2 gap-x-8 gap-y-10 rounded-4xl overflow-hidden shadow-5xl bg-white mt-8"
+                                      action="">
+                                    <div class="col-span-1">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'NameId',
+                                        'label': 'Full Name',
+                                        'styleInput': 'user-input-icon input-icon',
+                                        'type': 'text',
+                                        'placeholder': 'Your Name',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-1">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'EmailId',
+                                        'label': 'Email',
+                                        'styleInput': 'mail-input-icon input-icon',
+                                        'type': 'email',
+                                        'placeholder': 'example@youremail.com',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-1">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'NumId',
+                                        'label': 'Phone Number',
+                                        'styleInput': 'phone-input-icon input-icon',
+                                        'type': 'text',
+                                        'placeholder': '(123) 456 - 789',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-1">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'SubjectId',
+                                        'label': 'Subject',
+                                        'styleInput': 'question-input-icon input-icon',
+                                        'type': 'text',
+                                        'placeholder': 'Write your subject',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-2">
+                                        @@include('components/textarea.html', {
+                                        'common-style': '',
+                                        'idTextarea': 'SubjectId',
+                                        'label': 'Message',
+                                        'styleTextarea': '',
+                                        'type': 'text',
+                                        'placeholder': 'Write your message...'
+                                        })
+                                    </div>
+                                    <div class="col-span-2">
+                                        @@include('components/checkbox.html', {
+                                        'styleText': '',
+                                        'text': 'Newsletter agreement',
+                                        'errorStyle': 'hidden',
+                                        'errorText': 'Error',
+                                        })
+                                    </div>
+                                    <div class="col-span-2">
+                                        @@include('components/button-icon.html', {
+                                        'title': 'Send Message',
+                                        'type': 'submit',
+                                        'ariaLabel': 'Send Message Button'
+                                        })
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-span-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hidden">
         @@include('components/button.html', {
             'title': 'button'
         })
