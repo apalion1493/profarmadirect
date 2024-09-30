@@ -249,4 +249,25 @@
   }
 }
 
+.gallery-swiper-big {
+
+  .swiper-slide {
+    @apply rounded-6xl overflow-hidden border border-DarkBlue10 flex justify-center items-center
+  }
+
+  img {
+    @apply object-center object-cover max-h-[448px] bg-white
+  }
+}
+
+.gallery-swiper {
+  .swiper-slide {
+    @apply rounded-2xl overflow-hidden border border-DarkBlue10 flex justify-center items-center cursor-pointer
+  }
+
+  img {
+    @apply object-center object-cover max-h-[448px] bg-white
+  }
+}
+
 // swiper End

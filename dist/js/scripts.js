@@ -3466,14 +3466,16 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     var swiper2 = new Swiper(".gallery-swiper", {
-        spaceBetween: 10,
+        spaceBetween: 24,
         slidesPerView: 3,
         freeMode: true,
         watchSlidesProgress: true,
+        loop: true,
     });
-    var swiper3 = new Swiper(".gallery-swiper2", {
+    var swiper3 = new Swiper(".gallery-swiper-big", {
         spaceBetween: 10,
         zoom: true,
+        loop: true,
         thumbs: {
             swiper: swiper2,
         },
