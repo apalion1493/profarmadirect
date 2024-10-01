@@ -14,20 +14,32 @@ window.addEventListener('DOMContentLoaded', () => {
         },
     });
 
-    var swiper2 = new Swiper(".gallery-swiper", {
+    const swiper2 = new Swiper(".gallery-swiper", {
         spaceBetween: 24,
         slidesPerView: 3,
         freeMode: true,
         watchSlidesProgress: true,
         loop: true,
     });
-    var swiper3 = new Swiper(".gallery-swiper-big", {
+
+    const swiper3 = new Swiper(".gallery-swiper-big", {
         spaceBetween: 10,
         zoom: true,
         loop: true,
         thumbs: {
             swiper: swiper2,
         },
+    });
+
+    const swiper4 = new Swiper(".swiper-blog", {
+        slidesPerView: 3,
+        spaceBetween: 32
+    });
+
+    const swiper5 = new Swiper('.swiper-brands', {
+        slidesPerView: 8,
+        spaceBetween: 32,
+        loop: true,
     });
 })
 
