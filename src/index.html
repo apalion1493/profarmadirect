@@ -91,12 +91,224 @@
                         <h3 class="main-title mb-10">
                             Profarma Direct
                         </h3>
+                        <div>
+                            <p>We provide easy access to affordable medications and healthcare solutions, delivered
+                                right to your doorstep. With
+                                a mission to ensure reliable healthcare without compromising on quality or convenience,
+                                we are here to support you every step of the way.</p>
+                            <br>
+                            <p>Experience the convenience, affordability, and peace of mind that come with choosing
+                                Profarma Direct as your trusted online pharmacy in Lancashire. Whether you have
+                                questions about your medication, need advice on managing your health conditions, or
+                                simply seek reliable healthcare solutions, we
+                                are here for you. Take control of your well-being today by browsing our range of
+                                products and let us be a part of your healthcare journey.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="section">
+        <div class="container">
+            <span class="Border-wave"></span>
+            <div class="row pt-16">
+                <div class="col-span-12">
+                    <div class="flex flex-col">
+                        <div class="flex flex-col items-center mx-auto max-w-[560px]">
+                            @@include('components/Title-small.html', {
+                            'Title': 'How it works',
+                            'Style': 'mb-3'
+                            })
+                            <h3 class="main-title text-center mb-10">
+                                How it works
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-16 gap-x-8">
+                <div class="col-span-4">
+                    @@include('components/Information-card.html', {
+                    'Style': '',
+                    'Icon': 'Consultation-icon48',
+                    'Title': 'Consultattion',
+                    'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.',
+                    })
+                </div>
+                <div class="col-span-4">
+                    @@include('components/Information-card.html', {
+                    'Style': '',
+                    'Icon': 'Digestion-icon48',
+                    'Title': 'Delivery',
+                    'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.',
+                    })
+                </div>
+                <div class="col-span-4">
+                    @@include('components/Information-card.html', {
+                    'Style': '',
+                    'Icon': 'Approve-icon48',
+                    'Title': 'Approve',
+                    'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.',
+                    })
+                </div>
+            </div>
+            <span class="Border-wave"></span>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-6">
+                    <div class="flex flex-col">
+                        @@include('components/Title-small.html', {
+                        'Title': 'FAQ',
+                        'Style': 'mb-3'
+                        })
+                        <h3 class="main-title mb-10">
+                            Frequently Asked <br>
+                            Questions
+                        </h3>
 
+                        <div class="flex flex-col gap-y-4">
+                            <div x-data="{ isExpanded: true }" :class="isExpanded ? 'shadow-6xl'  : ' '"
+                                 class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                                <button id="controlsAccordionItem1" type="button"
+                                        class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                        aria-controls="accordionItem1" @click="isExpanded = ! isExpanded"
+                                        :class="isExpanded ? '1'  : '2'"
+                                        :aria-expanded="isExpanded ? 'true' : 'false'">
+                                    Can i reorder my prescription?
+                                    <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
+                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
+                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                         fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
+                                              fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
+                                              fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                                </button>
+                                <div x-cloak x-show="isExpanded" id="accordionItem1"
+                                     aria-labelledby="controlsAccordionItem1" x-collapse>
+                                    <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                        <p>Yes, Profarma Direct offers a convenient online prescription reordering
+                                            service.
+                                            If you have a prescription on file with us, you can easily reorder your
+                                            medications through our website.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '"
+                                 class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                                <button id="controlsAccordionItem2" type="button"
+                                        class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                        aria-controls="accordionItem2" @click="isExpanded = ! isExpanded"
+                                        :class="isExpanded ? '1'  : '2'"
+                                        :aria-expanded="isExpanded ? 'true' : 'false'">
+                                    What browsers are supported?
+                                    <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
+                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
+                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                         fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
+                                              fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
+                                              fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                                </button>
+                                <div x-cloak x-show="isExpanded" id="accordionItem2"
+                                     aria-labelledby="controlsAccordionItem2" x-collapse>
+                                    <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                        <p>Yes, Profarma Direct offers a convenient online prescription reordering
+                                            service.
+                                            If you have a prescription on file with us, you can easily reorder your
+                                            medications through our website.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '"
+                                 class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                                <button id="controlsAccordionItem3" type="button"
+                                        class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                        aria-controls="accordionItem3" @click="isExpanded = ! isExpanded"
+                                        :class="isExpanded ? '1'  : '2'"
+                                        :aria-expanded="isExpanded ? 'true' : 'false'">
+                                    What browsers are supported?
+                                    <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
+                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
+                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                         fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
+                                              fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
+                                              fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                                </button>
+                                <div x-cloak x-show="isExpanded" id="accordionItem3"
+                                     aria-labelledby="controlsAccordionItem3" x-collapse>
+                                    <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                        <p>Yes, Profarma Direct offers a convenient online prescription reordering
+                                            service.
+                                            If you have a prescription on file with us, you can easily reorder your
+                                            medications through our website.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '"
+                                 class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                                <button id="controlsAccordionItem4" type="button"
+                                        class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                        aria-controls="accordionItem4" @click="isExpanded = ! isExpanded"
+                                        :class="isExpanded ? '1'  : '2'"
+                                        :aria-expanded="isExpanded ? 'true' : 'false'">
+                                    What browsers are supported?
+                                    <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
+                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
+                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                         fill="none">
+                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
+                                              fill="#3D65FF"/>
+                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
+                                              fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+                                </button>
+                                <div x-cloak x-show="isExpanded" id="accordionItem4"
+                                     aria-labelledby="controlsAccordionItem4" x-collapse>
+                                    <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                                        <p>Yes, Profarma Direct offers a convenient online prescription reordering
+                                            service.
+                                            If you have a prescription on file with us, you can easily reorder your
+                                            medications through our website.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-6">
+                    <div>
+                        <div class="rounded-4xl overflow-hidden flex items-center justify-center max-w-[610px]">
+                            <img width="610" class="max-h-full object-center object-cover" src=""
+                                 alt="Care your loved ones image doctor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section">
         <div class="container">
             <div class="row">
@@ -104,36 +316,36 @@
                     <div class="flex flex-col">
                         <span class="block mx-auto text-center mb-10 text-Top1 font-bold">Shop by Top manyfacturers</span>
 
-<!--                        <div class="swiper-custom relative h-12 w-full mt-10">-->
-<!--                            <div class="swiper-button-arrow swiper-button-next">-->
-<!--                                <svg class="swiper-button-icon swiper-button-icon&#45;&#45;white" xmlns="http://www.w3.org/2000/svg"-->
-<!--                                     width="20" height="20" viewBox="0 0 20 20"-->
-<!--                                     fill="none">-->
-<!--                                    <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"-->
-<!--                                          fill="white"/>-->
-<!--                                </svg>-->
-<!--                                <svg class="swiper-button-icon swiper-button-icon&#45;&#45;grey" xmlns="http://www.w3.org/2000/svg"-->
-<!--                                     width="20" height="20" viewBox="0 0 20 20"-->
-<!--                                     fill="none">-->
-<!--                                    <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"-->
-<!--                                          fill="#BFC6D6"/>-->
-<!--                                </svg>-->
-<!--                            </div>-->
-<!--                            <div class="swiper-button-arrow swiper-button-prev">-->
-<!--                                <svg class="swiper-button-icon rotate-180 swiper-button-icon&#45;&#45;white"-->
-<!--                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"-->
-<!--                                     fill="none">-->
-<!--                                    <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"-->
-<!--                                          fill="white"/>-->
-<!--                                </svg>-->
-<!--                                <svg class="swiper-button-icon rotate-180 swiper-button-icon&#45;&#45;grey"-->
-<!--                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"-->
-<!--                                     fill="none">-->
-<!--                                    <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"-->
-<!--                                          fill="#BFC6D6"/>-->
-<!--                                </svg>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <!--                        <div class="swiper-custom relative h-12 w-full mt-10">-->
+                        <!--                            <div class="swiper-button-arrow swiper-button-next">-->
+                        <!--                                <svg class="swiper-button-icon swiper-button-icon&#45;&#45;white" xmlns="http://www.w3.org/2000/svg"-->
+                        <!--                                     width="20" height="20" viewBox="0 0 20 20"-->
+                        <!--                                     fill="none">-->
+                        <!--                                    <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"-->
+                        <!--                                          fill="white"/>-->
+                        <!--                                </svg>-->
+                        <!--                                <svg class="swiper-button-icon swiper-button-icon&#45;&#45;grey" xmlns="http://www.w3.org/2000/svg"-->
+                        <!--                                     width="20" height="20" viewBox="0 0 20 20"-->
+                        <!--                                     fill="none">-->
+                        <!--                                    <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"-->
+                        <!--                                          fill="#BFC6D6"/>-->
+                        <!--                                </svg>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="swiper-button-arrow swiper-button-prev">-->
+                        <!--                                <svg class="swiper-button-icon rotate-180 swiper-button-icon&#45;&#45;white"-->
+                        <!--                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"-->
+                        <!--                                     fill="none">-->
+                        <!--                                    <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"-->
+                        <!--                                          fill="white"/>-->
+                        <!--                                </svg>-->
+                        <!--                                <svg class="swiper-button-icon rotate-180 swiper-button-icon&#45;&#45;grey"-->
+                        <!--                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"-->
+                        <!--                                     fill="none">-->
+                        <!--                                    <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"-->
+                        <!--                                          fill="#BFC6D6"/>-->
+                        <!--                                </svg>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
                     </div>
                     <div class="col-span-12">
                         <div class="swiper swiper-brands">

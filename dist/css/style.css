@@ -2648,6 +2648,9 @@ html {
 .max-w-\[560px\] {
   max-width: 560px;
 }
+.max-w-\[610px\] {
+  max-width: 610px;
+}
 .max-w-\[634px\] {
   max-width: 634px;
 }
@@ -2994,6 +2997,9 @@ html {
 .p-12 {
   padding: 3rem;
 }
+.p-2 {
+  padding: 0.5rem;
+}
 .p-3 {
   padding: 0.75rem;
 }
@@ -3005,9 +3011,6 @@ html {
 }
 .p-8 {
   padding: 2rem;
-}
-.p-2 {
-  padding: 0.5rem;
 }
 .px-2 {
   padding-left: 0.5rem;
@@ -3138,6 +3141,9 @@ html {
 }
 .pt-\[46px\] {
   padding-top: 46px;
+}
+.pb-16 {
+  padding-bottom: 4rem;
 }
 .text-left {
   text-align: left;
@@ -3559,6 +3565,16 @@ p {
   background-repeat: no-repeat;
 }
 
+.Approve-icon48 {
+  background: url("../img/icons/Approve-icon40.png");
+  display: block;
+  height: 48px;
+  width: 48px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .Arrow20-icon {
   background: url("../img/icons/Arrow-icon20.svg");
   display: block;
@@ -3674,6 +3690,16 @@ p {
   display: block;
   height: 40px;
   width: 40px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Consultation-icon48 {
+  background: url("../img/icons/Consultation-icon40.png");
+  display: block;
+  height: 48px;
+  width: 48px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -4754,6 +4780,13 @@ p {
 
 .swiper-blog .swiper-slide {
   height: auto;
+}
+
+.swiper-brands {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .file\:mr-4::file-selector-button {
