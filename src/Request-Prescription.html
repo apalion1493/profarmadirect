@@ -63,6 +63,38 @@
         </div>
     </section>
 
+    <section class="section">
+        <div class="container">
+            <div class="row gap-x-8">
+                <div class="col-span-12">
+                    <div class="flex items-center mb-10">
+                        <div class="w-[18px] min-w-[18px] h-[18px] rounded-full border-[2px] border-blue100 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                                <circle cx="4" cy="4" r="4" fill="#3D65FF"/>
+                            </svg>
+                        </div>
+                        <div x-data="{ currentVal: 8.33 ,minVal: 0 ,maxVal: 100, calcPercentage(min, max, val){return ((val-min)/(max-min))*100} }" class="flex h-[2px] w-full overflow-hidden bg-Grey" role="progressbar" aria-label="default progress bar" :aria-valuenow="currentVal" :aria-valuemin="minVal" :aria-valuemax="maxVal">
+                            <div class="h-full rounded-xl bg-blue-700 dark:bg-blue-600" :style="`width: ${calcPercentage(minVal, maxVal, currentVal)}%`">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-span-3"></div>
+                    <div class="col-span-6">
+                        <div class="flex flex-col items-center">
+                            <span class="text-blue100 font-bold text-base block mb-3">1 /12</span>
+                            <span class="text-Top2 font-bold text-center block">Lorem ipsum dolor sit consectetur adipiscing elit?</span>
+                        </div>
+                    </div>
+                    <div class="col-span-3"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+
     @@include('components/Footer.html')
 </main>
 
