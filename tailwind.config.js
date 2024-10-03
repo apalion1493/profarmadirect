@@ -96,6 +96,9 @@ module.exports = {
                 White20: '#FFFFFF33',
                 Backgroung: '#F9FBFF',
                 Error: '#F25F5F',
+                WhiteV2: '#FEEFEE',
+                RedV2: '#C0000033',
+                RedV3: '#CB0000',
             },
             letterSpacing: {
                 '018': '-0.18px'

@@ -366,8 +366,12 @@
                                 <circle cx="4" cy="4" r="4" fill="#3D65FF"/>
                             </svg>
                         </div>
-                        <div x-data="{ currentVal: 8.33 ,minVal: 0 ,maxVal: 100, calcPercentage(min, max, val){return ((val-min)/(max-min))*100} }" class="flex h-[2px] w-full overflow-hidden bg-Grey" role="progressbar" aria-label="default progress bar" :aria-valuenow="currentVal" :aria-valuemin="minVal" :aria-valuemax="maxVal">
-                            <div class="h-full rounded-xl bg-blue-700 dark:bg-blue-600" :style="`width: ${calcPercentage(minVal, maxVal, currentVal)}%`">
+                        <div x-data="{ currentVal: 8.33 ,minVal: 0 ,maxVal: 100, calcPercentage(min, max, val){return ((val-min)/(max-min))*100} }"
+                             class="flex h-[2px] w-full overflow-hidden bg-Grey" role="progressbar"
+                             aria-label="default progress bar" :aria-valuenow="currentVal" :aria-valuemin="minVal"
+                             :aria-valuemax="maxVal">
+                            <div class="h-full rounded-xl bg-blue-700 dark:bg-blue-600"
+                                 :style="`width: ${calcPercentage(minVal, maxVal, currentVal)}%`">
                             </div>
                         </div>
                     </div>
@@ -378,8 +382,156 @@
                     <div class="col-span-3"></div>
                     <div class="col-span-6">
                         <div class="flex flex-col items-center">
-                            <span class="text-blue100 font-bold text-base block mb-3">1 /12</span>
-                            <span class="text-Top2 font-bold text-center block">Lorem ipsum dolor sit consectetur adipiscing elit?</span>
+                            <div class="flex flex-col items-center">
+                                <span class="text-blue100 font-bold text-base block mb-3">1 /12</span>
+                                <span class="text-Top2 font-bold text-center block">Lorem ipsum dolor sit consectetur adipiscing elit?</span>
+                            </div>
+
+                            <ul class="mt-16 flex flex-col gap-y-4 w-full">
+                                <li class="flex items-center justify-center">
+                                    <label class="cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                        <input type="radio" id="id1" aria-describedby="macDescription" required
+                                               class="sr-only peer" name="Step-1" value="Value-1" checked>
+                                        <span class="flex items-center">
+                                            <span class="font-medium"
+                                                  aria-hidden="true">Lorem ipsum dolor sit amet elit</span>
+                                        </span>
+                                        <svg class="ml-auto peer-checked:fill-white fill-blue100"
+                                             xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                             viewBox="0 0 20 20" fill="none">
+                                            <path class=""
+                                                  d="M10.5497 19.0959C10.3331 19.0959 10.1415 19.0439 9.97491 18.9399C9.80831 18.8359 9.68753 18.6919 9.61256 18.5079C9.53759 18.3239 9.52093 18.1359 9.56258 17.9439C9.60423 17.7519 9.69169 17.5919 9.82497 17.4639L17.5719 9.99995L9.82497 2.55995C9.72501 2.46395 9.65004 2.35595 9.60006 2.23595C9.55008 2.11595 9.52509 1.99195 9.52509 1.86395C9.52509 1.73595 9.55008 1.61595 9.60006 1.50395C9.65004 1.39195 9.72501 1.28795 9.82497 1.19195C9.92493 1.09595 10.0374 1.02395 10.1623 0.975948C10.2873 0.927948 10.4039 0.903948 10.5122 0.903948C10.6205 0.903948 10.7579 0.935949 10.9245 0.999949C11.0412 1.04795 11.1494 1.11995 11.2494 1.21595L19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.8959 10.5039 19.696 10.6959L11.2494 18.8079C11.0495 18.9999 10.8162 19.0959 10.5497 19.0959ZM18.9963 10.9599H1.00351C0.720286 10.9599 0.482881 10.8679 0.291291 10.6839C0.0997012 10.4999 0.00390625 10.2759 0.00390625 10.0119C0.00390625 9.74795 0.103866 9.51995 0.303786 9.32795C0.503706 9.13595 0.736946 9.03995 1.00351 9.03995H18.9963C19.2629 9.03995 19.4961 9.13595 19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.9001 10.4999 19.7085 10.6839C19.5169 10.8679 19.2795 10.9599 18.9963 10.9599Z"/>
+                                        </svg>
+                                    </label>
+                                </li>
+                                <li class="flex items-center justify-center">
+                                    <label class="cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                        <input type="radio" id="id2" aria-describedby="macDescription" required
+                                               class="sr-only peer" name="Step-1" value="Value-2">
+                                        <span class="flex items-center">
+                                            <span class="font-medium"
+                                                  aria-hidden="true">Lorem ipsum dolor sit amet elit</span>
+                                        </span>
+                                        <svg class="ml-auto peer-checked:fill-white fill-blue100"
+                                             xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                             viewBox="0 0 20 20" fill="none">
+                                            <path class=""
+                                                  d="M10.5497 19.0959C10.3331 19.0959 10.1415 19.0439 9.97491 18.9399C9.80831 18.8359 9.68753 18.6919 9.61256 18.5079C9.53759 18.3239 9.52093 18.1359 9.56258 17.9439C9.60423 17.7519 9.69169 17.5919 9.82497 17.4639L17.5719 9.99995L9.82497 2.55995C9.72501 2.46395 9.65004 2.35595 9.60006 2.23595C9.55008 2.11595 9.52509 1.99195 9.52509 1.86395C9.52509 1.73595 9.55008 1.61595 9.60006 1.50395C9.65004 1.39195 9.72501 1.28795 9.82497 1.19195C9.92493 1.09595 10.0374 1.02395 10.1623 0.975948C10.2873 0.927948 10.4039 0.903948 10.5122 0.903948C10.6205 0.903948 10.7579 0.935949 10.9245 0.999949C11.0412 1.04795 11.1494 1.11995 11.2494 1.21595L19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.8959 10.5039 19.696 10.6959L11.2494 18.8079C11.0495 18.9999 10.8162 19.0959 10.5497 19.0959ZM18.9963 10.9599H1.00351C0.720286 10.9599 0.482881 10.8679 0.291291 10.6839C0.0997012 10.4999 0.00390625 10.2759 0.00390625 10.0119C0.00390625 9.74795 0.103866 9.51995 0.303786 9.32795C0.503706 9.13595 0.736946 9.03995 1.00351 9.03995H18.9963C19.2629 9.03995 19.4961 9.13595 19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.9001 10.4999 19.7085 10.6839C19.5169 10.8679 19.2795 10.9599 18.9963 10.9599Z"/>
+                                        </svg>
+                                    </label>
+                                </li>
+                                <li class="flex items-center justify-center">
+                                    <label class="cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                        <input type="radio" id="id3" aria-describedby="macDescription" required
+                                               class="sr-only peer" name="Step-1" value="Value-3">
+                                        <span class="flex items-center">
+                                            <span class="font-medium"
+                                                  aria-hidden="true">Lorem ipsum dolor sit amet elit</span>
+                                        </span>
+                                        <svg class="ml-auto peer-checked:fill-white fill-blue100"
+                                             xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                             viewBox="0 0 20 20" fill="none">
+                                            <path class=""
+                                                  d="M10.5497 19.0959C10.3331 19.0959 10.1415 19.0439 9.97491 18.9399C9.80831 18.8359 9.68753 18.6919 9.61256 18.5079C9.53759 18.3239 9.52093 18.1359 9.56258 17.9439C9.60423 17.7519 9.69169 17.5919 9.82497 17.4639L17.5719 9.99995L9.82497 2.55995C9.72501 2.46395 9.65004 2.35595 9.60006 2.23595C9.55008 2.11595 9.52509 1.99195 9.52509 1.86395C9.52509 1.73595 9.55008 1.61595 9.60006 1.50395C9.65004 1.39195 9.72501 1.28795 9.82497 1.19195C9.92493 1.09595 10.0374 1.02395 10.1623 0.975948C10.2873 0.927948 10.4039 0.903948 10.5122 0.903948C10.6205 0.903948 10.7579 0.935949 10.9245 0.999949C11.0412 1.04795 11.1494 1.11995 11.2494 1.21595L19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.8959 10.5039 19.696 10.6959L11.2494 18.8079C11.0495 18.9999 10.8162 19.0959 10.5497 19.0959ZM18.9963 10.9599H1.00351C0.720286 10.9599 0.482881 10.8679 0.291291 10.6839C0.0997012 10.4999 0.00390625 10.2759 0.00390625 10.0119C0.00390625 9.74795 0.103866 9.51995 0.303786 9.32795C0.503706 9.13595 0.736946 9.03995 1.00351 9.03995H18.9963C19.2629 9.03995 19.4961 9.13595 19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.9001 10.4999 19.7085 10.6839C19.5169 10.8679 19.2795 10.9599 18.9963 10.9599Z"/>
+                                        </svg>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <div class="mt-16 w-full flex flex-col">
+                                <ul class="flex items-center gap-x-8 w-full">
+                                    <li class="flex flex-1 items-center justify-center">
+                                        <label class=" cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                            <input type="radio" id="id2.1" aria-describedby="macDescription" required
+                                                   class="sr-only peer" name="Step-2" value="Male">
+                                            <span class="flex items-center">
+                                            <span class="font-medium"
+                                                  aria-hidden="true">Male</span>
+                                        </span>
+                                            <svg class="ml-auto peer-checked:fill-white fill-blue100"
+                                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                 viewBox="0 0 20 20" fill="none">
+                                                <path class=""
+                                                      d="M10.5497 19.0959C10.3331 19.0959 10.1415 19.0439 9.97491 18.9399C9.80831 18.8359 9.68753 18.6919 9.61256 18.5079C9.53759 18.3239 9.52093 18.1359 9.56258 17.9439C9.60423 17.7519 9.69169 17.5919 9.82497 17.4639L17.5719 9.99995L9.82497 2.55995C9.72501 2.46395 9.65004 2.35595 9.60006 2.23595C9.55008 2.11595 9.52509 1.99195 9.52509 1.86395C9.52509 1.73595 9.55008 1.61595 9.60006 1.50395C9.65004 1.39195 9.72501 1.28795 9.82497 1.19195C9.92493 1.09595 10.0374 1.02395 10.1623 0.975948C10.2873 0.927948 10.4039 0.903948 10.5122 0.903948C10.6205 0.903948 10.7579 0.935949 10.9245 0.999949C11.0412 1.04795 11.1494 1.11995 11.2494 1.21595L19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.8959 10.5039 19.696 10.6959L11.2494 18.8079C11.0495 18.9999 10.8162 19.0959 10.5497 19.0959ZM18.9963 10.9599H1.00351C0.720286 10.9599 0.482881 10.8679 0.291291 10.6839C0.0997012 10.4999 0.00390625 10.2759 0.00390625 10.0119C0.00390625 9.74795 0.103866 9.51995 0.303786 9.32795C0.503706 9.13595 0.736946 9.03995 1.00351 9.03995H18.9963C19.2629 9.03995 19.4961 9.13595 19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.9001 10.4999 19.7085 10.6839C19.5169 10.8679 19.2795 10.9599 18.9963 10.9599Z"/>
+                                            </svg>
+                                        </label>
+                                    </li>
+                                    <li class="flex flex-1 items-center justify-center">
+                                        <label class=" cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                            <input type="radio" id="id2.2" aria-describedby="macDescription" required
+                                                   class="sr-only peer" name="Step-2" value="Female">
+                                            <span class="flex items-center">
+                                            <span class="font-medium"
+                                                  aria-hidden="true">Female</span>
+                                        </span>
+                                            <svg class="ml-auto peer-checked:fill-white fill-blue100"
+                                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                 viewBox="0 0 20 20" fill="none">
+                                                <path class=""
+                                                      d="M10.5497 19.0959C10.3331 19.0959 10.1415 19.0439 9.97491 18.9399C9.80831 18.8359 9.68753 18.6919 9.61256 18.5079C9.53759 18.3239 9.52093 18.1359 9.56258 17.9439C9.60423 17.7519 9.69169 17.5919 9.82497 17.4639L17.5719 9.99995L9.82497 2.55995C9.72501 2.46395 9.65004 2.35595 9.60006 2.23595C9.55008 2.11595 9.52509 1.99195 9.52509 1.86395C9.52509 1.73595 9.55008 1.61595 9.60006 1.50395C9.65004 1.39195 9.72501 1.28795 9.82497 1.19195C9.92493 1.09595 10.0374 1.02395 10.1623 0.975948C10.2873 0.927948 10.4039 0.903948 10.5122 0.903948C10.6205 0.903948 10.7579 0.935949 10.9245 0.999949C11.0412 1.04795 11.1494 1.11995 11.2494 1.21595L19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.8959 10.5039 19.696 10.6959L11.2494 18.8079C11.0495 18.9999 10.8162 19.0959 10.5497 19.0959ZM18.9963 10.9599H1.00351C0.720286 10.9599 0.482881 10.8679 0.291291 10.6839C0.0997012 10.4999 0.00390625 10.2759 0.00390625 10.0119C0.00390625 9.74795 0.103866 9.51995 0.303786 9.32795C0.503706 9.13595 0.736946 9.03995 1.00351 9.03995H18.9963C19.2629 9.03995 19.4961 9.13595 19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.9001 10.4999 19.7085 10.6839C19.5169 10.8679 19.2795 10.9599 18.9963 10.9599Z"/>
+                                            </svg>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="flex w-fit p-3 bg-WhiteV2 border border-RedV2 mt-6 overflow-hidden rounded-lg">
+                                    <p class="text-RedV3 text-body2 font-semibold">
+                                        We're sorry, but this product cannot be issued for the selected gender!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mt-16 w-full flex flex-col items-center">
+                                <ul class="flex flex-col list-disc text-base font-semibold text-DarkBlue100">
+                                    <li>
+                                        <p>Lorem ipsum dolor sit amet elit concet</p>
+                                    </li>
+                                    <li>
+                                        <p>Lorem ipsum dolor concet amet elit</p>
+                                    </li>
+                                    <li>
+                                        <p>Lorem ipsum dolor sit amet elit</p>
+                                    </li>
+                                </ul>
+                                <ul class="flex items-center gap-x-8 w-full mt-16">
+                                    <li class="flex flex-1 items-center justify-center">
+                                        <label class=" cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                            <input type="radio" id="id3.1" aria-describedby="macDescription" required
+                                                   class="sr-only peer" name="Step-3" value="Yes">
+                                            <span class="flex items-center">
+                                            <span class="font-medium"
+                                                  aria-hidden="true">Yes</span>
+                                        </span>
+                                            <svg class="ml-auto peer-checked:fill-white fill-blue100"
+                                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                 viewBox="0 0 20 20" fill="none">
+                                                <path class=""
+                                                      d="M10.5497 19.0959C10.3331 19.0959 10.1415 19.0439 9.97491 18.9399C9.80831 18.8359 9.68753 18.6919 9.61256 18.5079C9.53759 18.3239 9.52093 18.1359 9.56258 17.9439C9.60423 17.7519 9.69169 17.5919 9.82497 17.4639L17.5719 9.99995L9.82497 2.55995C9.72501 2.46395 9.65004 2.35595 9.60006 2.23595C9.55008 2.11595 9.52509 1.99195 9.52509 1.86395C9.52509 1.73595 9.55008 1.61595 9.60006 1.50395C9.65004 1.39195 9.72501 1.28795 9.82497 1.19195C9.92493 1.09595 10.0374 1.02395 10.1623 0.975948C10.2873 0.927948 10.4039 0.903948 10.5122 0.903948C10.6205 0.903948 10.7579 0.935949 10.9245 0.999949C11.0412 1.04795 11.1494 1.11995 11.2494 1.21595L19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.8959 10.5039 19.696 10.6959L11.2494 18.8079C11.0495 18.9999 10.8162 19.0959 10.5497 19.0959ZM18.9963 10.9599H1.00351C0.720286 10.9599 0.482881 10.8679 0.291291 10.6839C0.0997012 10.4999 0.00390625 10.2759 0.00390625 10.0119C0.00390625 9.74795 0.103866 9.51995 0.303786 9.32795C0.503706 9.13595 0.736946 9.03995 1.00351 9.03995H18.9963C19.2629 9.03995 19.4961 9.13595 19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.9001 10.4999 19.7085 10.6839C19.5169 10.8679 19.2795 10.9599 18.9963 10.9599Z"/>
+                                            </svg>
+                                        </label>
+                                    </li>
+                                    <li class="flex flex-1 items-center justify-center">
+                                        <label class=" cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                            <input type="radio" id="id3.2" aria-describedby="macDescription" required
+                                                   class="sr-only peer" name="Step-3" value="No">
+                                            <span class="flex items-center">
+                                            <span class="font-medium"
+                                                  aria-hidden="true">No</span>
+                                        </span>
+                                            <svg class="ml-auto peer-checked:fill-white fill-blue100"
+                                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                 viewBox="0 0 20 20" fill="none">
+                                                <path class=""
+                                                      d="M10.5497 19.0959C10.3331 19.0959 10.1415 19.0439 9.97491 18.9399C9.80831 18.8359 9.68753 18.6919 9.61256 18.5079C9.53759 18.3239 9.52093 18.1359 9.56258 17.9439C9.60423 17.7519 9.69169 17.5919 9.82497 17.4639L17.5719 9.99995L9.82497 2.55995C9.72501 2.46395 9.65004 2.35595 9.60006 2.23595C9.55008 2.11595 9.52509 1.99195 9.52509 1.86395C9.52509 1.73595 9.55008 1.61595 9.60006 1.50395C9.65004 1.39195 9.72501 1.28795 9.82497 1.19195C9.92493 1.09595 10.0374 1.02395 10.1623 0.975948C10.2873 0.927948 10.4039 0.903948 10.5122 0.903948C10.6205 0.903948 10.7579 0.935949 10.9245 0.999949C11.0412 1.04795 11.1494 1.11995 11.2494 1.21595L19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.8959 10.5039 19.696 10.6959L11.2494 18.8079C11.0495 18.9999 10.8162 19.0959 10.5497 19.0959ZM18.9963 10.9599H1.00351C0.720286 10.9599 0.482881 10.8679 0.291291 10.6839C0.0997012 10.4999 0.00390625 10.2759 0.00390625 10.0119C0.00390625 9.74795 0.103866 9.51995 0.303786 9.32795C0.503706 9.13595 0.736946 9.03995 1.00351 9.03995H18.9963C19.2629 9.03995 19.4961 9.13595 19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.9001 10.4999 19.7085 10.6839C19.5169 10.8679 19.2795 10.9599 18.9963 10.9599Z"/>
+                                            </svg>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="mt-16 w-full flex flex-col items-center">
+                                <span class="text-Top2 font-bold text-center block">In connection with your answer to the previous question, please provide more details about the medication you are taking</span>
+                                <p class="text-center mt-8 block text-body2 text-DarkBlue50 font-semibold">*More than 1 type of medicine? Click "Add Drug" below</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-span-3"></div>

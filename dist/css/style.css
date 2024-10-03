@@ -2515,6 +2515,9 @@ html {
 .h-\[161px\] {
   height: 161px;
 }
+.h-\[18px\] {
+  height: 18px;
+}
 .h-\[280px\] {
   height: 280px;
 }
@@ -2523,6 +2526,9 @@ html {
 }
 .h-\[291px\] {
   height: 291px;
+}
+.h-\[2px\] {
+  height: 2px;
 }
 .h-\[38px\] {
   height: 38px;
@@ -2550,15 +2556,6 @@ html {
 }
 .h-full {
   height: 100%;
-}
-.h-2\.5 {
-  height: 0.625rem;
-}
-.h-\[18px\] {
-  height: 18px;
-}
-.h-\[2px\] {
-  height: 2px;
 }
 .max-h-44 {
   max-height: 11rem;
@@ -2608,6 +2605,9 @@ html {
 .w-\[140px\] {
   width: 140px;
 }
+.w-\[18px\] {
+  width: 18px;
+}
 .w-\[200px\] {
   width: 200px;
 }
@@ -2627,9 +2627,6 @@ html {
 .w-full {
   width: 100%;
 }
-.w-\[18px\] {
-  width: 18px;
-}
 .min-w-10 {
   min-width: 2.5rem;
 }
@@ -2645,11 +2642,11 @@ html {
 .min-w-\[140px\] {
   min-width: 140px;
 }
-.min-w-\[272px\] {
-  min-width: 272px;
-}
 .min-w-\[18px\] {
   min-width: 18px;
+}
+.min-w-\[272px\] {
+  min-width: 272px;
 }
 .max-w-\[448px\] {
   max-width: 448px;
@@ -2668,6 +2665,9 @@ html {
 }
 .max-w-\[634px\] {
   max-width: 634px;
+}
+.max-w-\[640px\] {
+  max-width: 640px;
 }
 .max-w-\[648px\] {
   max-width: 648px;
@@ -2727,6 +2727,9 @@ html {
 }
 .resize {
   resize: both;
+}
+.list-disc {
+  list-style-type: disc;
 }
 .appearance-none {
   -webkit-appearance: none;
@@ -2929,6 +2932,9 @@ html {
   --tw-border-opacity: 1;
   border-color: rgb(239 246 255 / var(--tw-border-opacity));
 }
+.border-RedV2 {
+  border-color: #C0000033;
+}
 .border-White20 {
   border-color: #FFFFFF33;
 }
@@ -2954,9 +2960,6 @@ html {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.border-\[\] {
-  border-color: ;
-}
 .bg-Backgroung {
   --tw-bg-opacity: 1;
   background-color: rgb(249 251 255 / var(--tw-bg-opacity));
@@ -2965,9 +2968,21 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(6 11 82 / var(--tw-bg-opacity));
 }
+.bg-Grey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 198 214 / var(--tw-bg-opacity));
+}
 .bg-LightBlue {
   --tw-bg-opacity: 1;
   background-color: rgb(239 246 255 / var(--tw-bg-opacity));
+}
+.bg-WhiteV2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 239 238 / var(--tw-bg-opacity));
+}
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 .bg-blue100 {
   --tw-bg-opacity: 1;
@@ -2988,16 +3003,11 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-blue-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-.bg-Grey {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 198 214 / var(--tw-bg-opacity));
-}
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+.fill-blue100 {
+  fill: #3D65FF;
 }
 .fill-white {
   fill: #fff;
@@ -3284,6 +3294,10 @@ html {
 .text-Grey {
   --tw-text-opacity: 1;
   color: rgb(191 198 214 / var(--tw-text-opacity));
+}
+.text-RedV3 {
+  --tw-text-opacity: 1;
+  color: rgb(203 0 0 / var(--tw-text-opacity));
 }
 .text-blue-700 {
   --tw-text-opacity: 1;
@@ -4987,6 +5001,10 @@ p {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.peer:checked ~ .peer-checked\:fill-white {
+  fill: #fff;
+}
+
 .has-\[\:checked\]\:border-\[2px\]:has(:checked) {
   border-width: 2px;
 }
@@ -4996,6 +5014,11 @@ p {
   border-color: rgb(61 101 255 / var(--tw-border-opacity));
 }
 
+.has-\[\:checked\]\:bg-blue100:has(:checked) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(61 101 255 / var(--tw-bg-opacity));
+}
+
 .has-\[\:checked\]\:font-semibold:has(:checked) {
   font-weight: 600;
 }
@@ -5003,6 +5026,16 @@ p {
 .has-\[\:checked\]\:text-blue100:has(:checked) {
   --tw-text-opacity: 1;
   color: rgb(61 101 255 / var(--tw-text-opacity));
+}
+
+.has-\[\:checked\]\:text-white:has(:checked) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.has-\[\:focus\]\:outline-none:has(:focus) {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .has-\[\:focus\]\:outline:has(:focus) {
@@ -5015,6 +5048,10 @@ p {
 
 .has-\[\:focus\]\:outline-offset-0:has(:focus) {
   outline-offset: 0px;
+}
+
+.has-\[\:focus\]\:outline-inherit:has(:focus) {
+  outline-color: inherit;
 }
 
 .has-\[\:focus\]\:outline-transparent:has(:focus) {
@@ -5037,6 +5074,11 @@ p {
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
+.dark\:bg-blue-600:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
 .dark\:bg-slate-800:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
@@ -5044,11 +5086,6 @@ p {
 
 .dark\:bg-slate-800\/50:is(.dark *) {
   background-color: rgb(30 41 59 / 0.5);
-}
-
-.dark\:bg-blue-600:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .dark\:text-blue-600:is(.dark *) {
