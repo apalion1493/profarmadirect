@@ -38,6 +38,10 @@
     @apply bg-LightBlue text-blue100 hover:bg-blue100 hover:text-white
   }
 
+  &.btn-icons-blue {
+    @apply bg-blue100 text-white hover:bg-white hover:text-blue100
+  }
+
   &.width-auto {
     @apply min-w-[0px]
   }

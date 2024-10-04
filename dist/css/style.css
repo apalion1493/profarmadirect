@@ -2455,6 +2455,9 @@ html {
 .mt-auto {
   margin-top: auto;
 }
+.mr-4 {
+  margin-right: 1rem;
+}
 .block {
   display: block;
 }
@@ -2490,6 +2493,9 @@ html {
 }
 .h-10 {
   height: 2.5rem;
+}
+.h-11 {
+  height: 2.75rem;
 }
 .h-12 {
   height: 3rem;
@@ -2589,6 +2595,9 @@ html {
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.min-h-14 {
+  min-height: 3.5rem;
 }
 .w-10 {
   width: 2.5rem;
@@ -2778,6 +2787,10 @@ html {
 .gap-8 {
   gap: 2rem;
 }
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+}
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
@@ -2838,6 +2851,9 @@ html {
 .divide-slate-300 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-divide-opacity));
+}
+.self-start {
+  align-self: flex-start;
 }
 .self-end {
   align-self: flex-end;
@@ -2959,6 +2975,10 @@ html {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-red-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 .bg-Backgroung {
   --tw-bg-opacity: 1;
@@ -4566,6 +4586,18 @@ p {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.button.btn-icons-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(61 101 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.button.btn-icons-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(61 101 255 / var(--tw-text-opacity));
+}
 .button.width-auto {
   min-width: 0px;
 }
@@ -5001,6 +5033,19 @@ p {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.peer:checked ~ .peer-checked\:flex {
+  display: flex;
+}
+
+.peer:checked ~ .peer-checked\:hidden {
+  display: none;
+}
+
+.peer:checked ~ .peer-checked\:bg-blue100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(61 101 255 / var(--tw-bg-opacity));
+}
+
 .peer:checked ~ .peer-checked\:fill-white {
   fill: #fff;
 }
@@ -5017,6 +5062,10 @@ p {
 .has-\[\:checked\]\:bg-blue100:has(:checked) {
   --tw-bg-opacity: 1;
   background-color: rgb(61 101 255 / var(--tw-bg-opacity));
+}
+
+.has-\[\:checked\]\:bg-blue10:has(:checked) {
+  background-color: #3D65FF1A;
 }
 
 .has-\[\:checked\]\:font-semibold:has(:checked) {
