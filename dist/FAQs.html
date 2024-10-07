@@ -130,7 +130,7 @@
                     <img width="272" src="img/Logo.svg" alt="Profarma Main Logo">
                 </a>
                 <div class="flex items-center ml-12 w-full relative">
-                    <div style="display: none" x-data="{ query: '', results: [], showResults: false, showForm: false }"
+                    <div style="display: none" x-data="{ query: '', results: [], showResults: false, showForm: true }"
                          @click.away="showResults = false; showForm = false"
                          class='flex flex-col w-full pl-1/24 lg:pl-0 transition-all' :style="{display: 'flex'}"
                          :class='showForm ? "z-[12] lg:pr-0 lg:z-[32] w-full" : "lg:pr-[56px] w-[200px]"'>

@@ -35,6 +35,10 @@
   @apply grid grid-cols-12;
 }
 
+.row-10 {
+  @apply grid grid-cols-10;
+}
+
 section {
   @apply w-full
 }

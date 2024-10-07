@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .loaded {
+            opacity: 1
+        }
+    </style>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .loader-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .loader {
+            border-top-color: transparent;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .fade-out {
+            animation: fadeOut 0.1s forwards;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.1s forwards;
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+
+    <script>
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     setTimeout(() => {
+        //         const loader = document.getElementById('loader');
+        //         const content = document.getElementById('content');
+        //         const body = document.querySelector('body');
+        //         loader.classList.add('fade-out');
+        //         loader.addEventListener('animationend', () => {
+        //             loader.classList.add('hidden');
+        //             content.classList.remove('hidden');
+        //             body.classList.remove('loader-wrapper')
+        //
+        //             content.classList.add('fade-in');
+        //         }, { once: true });
+        //     }, 500);
+        // });
+
+    </script>
+</head>
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    <div class="flex flex-col max-w-[309px] w-full">
+
+    </div>
+    <div class="flex flex-col w-full">
+        <header class="flex w-full items-center">
+            <div class="row-10">
+
+            </div>
+        </header>
+        <div class="row-10">
+            <div class="col-span-10">
+                <p>
+                    Hello, Alexandra Vieru
+                </p>
+                <div class="flex flex-col">
+                    <p>Welcome to your dashboard! Here you can view a summary of all your orders.</p>
+                    <p>Remember: Statuses on your orders change in real time as the pharmacy deals with them. You will also be notified through email.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="./js/scripts.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('data', () => ({
+        }))
+    })
+
+    function fetchResults() {
+        this.results = []
+        if (this.query.length > 0) {
+            // Имитация поиска. Поменять на реальный API вызов или логику поиска.
+            this.results = [
+                {id: 1, title: 'Differin 0.1% Cream', price: '£16.43'},
+                {id: 2, title: 'Cardura (Doxazosin Mesylate)', price: '£28.99'},
+            ]
+        }
+        this.showResults = this.results.length > 0
+    }
+    //
+    // function selectResult(result) {
+    //     this.query = result.title
+    //     this.showResults = false
+    // }
+
+
+
+</script>
+</body>
+
+</html>

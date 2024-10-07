@@ -19,7 +19,7 @@
   }
 
   &.btn-small {
-    @apply h-[33px] text-body2 min-w-[104px] px-5
+    @apply h-[33px] text-body2 min-w-[0] px-5
   }
 
   &.btn-medium {
@@ -294,4 +294,19 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(0deg, rgba(5, 9, 62, 0.50) 0%, rgba(5, 9, 62, 0.50) 100%);
+}
+
+.top-line {
+  @apply relative
+}
+
+.top-line:before {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right: 1px solid #05093E1A;
+  height: 20px;
+  display: block;
 }
