@@ -2645,6 +2645,9 @@ html {
 .w-full {
   width: 100%;
 }
+.w-\[128px\] {
+  width: 128px;
+}
 .min-w-10 {
   min-width: 2.5rem;
 }
@@ -3229,6 +3232,12 @@ html {
 }
 .pt-\[46px\] {
   padding-top: 46px;
+}
+.pb-4 {
+  padding-bottom: 1rem;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 .text-left {
   text-align: left;

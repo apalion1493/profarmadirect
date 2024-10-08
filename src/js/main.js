@@ -40,6 +40,10 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 8,
         spaceBetween: 32,
         loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
 })
 
