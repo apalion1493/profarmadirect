@@ -8,7 +8,7 @@ https://apalion1493.github.io/profarmadirect/dist/Request-Prescription.html <br/
 https://apalion1493.github.io/profarmadirect/dist/Blog-post.html <br/>
 https://apalion1493.github.io/profarmadirect/dist/Terms-of-Use.html <br/> 
 https://apalion1493.github.io/profarmadirect/dist/FAQs.html <br/> 
-https://apalion1493.github.io/profarmadirect/dist/Search-Results.html <br/> 
+https://apalion1493.github.io/profarmadirect/dist/SearchResults.html <br/> 
 https://apalion1493.github.io/profarmadirect/dist/Login.html <br/> 
 https://apalion1493.github.io/profarmadirect/dist/Registration.html <br/> 
 https://apalion1493.github.io/profarmadirect/dist/Blog.html <br/> 
