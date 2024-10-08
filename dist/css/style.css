@@ -2569,6 +2569,9 @@ html {
 .h-full {
   height: 100%;
 }
+.h-\[101px\] {
+  height: 101px;
+}
 .max-h-44 {
   max-height: 11rem;
 }
@@ -2583,6 +2586,9 @@ html {
 }
 .max-h-svh {
   max-height: 100svh;
+}
+.max-h-\[226px\] {
+  max-height: 226px;
 }
 .min-h-14 {
   min-height: 3.5rem;
@@ -2645,6 +2651,12 @@ html {
 .w-full {
   width: 100%;
 }
+.w-\[101px\] {
+  width: 101px;
+}
+.w-11 {
+  width: 2.75rem;
+}
 .min-w-10 {
   min-width: 2.5rem;
 }
@@ -2665,6 +2677,12 @@ html {
 }
 .min-w-\[272px\] {
   min-width: 272px;
+}
+.min-w-\[101px\] {
+  min-width: 101px;
+}
+.min-w-11 {
+  min-width: 2.75rem;
 }
 .max-w-\[309px\] {
   max-width: 309px;
@@ -3005,6 +3023,10 @@ html {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-Grey {
+  --tw-border-opacity: 1;
+  border-color: rgb(191 198 214 / var(--tw-border-opacity));
 }
 .bg-Backgroung {
   --tw-bg-opacity: 1;
@@ -4936,6 +4958,12 @@ p {
   display: block;
 }
 
+@media (max-width: 1023px) {
+  .lg\:w-full {
+    width: 100% !important;
+  }
+}
+
 .file\:mr-4::file-selector-button {
   margin-right: 1rem;
 }
@@ -5248,9 +5276,25 @@ p {
   .lg\:w-10 {
     width: 2.5rem;
   }
+  .lg\:w-full {
+    width: 100%;
+  }
+  .lg\:w-\[204px\] {
+    width: 204px;
+  }
+  .lg\:min-w-\[204px\] {
+    min-width: 204px;
+  }
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
   .lg\:gap-x-0 {
     -moz-column-gap: 0px;
          column-gap: 0px;
+  }
+  .lg\:gap-x-3 {
+    -moz-column-gap: 0.75rem;
+         column-gap: 0.75rem;
   }
   .lg\:p-0 {
     padding: 0px;
