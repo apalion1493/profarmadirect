@@ -25,3 +25,10 @@ h6, .h6 {
 p {
   @apply text-base
 }
+
+.text-block {
+
+  a {
+    @apply font-bold underline
+  }
+}

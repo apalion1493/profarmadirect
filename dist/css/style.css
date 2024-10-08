@@ -3650,6 +3650,11 @@ p {
   line-height: 130%;
 }
 
+.text-block a {
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
 .Approve-icon {
   background: url("../img/icons/Approve-icon40.png");
   display: block;
