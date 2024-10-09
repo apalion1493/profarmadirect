@@ -5304,6 +5304,9 @@ p {
   .lg\:h-14 {
     height: 3.5rem;
   }
+  .lg\:min-h-dvh {
+    min-height: 100dvh;
+  }
   .lg\:w-10 {
     width: 2.5rem;
   }
@@ -5329,6 +5332,10 @@ p {
   }
   .lg\:p-0 {
     padding: 0px;
+  }
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
   .lg\:pl-0 {
     padding-left: 0px;

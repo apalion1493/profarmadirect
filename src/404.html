@@ -7,17 +7,19 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
-<section class="min-h-dvh flex items-center py-[134px] bg-LightBlue">
+<section class="min-h-dvh flex items-center py-[134px] lg:min-h-dvh lg:py-10 bg-LightBlue">
     <div class="container">
         <div class="flex flex-col items-center justify-center text-DarkBlue100">
             <span class="font-bold text-Top2 block text-blue100 mb-4">oops!</span>
             <p class="text-body">Page not found</p>
-            <img class="mt-[72px] mb-20" src="img/404.svg" alt="Error 404">
+            <img class="mt-[72px] mb-20 max-w-full" src="img/404.svg" alt="Error 404">
             <h1 class="text-blue100 font-bold text-Top2 mb-4">Error 404</h1>
-            <p class="mb-8">The target resource is no longer available on the origin server.</p>
-            @@include('components/Link.html', {
+            <p class="mb-8 text-center">The target resource is no longer available on the origin server.</p>
+            @@include('components/Link-icon.html', {
             'title': 'Go to Homepage',
-            'url': 'index.html'
+            'url': 'index.html',
+            'Icon-Blue': 'hidden',
+            'Icon-White': 'block',
             })
         </div>
     </div>
