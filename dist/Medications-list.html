@@ -314,7 +314,7 @@
                 isVisible(letter) {
                     return this.activeFilters.length === 0 || this.activeFilters.includes(letter);
                 }
-              }"
+            }"
              class="section">
         <div class="container">
             <div class="row gap-x-8">
@@ -330,7 +330,7 @@
                 </div>
                 <div class="col-span-12">
                     <div class="checkboxes-alphabet-list">
-                        <label :class=""><input type="checkbox" value="A" @change="toggleFilter($event)"> A</label>
+                        <label><input type="checkbox" value="A" @change="toggleFilter($event)"> A</label>
                         <label><input type="checkbox" value="B" @change="toggleFilter($event)"> B</label>
                         <label><input type="checkbox" value="C" @change="toggleFilter($event)"> C</label>
                         <label><input type="checkbox" value="D" @change="toggleFilter($event)"> D</label>
@@ -361,7 +361,7 @@
             </div>
             <div class="row mt-10">
                 <div class="col-span-12">
-                    <div class="flex flex-wrap gap-8 alphabet-list">
+                    <div class="flex flex-wrap justify-center gap-8 alphabet-list">
                         <div class="" x-show="isVisible('A')">
                             <div class="flex flex-col overflow-hidden rounded-[20px] w-full h-[291px] border border-DarkBlue10 p-6 ">
     <div class="border-b border-DarkBlue10 pb-6">

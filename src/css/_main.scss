@@ -96,11 +96,11 @@
 }
 
 .main-title {
-  @apply text-h2 font-bold
+  @apply text-h2 font-bold md:text-h2Mob
 }
 
 .section {
-  @apply my-16
+  @apply my-16 lg:my-10
 }
 
 .Border-wave {
@@ -309,4 +309,8 @@
   border-right: 1px solid #05093E1A;
   height: 20px;
   display: block;
+}
+
+.icon-40 {
+  @apply md:w-10 md:h-10
 }
