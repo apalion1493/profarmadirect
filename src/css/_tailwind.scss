@@ -44,7 +44,7 @@ section {
 }
 
 .input::placeholder {
-	@apply text-DarkBlue50
+	@apply text-DarkBlue50 md:text-body2
 }
 
 .input {
@@ -64,7 +64,7 @@ section {
     @apply text-DarkBlue50
   }
 
-  @apply px-4 py-[10px] bg-white flex items-center rounded-2xl text-body font-medium h-14
+  @apply px-4 py-[10px] bg-white flex items-center rounded-2xl text-body font-medium h-14 md:h-[50px] md:text-body2
   w-full text-DarkBlue100 border border-DarkBlue10 transition-all focus:shadow-3xl
   focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit focus:border-DarkBlue10
 }
@@ -134,6 +134,11 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 @media (max-width: 1023.98px) {
+
+  .contact-color-block {
+    width: calc(100% + 32px) !important;
+  }
+
 }
 
 @media (max-width: 767.98px) {

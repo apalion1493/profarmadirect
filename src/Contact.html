@@ -11,7 +11,7 @@
     'commonStyle': ' ',
     })
 
-    <section class="pt-16">
+    <section class="pt-16 lg:pt-10 md:mb-10">
         <div class="container">
             <div class="row gap-x-8">
                 <div class="col-span-12">
@@ -19,26 +19,26 @@
                         <div class="flex flex-col items-center mx-auto max-w-[560px]">
                             @@include('components/Title-small.html', {
                             'Title': 'Contact us',
-                            'Style': 'mb-3'
+                            'Style': 'mb-3 md:mb-2'
                             })
-                            <h1 class="main-title text-center mb-10">
+                            <h1 class="main-title text-center mb-10 md:mb-5">
                                 Get in touch
                             </h1>
-                            <p class="text-DarkBlue50 -tracking-018 font-medium text-base text-center">Lorem ipsum dolor
+                            <p class="text-DarkBlue50 -tracking-018 font-medium text-base md:text-body text-center">Lorem ipsum dolor
                                 sit amet consectetur commodo aliquam
                                 augue duis aliquet ipsum donec tempus ac inter.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-span-12">
-                    <div class="pb-[120px] relative">
-                        <div class="rounded-4xl w-full bg-color-2 absolute bottom-0 left-0 right-0"></div>
+                    <div class="pb-[120px] lg:pb-[72px] relative">
+                        <div class="rounded-4xl w-full bg-color-2 absolute bottom-0 left-0 right-0 contact-color-block lg:-left-4"></div>
                         <div class="row gap-x-8 relative z-10">
-                            <div class="col-span-2"></div>
-                            <div class="col-span-8">
-                                <form class="p-12 grid grid-cols-2 gap-x-8 gap-y-10 rounded-4xl overflow-hidden shadow-5xl bg-white mt-8"
+                            <div class="col-span-2 xl:col-span-1 lg:hidden"></div>
+                            <div class="col-span-8 xl:col-span-10 lg:col-span-12">
+                                <form class="p-12 grid grid-cols-2 gap-x-8 gap-y-10 rounded-4xl overflow-hidden shadow-5xl bg-white mt-8 md:px-4 md:py-10 md:gap-y-5"
                                       action="">
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 md:col-span-2">
                                         @@include('components/input.html', {
                                         'common-style': '',
                                         'idInput': 'NameId',
@@ -49,7 +49,7 @@
                                         'errorStyle': 'hidden',
                                         })
                                     </div>
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 md:col-span-2">
                                         @@include('components/input.html', {
                                         'common-style': '',
                                         'idInput': 'EmailId',
@@ -60,7 +60,7 @@
                                         'errorStyle': 'hidden',
                                         })
                                     </div>
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 md:col-span-2">
                                         @@include('components/input.html', {
                                         'common-style': '',
                                         'idInput': 'NumId',
@@ -71,7 +71,7 @@
                                         'errorStyle': 'hidden',
                                         })
                                     </div>
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 md:col-span-2">
                                         @@include('components/input.html', {
                                         'common-style': '',
                                         'idInput': 'SubjectId',
@@ -96,12 +96,13 @@
                                         @@include('components/button-icon.html', {
                                         'title': 'Send Message',
                                         'type': 'submit',
+                                        'style': 'md:w-full',
                                         'ariaLabel': 'Send Message Button'
                                         })
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-span-2"></div>
+                            <div class="col-span-2 xl:col-span-1 lg:hidden"></div>
                         </div>
                     </div>
                 </div>
@@ -110,21 +111,21 @@
     </section>
     <section class="section">
         <div class="container">
-            <div class="row gap-x-8">
+            <div class="row gap-x-8 lg:gap-y-5">
                 <div class="col-span-12">
-                    <div class="flex flex-col max-w-[464px] mx-auto mb-10">
+                    <div class="flex flex-col md:items-start md:max-w-full max-w-[464px] mx-auto mb-10 lg:mb-3">
                         @@include('components/Title-small.html', {
                         'Title': 'Information',
-                        'Style': 'mb-3 text-center'
+                        'Style': 'mb-3 md:mb-2 text-center'
                         })
-                        <h2 class="main-title text-center mb-10">
+                        <h2 class="main-title text-center mb-10 md:mb-5">
                             Quick Contact
                         </h2>
-                        <p class="text-DarkBlue50 -tracking-018 font-medium text-base text-center">Please feel free to
+                        <p class="text-DarkBlue50 -tracking-018 font-medium text-base text-center md:text-left md:text-body">Please feel free to
                             contact our friendly staff with any medical enquiry.</p>
                     </div>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-4 lg:col-span-12">
                     @@include('components/Contact-card.html', {
                     'Style': '',
                     'Icon': 'Call-icon48',
@@ -134,7 +135,7 @@
                     'URL': 'tel:+107425899611',
                     })
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-4 lg:col-span-12">
                     @@include('components/Contact-card.html', {
                     'Style': '',
                     'Icon': 'Email-icon48',
@@ -144,7 +145,7 @@
                     'URL': 'mailto:info@profarmadirect.com',
                     })
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-4 lg:col-span-12">
                     @@include('components/Contact-card.html', {
                     'Style': '',
                     'Icon': 'Location-icon48',
