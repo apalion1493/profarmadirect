@@ -14,62 +14,63 @@
     <section class="section">
         <div class="container">
             <div class="row gap-x-8">
-                <div class="col-span-1"></div>
-                <div class="col-span-10">
-                    <div class="flex flex-col mb-10">
+                <div class="col-span-1 md:hidden"></div>
+                <div class="col-span-10 md:col-span-12">
+                    <div class="flex flex-col mb-10 md:mb-5">
                         @@include('components/Title-small.html', {
                         'Title': 'OUR CONDITIONS',
-                        'Style': 'mb-3 text-center'
+                        'Style': 'mb-3 md:mb-2 text-center'
                         })
-                        <h1 class="main-title text-center mb-10">
+                        <h1 class="main-title text-center mb-10 md:mb-5">
                             All Conditions
                         </h1>
-                        <p class="text-DarkBlue50 -tracking-018 font-medium text-base text-center">From acne to warts
+                        <p class="text-DarkBlue50 -tracking-018 font-medium text-base md:text-body text-center md:hidden">From acne to warts
                             and verrucas, we offer treatments for a whole host of conditions and medical problems.
                             Whether you need a quick over-the-counter fix for a mild infection, or a prescription
                             maintenance drug for a lifelong illness, you can find the medication you need quickly and
                             simply by browsing our list of conditions from A-Z.</p>
+                        <p class="text-DarkBlue50 -tracking-018 font-medium text-base md:text-body text-center minmd:hidden">Discover our conditions!</p>
                     </div>
                 </div>
-                <div class="col-span-1"></div>
+                <div class="col-span-1 md:hidden"></div>
             </div>
-            <div class="row sb gap-x-8 gap-y-10">
-                <div class="col-span-3">
+            <div class="row gap-x-8 gap-y-10 md:gap-y-5 sm:gap-x-0">
+                <div class="col-span-3 lg:col-span-4 md:col-span-6 sm:col-span-12">
                     @@include('components/Condition-card.html', {
                     'Style': '',
                     'Icon': 'Skin-Care-icon48',
                     'Title': 'Skin Care',
                     })
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-3 lg:col-span-4 md:col-span-6 sm:col-span-12">
                     @@include('components/Condition-card.html', {
                     'Style': '',
                     'Icon': 'General-Health-icon48',
                     'Title': 'General Health',
                     })
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-3 lg:col-span-4 md:col-span-6 sm:col-span-12">
                     @@include('components/Condition-card.html', {
                     'Style': '',
                     'Icon': 'Digestion-icon48',
                     'Title': 'Digestion',
                     })
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-3 lg:col-span-4 md:col-span-6 sm:col-span-12">
                     @@include('components/Condition-card.html', {
                     'Style': '',
                     'Icon': 'Mens-Health-icon48',
                     'Title': 'Men’s Health',
                     })
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-3 lg:col-span-4 md:col-span-6 sm:col-span-12">
                     @@include('components/Condition-card.html', {
                     'Style': '',
                     'Icon': 'Sexual-Health-icon48',
                     'Title': 'Sexual Health',
                     })
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-3 lg:col-span-4 md:col-span-6 sm:col-span-12">
                     @@include('components/Condition-card.html', {
                     'Style': '',
                     'Icon': 'Womens-Health-icon48',

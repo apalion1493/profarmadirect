@@ -5038,6 +5038,12 @@ p {
   }
 }
 
+@media (max-width: 480px) {
+  .sm2\:w-full {
+    width: 100% !important;
+  }
+}
+
 .file\:mr-4::file-selector-button {
   margin-right: 1rem;
 }
@@ -5359,6 +5365,12 @@ p {
   .lg\:col-span-12 {
     grid-column: span 12 / span 12;
   }
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -5450,6 +5462,12 @@ p {
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+  .md\:col-span-12 {
+    grid-column: span 12 / span 12;
+  }
   .md\:mb-2 {
     margin-bottom: 0.5rem;
   }
@@ -5470,6 +5488,12 @@ p {
   }
   .md\:mb-3 {
     margin-bottom: 0.75rem;
+  }
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+  .md\:mb-1 {
+    margin-bottom: 0.25rem;
   }
   .md\:hidden {
     display: none;
@@ -5529,6 +5553,9 @@ p {
   .md\:pt-\[36px\] {
     padding-top: 36px;
   }
+  .md\:pt-\[32px\] {
+    padding-top: 32px;
+  }
   .md\:text-left {
     text-align: left;
   }
@@ -5551,8 +5578,27 @@ p {
 }
 
 @media (max-width: 639px) {
+  .sm\:col-span-12 {
+    grid-column: span 12 / span 12;
+  }
   .sm\:flex-col {
     flex-direction: column;
+  }
+  .sm\:gap-x-0 {
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sm2\:w-full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .minmd\:hidden {
+    display: none;
   }
 }
 
