@@ -13,36 +13,36 @@
 
     <section class="section">
         <div class="container">
-            <div class="row gap-x-8">
-                <div class="col-span-2"></div>
-                <div class="col-span-8">
+            <div class="row gap-x-8 lg:gap-x-0">
+                <div class="col-span-2 xl:col-span-1 lg:hidden"></div>
+                <div class="col-span-8 xl:col-span-10 lg:col-span-12">
                     <div class="flex flex-col items-center">
                         @@include('components/Title-small.html', {
                         'Title': 'PRESCRIPTION',
-                        'Style': 'mb-3 text-center'
+                        'Style': 'mb-3 md:mb-2 text-center'
                         })
-                        <h1 class="text-h3 font-bold text-center mb-10 max-w-[634px]">
+                        <h1 class="text-h3 font-bold text-center mb-10 max-w-[634px] md:text-Top2 md:mb-5">
                             Free online prescription diagnostics
                         </h1>
-                        <p class="text-DarkBlue50 -tracking-018 font-medium text-base text-center">It is important that
+                        <p class="text-DarkBlue50 -tracking-018 font-medium text-base md:text-body text-center">It is important that
                             you provide accurate information, just answer the questions about your health and lifestyle
                             so that the doctor can recommend your treatment or prescribe the treatment you need.</p>
 
-                        <div class="flex items-center justify-between gap-x-4 w-full mt-10">
+                        <div class="flex items-center justify-between gap-x-4 w-full mt-10 md:mt-8 md:flex-col md:items-start md:gap-y-5">
                             <div class="flex items-center">
                                 <i class="mr-2 Check-icon24"></i>
-                                <span class="font-semibold text-base text-DarkBlue100">EU-authorised doctor</span>
+                                <span class="font-semibold text-base md:text-body text-DarkBlue100">EU-authorised doctor</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="mr-2 Check-icon24"></i>
-                                <span class="font-semibold text-base text-DarkBlue100">Only the doctor can access this data</span>
+                                <span class="font-semibold text-base md:text-body text-DarkBlue100">Only the doctor can access this data</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="mr-2 Check-icon24"></i>
-                                <span class="font-semibold text-base text-DarkBlue100">Free Prescription</span>
+                                <span class="font-semibold text-base md:text-body text-DarkBlue100">Free Prescription</span>
                             </div>
                         </div>
-                        <div class="flex flex-col items-center mt-10">
+                        <div class="flex flex-col items-center mt-10 md:mt-8 w-full">
                             <a class="button big-btn-1 group mb-4" href="#">
                                 <span>Continue</span>
                                 <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="12"
@@ -52,22 +52,22 @@
                                           fill="white"/>
                                 </svg>
                             </a>
-                            <p class="text-DarkBlue50 font-semibold text-body text-center">Already have a
+                            <p class="text-DarkBlue50 font-semibold text-body md:text-body2 text-center">Already have a
                                 prescription?
                                 <a class="text-DarkBlue100" href="#">Click here</a> to redeem it.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-span-2"></div>
+                <div class="col-span-2 xl:col-span-1 lg:hidden"></div>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="row gap-x-8">
+            <div class="row">
                 <div class="col-span-12">
-                    <div class="flex items-center mb-10">
+                    <div class="flex items-center mb-10 relative md:pt-[60px]">
                         <div class="w-[18px] min-w-[18px] h-[18px] rounded-full border-[2px] border-blue100 flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
                                 <circle cx="4" cy="4" r="4" fill="#3D65FF"/>
@@ -81,22 +81,29 @@
                                  :style="`width: ${calcPercentage(minVal, maxVal, currentVal)}%`">
                             </div>
                         </div>
+                        <a class="absolute left-0 -bottom-[88px] md:bottom-10" href="#">
+                            <span class="rounded-full border border-Grey w-12 h-12 md:w-10 md:h-10 flex items-center justify-center">
+                                <svg class="md:w-5 md:h-5" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                  <path d="M12.4289 22.802C12.6541 22.802 12.8534 22.7457 13.0266 22.633C13.1999 22.5203 13.3255 22.3643 13.4035 22.165C13.4815 21.9657 13.4988 21.762 13.4555 21.554C13.4122 21.346 13.3212 21.1727 13.1826 21.034L5.1258 12.948L13.1826 4.888C13.2865 4.784 13.3645 4.667 13.4165 4.537C13.4685 4.407 13.4945 4.27267 13.4945 4.134C13.4945 3.99533 13.4685 3.86534 13.4165 3.744C13.3645 3.62267 13.2865 3.51 13.1826 3.406C13.0786 3.302 12.9617 3.224 12.8317 3.172C12.7018 3.12 12.5805 3.094 12.4679 3.094C12.3552 3.094 12.2123 3.12867 12.039 3.198C11.9177 3.25 11.8051 3.328 11.7012 3.432L2.91669 12.22C2.70877 12.428 2.60481 12.675 2.60481 12.961C2.60481 13.247 2.70877 13.494 2.91669 13.702L11.7012 22.49C11.9091 22.698 12.1517 22.802 12.4289 22.802ZM3.6444 13.988H22.3569C22.6514 13.988 22.8984 13.8883 23.0976 13.689C23.2969 13.4897 23.3965 13.247 23.3965 12.961C23.3965 12.675 23.2925 12.428 23.0846 12.22C22.8767 12.012 22.6341 11.908 22.3569 11.908H3.6444C3.36717 11.908 3.1246 12.012 2.91669 12.22C2.70877 12.428 2.60481 12.675 2.60481 12.961C2.60481 13.247 2.70444 13.4897 2.90369 13.689C3.10295 13.8883 3.34985 13.988 3.6444 13.988Z" fill="#BFC6D6"/>
+                                </svg>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
             <form action="">
                 <div class="row">
-                    <div class="col-span-3"></div>
-                    <div class="col-span-6">
+                    <div class="col-span-3 xl:col-span-2 lg:col-span-1 md:hidden"></div>
+                    <div class="col-span-6 xl:col-span-8 lg:col-span-10 md:col-span-12">
                         <div class="flex flex-col items-center">
                             <div class="flex flex-col items-center">
-                                <span class="text-blue100 font-bold text-base block mb-3">1 /12</span>
+                                <span class="text-blue100 font-bold text-base md:text-body2 block mb-3">1 /12</span>
                                 <span class="text-Top2 font-bold text-center block">Lorem ipsum dolor sit consectetur adipiscing elit?</span>
                             </div>
 
                             <ul class="mt-16 flex flex-col gap-y-4 w-full">
                                 <li class="flex items-center justify-center">
-                                    <label class="cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                    <label class="cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base md:text-body w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
                                         <input type="radio" id="id1" aria-describedby="macDescription" required
                                                class="sr-only peer" name="Step-1" value="Value-1" checked>
                                         <span class="flex items-center">
@@ -112,7 +119,7 @@
                                     </label>
                                 </li>
                                 <li class="flex items-center justify-center">
-                                    <label class="cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                    <label class="cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base md:text-body w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
                                         <input type="radio" id="id2" aria-describedby="macDescription" required
                                                class="sr-only peer" name="Step-1" value="Value-2">
                                         <span class="flex items-center">
@@ -128,7 +135,7 @@
                                     </label>
                                 </li>
                                 <li class="flex items-center justify-center">
-                                    <label class="cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                    <label class="cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base md:text-body w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
                                         <input type="radio" id="id3" aria-describedby="macDescription" required
                                                class="sr-only peer" name="Step-1" value="Value-3">
                                         <span class="flex items-center">
@@ -146,9 +153,9 @@
                             </ul>
 
                             <div class="mt-16 w-full flex flex-col">
-                                <ul class="flex items-center gap-x-8 w-full">
-                                    <li class="flex flex-1 items-center justify-center">
-                                        <label class=" cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                <ul class="flex items-center gap-x-8 w-full md:flex-col md:gap-x-0 md:gap-y-4">
+                                    <li class="flex flex-1 w-full items-center justify-center">
+                                        <label class=" cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base md:text-body w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
                                             <input type="radio" id="id2.1" aria-describedby="macDescription" required
                                                    class="sr-only peer" name="Step-2" value="Male">
                                             <span class="flex items-center">
@@ -163,8 +170,8 @@
                                             </svg>
                                         </label>
                                     </li>
-                                    <li class="flex flex-1 items-center justify-center">
-                                        <label class=" cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                    <li class="flex flex-1 w-full items-center justify-center">
+                                        <label class=" cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base md:text-body w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
                                             <input type="radio" id="id2.2" aria-describedby="macDescription" required
                                                    class="sr-only peer" name="Step-2" value="Female">
                                             <span class="flex items-center">
@@ -180,15 +187,15 @@
                                         </label>
                                     </li>
                                 </ul>
-                                <div class="flex w-fit p-3 bg-WhiteV2 border border-RedV2 mt-6 overflow-hidden rounded-lg">
-                                    <p class="text-RedV3 text-body2 font-semibold">
+                                <div class="flex w-fit p-3 bg-WhiteV2 border border-RedV2 mt-6 md:mt-5 overflow-hidden rounded-lg">
+                                    <p class="text-RedV3 text-body2 md:text-body4 font-semibold">
                                         We're sorry, but this product cannot be issued for the selected gender!
                                     </p>
                                 </div>
                             </div>
 
                             <div class="mt-16 w-full flex flex-col items-center">
-                                <ul class="flex flex-col list-disc text-base font-semibold text-DarkBlue100">
+                                <ul class="flex flex-col list-disc text-base pl-5 md:text-body font-semibold text-DarkBlue100 md:self-start">
                                     <li>
                                         <p>Lorem ipsum dolor sit amet elit concet</p>
                                     </li>
@@ -199,8 +206,8 @@
                                         <p>Lorem ipsum dolor sit amet elit</p>
                                     </li>
                                 </ul>
-                                <ul class="flex items-center gap-x-8 w-full mt-16">
-                                    <li class="flex flex-1 items-center justify-center">
+                                <ul class="flex items-center gap-x-8 w-full mt-16 md:flex-col md:gap-x-0 md:gap-y-4">
+                                    <li class="flex flex-1 w-full items-center justify-center">
                                         <label class=" cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
                                             <input type="radio" id="id3.1" aria-describedby="macDescription" required
                                                    class="sr-only peer" name="Step-3" value="Yes">
@@ -216,7 +223,7 @@
                                             </svg>
                                         </label>
                                     </li>
-                                    <li class="flex flex-1 items-center justify-center">
+                                    <li class="flex flex-1 w-full items-center justify-center">
                                         <label class=" cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 font-semibold has-[:checked]:bg-blue100 has-[:checked]:text-white has-[:focus]:outline-none has-[:focus]:outline-inherit border-[2px] border-blue100">
                                             <input type="radio" id="id3.2" aria-describedby="macDescription" required
                                                    class="sr-only peer" name="Step-3" value="No">
@@ -288,7 +295,7 @@
 
                                 @@include('components/Link-icon.html', {
                                 'title': 'Next',
-                                'style': 'btn-icons-blue w-full mt-16',
+                                'style': 'btn-icons-blue w-full mt-16 md:mt-8',
                                 'url': '#',
                                 'Icon-Blue': 'hidden',
                                 'Icon-White': 'block',
@@ -296,7 +303,8 @@
                             </div>
 
                             <div class="mt-16 w-full flex flex-col items-center">
-                                <ul class="flex flex-col list-disc text-base font-semibold text-DarkBlue100 max-w-[640px] w-full">
+                                <ul x-data="{ showMore: false }" class="flex flex-col list-disc pl-5 text-base font-semibold text-DarkBlue100 max-w-[640px] w-full">
+                                    <!-- Первые 3 пункта всегда видны -->
                                     <li>
                                         <p>My answers are true to the best of my knowledge.</p>
                                     </li>
@@ -306,63 +314,52 @@
                                     <li>
                                         <p>This diagnosis and treatment is for personal use only.</p>
                                     </li>
-                                    <li>
-                                        <p>I agree not to mix Viagra/Sildenafil, Cialis/Tadalafil, Levitra, and Spedra
-                                            at the same time - or use any other erectile dysfunction treatment.</p>
-                                    </li>
-                                    <li>
-                                        <p>If the doctor suggests medical treatment, I confirm that I will read the
-                                            information on the leaflet carefully and I will not abuse the medicine by
-                                            exceeding the recommended daily dose</p>
-                                    </li>
-                                    <li>
-                                        <p>I understand that consumption of smoking and alcohol may affect the
-                                            effectiveness of the medication</p>
-                                    </li>
-                                    <li>
-                                        <p>I consent to health information that I share with a physician and pharmacy
-                                            being accessed by non-medical support staff to respond to potential
-                                            requests. My consent can be revoked with effect for the future of customer
-                                            support. For more information <a
-                                                    href="#" class="hover:underline">click here</a>.</p>
-                                    </li>
-                                    <li>
-                                        <p>I hereby accept Health&Go's terms and conditions and privacy
-                                            policy. & subscription terms</p>
-                                    </li>
-                                    <li>
-                                        <p>If you choose "repeat service", the doctor will check, based on your medical
-                                            conditions, whether you are entitled to a new prescription. About a week
-                                            before you run out of your prescribed medication, you will receive an email
-                                            asking you about any changes in your health. All changes can be reported via
-                                            a special online questionnaire. The doctor will check whether a new
-                                            prescription can be issued and you will be informed if further medical
-                                            information is needed. If so, the prescription will be forwarded to Apomeds
-                                            NL for delivery on your behalf. You can cancel the "Repeat Service" by email
-                                            at any time if you wish.</p>
-                                    </li>
-                                    <li>
-                                        <p>Your information will be assessed and evaluated by doctor Viktor Simunovic
-                                            ( click here to see Viktor Simunovic's contact information and CV) For your
-                                            safety and for the sake of your health, he will first assess whether
-                                            telemedicine treatment is possible in your case. If necessary, further
-                                            inquiries or information may be required for this purpose)</p>
-                                    </li>
-                                    <li>
-                                        <p>I request that an electronic prescription be forwarded to Apomeds NL BV,
-                                            James Cookstraat 49, 7825AX Emmen, Niederlande. This should also apply to
-                                            any follow-up prescriptions as long as I do not instruct otherwise.</p>
-                                    </li>
+
+                                    <!-- Остальные пункты скрыты на мобилках, показываются только при нажатии на кнопку -->
+                                    <div :class="showMore ? 'block' : 'block lg:hidden'">
+                                        <li>
+                                            <p>I agree not to mix Viagra/Sildenafil, Cialis/Tadalafil, Levitra, and Spedra at the same time - or use any other erectile dysfunction treatment.</p>
+                                        </li>
+                                        <li>
+                                            <p>If the doctor suggests medical treatment, I confirm that I will read the information on the leaflet carefully and I will not abuse the medicine by exceeding the recommended daily dose.</p>
+                                        </li>
+                                        <li>
+                                            <p>I understand that consumption of smoking and alcohol may affect the effectiveness of the medication.</p>
+                                        </li>
+                                        <li>
+                                            <p>I consent to health information that I share with a physician and pharmacy being accessed by non-medical support staff to respond to potential requests. My consent can be revoked with effect for the future of customer support. For more information <a href="#" class="hover:underline">click here</a>.</p>
+                                        </li>
+                                        <li>
+                                            <p>I hereby accept Health&Go's terms and conditions and privacy policy. & subscription terms</p>
+                                        </li>
+                                        <li>
+                                            <p>If you choose "repeat service", the doctor will check, based on your medical conditions, whether you are entitled to a new prescription. About a week before you run out of your prescribed medication, you will receive an email asking you about any changes in your health. All changes can be reported via a special online questionnaire. The doctor will check whether a new prescription can be issued and you will be informed if further medical information is needed. If so, the prescription will be forwarded to Apomeds NL for delivery on your behalf. You can cancel the "Repeat Service" by email at any time if you wish.</p>
+                                        </li>
+                                        <li>
+                                            <p>Your information will be assessed and evaluated by doctor Viktor Simunovic (click here to see Viktor Simunovic's contact information and CV). For your safety and for the sake of your health, he will first assess whether telemedicine treatment is possible in your case. If necessary, further inquiries or information may be required for this purpose.</p>
+                                        </li>
+                                        <li>
+                                            <p>I request that an electronic prescription be forwarded to Apomeds NL BV, James Cookstraat 49, 7825AX Emmen, Niederlande. This should also apply to any follow-up prescriptions as long as I do not instruct otherwise.</p>
+                                        </li>
+                                    </div>
+
+                                    <!-- Кнопка "Read more", видна только на мобильных устройствах -->
+                                    <button type="button"
+                                            @click="showMore = !showMore"
+                                            class="lg:block hidden text-blue100 text-body text-left font-semibold mt-5 underline"
+                                            x-text="showMore ? 'Show less' : 'Read more'">
+                                    </button>
                                 </ul>
+
 
                                 @@include('components/Link-icon.html', {
                                 'title': 'Next',
-                                'style': 'btn-icons-blue w-full mt-16',
+                                'style': 'btn-icons-blue w-full mt-16 md:mt-8',
                                 'url': '#',
                                 'Icon-Blue': 'hidden',
                                 'Icon-White': 'block',
                                 })
-                                <p class="mt-4 text-body2 font-semibold text-DarkBlue50 self-start">If you click NEXT,
+                                <p class="mt-4 text-body2 font-semibold text-DarkBlue50 self-start md:text-center">If you click NEXT,
                                     the completed questionnaire will be sent to the doctor treating you.</p>
                             </div>
 
@@ -374,7 +371,7 @@
                                     your health and lifestyle so that the doctor can recommend your treatment or
                                     prescribe the treatment you need.</p>
 
-                                <div class="flex items-center gap-x-8 w-full mt-16">
+                                <div class="flex items-center gap-x-8 md:gap-x-5 w-full mt-16">
                                     <label class="flex-1 cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 min-h-14 font-semibold has-[:checked]:bg-blue10 has-[:focus]:outline-0 has-[:focus]:outline-inherit border-[2px] border-blue100">
                                         <input type="radio" id="id4.1" aria-describedby="macDescription" required
                                                class="sr-only peer" name="allergy" value="Yes">
@@ -403,15 +400,15 @@
                                     </label>
                                 </div>
 
-                                <div class="flex items-center gap-x-5 my-10 w-full">
+                                <div class="flex items-center gap-x-5 md:gap-x-4 my-10 w-full">
                                     <span class="border-t-[2px] border-blue20 w-full flex"></span>
-                                    <span class="w-fit text-nowrap uppercase font-semibold text-body2 text-DarkBlue50">CHOOSE ALLERGY PREPHARATE</span>
+                                    <span class="w-fit text-nowrap uppercase font-semibold text-body2 text-DarkBlue50 md:text-body2">CHOOSE ALLERGY PREPHARATE</span>
                                     <span class="border-t-[2px] border-blue20 w-full flex"></span>
                                 </div>
 
                                 <div class="flex items-center gap-x-8 w-full">
-                                   <div class="flex flex-col gap-y-5 w-full">
-                                       <label class="flex-1 cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 min-h-14 font-semibold has-[:checked]:bg-blue10 has-[:focus]:outline-0 has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                   <div class="flex flex-col gap-y-5 w-full md:gap-y-4">
+                                       <label class="flex-1 cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base w-full h-14 min-h-14 font-semibold has-[:checked]:bg-blue10 has-[:focus]:outline-0 has-[:focus]:outline-inherit border-[2px] border-blue100">
                                            <input type="radio" id="id5.1" aria-describedby="macDescription" required
                                                   class="sr-only peer" name="PREPHARATE" value="PREPHARATE-1">
                                            <span class="peer-checked:hidden flex border border-blue100 peer-checked:bg-blue100 rounded-full overflow-hidden w-5 h-5 min-w-5 items-center justify-center mr-4"></span>
@@ -424,7 +421,7 @@
                                         </span>
                                            <span class="font-medium" aria-hidden="true">Lorem Ipsum</span>
                                        </label>
-                                       <label class="flex-1 cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 min-h-14 font-semibold has-[:checked]:bg-blue10 has-[:focus]:outline-0 has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                       <label class="flex-1 cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base w-full h-14 min-h-14 font-semibold has-[:checked]:bg-blue10 has-[:focus]:outline-0 has-[:focus]:outline-inherit border-[2px] border-blue100">
                                            <input type="radio" id="id5.2" aria-describedby="macDescription" required
                                                   class="sr-only peer" name="PREPHARATE" value="PREPHARATE-2">
                                            <span class="peer-checked:hidden flex border border-blue100 peer-checked:bg-blue100 rounded-full overflow-hidden w-5 h-5 min-w-5 items-center justify-center mr-4"></span>
@@ -437,7 +434,7 @@
                                         </span>
                                            <span class="font-medium" aria-hidden="true">Lorem Ipsum</span>
                                        </label>
-                                       <label class="flex-1 cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 min-h-14 font-semibold has-[:checked]:bg-blue10 has-[:focus]:outline-0 has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                       <label class="flex-1 cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base w-full h-14 min-h-14 font-semibold has-[:checked]:bg-blue10 has-[:focus]:outline-0 has-[:focus]:outline-inherit border-[2px] border-blue100">
                                            <input type="radio" id="id5.3" aria-describedby="macDescription" required
                                                   class="sr-only peer" name="PREPHARATE" value="PREPHARATE-3">
                                            <span class="peer-checked:hidden flex border border-blue100 peer-checked:bg-blue100 rounded-full overflow-hidden w-5 h-5 min-w-5 items-center justify-center mr-4"></span>
@@ -450,7 +447,7 @@
                                         </span>
                                            <span class="font-medium" aria-hidden="true">Lorem Ipsum</span>
                                        </label>
-                                       <label class="flex-1 cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base max-w-[640px] w-full h-14 min-h-14 font-semibold has-[:checked]:bg-blue10 has-[:focus]:outline-0 has-[:focus]:outline-inherit border-[2px] border-blue100">
+                                       <label class="flex-1 cursor-pointer relative flex items-center rounded-xl bg-white py-2 px-6 transition-transform text-DarkBlue100 text-base w-full h-14 min-h-14 font-semibold has-[:checked]:bg-blue10 has-[:focus]:outline-0 has-[:focus]:outline-inherit border-[2px] border-blue100">
                                            <input type="radio" id="id5.4" aria-describedby="macDescription" required
                                                   class="sr-only peer" name="PREPHARATE" value="PREPHARATE-4">
                                            <span class="peer-checked:hidden flex border border-blue100 peer-checked:bg-blue100 rounded-full overflow-hidden w-5 h-5 min-w-5 items-center justify-center mr-4"></span>
@@ -476,7 +473,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-3"></div>
+                    <div class="col-span-3 xl:col-span-2 lg:col-span-1 md:col-span-1"></div>
                 </div>
             </form>
         </div>
