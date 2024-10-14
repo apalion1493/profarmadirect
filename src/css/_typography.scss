@@ -1,25 +1,25 @@
 h1, .h1 {
-  @apply text-h1
+  @apply text-h1 md:text-Top1
 }
 
 h2, .h2 {
-  @apply text-h2
+  @apply text-h2 md:text-Top3
 }
 
 h3, .h3 {
-  @apply text-h3
+  @apply text-h3 md:text-base
 }
 
 h4, .h4 {
-  @apply text-h4
+  @apply text-h4 md:text-body
 }
 
 h5, .h5 {
-  @apply text-Top1
+  @apply text-Top1 md:text-body2
 }
 
 h6, .h6 {
-  @apply text-Top3
+  @apply text-Top3 md:text-body4
 }
 
 p {

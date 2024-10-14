@@ -115,7 +115,7 @@
 .text-content {
 
   p {
-    @apply text-base -tracking-018 text-DarkBlue50 font-medium
+    @apply text-base md:text-body -tracking-018 text-DarkBlue50 font-medium
   }
 
   ol {
