@@ -13,12 +13,12 @@
 
     <section class="section">
         <div class="container">
-            <div class="row gap-x-8">
+            <div class="row">
                 <div class="col-span-12">
                     <div class="flex flex-col items-center max-w-[450px] mx-auto">
                         @@include('components/Title-small.html', {
                         'Title': 'Login',
-                        'Style': 'mb-3'
+                        'Style': 'mb-3 md:mb-2'
                         })
                         <h1 class="main-title text-center">
                             Login Details
@@ -28,14 +28,14 @@
                     </div>
                 </div>
                 <div class="col-span-12">
-                    <div class="pb-[120px] relative">
-                        <div class="rounded-4xl w-full bg-color-4 absolute bottom-0 left-0 right-0"></div>
+                    <div class="pb-[120px] md:pb-[72px] relative">
+                        <div class="rounded-4xl w-full bg-color-4 absolute bottom-0 left-0 right-0 contact-color-block lg:-left-4 md:h-[263px] md:bg-cover"></div>
                         <div class="row gap-x-8 relative z-10">
-                            <div class="col-span-2"></div>
-                            <div class="col-span-8">
-                                <form class="p-12 grid grid-cols-2 gap-x-8 gap-y-10 rounded-4xl overflow-hidden shadow-5xl bg-white mt-8"
+                            <div class="col-span-2 lg:col-span-1 md:hidden"></div>
+                            <div class="col-span-8 lg:col-span-10 md:col-span-12">
+                                <form class="p-12 md:px-4 md:py-10 grid grid-cols-2 gap-x-8 gap-y-10 md:gap-y-5 md:gap-x-0 rounded-4xl overflow-hidden shadow-5xl bg-white mt-8"
                                       action="">
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 md:col-span-2">
                                         @@include('components/input.html', {
                                         'common-style': '',
                                         'idInput': 'NameId',
@@ -46,7 +46,7 @@
                                         'errorStyle': 'hidden',
                                         })
                                     </div>
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 md:col-span-2">
                                         @@include('components/input.html', {
                                         'common-style': '',
                                         'idInput': 'passwordId',
@@ -62,14 +62,14 @@
                                         'title': 'Continue',
                                         'type': 'submit',
                                         'ariaLabel': 'Continue Button',
-                                        'style': '',
+                                        'style': 'md:w-full',
                                         })
 
-                                        <a class="text-body font-medium mt-4 inline-block text-DarkBlue50 hover:underline" href="#">Forgot Password?</a>
+                                        <a class="text-body font-medium mt-4 inline-block md:text-center md:block text-DarkBlue50 hover:underline" href="#">Forgot Password?</a>
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-span-2"></div>
+                            <div class="col-span-2 lg:col-span-1 md:hidden"></div>
                         </div>
                     </div>
                 </div>

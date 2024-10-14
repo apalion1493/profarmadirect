@@ -5644,6 +5644,9 @@ p {
   .md\:mt-8 {
     margin-top: 2rem;
   }
+  .md\:block {
+    display: block;
+  }
   .md\:hidden {
     display: none;
   }
@@ -5658,6 +5661,9 @@ p {
   }
   .md\:h-\[72px\] {
     height: 72px;
+  }
+  .md\:h-\[263px\] {
+    height: 263px;
   }
   .md\:min-h-\[471px\] {
     min-height: 471px;
@@ -5717,6 +5723,9 @@ p {
   .md\:overflow-y-scroll {
     overflow-y: scroll;
   }
+  .md\:bg-cover {
+    background-size: cover;
+  }
   .md\:p-5 {
     padding: 1.25rem;
   }
@@ -5743,6 +5752,9 @@ p {
   }
   .md\:pt-\[60px\] {
     padding-top: 60px;
+  }
+  .md\:pb-\[72px\] {
+    padding-bottom: 72px;
   }
   .md\:text-left {
     text-align: left;
