@@ -15,15 +15,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-span-12 flex justify-center">
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center lg:items-start">
                         @@include('components/Title-small.html', {
                         'Title': 'SHOP',
-                        'Style': 'mb-3'
+                        'Style': 'mb-3 md:mb-2'
                         })
                         <h1 class="main-title">
                             Pharmacy Shop
                         </h1>
-                        <p class="text-base -tracking-018 font-medium max-w-[916px] text-center text-DarkBlue50 mt-5">
+                        <p class="text-base md:text-body lg:text-left -tracking-018 font-medium max-w-[916px] text-center text-DarkBlue50 mt-5">
                             Discover a wide range of skincare products at our pharmacy. From gentle cleansers to
                             hydrating moisturizers and targeted treatments, our selection caters to various skin types
                             and concerns.</p>
@@ -32,33 +32,36 @@
             </div>
         </div>
     </section>
-    <section class="mb-16 mt-10">
+    <section class="mb-16 mt-10 lg:mt-0">
         <div class="container">
             <div class="row gap-x-8">
+                <div class="col-span-12 minlg:hidden">
+                    <span class="md:text-body lg:text-left -tracking-018 font-medium text-center text-DarkBlue50 block mb-6">0-6 of 12 results</span>
+                </div>
                 <div class="col-span-12">
-                    <div class="row gap-8">
-                        <div class="col-span-3">
+                    <div class="row gap-8 md:gap-y-6 sm:gap-x-0">
+                        <div class="col-span-3 xl:col-span-4 lg:col-span-6 sm:col-span-12">
                             @@include('components/Product-card.html')
                         </div>
-                        <div class="col-span-3">
+                        <div class="col-span-3 xl:col-span-4 lg:col-span-6 sm:col-span-12">
                             @@include('components/Product-card.html')
                         </div>
-                        <div class="col-span-3">
+                        <div class="col-span-3 xl:col-span-4 lg:col-span-6 sm:col-span-12">
                             @@include('components/Product-card.html')
                         </div>
-                        <div class="col-span-3">
+                        <div class="col-span-3 xl:col-span-4 lg:col-span-6 sm:col-span-12">
                             @@include('components/Product-card.html')
                         </div>
-                        <div class="col-span-3">
+                        <div class="col-span-3 xl:col-span-4 lg:col-span-6 sm:col-span-12">
                             @@include('components/Product-card.html')
                         </div>
-                        <div class="col-span-3">
+                        <div class="col-span-3 xl:col-span-4 lg:col-span-6 sm:col-span-12">
                             @@include('components/Product-card.html')
                         </div>
-                        <div class="col-span-3">
+                        <div class="col-span-3 xl:col-span-4 lg:col-span-6 sm:col-span-12">
                             @@include('components/Product-card.html')
                         </div>
-                        <div class="col-span-3">
+                        <div class="col-span-3 xl:col-span-4 lg:col-span-6 sm:col-span-12">
                             @@include('components/Product-card.html')
                         </div>
                         <div class="col-span-12">
