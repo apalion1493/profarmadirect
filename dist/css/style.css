@@ -5396,6 +5396,39 @@ p {
 }
 
 @media (max-width: 1344px) {
+  .xl\:order-1 {
+    order: 1;
+  }
+  .xl\:order-2 {
+    order: 2;
+  }
+  .xl\:order-3 {
+    order: 3;
+  }
+  .xl\:order-4 {
+    order: 4;
+  }
+  .xl\:order-5 {
+    order: 5;
+  }
+  .xl\:order-6 {
+    order: 6;
+  }
+  .xl\:order-7 {
+    order: 7;
+  }
+  .xl\:order-8 {
+    order: 8;
+  }
+  .xl\:order-10 {
+    order: 10;
+  }
+  .xl\:order-11 {
+    order: 11;
+  }
+  .xl\:order-9 {
+    order: 9;
+  }
   .xl\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -5444,6 +5477,9 @@ p {
   }
   .lg\:col-span-4 {
     grid-column: span 4 / span 4;
+  }
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
   .lg\:mx-auto {
     margin-left: auto;

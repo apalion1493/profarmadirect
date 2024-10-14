@@ -13,7 +13,7 @@
 
     <section class="section">
         <div class="container">
-            <div class="row gap-x-8">
+            <div class="row">
                 <div class="col-span-12">
                     <div class="flex flex-col items-center max-w-[450px] mx-auto">
                         @@include('components/Title-small.html', {
@@ -29,14 +29,14 @@
                     </div>
                 </div>
                 <div class="col-span-12">
-                    <div class="pb-[120px] relative">
-                        <div class="rounded-4xl w-full bg-color-4 absolute bottom-0 left-0 right-0"></div>
-                        <div class="row gap-x-8 relative z-10">
-                            <div class="col-span-2"></div>
-                            <div class="col-span-8">
-                                <form class="p-12 grid grid-cols-2 gap-x-8 gap-y-10 rounded-4xl overflow-hidden shadow-5xl bg-white mt-8"
+                    <div class="pb-[120px] md:pb-[72px] relative">
+                        <div class="rounded-4xl w-full bg-color-4 absolute bottom-0 left-0 right-0 contact-color-block lg:-left-4 md:h-[263px] md:bg-cover"></div>
+                        <div class="row gap-x-8 md:gap-x-0 relative z-10">
+                            <div class="col-span-2 lg:col-span-1 md:hidden"></div>
+                            <div class="col-span-8 lg:col-span-10 md:col-span-12">
+                                <form class="p-12 md:px-4 md:py-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:gap-y-5 lg:gap-x-3 rounded-4xl overflow-hidden shadow-5xl bg-white mt-8"
                                       action="">
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 xl:col-span-2 xl:order-1">
                                         @@include('components/input.html', {
                                         'common-style': '',
                                         'idInput': 'NameId',
@@ -47,9 +47,9 @@
                                         'errorStyle': 'hidden',
                                         })
                                     </div>
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 xl:col-span-2 xl:order-5">
                                         <div class="flex flex-col">
-                                            <span class="mb-3 font-semibold text-body">Date of Birth</span>
+                                            <span class="mb-3 font-semibold text-body md:text-body2">Date of Birth</span>
                                             <div class="flex gap-3">
                                                 <div class="form-group flex flex-1 flex-col items-start relative">
                                                     <label class="text-none" for="idSelect1">Day</label>
@@ -83,7 +83,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 xl:col-span-2 xl:order-2">
                                         @@include('components/input.html', {
                                         'common-style': '',
                                         'idInput': 'EmailId',
@@ -94,7 +94,7 @@
                                         'errorStyle': 'hidden',
                                         })
                                     </div>
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 xl:col-span-2 xl:order-6">
                                         @@include('components/input.html', {
                                         'common-style': '',
                                         'idInput': 'NHSId',
@@ -105,7 +105,7 @@
                                         'errorStyle': 'hidden',
                                         })
                                     </div>
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 xl:col-span-2 xl:order-3">
                                         @@include('components/input.html', {
                                         'common-style': '',
                                         'idInput': 'NumId',
@@ -116,10 +116,10 @@
                                         'errorStyle': 'hidden',
                                         })
                                     </div>
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 xl:col-span-2 xl:order-7">
                                         <div class="flex flex-col">
-                                            <span class="mb-3 font-semibold text-body">Gender</span>
-                                            <div class="flex gap-3">
+                                            <span class="mb-3 font-semibold text-body md:text-body2">Gender</span>
+                                            <div class="flex md:flex-col gap-3">
                                                 <div class="flex input input--radio flex-1 items-center">
                                                     <input id="radioMac" type="radio"
                                                            class="input-radio-block"
@@ -141,7 +141,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 xl:col-span-2 xl:order-4">
                                         @@include('components/input.html', {
                                         'common-style': '',
                                         'idInput': 'passwordId',
@@ -152,7 +152,7 @@
                                         'errorStyle': 'hidden',
                                         })
                                     </div>
-                                    <div class="col-span-1">
+                                    <div class="col-span-1 xl:col-span-2 xl:order-8">
                                         @@include('components/Select.html', {
                                         'commonStyle': '',
                                         'idSelect': 'SelectIdState',
@@ -160,14 +160,14 @@
                                         'NameSelect': 'Enter GP Surgery here...',
                                         })
                                     </div>
-                                    <div class="col-span-2">
+                                    <div class="col-span-2 xl:order-9">
                                         <div class="flex flex-col">
-                                            <label class="mb-3 text-body font-semibold" for="fileInput">Indification Check</label>
+                                            <label class="mb-3 text-body font-semibold " for="fileInput">Indification Check</label>
                                             <p class="text-body2 text-DarkBlue50 font-medium mb-3">Upload a picture of your Passport or Driving License (Jpeg, Png, PDF, HEIC) *</p>
                                             <input id="fileInput" type="file" class="input w-full overflow-clip rounded-xl border border-slate-300 bg-slate-100/50 text-sm text-slate-700 file:mr-4 file:cursor-pointer file:border-none file:bg-slate-100 file:px-4 file:py-2 file:font-medium file:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 disabled:cursor-not-allowed disabled:opacity-75 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-300 dark:file:bg-slate-800 dark:file:text-white dark:focus-visible:outline-blue-600" />
                                         </div>
                                     </div>
-                                    <div class="col-span-2">
+                                    <div class="col-span-2 xl:order-10">
                                         <div class="flex flex-col gap-y-4">
                                             @@include('components/checkbox.html', {
                                             'styleText': '',
@@ -184,7 +184,7 @@
                                             })
                                         </div>
                                     </div>
-                                    <div class="col-span-2">
+                                    <div class="col-span-2 xl:order-11">
                                         @@include('components/button-icon.html', {
                                         'title': 'Continue',
                                         'type': 'submit',
@@ -196,7 +196,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-span-2"></div>
+                            <div class="col-span-2 lg:col-span-1 md:hidden"></div>
                         </div>
                     </div>
                 </div>
