@@ -14,9 +14,9 @@
     <section class="section">
         <div class="container">
             <div class="row gap-x-8">
-                <div class="col-span-5">
+                <div class="col-span-5 lg:col-span-12">
                     <div class="sticky top-3 flex flex-col">
-                        <div class="flex mb-6">
+                        <div class="flex mb-6 lg:mb-8">
                             <nav class="font-medium text-body2 text-DarkBlue30" aria-label="breadcrumb">
                                 <ol class="flex flex-wrap items-center gap-3">
                                     <li class="flex items-center">
@@ -41,7 +41,14 @@
                                 </ol>
                             </nav>
                         </div>
-                        <div class="max-w-[448px]">
+                        <div class="flex flex-col gap-y-3 lg:gap-y-4 minlg:hidden lg:mb-8">
+                            @@include('components/Categories-tag-2.html', {
+                            'Style': 'active-tag',
+                            'Title': 'Brand'
+                            })
+                            <h1 class="text-h3 lg:text-h2Mob font-bold text-DarkBlue100">Differin 0.1% Cream</h1>
+                        </div>
+                        <div class="max-w-[448px] lg:mx-auto lg:max-w-[343px] lg:mb-8">
                             <div class="swiper gallery-swiper-big">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -96,7 +103,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div thumbsSlider="" class="swiper gallery-swiper mt-6">
+                            <div thumbsSlider="" class="swiper gallery-swiper mt-6 lg:mt-4">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <img src="img/Product-img-1.png" alt="Product img 1"/>
@@ -138,9 +145,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-7">
+                <div class="col-span-7 lg:col-span-12">
                     <form class="flex flex-col gap-y-8">
-                        <div class="flex flex-col gap-y-3">
+                        <div class="flex flex-col gap-y-3 lg:hidden">
                             @@include('components/Categories-tag-2.html', {
                             'Style': 'active-tag',
                             'Title': 'Brand'
@@ -148,52 +155,58 @@
                             <h1 class="text-h3 font-bold text-DarkBlue100">Differin 0.1% Cream</h1>
                             <span class="text-DarkBlue50 text-Top1 font-medium">£16.43</span>
                         </div>
-                        <div class="flex flex-col">
-                            <span class="text-base font-semibold block mb-4">Available Srenght:</span>
-                            <div class="flex items-center gap-x-3">
-                                <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
-                                    <input type="radio" id="osMac" aria-describedby="macDescription" class="sr-only peer" name="Available_Srenght" value="45" checked >
-                                    <span class="flex flex-col">
+                        <div class="flex flex-col lg:gap-y-8">
+                            <div class="minlg:hidden flex items-center gap-x-4">
+                                <span class="text-base font-semibold block">Price:</span>
+                                <span class="font-medium text-DarkBlue50 text-Top2">£16.43</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-base font-semibold block mb-4">Available Srenght:</span>
+                                <div class="flex items-center gap-x-3">
+                                    <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] lg:h-[43px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
+                                        <input type="radio" id="osMac" aria-describedby="macDescription" class="sr-only peer" name="Available_Srenght" value="45" checked >
+                                        <span class="flex flex-col">
                                             <span class="" aria-hidden="true">45g</span>
                                         </span>
-                                </label>
-                                <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
-                                    <input type="radio" id="osWindows" aria-describedby="windowsDescription" class="sr-only peer" name="Available_Srenght" value="75">
-                                    <span class="flex flex-col">
+                                    </label>
+                                    <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] lg:h-[43px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
+                                        <input type="radio" id="osWindows" aria-describedby="windowsDescription" class="sr-only peer" name="Available_Srenght" value="75">
+                                        <span class="flex flex-col">
                                             <span class="" aria-hidden="true">75g</span>
                                         </span>
-                                </label>
-                                <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
-                                    <input type="radio" id="osLinux" aria-describedby="linuxDescription" class="sr-only peer" name="Available_Srenght" value="100">
-                                    <span class="flex flex-col">
+                                    </label>
+                                    <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] lg:h-[43px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
+                                        <input type="radio" id="osLinux" aria-describedby="linuxDescription" class="sr-only peer" name="Available_Srenght" value="100">
+                                        <span class="flex flex-col">
                                             <span class="" aria-hidden="true">100g</span>
                                         </span>
-                                </label>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-base font-semibold block mb-4">Available Srenght:</span>
-                            <p class="-tracking-018 text-base font-medium text-DarkBlue50">Differin is a brand name for a medication containing the active ingredient adapalene. It
+                            <span class="text-base font-semibold block mb-4 lg:mb-3">Available Srenght:</span>
+                            <p class="-tracking-018 text-base lg:text-body font-medium text-DarkBlue50">Differin is a brand name for a medication containing the active ingredient adapalene. It
                                 is primarily used to treat acne.</p>
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-base font-semibold block mb-4">Use for:</span>
-                            <p class="-tracking-018 text-base font-medium text-DarkBlue50">Adapalene, the active ingredient in Differin, works by binding to specific receptors in
+                            <span class="text-base font-semibold block mb-4 lg:mb-3">Use for:</span>
+                            <p class="-tracking-018 text-base lg:text-body font-medium text-DarkBlue50">Adapalene, the active ingredient in Differin, works by binding to specific receptors in
                                 the skin cells called retinoic acid receptors. It regulates the growth and
                                 differentiation of skin cells, preventing the formation of clogged pores, and reducing
                                 inflammation. This helps to improve acne by promoting the turnover of skin cells and
                                 preventing the formation of acne lesions.</p>
                         </div>
-                        <div class="flex items-center gap-x-4">
+                        <div class="flex items-center gap-x-4 lg:flex-col lg:gap-y-4 lg:gap-x-0">
                             @@include('components/button.html', {
                             'title': 'Request a Prescription',
                             'type': 'submit',
-                            'style': 'flex-1'
+                            'style': 'flex-1 lg:w-full'
                             })
 
                             @@include('components/Link-icon.html', {
                             'title': 'Send Us Prescriptio',
-                            'style': 'flex-1 btn-icons'
+                            'style': 'flex-1 btn-icons lg:w-full'
                             })
                         </div>
                     </form>
@@ -205,11 +218,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-span-12">
-                    <div class="flex flex-col gap-y-5">
+                    <div class="flex flex-col gap-y-5 lg:gap-y-4">
                         <div x-data="{ isExpanded: true }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem3" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
                                     aria-controls="accordionItem3" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -229,19 +242,19 @@
                             </button>
                             <div x-cloak x-show="isExpanded" id="accordionItem3"
                                  aria-labelledby="controlsAccordionItem3" x-collapse>
-                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the
-                                        skin. It works by normalizing the growth of skin cells and reducing
-                                        inflammation, helping to prevent the formation of acne lesions such as
-                                        blackheads, whiteheads, and pimples.</p>
+                                <div class="pt-4 text-body lg:text-body text-DarkBlue50 font-medium">
+                                    Differin (adapalene) is a topical retinoid medication that is applied to the
+                                    skin. It works by normalizing the growth of skin cells and reducing
+                                    inflammation, helping to prevent the formation of acne lesions such as
+                                    blackheads, whiteheads, and pimples.
                                 </div>
                             </div>
                         </div>
                         <div x-data="{ isExpanded: false }"
                              :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem4" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
                                     aria-controls="accordionItem4" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -262,18 +275,18 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem4"
                                  aria-labelledby="controlsAccordionItem4" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the
-                                        skin. It works by normalizing the growth of skin cells and reducing
-                                        inflammation, helping to prevent the formation of acne lesions such as
-                                        blackheads, whiteheads, and pimples.</p>
+                                    Differin (adapalene) is a topical retinoid medication that is applied to the
+                                    skin. It works by normalizing the growth of skin cells and reducing
+                                    inflammation, helping to prevent the formation of acne lesions such as
+                                    blackheads, whiteheads, and pimples.
                                 </div>
                             </div>
                         </div>
                         <div x-data="{ isExpanded: false }"
                              :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem5" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
                                     aria-controls="accordionItem5" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -294,18 +307,18 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem5"
                                  aria-labelledby="controlsAccordionItem5" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the
-                                        skin. It works by normalizing the growth of skin cells and reducing
-                                        inflammation, helping to prevent the formation of acne lesions such as
-                                        blackheads, whiteheads, and pimples.</p>
+                                    Differin (adapalene) is a topical retinoid medication that is applied to the
+                                    skin. It works by normalizing the growth of skin cells and reducing
+                                    inflammation, helping to prevent the formation of acne lesions such as
+                                    blackheads, whiteheads, and pimples.
                                 </div>
                             </div>
                         </div>
                         <div x-data="{ isExpanded: false }"
                              :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem6" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
                                     aria-controls="accordionItem6" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -326,10 +339,10 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem6"
                                  aria-labelledby="controlsAccordionItem6" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the
-                                        skin. It works by normalizing the growth of skin cells and reducing
-                                        inflammation, helping to prevent the formation of acne lesions such as
-                                        blackheads, whiteheads, and pimples.</p>
+                                    Differin (adapalene) is a topical retinoid medication that is applied to the
+                                    skin. It works by normalizing the growth of skin cells and reducing
+                                    inflammation, helping to prevent the formation of acne lesions such as
+                                    blackheads, whiteheads, and pimples.
                                 </div>
                             </div>
                         </div>
@@ -341,19 +354,19 @@
     <section class="section">
         <div class="container">
             <span class="Border-wave"></span>
-            <div class="row py-14 gap-x-8 gap-y-10">
+            <div class="row py-14 gap-x-8 gap-y-10 lg:gap-y-5">
                 <div class="col-span-12">
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center lg:mb-3 md:items-start">
                         @@include('components/Title-small.html', {
                         'Title': 'How it works',
-                        'Style': 'mb-3'
+                        'Style': 'mb-3 md:mb-2'
                         })
                         <h2 class="main-title">
                             How it works
                         </h2>
                     </div>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-4 lg:col-span-12">
                     @@include('components/Information-card.html', {
                     'Style': '',
                     'Icon': 'Consultation-icon48',
@@ -361,7 +374,7 @@
                     'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.',
                     })
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-4 lg:col-span-12">
                     @@include('components/Information-card.html', {
                     'Style': '',
                     'Icon': 'Digestion-icon48',
@@ -369,7 +382,7 @@
                     'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.',
                     })
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-4 lg:col-span-12">
                     @@include('components/Information-card.html', {
                     'Style': '',
                     'Icon': 'Approve-icon48',
@@ -388,9 +401,9 @@
                     <div class="flex flex-col">
                         @@include('components/Title-small.html', {
                         'Title': 'SHOP',
-                        'Style': 'mb-3'
+                        'Style': 'mb-3 md:mb-2'
                         })
-                        <h2 class="main-title mb-10">
+                        <h2 class="main-title mb-10 md:mb-8">
                             Related Products
                         </h2>
                     </div>
@@ -427,7 +440,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-custom relative h-12 w-full mt-10">
+                    <div class="swiper-custom relative h-12 w-full mt-10 md:mt-8">
                         <div class="swiper-button-arrow swiper-button-next">
                             <svg class="swiper-button-icon swiper-button-icon--white" xmlns="http://www.w3.org/2000/svg"
                                  width="20" height="20" viewBox="0 0 20 20"

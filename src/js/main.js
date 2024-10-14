@@ -12,6 +12,20 @@ window.addEventListener('DOMContentLoaded', () => {
             el: ".swiper-pagination",
             dynamicBullets: true,
         },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            769: {
+                slidesPerView: 2,
+            },
+            1025: {
+                slidesPerView: 3,
+            },
+            1346: {
+                slidesPerView: 4,
+            }
+        }
     });
 
     const swiper2 = new Swiper(".gallery-swiper", {
@@ -20,6 +34,14 @@ window.addEventListener('DOMContentLoaded', () => {
         freeMode: true,
         watchSlidesProgress: true,
         loop: true,
+        breakpoints: {
+            1024: {
+                spaceBetween: 24,
+            },
+            100: {
+                spaceBetween: 16,
+            }
+        }
     });
 
     const swiper3 = new Swiper(".gallery-swiper-big", {

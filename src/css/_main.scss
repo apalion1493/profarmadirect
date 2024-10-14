@@ -15,15 +15,15 @@
 .button {
 
   &.categories {
-    @apply h-[38px] min-w-fit bg-LightBlue border-LightBlue text-body px-4 text-blue100 hover:border-blue100 hover:text-blue100 disabled:border-DarkBlue10 disabled:text-DarkBlue50
+    @apply h-[38px] min-h-[38px] min-w-fit bg-LightBlue border-LightBlue text-body px-4 text-blue100 hover:border-blue100 hover:text-blue100 disabled:border-DarkBlue10 disabled:text-DarkBlue50
   }
 
   &.btn-small {
-    @apply h-[33px] text-body2 min-w-[0] px-5
+    @apply h-[33px] min-h-[33px] text-body2 min-w-[0] px-5
   }
 
   &.btn-medium {
-    @apply h-10 text-body min-w-[98px] px-5
+    @apply h-10 min-h-10 text-body min-w-[98px] px-5
   }
 
   &.hoverColor {
@@ -50,7 +50,7 @@
     @apply max-w-[475px] w-full
   }
 
-  @apply h-14 px-8 min-w-[129px] w-fit flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100;
+  @apply h-14 min-h-14 px-8 min-w-[129px] w-fit flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100;
 }
 
 // Button with arrow Style End
@@ -190,7 +190,7 @@
 
 .swiper-custom {
   .swiper-pagination-bullet {
-    @apply w-6 h-6 opacity-100 bg-DarkBlue10
+    @apply w-6 h-6 lg:w-[18px] lg:h-[18px] opacity-100 bg-DarkBlue10
   }
 
   .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,

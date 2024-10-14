@@ -304,9 +304,9 @@
     <section class="section">
         <div class="container">
             <div class="row gap-x-8">
-                <div class="col-span-5">
+                <div class="col-span-5 lg:col-span-12">
                     <div class="sticky top-3 flex flex-col">
-                        <div class="flex mb-6">
+                        <div class="flex mb-6 lg:mb-8">
                             <nav class="font-medium text-body2 text-DarkBlue30" aria-label="breadcrumb">
                                 <ol class="flex flex-wrap items-center gap-3">
                                     <li class="flex items-center">
@@ -331,7 +331,13 @@
                                 </ol>
                             </nav>
                         </div>
-                        <div class="max-w-[448px]">
+                        <div class="flex flex-col gap-y-3 lg:gap-y-4 minlg:hidden lg:mb-8">
+                            <p class="flex items-center justify-center w-fit h-[38px] px-4 py-3 bg-LightBlue rounded-5xl active-tag">
+    <span class="text-body font-semibold text-blue100">Brand</span>
+</p>
+                            <h1 class="text-h3 lg:text-h2Mob font-bold text-DarkBlue100">Differin 0.1% Cream</h1>
+                        </div>
+                        <div class="max-w-[448px] lg:mx-auto lg:max-w-[343px] lg:mb-8">
                             <div class="swiper gallery-swiper-big">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -386,7 +392,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div thumbsSlider="" class="swiper gallery-swiper mt-6">
+                            <div thumbsSlider="" class="swiper gallery-swiper mt-6 lg:mt-4">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <img src="img/Product-img-1.png" alt="Product img 1"/>
@@ -428,57 +434,63 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-7">
+                <div class="col-span-7 lg:col-span-12">
                     <form class="flex flex-col gap-y-8">
-                        <div class="flex flex-col gap-y-3">
+                        <div class="flex flex-col gap-y-3 lg:hidden">
                             <p class="flex items-center justify-center w-fit h-[38px] px-4 py-3 bg-LightBlue rounded-5xl active-tag">
     <span class="text-body font-semibold text-blue100">Brand</span>
 </p>
                             <h1 class="text-h3 font-bold text-DarkBlue100">Differin 0.1% Cream</h1>
                             <span class="text-DarkBlue50 text-Top1 font-medium">£16.43</span>
                         </div>
-                        <div class="flex flex-col">
-                            <span class="text-base font-semibold block mb-4">Available Srenght:</span>
-                            <div class="flex items-center gap-x-3">
-                                <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
-                                    <input type="radio" id="osMac" aria-describedby="macDescription" class="sr-only peer" name="Available_Srenght" value="45" checked >
-                                    <span class="flex flex-col">
+                        <div class="flex flex-col lg:gap-y-8">
+                            <div class="minlg:hidden flex items-center gap-x-4">
+                                <span class="text-base font-semibold block">Price:</span>
+                                <span class="font-medium text-DarkBlue50 text-Top2">£16.43</span>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-base font-semibold block mb-4">Available Srenght:</span>
+                                <div class="flex items-center gap-x-3">
+                                    <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] lg:h-[43px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
+                                        <input type="radio" id="osMac" aria-describedby="macDescription" class="sr-only peer" name="Available_Srenght" value="45" checked >
+                                        <span class="flex flex-col">
                                             <span class="" aria-hidden="true">45g</span>
                                         </span>
-                                </label>
-                                <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
-                                    <input type="radio" id="osWindows" aria-describedby="windowsDescription" class="sr-only peer" name="Available_Srenght" value="75">
-                                    <span class="flex flex-col">
+                                    </label>
+                                    <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] lg:h-[43px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
+                                        <input type="radio" id="osWindows" aria-describedby="windowsDescription" class="sr-only peer" name="Available_Srenght" value="75">
+                                        <span class="flex flex-col">
                                             <span class="" aria-hidden="true">75g</span>
                                         </span>
-                                </label>
-                                <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
-                                    <input type="radio" id="osLinux" aria-describedby="linuxDescription" class="sr-only peer" name="Available_Srenght" value="100">
-                                    <span class="flex flex-col">
+                                    </label>
+                                    <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] lg:h-[43px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
+                                        <input type="radio" id="osLinux" aria-describedby="linuxDescription" class="sr-only peer" name="Available_Srenght" value="100">
+                                        <span class="flex flex-col">
                                             <span class="" aria-hidden="true">100g</span>
                                         </span>
-                                </label>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-base font-semibold block mb-4">Available Srenght:</span>
-                            <p class="-tracking-018 text-base font-medium text-DarkBlue50">Differin is a brand name for a medication containing the active ingredient adapalene. It
+                            <span class="text-base font-semibold block mb-4 lg:mb-3">Available Srenght:</span>
+                            <p class="-tracking-018 text-base lg:text-body font-medium text-DarkBlue50">Differin is a brand name for a medication containing the active ingredient adapalene. It
                                 is primarily used to treat acne.</p>
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-base font-semibold block mb-4">Use for:</span>
-                            <p class="-tracking-018 text-base font-medium text-DarkBlue50">Adapalene, the active ingredient in Differin, works by binding to specific receptors in
+                            <span class="text-base font-semibold block mb-4 lg:mb-3">Use for:</span>
+                            <p class="-tracking-018 text-base lg:text-body font-medium text-DarkBlue50">Adapalene, the active ingredient in Differin, works by binding to specific receptors in
                                 the skin cells called retinoic acid receptors. It regulates the growth and
                                 differentiation of skin cells, preventing the formation of clogged pores, and reducing
                                 inflammation. This helps to improve acne by promoting the turnover of skin cells and
                                 preventing the formation of acne lesions.</p>
                         </div>
-                        <div class="flex items-center gap-x-4">
-                            <button class="button flex-1" type="submit" aria-label="@@ariaLabel">
+                        <div class="flex items-center gap-x-4 lg:flex-col lg:gap-y-4 lg:gap-x-0">
+                            <button class="button flex-1 lg:w-full" type="submit" aria-label="@@ariaLabel">
     <span>Request a Prescription</span>
 </button>
 
-                            <a class="button group flex-1 btn-icons" href="@@url">
+                            <a class="button group flex-1 btn-icons lg:w-full" href="@@url">
     <span class="">Send Us Prescriptio</span>
     <svg class="ml-2 @@Icon-Blue" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
         <path class="group-hover:fill-white transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#3D65FF"/>
@@ -497,11 +509,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-span-12">
-                    <div class="flex flex-col gap-y-5">
+                    <div class="flex flex-col gap-y-5 lg:gap-y-4">
                         <div x-data="{ isExpanded: true }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem3" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
                                     aria-controls="accordionItem3" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -521,19 +533,19 @@
                             </button>
                             <div x-cloak x-show="isExpanded" id="accordionItem3"
                                  aria-labelledby="controlsAccordionItem3" x-collapse>
-                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the
-                                        skin. It works by normalizing the growth of skin cells and reducing
-                                        inflammation, helping to prevent the formation of acne lesions such as
-                                        blackheads, whiteheads, and pimples.</p>
+                                <div class="pt-4 text-body lg:text-body text-DarkBlue50 font-medium">
+                                    Differin (adapalene) is a topical retinoid medication that is applied to the
+                                    skin. It works by normalizing the growth of skin cells and reducing
+                                    inflammation, helping to prevent the formation of acne lesions such as
+                                    blackheads, whiteheads, and pimples.
                                 </div>
                             </div>
                         </div>
                         <div x-data="{ isExpanded: false }"
                              :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem4" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
                                     aria-controls="accordionItem4" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -554,18 +566,18 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem4"
                                  aria-labelledby="controlsAccordionItem4" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the
-                                        skin. It works by normalizing the growth of skin cells and reducing
-                                        inflammation, helping to prevent the formation of acne lesions such as
-                                        blackheads, whiteheads, and pimples.</p>
+                                    Differin (adapalene) is a topical retinoid medication that is applied to the
+                                    skin. It works by normalizing the growth of skin cells and reducing
+                                    inflammation, helping to prevent the formation of acne lesions such as
+                                    blackheads, whiteheads, and pimples.
                                 </div>
                             </div>
                         </div>
                         <div x-data="{ isExpanded: false }"
                              :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem5" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
                                     aria-controls="accordionItem5" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -586,18 +598,18 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem5"
                                  aria-labelledby="controlsAccordionItem5" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the
-                                        skin. It works by normalizing the growth of skin cells and reducing
-                                        inflammation, helping to prevent the formation of acne lesions such as
-                                        blackheads, whiteheads, and pimples.</p>
+                                    Differin (adapalene) is a topical retinoid medication that is applied to the
+                                    skin. It works by normalizing the growth of skin cells and reducing
+                                    inflammation, helping to prevent the formation of acne lesions such as
+                                    blackheads, whiteheads, and pimples.
                                 </div>
                             </div>
                         </div>
                         <div x-data="{ isExpanded: false }"
                              :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 border border-blue20 rounded-[20px] overflow-hidden">
+                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem6" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
                                     aria-controls="accordionItem6" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -618,10 +630,10 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem6"
                                  aria-labelledby="controlsAccordionItem6" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Differin (adapalene) is a topical retinoid medication that is applied to the
-                                        skin. It works by normalizing the growth of skin cells and reducing
-                                        inflammation, helping to prevent the formation of acne lesions such as
-                                        blackheads, whiteheads, and pimples.</p>
+                                    Differin (adapalene) is a topical retinoid medication that is applied to the
+                                    skin. It works by normalizing the growth of skin cells and reducing
+                                    inflammation, helping to prevent the formation of acne lesions such as
+                                    blackheads, whiteheads, and pimples.
                                 </div>
                             </div>
                         </div>
@@ -633,40 +645,40 @@
     <section class="section">
         <div class="container">
             <span class="Border-wave"></span>
-            <div class="row py-14 gap-x-8 gap-y-10">
+            <div class="row py-14 gap-x-8 gap-y-10 lg:gap-y-5">
                 <div class="col-span-12">
-                    <div class="flex flex-col items-center">
-                        <span class="uppercase text-body2 text-blue100 font-bold block mb-3">How it works</span>
+                    <div class="flex flex-col items-center lg:mb-3 md:items-start">
+                        <span class="uppercase text-body2 text-blue100 font-bold block mb-3 md:mb-2">How it works</span>
                         <h2 class="main-title">
                             How it works
                         </h2>
                     </div>
                 </div>
-                <div class="col-span-4">
-                    <article class="flex flex-col w-full h-full items-center py-8 px-6 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl ">
-    <div class="rounded-full w-[91px] h-[91px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
-        <i class="Consultation-icon48"></i>
+                <div class="col-span-4 lg:col-span-12">
+                    <article class="flex flex-col w-full h-full items-center py-8 px-6 md:px-4 md:py-5 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl ">
+    <div class="rounded-full w-[91px] h-[91px] md:w-[72px] md:h-[72px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
+        <i class="icon-40 Consultation-icon48"></i>
     </div>
-    <span class="text-center font-bold block mb-4 text-Top2">Consultattion</span>
-    <p class="text-center text-base text-DarkBlue50">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
+    <span class="text-center font-bold block mb-4 text-Top2 md:text-base md:mb-3">Consultattion</span>
+    <p class="text-center text-base text-DarkBlue50 md:text-body">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
 </article>
                 </div>
-                <div class="col-span-4">
-                    <article class="flex flex-col w-full h-full items-center py-8 px-6 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl ">
-    <div class="rounded-full w-[91px] h-[91px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
-        <i class="Digestion-icon48"></i>
+                <div class="col-span-4 lg:col-span-12">
+                    <article class="flex flex-col w-full h-full items-center py-8 px-6 md:px-4 md:py-5 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl ">
+    <div class="rounded-full w-[91px] h-[91px] md:w-[72px] md:h-[72px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
+        <i class="icon-40 Digestion-icon48"></i>
     </div>
-    <span class="text-center font-bold block mb-4 text-Top2">Delivery</span>
-    <p class="text-center text-base text-DarkBlue50">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
+    <span class="text-center font-bold block mb-4 text-Top2 md:text-base md:mb-3">Delivery</span>
+    <p class="text-center text-base text-DarkBlue50 md:text-body">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
 </article>
                 </div>
-                <div class="col-span-4">
-                    <article class="flex flex-col w-full h-full items-center py-8 px-6 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl ">
-    <div class="rounded-full w-[91px] h-[91px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
-        <i class="Approve-icon48"></i>
+                <div class="col-span-4 lg:col-span-12">
+                    <article class="flex flex-col w-full h-full items-center py-8 px-6 md:px-4 md:py-5 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl ">
+    <div class="rounded-full w-[91px] h-[91px] md:w-[72px] md:h-[72px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
+        <i class="icon-40 Approve-icon48"></i>
     </div>
-    <span class="text-center font-bold block mb-4 text-Top2">Approve</span>
-    <p class="text-center text-base text-DarkBlue50">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
+    <span class="text-center font-bold block mb-4 text-Top2 md:text-base md:mb-3">Approve</span>
+    <p class="text-center text-base text-DarkBlue50 md:text-body">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
 </article>
                 </div>
             </div>
@@ -678,8 +690,8 @@
             <div class="row">
                 <div class="col-span-12">
                     <div class="flex flex-col">
-                        <span class="uppercase text-body2 text-blue100 font-bold block mb-3">SHOP</span>
-                        <h2 class="main-title mb-10">
+                        <span class="uppercase text-body2 text-blue100 font-bold block mb-3 md:mb-2">SHOP</span>
+                        <h2 class="main-title mb-10 md:mb-8">
                             Related Products
                         </h2>
                     </div>
@@ -689,23 +701,23 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <article
-        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] md:min-h-[471px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
     <!-- Image -->
-    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8 md:mb-5">
         <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
              alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
     </div>
     <!-- Content -->
-    <div class="flex flex-col px-5 pb-8">
-        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+    <div class="flex flex-col px-5 pb-8 md:pb-6 h-full flex-1">
+        <span class="w-full border-t border-DarkBlue10 mb-8 md:mb-5"></span>
         <!-- Header -->
-        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
-        <div class="flex flex-col mb-8">
-            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
-            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6 md:mb-5">Brand</span>
+        <div class="flex flex-col mb-8 md:mb-5">
+            <h3 class="text-Top3 font-bold mb-3 block md:text-base" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 md:text-Top2 font-medium text-DarkBlue50">£16.43</span>
         </div>
         <!-- Button -->
-        <a class="button width-full" href="#">
+        <a class="button width-full mt-auto" href="#">
     <span class="">Learn More</span>
 </a>
     </div>
@@ -713,23 +725,23 @@
                             </div>
                             <div class="swiper-slide">
                                 <article
-        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] md:min-h-[471px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
     <!-- Image -->
-    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8 md:mb-5">
         <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
              alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
     </div>
     <!-- Content -->
-    <div class="flex flex-col px-5 pb-8">
-        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+    <div class="flex flex-col px-5 pb-8 md:pb-6 h-full flex-1">
+        <span class="w-full border-t border-DarkBlue10 mb-8 md:mb-5"></span>
         <!-- Header -->
-        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
-        <div class="flex flex-col mb-8">
-            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
-            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6 md:mb-5">Brand</span>
+        <div class="flex flex-col mb-8 md:mb-5">
+            <h3 class="text-Top3 font-bold mb-3 block md:text-base" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 md:text-Top2 font-medium text-DarkBlue50">£16.43</span>
         </div>
         <!-- Button -->
-        <a class="button width-full" href="#">
+        <a class="button width-full mt-auto" href="#">
     <span class="">Learn More</span>
 </a>
     </div>
@@ -737,23 +749,23 @@
                             </div>
                             <div class="swiper-slide">
                                 <article
-        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] md:min-h-[471px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
     <!-- Image -->
-    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8 md:mb-5">
         <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
              alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
     </div>
     <!-- Content -->
-    <div class="flex flex-col px-5 pb-8">
-        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+    <div class="flex flex-col px-5 pb-8 md:pb-6 h-full flex-1">
+        <span class="w-full border-t border-DarkBlue10 mb-8 md:mb-5"></span>
         <!-- Header -->
-        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
-        <div class="flex flex-col mb-8">
-            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
-            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6 md:mb-5">Brand</span>
+        <div class="flex flex-col mb-8 md:mb-5">
+            <h3 class="text-Top3 font-bold mb-3 block md:text-base" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 md:text-Top2 font-medium text-DarkBlue50">£16.43</span>
         </div>
         <!-- Button -->
-        <a class="button width-full" href="#">
+        <a class="button width-full mt-auto" href="#">
     <span class="">Learn More</span>
 </a>
     </div>
@@ -761,23 +773,23 @@
                             </div>
                             <div class="swiper-slide">
                                 <article
-        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] md:min-h-[471px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
     <!-- Image -->
-    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8 md:mb-5">
         <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
              alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
     </div>
     <!-- Content -->
-    <div class="flex flex-col px-5 pb-8">
-        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+    <div class="flex flex-col px-5 pb-8 md:pb-6 h-full flex-1">
+        <span class="w-full border-t border-DarkBlue10 mb-8 md:mb-5"></span>
         <!-- Header -->
-        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
-        <div class="flex flex-col mb-8">
-            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
-            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6 md:mb-5">Brand</span>
+        <div class="flex flex-col mb-8 md:mb-5">
+            <h3 class="text-Top3 font-bold mb-3 block md:text-base" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 md:text-Top2 font-medium text-DarkBlue50">£16.43</span>
         </div>
         <!-- Button -->
-        <a class="button width-full" href="#">
+        <a class="button width-full mt-auto" href="#">
     <span class="">Learn More</span>
 </a>
     </div>
@@ -785,23 +797,23 @@
                             </div>
                             <div class="swiper-slide">
                                 <article
-        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] md:min-h-[471px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
     <!-- Image -->
-    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8 md:mb-5">
         <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
              alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
     </div>
     <!-- Content -->
-    <div class="flex flex-col px-5 pb-8">
-        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+    <div class="flex flex-col px-5 pb-8 md:pb-6 h-full flex-1">
+        <span class="w-full border-t border-DarkBlue10 mb-8 md:mb-5"></span>
         <!-- Header -->
-        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
-        <div class="flex flex-col mb-8">
-            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
-            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6 md:mb-5">Brand</span>
+        <div class="flex flex-col mb-8 md:mb-5">
+            <h3 class="text-Top3 font-bold mb-3 block md:text-base" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 md:text-Top2 font-medium text-DarkBlue50">£16.43</span>
         </div>
         <!-- Button -->
-        <a class="button width-full" href="#">
+        <a class="button width-full mt-auto" href="#">
     <span class="">Learn More</span>
 </a>
     </div>
@@ -809,23 +821,23 @@
                             </div>
                             <div class="swiper-slide">
                                 <article
-        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] md:min-h-[471px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
     <!-- Image -->
-    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8 md:mb-5">
         <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
              alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
     </div>
     <!-- Content -->
-    <div class="flex flex-col px-5 pb-8">
-        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+    <div class="flex flex-col px-5 pb-8 md:pb-6 h-full flex-1">
+        <span class="w-full border-t border-DarkBlue10 mb-8 md:mb-5"></span>
         <!-- Header -->
-        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
-        <div class="flex flex-col mb-8">
-            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
-            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6 md:mb-5">Brand</span>
+        <div class="flex flex-col mb-8 md:mb-5">
+            <h3 class="text-Top3 font-bold mb-3 block md:text-base" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 md:text-Top2 font-medium text-DarkBlue50">£16.43</span>
         </div>
         <!-- Button -->
-        <a class="button width-full" href="#">
+        <a class="button width-full mt-auto" href="#">
     <span class="">Learn More</span>
 </a>
     </div>
@@ -833,23 +845,23 @@
                             </div>
                             <div class="swiper-slide">
                                 <article
-        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] md:min-h-[471px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
     <!-- Image -->
-    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8 md:mb-5">
         <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
              alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
     </div>
     <!-- Content -->
-    <div class="flex flex-col px-5 pb-8">
-        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+    <div class="flex flex-col px-5 pb-8 md:pb-6 h-full flex-1">
+        <span class="w-full border-t border-DarkBlue10 mb-8 md:mb-5"></span>
         <!-- Header -->
-        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
-        <div class="flex flex-col mb-8">
-            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
-            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6 md:mb-5">Brand</span>
+        <div class="flex flex-col mb-8 md:mb-5">
+            <h3 class="text-Top3 font-bold mb-3 block md:text-base" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 md:text-Top2 font-medium text-DarkBlue50">£16.43</span>
         </div>
         <!-- Button -->
-        <a class="button width-full" href="#">
+        <a class="button width-full mt-auto" href="#">
     <span class="">Learn More</span>
 </a>
     </div>
@@ -857,23 +869,23 @@
                             </div>
                             <div class="swiper-slide">
                                 <article
-        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] md:min-h-[471px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
     <!-- Image -->
-    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8 md:mb-5">
         <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
              alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
     </div>
     <!-- Content -->
-    <div class="flex flex-col px-5 pb-8">
-        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+    <div class="flex flex-col px-5 pb-8 md:pb-6 h-full flex-1">
+        <span class="w-full border-t border-DarkBlue10 mb-8 md:mb-5"></span>
         <!-- Header -->
-        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
-        <div class="flex flex-col mb-8">
-            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
-            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6 md:mb-5">Brand</span>
+        <div class="flex flex-col mb-8 md:mb-5">
+            <h3 class="text-Top3 font-bold mb-3 block md:text-base" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 md:text-Top2 font-medium text-DarkBlue50">£16.43</span>
         </div>
         <!-- Button -->
-        <a class="button width-full" href="#">
+        <a class="button width-full mt-auto" href="#">
     <span class="">Learn More</span>
 </a>
     </div>
@@ -881,23 +893,23 @@
                             </div>
                             <div class="swiper-slide">
                                 <article
-        class="flex rounded-[20px] flex-col w-full min-h-[600px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
+        class="flex rounded-[20px] flex-col w-full min-h-[600px] md:min-h-[471px] overflow-hidden border border-DarkBlue10 bg-white transition-all hover:shadow-3xl">
     <!-- Image -->
-    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8">
+    <div class="h-[280px] flex items-center justify-center overflow-hidden mb-8 md:mb-5">
         <img src="https://penguinui.s3.amazonaws.com/component-assets/card-img-3.webp" class="object-cover h-full object-center"
              alt="CASIO G-SHOCK GA2100, Black face, black bands"/>
     </div>
     <!-- Content -->
-    <div class="flex flex-col px-5 pb-8">
-        <span class="w-full border-t border-DarkBlue10 mb-8"></span>
+    <div class="flex flex-col px-5 pb-8 md:pb-6 h-full flex-1">
+        <span class="w-full border-t border-DarkBlue10 mb-8 md:mb-5"></span>
         <!-- Header -->
-        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6">Brand</span>
-        <div class="flex flex-col mb-8">
-            <h3 class="text-Top3 font-bold mb-3 block" aria-describedby="productTitle">Differin 0.1% Cream</h3>
-            <span class="text-Top1 font-medium text-DarkBlue50">£16.43</span>
+        <span class="rounded-[40px] w-fit bg-LightBlue px-5 py-3 text-body font-semibold text-blue100 mb-6 md:mb-5">Brand</span>
+        <div class="flex flex-col mb-8 md:mb-5">
+            <h3 class="text-Top3 font-bold mb-3 block md:text-base" aria-describedby="productTitle">Differin 0.1% Cream</h3>
+            <span class="text-Top1 md:text-Top2 font-medium text-DarkBlue50">£16.43</span>
         </div>
         <!-- Button -->
-        <a class="button width-full" href="#">
+        <a class="button width-full mt-auto" href="#">
     <span class="">Learn More</span>
 </a>
     </div>
@@ -905,7 +917,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-custom relative h-12 w-full mt-10">
+                    <div class="swiper-custom relative h-12 w-full mt-10 md:mt-8">
                         <div class="swiper-button-arrow swiper-button-next">
                             <svg class="swiper-button-icon swiper-button-icon--white" xmlns="http://www.w3.org/2000/svg"
                                  width="20" height="20" viewBox="0 0 20 20"
