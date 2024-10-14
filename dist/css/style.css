@@ -5461,6 +5461,9 @@ p {
   .lg\:mt-8 {
     margin-top: 2rem;
   }
+  .lg\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
   .lg\:block {
     display: block;
   }

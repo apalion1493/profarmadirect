@@ -13,23 +13,23 @@
 
     <section class="section">
         <div class="container">
-            <div class="row gap-x-8">
+            <div class="row gap-x-8 lg:gap-x-0 lg:gap-y-4">
                 <div class="col-span-12">
-                    <div class="flex flex-col items-center mb-12 max-w-[450px] mx-auto">
+                    <div class="flex flex-col items-center mb-12 lg:mb-5 md:items-start md:max-w-full max-w-[450px] mx-auto">
                         @@include('components/Title-small.html', {
                         'Title': 'FAQ',
-                        'Style': 'mb-3'
+                        'Style': 'mb-3 md:mb-2'
                         })
                         <h1 class="main-title text-center">
                             Frequently Asked Questions
                         </h1>
                     </div>
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 lg:col-span-12">
                     <div class="flex flex-col gap-y-4">
-                        <div x-data="{ isExpanded: true }" :class="isExpanded ? 'shadow-6xl'  : ' '" class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                        <div x-data="{ isExpanded: true }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem1" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                     aria-controls="accordionItem1" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -45,15 +45,15 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem1"
                                  aria-labelledby="controlsAccordionItem1" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Yes, Profarma Direct offers a convenient online prescription reordering service.
-                                        If you have a prescription on file with us, you can easily reorder your
-                                        medications through our website.</p>
+                                    Yes, Profarma Direct offers a convenient online prescription reordering service.
+                                    If you have a prescription on file with us, you can easily reorder your
+                                    medications through our website.
                                 </div>
                             </div>
                         </div>
-                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '" class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem2" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                     aria-controls="accordionItem2" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -69,15 +69,15 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem2"
                                  aria-labelledby="controlsAccordionItem2" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Yes, Profarma Direct offers a convenient online prescription reordering service.
-                                        If you have a prescription on file with us, you can easily reorder your
-                                        medications through our website.</p>
+                                    Yes, Profarma Direct offers a convenient online prescription reordering service.
+                                    If you have a prescription on file with us, you can easily reorder your
+                                    medications through our website.
                                 </div>
                             </div>
                         </div>
-                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '" class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem3" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                     aria-controls="accordionItem3" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -93,15 +93,15 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem3"
                                  aria-labelledby="controlsAccordionItem3" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Yes, Profarma Direct offers a convenient online prescription reordering service.
-                                        If you have a prescription on file with us, you can easily reorder your
-                                        medications through our website.</p>
+                                    Yes, Profarma Direct offers a convenient online prescription reordering service.
+                                    If you have a prescription on file with us, you can easily reorder your
+                                    medications through our website.
                                 </div>
                             </div>
                         </div>
-                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '" class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem4" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                     aria-controls="accordionItem4" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -117,20 +117,20 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem4"
                                  aria-labelledby="controlsAccordionItem4" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Yes, Profarma Direct offers a convenient online prescription reordering service.
-                                        If you have a prescription on file with us, you can easily reorder your
-                                        medications through our website.</p>
+                                    Yes, Profarma Direct offers a convenient online prescription reordering service.
+                                    If you have a prescription on file with us, you can easily reorder your
+                                    medications through our website.
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 lg:col-span-12">
                     <div class="flex flex-col gap-y-4">
-                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '" class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem5" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                     aria-controls="accordionItem5" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -146,15 +146,15 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem5"
                                  aria-labelledby="controlsAccordionItem5" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Yes, Profarma Direct offers a convenient online prescription reordering service.
-                                        If you have a prescription on file with us, you can easily reorder your
-                                        medications through our website.</p>
+                                    Yes, Profarma Direct offers a convenient online prescription reordering service.
+                                    If you have a prescription on file with us, you can easily reorder your
+                                    medications through our website.
                                 </div>
                             </div>
                         </div>
-                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '" class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem6" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                     aria-controls="accordionItem6" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -170,15 +170,15 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem6"
                                  aria-labelledby="controlsAccordionItem6" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Yes, Profarma Direct offers a convenient online prescription reordering service.
-                                        If you have a prescription on file with us, you can easily reorder your
-                                        medications through our website.</p>
+                                    Yes, Profarma Direct offers a convenient online prescription reordering service.
+                                    If you have a prescription on file with us, you can easily reorder your
+                                    medications through our website.
                                 </div>
                             </div>
                         </div>
-                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '" class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem7" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                     aria-controls="accordionItem7" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -194,15 +194,15 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem7"
                                  aria-labelledby="controlsAccordionItem7" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Yes, Profarma Direct offers a convenient online prescription reordering service.
-                                        If you have a prescription on file with us, you can easily reorder your
-                                        medications through our website.</p>
+                                    Yes, Profarma Direct offers a convenient online prescription reordering service.
+                                    If you have a prescription on file with us, you can easily reorder your
+                                    medications through our website.
                                 </div>
                             </div>
                         </div>
-                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '" class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                        <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'" class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                             <button id="controlsAccordionItem8" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                    class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                     aria-controls="accordionItem8" @click="isExpanded = ! isExpanded"
                                     :class="isExpanded ? '1'  : '2'"
                                     :aria-expanded="isExpanded ? 'true' : 'false'">
@@ -218,9 +218,9 @@
                             <div x-cloak x-show="isExpanded" id="accordionItem8"
                                  aria-labelledby="controlsAccordionItem8" x-collapse>
                                 <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    <p>Yes, Profarma Direct offers a convenient online prescription reordering service.
-                                        If you have a prescription on file with us, you can easily reorder your
-                                        medications through our website.</p>
+                                    Yes, Profarma Direct offers a convenient online prescription reordering service.
+                                    If you have a prescription on file with us, you can easily reorder your
+                                    medications through our website.
                                 </div>
                             </div>
                         </div>
