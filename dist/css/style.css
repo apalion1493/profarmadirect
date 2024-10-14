@@ -2377,6 +2377,14 @@ html {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -5481,6 +5489,12 @@ p {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8;
+  }
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -5570,6 +5584,9 @@ p {
   }
   .lg\:gap-y-8 {
     row-gap: 2rem;
+  }
+  .lg\:gap-y-14 {
+    row-gap: 3.5rem;
   }
   .lg\:p-0 {
     padding: 0px;
@@ -5680,6 +5697,12 @@ p {
   .md\:mt-8 {
     margin-top: 2rem;
   }
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
   .md\:block {
     display: block;
   }
@@ -5759,11 +5782,20 @@ p {
   .md\:overflow-y-scroll {
     overflow-y: scroll;
   }
+  .md\:border {
+    border-width: 1px;
+  }
+  .md\:border-White20 {
+    border-color: #FFFFFF33;
+  }
   .md\:bg-cover {
     background-size: cover;
   }
   .md\:p-5 {
     padding: 1.25rem;
+  }
+  .md\:p-4 {
+    padding: 1rem;
   }
   .md\:px-4 {
     padding-left: 1rem;
@@ -5791,6 +5823,12 @@ p {
   }
   .md\:pb-\[72px\] {
     padding-bottom: 72px;
+  }
+  .md\:pt-8 {
+    padding-top: 2rem;
+  }
+  .md\:pb-8 {
+    padding-bottom: 2rem;
   }
   .md\:text-left {
     text-align: left;

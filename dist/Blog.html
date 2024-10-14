@@ -511,11 +511,11 @@
         </div>
     </section>
 
-    <footer class="w-full mt-auto overflow-hidden rounded-t-[40px] bg-DarkBlue100 text-Grey pt-20 pb-10">
+    <footer class="w-full mt-auto overflow-hidden rounded-t-[40px] bg-DarkBlue100 text-Grey pt-20 md:pt-12 md:pb-8 pb-10">
     <div class="container">
-        <div class="row gap-x-8">
-            <div class="col-span-4">
-                <div class="flex flex-col">
+        <div class="row gap-x-8 lg:gap-y-14 md:gap-y-4">
+            <div class="col-span-4 lg:col-span-12">
+                <div class="flex flex-col w-full">
                     <div class="flex flex-col gap-y-6">
                         <img width="272" src="../img/Logo.svg" alt="ProfarmaDirect Logo">
                         <p>Lorem ipsum dolor sit amet consectetur elit
@@ -564,26 +564,33 @@
                     </div>
                     <span class="block my-10 border-b border-White20"></span>
                     <form>
-                        <label class="text-white font-bold text-Top3 block mb-5" for="emailFormFooter">
+                        <label class="text-white font-bold text-Top3 block mb-5 md:text-base" for="emailFormFooter">
                             Sign up for our newsletter
                         </label>
                         <div class="bg-white w-full py-2 pl-4 pr-2 flex items-center overflow-hidden rounded-4xl">
-                            <i class="Mail-icon20"></i>
-                            <input class="flex-1 px-2 text-DarkBlue50 border-0 shadow-none focus:ring-0 focus:shadow-none focus:border-0 focus:border-inherit outline-0 focus:outline-0 focus:outline-inherit" id="emailFormFooter" type="email" placeholder="Enter tour email">
+                            <i class="Mail-icon20 min-w-5"></i>
+                            <input class="flex-1 px-2 w-full text-DarkBlue50 border-0 shadow-none focus:ring-0 focus:shadow-none focus:border-0 focus:border-inherit outline-0 focus:outline-0 focus:outline-inherit" id="emailFormFooter" type="email" placeholder="Enter tour email">
                             <button class="button btn-medium" type="submit">Button</button>
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="col-span-1"></div>
-            <div class="col-span-2">
+            <div class="col-span-1 lg:col-span-12">
+                <span class="block my-6 minlg:hidden border-b border-White20"></span>
+            </div>
+            <div class="col-span-2 lg:col-span-4 md:col-span-12">
                 <div class="flex-col flex">
-                    <div x-data="{ isExpanded: true, isMobile: 0 }"  x-resize.document="isMobile = $width" class="">
-                        <button id="controlsAccordionItemOne" type="button" aria-controls="accordionItemOne" @click="isMobile < 768 ? isExpanded = ! isExpanded : null" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'">
-                            <span class="text-white mb-6 block text-Top3 font-bold minlg:cursor-auto">Main pages</span>
+                    <div x-data="{ isExpanded: true, isMobile: 0 }"  x-resize.document="isMobile = $width" class="md:p-4 md:border md:border-White20 rounded-xl">
+                        <button id="controlsAccordionItemOne" type="button" aria-controls="accordionItemOne" @click="isMobile < 768 ? isExpanded = ! isExpanded : null" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'" class="w-full flex items-center justify-between">
+                            <span class="text-white mb-6 md:mb-0 block text-Top3 md:text-base text-left font-bold minlg:cursor-auto">Main pages</span>
+                            <span class="flex items-center justify-center minmd:hidden">
+                                <svg :class="isExpanded  ?  'rotate-180'  :  ''" class="transition-all" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
+                                  <path d="M1 1.67432L7 7.67432L13 1.67432" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
                         </button>
                         <div x-cloak x-show="isExpanded || isMobile > 768" id="accordionItemOne" role="region" aria-labelledby="controlsAccordionItemOne"  x-collapse>
-                            <ul class="flex flex-col gap-y-4">
+                            <ul class="flex flex-col gap-y-4 md:mt-6">
                                 <li>
                                     <a class="tracking-018 text-base hover:text-white transition-all" href="About.html">About Us</a>
                                 </li>
@@ -604,14 +611,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-2">
+            <div class="col-span-2 lg:col-span-4 md:col-span-12">
                 <div class="flex-col flex">
-                    <div x-data="{ isExpanded: true, isMobile: 0 }"  x-resize.document="isMobile = $width" class="">
-                        <button id="controlsAccordionItem2" type="button" aria-controls="accordionItem2" @click="isMobile < 768 ? isExpanded = ! isExpanded : null" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'">
-                            <span class="text-white mb-6 block text-Top3 font-bold minlg:cursor-auto">Legal</span>
+                    <div x-data="{ isExpanded: false, isMobile: 0 }"  x-resize.document="isMobile = $width" class="md:p-4 md:border md:border-White20 rounded-xl">
+                        <button id="controlsAccordionItem2" type="button" aria-controls="accordionItem2" @click="isMobile < 768 ? isExpanded = ! isExpanded : null" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'" class="w-full flex items-center justify-between">
+                            <span class="text-white mb-6 md:mb-0 block text-Top3 md:text-base text-left font-bold minlg:cursor-auto">Legal</span>
+                            <span class="flex items-center justify-center minmd:hidden">
+                                <svg :class="isExpanded  ?  'rotate-180'  :  ''" class="transition-all" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
+                                  <path d="M1 1.67432L7 7.67432L13 1.67432" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
                         </button>
                         <div x-cloak x-show="isExpanded || isMobile > 768" id="accordionItem2" role="region" aria-labelledby="controlsAccordionItem2"  x-collapse>
-                            <ul class="flex flex-col gap-y-4">
+                            <ul class="flex flex-col gap-y-4 md:mt-6">
                                 <li>
                                     <a class="tracking-018 text-base hover:text-white transition-all" href="Terms-of-Use.html">Terms of use</a>
                                 </li>
@@ -629,14 +641,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-3">
+            <div class="col-span-3 lg:col-span-4 md:col-span-12">
                 <div class="flex-col flex">
-                    <div x-data="{ isExpanded: true, isMobile: 0 }"  x-resize.document="isMobile = $width" class="">
-                        <button id="controlsAccordionItem3" type="button" aria-controls="accordionItem3" @click="isMobile < 768 ? isExpanded = ! isExpanded : null" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'">
-                            <span class="text-white mb-6 block text-Top3 font-bold minlg:cursor-auto">Contacts</span>
+                    <div x-data="{ isExpanded: false, isMobile: 0 }"  x-resize.document="isMobile = $width" class="md:p-4 md:border md:border-White20 rounded-xl">
+                        <button id="controlsAccordionItem3" type="button" aria-controls="accordionItem3" @click="isMobile < 768 ? isExpanded = ! isExpanded : null" :class="isExpanded ? '1'  : '2'" :aria-expanded="isExpanded ? 'true' : 'false'" class="w-full flex items-center justify-between">
+                            <span class="text-white mb-6 md:mb-0 block text-Top3 md:text-base text-left font-bold minlg:cursor-auto">Contacts</span>
+                            <span class="flex items-center justify-center minmd:hidden">
+                                <svg :class="isExpanded  ?  'rotate-180'  :  ''" class="transition-all" xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
+                                  <path d="M1 1.67432L7 7.67432L13 1.67432" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
                         </button>
                         <div x-cloak x-show="isExpanded || isMobile > 768" id="accordionItem3" role="region" aria-labelledby="controlsAccordionItem3" x-collapse>
-                           <div class="flex flex-col gap-y-5">
+                           <div class="flex flex-col gap-y-5 md:mt-6">
                                 <div class="flex flex-col gap-y-3">
                                     <div class="flex items-center gap-x-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -673,7 +690,7 @@
                 </div>
             </div>
             <div class="col-span-12">
-                <div class="mt-16 pt-6 border-t border-White20 w-full">
+                <div class="mt-16 md:mt-6 pt-6 md:pt-8 border-t border-White20 w-full">
                     <p class="text-body2">Copyright © 2024 Profarma Direct. All Rights Reserved.</p>
                 </div>
             </div>
