@@ -31,12 +31,12 @@
                         </ul>
                     </div>
                     <div class="flex items-center gap-x-8 lg:justify-between lg:w-full xl:gap-x-4">
-                        <a class="flex items-center gap-x-3" href="#">
-                            <i class="phone-header-icon20"></i>
+                        <a class="flex items-center gap-x-3 md:gap-x-2 md:text-body2" href="tel:+107425899611">
+                            <i class="phone-header-icon20 icon-16"></i>
                             <span>07425 899611</span>
                         </a>
-                        <a class="flex items-center gap-x-3" href="#">
-                            <i class="Mail-header-iocn20"></i>
+                        <a class="flex items-center gap-x-3 md:gap-x-2 md:text-body2" href="mailto:info@profarmadirect.com">
+                            <i class="Mail-header-iocn20 icon-16"></i>
                             <span>info@profarmadirect.com</span>
                         </a>
                     </div>
@@ -48,16 +48,16 @@
                 <a class="min-w-[272px] lg:min-w-[204px] lg:w-[204px]" href="index.html">
                     <img width="272" src="img/Logo.svg" alt="Profarma Main Logo">
                 </a>
-                <div class="flex items-center ml-12 w-full relative">
-                    <div x-cloak style="display: none" x-data="{ query: '', results: [], showResults: false, showForm: true, isMobile: 0 }"
+                <div class="flex items-center ml-12 w-full relative lg:hidden">
+                    <div x-data="{ query: '', results: [], showResults: false, showForm: true, isMobile: 0 }"
                          @click.away="showResults = false; showForm = true"
                          x-resize.document="isMobile = $width"
-                         class='flex flex-col w-full pl-1/24 lg:pl-0 transition-all' :style="{display: 'flex'}"
+                         class='flex flex-col w-full pl-1/24 lg:pl-0 transition-all lg:hidden'
                          :class='showForm ? "1" : "2"'>
                         <label for="header-search" class="text-none absolute -z-10">Search</label>
                         <div class='flex items-center relative'>
-                            <div :class="isMobile > 1024 ? '1': 'opacity-0 -z-10'" class="flex items-center w-full">
-                                <div :class='showForm ? "py-2 pl-6 lg:pl-4 pr-16 border opacity-100" : "border-0 p-0 opacity-0"'
+                            <div :class="isMobile > 1024 ? 'dt': 'mob'" class="flex items-center w-full">
+                                <div :class="showForm ? 'py-2 pl-6 lg:pl-4 pr-16 border opacity-100' : 'border-0 p-0 opacity-0'"
                                      class='flex items-center rounded-[40px] lg:pr-[56px] h-[56px] w-full  overflow-hidden transition-all bg-white border-border-2 relative'>
                                     <div class="relative w-full">
                                         <input type="search" id="header-search" name="Search bar"
@@ -67,8 +67,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <button :class='showForm ? "active right-2 clicked w-10 h-10 min-w-10 top-1/2 -translate-y-1/2" : "w-14 min-w-14 h-14 right-0 top-0"'
-                                    class="flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
+                            <button :class='showForm ? "active right-2 clicked w-10 h-10 min-w-10 lg:w-11 lg:h-11 lg:min-w-11 lg:right-0 top-1/2 -translate-y-1/2" : "w-14 min-w-14 h-14 right-0 top-0"'
+                                    class="flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 lg:bg-LagunaBlue lg:border-LagunaBlue border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
                                     @click="showForm = !showForm; showResults = false" aria-label="Search button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                     <path class="group-hover:fill-blue100 transition-all" d="M0.5 10.0438C0.5 4.77292 4.77292 0.5 10.0438 0.5C15.3147 0.5 19.5876 4.77292 19.5876 10.0438C19.5876 15.3147 15.3147 19.5876 10.0438 19.5876C4.77292 19.5876 0.5 15.3147 0.5 10.0438ZM10.0438 2.04764C5.62766 2.04764 2.04764 5.62766 2.04764 10.0438C2.04764 14.4599 5.62766 18.0399 10.0438 18.0399C14.4599 18.0399 18.0399 14.4599 18.0399 10.0438C18.0399 5.62766 14.4599 2.04764 10.0438 2.04764Z" fill="white"/>
@@ -76,7 +76,7 @@
                                 </svg>
                             </button>
                         </div>
-                        <div x-show="showResults && query.length > 0"
+                        <div style="display: none" x-show="showResults && query.length > 0"
                              class="absolute left-0 top-full mt-2 pl-1/24 w-full z-10 lg:pl-0">
                             <div class='bg-white border border-gray-200 rounded-lg shadow-shadow-2 p-6 md:px-4 md:py-5'>
                                 <ul class='flex flex-col gap-y-4 max-h-[226px] overflow-y-auto'>
@@ -115,15 +115,15 @@
                         </a>
                     </div>
                 </div>
-                <button @click="mobileMenuIsOpen = !mobileMenuIsOpen" :aria-expanded="mobileMenuIsOpen"
+                <button id="burger-button" @click="mobileMenuIsOpen = !mobileMenuIsOpen" :aria-expanded="mobileMenuIsOpen"
                         :class="mobileMenuIsOpen ? '0' : null" type="button"
-                        class="w-11 min-w-11 h-11 flex justify-center items-center rounded-full overflow-hidden bg-blue100 minlg:hidden" aria-label="mobile menu"
+                        class="w-11 min-w-11 h-11 flex justify-center items-center rounded-full overflow-hidden bg-blue100 ml-auto minlg:hidden" aria-label="mobile menu"
                         aria-controls="mobileMenu">
-                    <svg x-cloak x-show="!mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="white" aria-hidden="true"
+                    <svg style="display: none" x-cloak x-show="!mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="white" aria-hidden="true"
                          viewBox="0 0 24 24" stroke-width="2" stroke="white" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
                     </svg>
-                    <svg x-cloak x-show="mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="white" aria-hidden="true"
+                    <svg style="display: none" x-cloak x-show="mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="white" aria-hidden="true"
                          viewBox="0 0 24 24" stroke-width="2" stroke="white" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
                     </svg>
@@ -206,13 +206,97 @@
         <!-- Mobile Menu Button -->
 
         <!-- Mobile Menu -->
-        <div x-cloak x-show="mobileMenuIsOpen"
+        <div style="display: none" x-cloak x-show="mobileMenuIsOpen" id="mobile-menu"
              x-transition:enter="transition motion-reduce:transition-none ease-out duration-300"
              x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0"
              x-transition:leave="transition motion-reduce:transition-none ease-out duration-300"
              x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full"
-             class="absolute max-h-svh overflow-x-auto inset-x-0 top-[100%] z-10 flex flex-col divide-x divide-slate-300 rounded-b-xl border-b border-slate-300 bg-slate-100 px-6 pb-6 pt-20">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt, dicta dignissimos et exercitationem iusto laborum magni nemo numquam praesentium quaerat quisquam repellendus reprehenderit sint vitae. Deserunt distinctio error exercitationem?</span>
+             class="absolute min-h-screen minlg:hidden h-full overflow-x-auto inset-x-0 top-[100%] z-[10000] flex flex-col items-center divide-x divide-slate-300 rounded-b-xl border-b border-slate-300 bg-slate-100">
+            <div class="overflow-y-scroll flex flex-col items-center w-full pt-16 pb-[250px] container">
+                <div x-cloak style="display: none" x-data="{ query: '', results: [], showResults: false, showForm: true, isMobile: 0 }"
+                     @click.away="showResults = false; showForm = true"
+                     x-resize.document="isMobile = $width"
+                     class='flex flex-col w-full pl-1/24 lg:pl-0 transition-all relative mb-8' :style="{display: 'flex'}"
+                     :class='showForm ? "1" : "2"'>
+                    <label for="header-search-mob" class="text-none absolute -z-10">Search</label>
+                    <div class='flex items-center relative'>
+                        <div :class="isMobile > 1024 ? 'dt': 'mob'" class="flex items-center w-full">
+                            <div :class="showForm ? 'py-2 pl-6 lg:pl-4 pr-16 border opacity-100' : 'border-0 p-0 opacity-0'"
+                                 class='flex items-center rounded-[40px] lg:pr-[56px] h-[56px] md:h-[52px] w-full  overflow-hidden transition-all bg-white border-border-2 relative'>
+                                <div class="relative w-full">
+                                    <input type="search" id="header-search-mob" name="Search bar"
+                                           placeholder="Type your drug name..." x-model="query"
+                                           @input.debounce.300="fetchResults" @focus="showResults = true"
+                                           class="w-full bg-white border-0 focus:ring-0 focus:bg-transparent focus:border-0 text-base md:text-body2 outline-none p-0 leading-8 transition-colors duration-200 ease-in-out appearance-none">
+                                </div>
+                            </div>
+                        </div>
+                        <button :class='showForm ? "active right-2 clicked w-10 h-10 min-w-10 lg:w-11 lg:h-11 lg:min-w-11 top-1/2 -translate-y-1/2" : "w-14 min-w-14 h-14 right-0 top-0"'
+                                class="flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
+                                @click="showForm = !showForm; showResults = false" aria-label="Search button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path class="group-hover:fill-blue100 transition-all" d="M0.5 10.0438C0.5 4.77292 4.77292 0.5 10.0438 0.5C15.3147 0.5 19.5876 4.77292 19.5876 10.0438C19.5876 15.3147 15.3147 19.5876 10.0438 19.5876C4.77292 19.5876 0.5 15.3147 0.5 10.0438ZM10.0438 2.04764C5.62766 2.04764 2.04764 5.62766 2.04764 10.0438C2.04764 14.4599 5.62766 18.0399 10.0438 18.0399C14.4599 18.0399 18.0399 14.4599 18.0399 10.0438C18.0399 5.62766 14.4599 2.04764 10.0438 2.04764Z" fill="white"/>
+                                <path class="group-hover:fill-blue100 transition-all" d="M15.8016 15.8016C16.1038 15.4994 16.5938 15.4994 16.896 15.8016L21.2734 20.179C21.5755 20.4812 21.5755 20.9712 21.2734 21.2734C20.9712 21.5755 20.4812 21.5755 20.179 21.2734L15.8016 16.896C15.4994 16.5938 15.4994 16.1038 15.8016 15.8016Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div x-show="showResults && query.length > 0"
+                         class="absolute left-0 top-full mt-2 pl-1/24 w-full z-10 lg:pl-0">
+                        <div class='bg-white border border-gray-200 rounded-lg shadow-shadow-2 p-6 md:px-4 md:py-5'>
+                            <ul class='flex flex-col gap-y-4 max-h-[226px] overflow-y-auto'>
+                                <template x-for="result in results" :key="result.id">
+                                    <li class="text-body3 cursor-pointer">
+                                        <a href="#" class="flex items-center gap-x-6 w-full">
+                                            <div class="rounded-6xl flex items-center justify-center overflow-hidden border border-Grey w-[101px] min-w-[101px] h-[101px]">
+                                                <img class="object-cover object-center" src="img/img-product-small-1.png" alt="">
+                                            </div>
+                                            <div class="flex flex-col">
+                                                <span class="mb-3 block font-bold text-base text-DarkBlue100" x-text="result.title"></span>
+                                                <p class="-tracking-018 text-base font-medium text-DarkBlue50" x-text="result.price"></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </template>
+                            </ul>
+                            <a class='text-danger uppercase font-semibold text-body6 tracking-[0.5px] mt-6 block'
+                               href="#">More results</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="flex flex-col gap-y-10 w-full">
+                    <li class="flex items-center justify-center">
+                        <a class="text-base font-semibold text-DarkBlue100 pb-3 menu-item-active" href="index.html">Home</a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a class="text-base font-semibold text-DarkBlue100 pb-3" href="All-conditions.html">Conditions</a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a class="text-base font-semibold text-DarkBlue100 pb-3" href="Shop.html">Shop</a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a class="text-base font-semibold text-DarkBlue100 pb-3" href="Medications-list.html">A-Z Medications</a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a class="text-base font-semibold text-DarkBlue100 pb-3" href="About.html">About Us</a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a class="text-base font-semibold text-DarkBlue100 pb-3" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a class="text-base font-semibold text-DarkBlue100 pb-3" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <a class="button group btn-icons-blue mt-12" href="@@url">
+    <span class="">Login</span>
+    <svg class="ml-2 hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+        <path class="group-hover:fill-white transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#3D65FF"/>
+    </svg>
+    <svg class="ml-2 block" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+        <path class="group-hover:fill-blue100 transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#FFFFFF"/>
+    </svg>
+</a>
+            </div>
         </div>
     </nav>
 

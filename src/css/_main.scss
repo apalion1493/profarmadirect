@@ -19,7 +19,7 @@
   }
 
   &.btn-small {
-    @apply h-[33px] min-h-[33px] text-body2 min-w-[0] px-5
+    @apply h-[33px] min-h-[33px] text-body2 min-w-[0] px-5 md:px-3
   }
 
   &.btn-medium {
@@ -309,8 +309,29 @@
   border-right: 1px solid #05093E1A;
   height: 20px;
   display: block;
+
+  @apply lg:-right-2
 }
 
 .icon-40 {
   @apply md:w-10 md:h-10
+}
+
+.icon-16 {
+  @apply md:w-4 md:h-4 md:min-w-4
+}
+
+.menu-item-active {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 10px);
+    display: block;
+    border-bottom: 2px solid #3D65FF;
+  }
 }

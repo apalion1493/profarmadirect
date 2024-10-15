@@ -67,6 +67,36 @@ window.addEventListener('DOMContentLoaded', () => {
             prevEl: ".swiper-button-prev",
         },
     });
+
+
+
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerButton = document.getElementById('burger-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    // const closeMenuBtn = document.querySelector('.close-mob-menu');
+    // const closeMenuBtnFilter = document.querySelector('.close-mob-menu-filter');
+    // const menuOverlay = document.querySelector('.menu-overlay');
+    // const menuOverlayFilter = document.querySelector('.menu-overlay-filter');
+    // const mobFilterButton = document.querySelector('.mobileFilterButton');
+
+    const toggleMenu = () => {
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('overflow-hidden');
+    };
+
+    burgerButton.addEventListener('click', toggleMenu);
+
+    // if (burgerButton && mobileMenu && closeMenuBtn && menuOverlay) {
+    //     burgerButton.addEventListener('click', toggleMenu);
+    //     closeMenuBtn.addEventListener('click', toggleMenu);
+    //     menuOverlay.addEventListener('click', toggleMenu);
+    //     menuOverlayFilter.addEventListener('click', toggleFilterMenu);
+    //     mobFilterButton.addEventListener('click', toggleFilterMenu);
+    //     closeMenuBtnFilter.addEventListener('click', toggleFilterMenu);
+    // }
+})
+
 
 // TODO test
