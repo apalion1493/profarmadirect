@@ -119,42 +119,57 @@
                         </div>
 
                         @@include('components/Link-icon.html', {
-                        'title': 'Button',
+                        'title': 'All Conditions',
                         'url': '#',
                         'Icon-Blue': 'block',
                         'Icon-White': 'hidden',
-                        'style': 'btn-icons ml-auto',
+                        'style': 'btn-icons ml-auto md:hidden',
                         })
                     </div>
                 </div>
             </div>
-            <div class="row gap-x-8">
-                <div class="col-span-3">
-                    @@include('components/Condition-card.html', {
-                    'Style': '',
-                    'Icon': 'Skin-Care-icon48',
-                    'Title': 'Skin Care',
-                    })
+            <div class="row">
+                <div class="col-span-12">
+                    <div class="swiper condition-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                @@include('components/Condition-card.html', {
+                                'Style': '',
+                                'Icon': 'Skin-Care-icon48',
+                                'Title': 'Skin Care',
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('components/Condition-card.html', {
+                                'Style': '',
+                                'Icon': 'General-Health-icon48',
+                                'Title': 'General Health',
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('components/Condition-card.html', {
+                                'Style': '',
+                                'Icon': 'small-intestine48',
+                                'Title': 'Digestion',
+                                })
+                            </div>
+                            <div class="swiper-slide">
+                                @@include('components/Condition-card.html', {
+                                'Style': '',
+                                'Icon': 'Mens-Health-icon48',
+                                'Title': 'Men’s Health',
+                                })
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-span-3">
-                    @@include('components/Condition-card.html', {
-                    'Style': '',
-                    'Icon': 'General-Health-icon48',
-                    'Title': 'General Health',
-                    })
-                </div>
-                <div class="col-span-3">
-                    @@include('components/Condition-card.html', {
-                    'Style': '',
-                    'Icon': 'small-intestine48',
-                    'Title': 'Digestion',
-                    })
-                </div>
-                <div class="col-span-3">
-                    @@include('components/Condition-card.html', {
-                    'Style': '',
-                    'Icon': 'Mens-Health-icon48',
-                    'Title': 'Men’s Health',
+                <div class="col-span-12">
+                    @@include('components/Link-icon.html', {
+                    'title': 'All Conditions',
+                    'url': '#',
+                    'Icon-Blue': 'block',
+                    'Icon-White': 'hidden',
+                    'style': 'btn-icons mr-auto mt-8 minmd:hidden',
                     })
                 </div>
             </div>

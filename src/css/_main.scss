@@ -247,6 +247,20 @@
   }
 }
 
+.condition-swiper {
+  overflow: inherit;
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  @media (max-width: 639.98px) {
+    .swiper-slide {
+      width: auto;
+    }
+  }
+}
+
 .swiper-zoom-container {
   img {
     @apply hover:cursor-zoom-in
