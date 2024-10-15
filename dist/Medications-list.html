@@ -113,14 +113,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="flex items-center gap-x-8 lg:justify-between lg:w-full xl:gap-x-4">
-                        <a class="flex items-center gap-x-3 md:gap-x-2 md:text-body2" href="tel:+107425899611">
+                    <div class="flex items-center gap-x-8 lg:justify-between lg:w-full xl:gap-x-4 lg:gap-x-2">
+                        <a class="flex items-center gap-x-3 md:gap-x-2 md:text-body4" href="tel:+107425899611">
                             <i class="phone-header-icon20 icon-16"></i>
-                            <span>07425 899611</span>
+                            <span class="md:text-body4">07425 899611</span>
                         </a>
-                        <a class="flex items-center gap-x-3 md:gap-x-2 md:text-body2" href="mailto:info@profarmadirect.com">
+                        <a class="flex items-center gap-x-3 md:gap-x-2 md:text-body4" href="mailto:info@profarmadirect.com">
                             <i class="Mail-header-iocn20 icon-16"></i>
-                            <span>info@profarmadirect.com</span>
+                            <span class="md:text-body4">info@profarmadirect.com</span>
                         </a>
                     </div>
                 </div>
@@ -386,7 +386,7 @@
 </header>
 
     <section x-data="{
-                activeFilters: [],
+               activeFilters: [],
                 toggleFilter(event) {
                     const value = event.target.value;
                     if (event.target.checked) {
@@ -414,32 +414,110 @@
                 </div>
                 <div class="col-span-12">
                     <div class="checkboxes-alphabet-list">
-                        <label><input type="checkbox" value="A" @change="toggleFilter($event)"> A</label>
-                        <label><input type="checkbox" value="B" @change="toggleFilter($event)"> B</label>
-                        <label><input type="checkbox" value="C" @change="toggleFilter($event)"> C</label>
-                        <label><input type="checkbox" value="D" @change="toggleFilter($event)"> D</label>
-                        <label><input type="checkbox" value="E" @change="toggleFilter($event)"> E</label>
-                        <label><input type="checkbox" value="F" @change="toggleFilter($event)"> F</label>
-                        <label><input type="checkbox" value="G" @change="toggleFilter($event)"> G</label>
-                        <label><input type="checkbox" value="H" @change="toggleFilter($event)"> H</label>
-                        <label><input type="checkbox" value="I" @change="toggleFilter($event)"> I</label>
-                        <label><input type="checkbox" value="J" @change="toggleFilter($event)"> J</label>
-                        <label><input type="checkbox" value="K" @change="toggleFilter($event)"> K</label>
-                        <label><input type="checkbox" value="L" @change="toggleFilter($event)"> L</label>
-                        <label><input type="checkbox" value="M" @change="toggleFilter($event)"> M</label>
-                        <label><input type="checkbox" value="N" @change="toggleFilter($event)"> N</label>
-                        <label><input type="checkbox" value="O" @change="toggleFilter($event)"> O</label>
-                        <label><input type="checkbox" value="P" @change="toggleFilter($event)"> P</label>
-                        <label><input type="checkbox" value="Q" @change="toggleFilter($event)"> Q</label>
-                        <label><input type="checkbox" value="R" @change="toggleFilter($event)"> R</label>
-                        <label><input type="checkbox" value="S" @change="toggleFilter($event)"> S</label>
-                        <label><input type="checkbox" value="T" @change="toggleFilter($event)"> T</label>
-                        <label><input type="checkbox" value="U" @change="toggleFilter($event)"> U</label>
-                        <label><input type="checkbox" value="V" @change="toggleFilter($event)"> V</label>
-                        <label><input type="checkbox" value="W" @change="toggleFilter($event)"> W</label>
-                        <label><input type="checkbox" value="X" @change="toggleFilter($event)"> X</label>
-                        <label><input type="checkbox" value="Y" @change="toggleFilter($event)"> Y</label>
-                        <label><input type="checkbox" value="Z" @change="toggleFilter($event)"> Z</label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('A')}">
+                            <input type="checkbox" value="A" @change="toggleFilter($event)">
+                            <span>A</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('B')}">
+                            <input type="checkbox" value="B" @change="toggleFilter($event)">
+                            <span>B</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('C')}">
+                            <input type="checkbox" value="C" @change="toggleFilter($event)">
+                            <span>C</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('D')}">
+                            <input type="checkbox" value="D" @change="toggleFilter($event)">
+                            <span>D</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('E')}">
+                            <input type="checkbox" value="E" @change="toggleFilter($event)">
+                            <span>E</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('F')}">
+                            <input type="checkbox" value="F" @change="toggleFilter($event)">
+                            <span>F</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('G')}">
+                            <input type="checkbox" value="G" @change="toggleFilter($event)">
+                            <span>G</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('H')}">
+                            <input type="checkbox" value="H" @change="toggleFilter($event)">
+                            <span>H</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('I')}">
+                            <input type="checkbox" value="I" @change="toggleFilter($event)">
+                            <span>I</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('J')}">
+                            <input type="checkbox" value="J" @change="toggleFilter($event)">
+                            <span>J</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('K')}">
+                            <input type="checkbox" value="K" @change="toggleFilter($event)">
+                            <span>K</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('L')}">
+                            <input type="checkbox" value="L" @change="toggleFilter($event)">
+                            <span>L</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('M')}">
+                            <input type="checkbox" value="M" @change="toggleFilter($event)">
+                            <span>M</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('N')}">
+                            <input type="checkbox" value="N" @change="toggleFilter($event)">
+                            <span>N</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('O')}">
+                            <input type="checkbox" value="O" @change="toggleFilter($event)">
+                            <span>O</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('P')}">
+                            <input type="checkbox" value="P" @change="toggleFilter($event)">
+                            <span>P</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('Q')}">
+                            <input type="checkbox" value="Q" @change="toggleFilter($event)">
+                            <span>Q</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('R')}">
+                            <input type="checkbox" value="R" @change="toggleFilter($event)">
+                            <span>R</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('S')}">
+                            <input type="checkbox" value="S" @change="toggleFilter($event)">
+                            <span>S</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('T')}">
+                            <input type="checkbox" value="T" @change="toggleFilter($event)">
+                            <span>T</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('U')}">
+                            <input type="checkbox" value="U" @change="toggleFilter($event)">
+                            <span>U</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('V')}">
+                            <input type="checkbox" value="V" @change="toggleFilter($event)">
+                            <span>V</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('W')}">
+                            <input type="checkbox" value="W" @change="toggleFilter($event)">
+                            <span>W</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('X')}">
+                            <input type="checkbox" value="X" @change="toggleFilter($event)">
+                            <span>X</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('Y')}">
+                            <input type="checkbox" value="Y" @change="toggleFilter($event)">
+                            <span>Y</span>
+                        </label>
+                        <label :class="{'bg-blue-500 text-white': activeFilters.includes('Z')}">
+                            <input disabled type="checkbox" value="Z" @change="toggleFilter($event)">
+                            <span>Z</span>
+                        </label>
                     </div>
                 </div>
             </div>

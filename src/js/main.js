@@ -55,7 +55,23 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const swiper4 = new Swiper(".swiper-blog", {
         slidesPerView: 3,
-        spaceBetween: 32
+        spaceBetween: 32,
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 32,
+            },
+            768: {
+                slidesPerView: "auto",
+            },
+            640: {
+                slidesPerView: "auto",
+            },
+            100: {
+                slidesPerView: "auto",
+                spaceBetween: 20,
+            }
+        }
     });
 
     const swiper5 = new Swiper('.swiper-brands', {

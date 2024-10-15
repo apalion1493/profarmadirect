@@ -166,6 +166,24 @@
   @apply flex flex-wrap gap-2 mx-auto w-full justify-center mt-10
 }
 
+.checkboxes-alphabet-list label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkboxes-alphabet-list label.bg-blue-500 {
+  background-color: #32CDD7; /* Синий фон при активации */
+  color: #fff;
+}
+
+/* Стиль для отключенных кнопок */
+.checkboxes-alphabet-list input:disabled + span {
+  background-color: #F9FBFF; /* Серый фон для отключенной кнопки */
+  color: #05093E1A; /* Текст серого цвета */
+  cursor: not-allowed;
+}
+
 // Pagination Start
 
 .pagination-button {
@@ -289,8 +307,16 @@
 }
 
 .swiper-blog {
+  overflow: inherit;
+
   .swiper-slide {
     height: auto;
+  }
+
+  @media (max-width: 1023.98px) {
+    .swiper-slide {
+      width: auto;
+    }
   }
 }
 
