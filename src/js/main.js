@@ -84,6 +84,11 @@ window.addEventListener('DOMContentLoaded', () => {
         },
     });
 
+    const swiper6 = new Swiper('.checkboxes-alphabet-list--swiper', {
+        slidesPerView: "auto",
+        spaceBetween: 8,
+    })
+
     const conditionSwiper = new Swiper(".condition-swiper", {
         slidesPerView: 4,
         spaceBetween: 32,

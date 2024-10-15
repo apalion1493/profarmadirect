@@ -150,17 +150,35 @@
 //
 
 .alphabet-list > div {
-  flex: 1 0 23%;
-  max-width: 23%;
+  max-width: calc(25% - 24px);
+  width: 100%;
+
+  @media (max-width: 1023.98px) {
+    max-width: calc(33% - 20px);
+  }
+
+  @media (max-width: 767.98px) {
+    max-width: calc(50% - 16px);
+  }
+
+  @media (max-width: 639.98px) {
+    max-width: 100%;
+  }
 }
 
 .checkboxes-alphabet-list {
+  overflow: inherit;
+
   input {
     @apply hidden
   }
 
   label {
     @apply w-10 min-w-10 h-10 flex items-center justify-center border border-DarkBlue30 rounded-full overflow-hidden bg-Backgroung cursor-pointer
+  }
+
+  .swiper-slide {
+    width: auto;
   }
 
   @apply flex flex-wrap gap-2 mx-auto w-full justify-center mt-10
@@ -174,6 +192,7 @@
 
 .checkboxes-alphabet-list label.bg-blue-500 {
   background-color: #32CDD7; /* Синий фон при активации */
+  border-color: #32CDD7;
   color: #fff;
 }
 

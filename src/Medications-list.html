@@ -27,7 +27,7 @@
             }"
              class="section">
         <div class="container">
-            <div class="row gap-x-8">
+            <div class="row">
                 <div class="col-span-12">
                     <div class="flex flex-col items-center max-w-[944px] mx-auto">
                         @@include('components/Title-small.html', {
@@ -42,7 +42,31 @@
                     </div>
                 </div>
                 <div class="col-span-12">
-                    <div class="checkboxes-alphabet-list">
+                    <div x-data="{ query: '' }"
+                         class='flex flex-col w-full mt-10 lg:mt-8 transition-all'>
+                        <label for="header-search" class="text-none absolute -z-10">Search</label>
+                        <div class='flex items-center relative'>
+                            <div class="flex items-center w-full">
+                                <div class='flex items-center rounded-[40px] lg:pr-[56px] h-[56px] w-full py-2 pl-6 lg:pl-4 pr-16 border opacity-100 overflow-hidden transition-all bg-white border-border-2 relative'>
+                                    <div class="relative w-full">
+                                        <input type="search" id="header-search" name="Search bar"
+                                               placeholder="Type your drug name..." x-model="query"
+                                               class="w-full bg-white border-0 md:text-body2 focus:ring-0 focus:bg-transparent focus:border-0 text-base outline-none p-0 leading-8 transition-colors duration-200 ease-in-out appearance-none">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary right-2 clicked w-10 h-10 min-w-10 lg:w-11 lg:h-11 lg:min-w-11 top-1/2 -translate-y-1/2"
+                                    type="button" aria-label="Search button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                    <path class="group-hover:fill-blue100 transition-all" d="M0.5 10.0438C0.5 4.77292 4.77292 0.5 10.0438 0.5C15.3147 0.5 19.5876 4.77292 19.5876 10.0438C19.5876 15.3147 15.3147 19.5876 10.0438 19.5876C4.77292 19.5876 0.5 15.3147 0.5 10.0438ZM10.0438 2.04764C5.62766 2.04764 2.04764 5.62766 2.04764 10.0438C2.04764 14.4599 5.62766 18.0399 10.0438 18.0399C14.4599 18.0399 18.0399 14.4599 18.0399 10.0438C18.0399 5.62766 14.4599 2.04764 10.0438 2.04764Z" fill="white"/>
+                                    <path class="group-hover:fill-blue100 transition-all" d="M15.8016 15.8016C16.1038 15.4994 16.5938 15.4994 16.896 15.8016L21.2734 20.179C21.5755 20.4812 21.5755 20.9712 21.2734 21.2734C20.9712 21.5755 20.4812 21.5755 20.179 21.2734L15.8016 16.896C15.4994 16.5938 15.4994 16.1038 15.8016 15.8016Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12">
+                    <div class="checkboxes-alphabet-list md:hidden">
                         <label :class="{'bg-blue-500 text-white': activeFilters.includes('A')}">
                             <input type="checkbox" value="A" @change="toggleFilter($event)">
                             <span>A</span>
@@ -148,12 +172,172 @@
                             <span>Z</span>
                         </label>
                     </div>
+                    <div class="swiper checkboxes-alphabet-list checkboxes-alphabet-list--swiper minmd:hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <label :class="{'bg-blue-500 text-white': activeFilters.includes('A')}">
+                                    <input type="checkbox" value="A" @change="toggleFilter($event)">
+                                    <span>A</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label :class="{'bg-blue-500 text-white': activeFilters.includes('B')}">
+                                    <input type="checkbox" value="B" @change="toggleFilter($event)">
+                                    <span>B</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label :class="{'bg-blue-500 text-white': activeFilters.includes('C')}">
+                                    <input type="checkbox" value="C" @change="toggleFilter($event)">
+                                    <span>C</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                 <label :class="{'bg-blue-500 text-white': activeFilters.includes('D')}">
+                                    <input type="checkbox" value="D" @change="toggleFilter($event)">
+                                    <span>D</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                 <label :class="{'bg-blue-500 text-white': activeFilters.includes('E')}">
+                                    <input type="checkbox" value="E" @change="toggleFilter($event)">
+                                    <span>E</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label :class="{'bg-blue-500 text-white': activeFilters.includes('F')}">
+                                    <input type="checkbox" value="F" @change="toggleFilter($event)">
+                                    <span>F</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                 <label :class="{'bg-blue-500 text-white': activeFilters.includes('G')}">
+                                    <input type="checkbox" value="G" @change="toggleFilter($event)">
+                                    <span>G</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                 <label :class="{'bg-blue-500 text-white': activeFilters.includes('H')}">
+                                    <input type="checkbox" value="H" @change="toggleFilter($event)">
+                                    <span>H</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label :class="{'bg-blue-500 text-white': activeFilters.includes('I')}">
+                                    <input type="checkbox" value="I" @change="toggleFilter($event)">
+                                    <span>I</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                 <label :class="{'bg-blue-500 text-white': activeFilters.includes('J')}">
+                                    <input type="checkbox" value="J" @change="toggleFilter($event)">
+                                    <span>J</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                  <label :class="{'bg-blue-500 text-white': activeFilters.includes('K')}">
+                                    <input type="checkbox" value="K" @change="toggleFilter($event)">
+                                    <span>K</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                 <label :class="{'bg-blue-500 text-white': activeFilters.includes('L')}">
+                                    <input type="checkbox" value="L" @change="toggleFilter($event)">
+                                    <span>L</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                  <label :class="{'bg-blue-500 text-white': activeFilters.includes('M')}">
+                                    <input type="checkbox" value="M" @change="toggleFilter($event)">
+                                    <span>M</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                  <label :class="{'bg-blue-500 text-white': activeFilters.includes('N')}">
+                                    <input type="checkbox" value="N" @change="toggleFilter($event)">
+                                    <span>N</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                  <label :class="{'bg-blue-500 text-white': activeFilters.includes('O')}">
+                                    <input type="checkbox" value="O" @change="toggleFilter($event)">
+                                    <span>O</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                  <label :class="{'bg-blue-500 text-white': activeFilters.includes('P')}">
+                                    <input type="checkbox" value="P" @change="toggleFilter($event)">
+                                    <span>P</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                 <label :class="{'bg-blue-500 text-white': activeFilters.includes('Q')}">
+                                    <input type="checkbox" value="Q" @change="toggleFilter($event)">
+                                    <span>Q</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                 <label :class="{'bg-blue-500 text-white': activeFilters.includes('R')}">
+                                    <input type="checkbox" value="R" @change="toggleFilter($event)">
+                                    <span>R</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label :class="{'bg-blue-500 text-white': activeFilters.includes('S')}">
+                                    <input type="checkbox" value="S" @change="toggleFilter($event)">
+                                    <span>S</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label :class="{'bg-blue-500 text-white': activeFilters.includes('T')}">
+                                    <input type="checkbox" value="T" @change="toggleFilter($event)">
+                                    <span>T</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label :class="{'bg-blue-500 text-white': activeFilters.includes('U')}">
+                                    <input type="checkbox" value="U" @change="toggleFilter($event)">
+                                    <span>U</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label :class="{'bg-blue-500 text-white': activeFilters.includes('V')}">
+                                    <input type="checkbox" value="V" @change="toggleFilter($event)">
+                                    <span>V</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                 <label :class="{'bg-blue-500 text-white': activeFilters.includes('W')}">
+                                    <input type="checkbox" value="W" @change="toggleFilter($event)">
+                                    <span>W</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                  <label :class="{'bg-blue-500 text-white': activeFilters.includes('X')}">
+                                    <input type="checkbox" value="X" @change="toggleFilter($event)">
+                                    <span>X</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                  <label :class="{'bg-blue-500 text-white': activeFilters.includes('Y')}">
+                                    <input type="checkbox" value="Y" @change="toggleFilter($event)">
+                                    <span>Y</span>
+                                </label>
+                            </div>
+                            <div class="swiper-slide">
+                                <label :class="{'bg-blue-500 text-white': activeFilters.includes('Z')}">
+                                    <input disabled type="checkbox" value="Z" @change="toggleFilter($event)">
+                                    <span>Z</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row mt-10">
                 <div class="col-span-12">
                     <div class="flex flex-wrap justify-center gap-8 alphabet-list">
-                        <div class="" x-show="isVisible('A')">
+                        <div x-show="isVisible('A')">
                             @@include('components/Alphabet-card.html', {
                             'style': '',
                             'Title': 'A',

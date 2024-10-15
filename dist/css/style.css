@@ -4893,11 +4893,27 @@ p{
 }
 
 .alphabet-list > div {
-  flex: 1 0 23%;
-  max-width: 23%;
+  max-width: calc(25% - 24px);
+  width: 100%;
+}
+@media (max-width: 1023.98px) {
+  .alphabet-list > div {
+    max-width: calc(33% - 20px);
+  }
+}
+@media (max-width: 767.98px) {
+  .alphabet-list > div {
+    max-width: calc(50% - 16px);
+  }
+}
+@media (max-width: 639.98px) {
+  .alphabet-list > div {
+    max-width: 100%;
+  }
 }
 
 .checkboxes-alphabet-list {
+  overflow: inherit;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2.5rem;
@@ -4906,21 +4922,30 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.5rem;
-  }
+}
 .checkboxes-alphabet-list input{
   display: none;
 }
 .checkboxes-alphabet-list label{
+  display: flex;
   height: 2.5rem;
   width: 2.5rem;
   min-width: 2.5rem;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   border-radius: 9999px;
   border-width: 1px;
   border-color: #05093E4D;
   --tw-bg-opacity: 1;
   background-color: rgb(249 251 255 / var(--tw-bg-opacity));
+}
+.checkboxes-alphabet-list .swiper-slide {
+  width: auto;
+}
+
+.checkboxes-alphabet-list label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4928,6 +4953,7 @@ p{
 
 .checkboxes-alphabet-list label.bg-blue-500 {
   background-color: #32CDD7; /* Синий фон при активации */
+  border-color: #32CDD7;
   color: #fff;
 }
 
@@ -5629,6 +5655,9 @@ p{
   }
   .lg\:p-0{
     padding: 0px;
+  }
+  .lg\:p-5{
+    padding: 1.25rem;
   }
   .lg\:px-4{
     padding-left: 1rem;
