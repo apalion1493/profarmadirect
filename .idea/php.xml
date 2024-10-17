@@ -11,6 +11,7 @@
     <option name="transferred" value="true" />
   </component>
   <component name="PhpStanOptionsConfiguration">
+    <option name="memoryLimit" value="4G" />
     <option name="transferred" value="true" />
   </component>
   <component name="PsalmOptionsConfiguration">
