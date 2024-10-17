@@ -386,14 +386,16 @@
 </header>
 
     <section class="relative">
-        <div class="hero-bg rounded-b-4xl overflow-hidden w-full h-full bg-center bg-cover absolute top-0 -left-1/2 translate-x-1/2" style="background-image: url(img/img-hero-block.png);"></div>
+        <div class="hero-bg rounded-b-4xl overflow-hidden w-full h-full bg-center bg-cover absolute top-0 -left-1/2 translate-x-1/2"
+             style="background-image: url(img/img-hero-block.png);"></div>
         <div class="container py-16 relative">
             <div class="row">
                 <div class="col-span-12">
                     <div class="flex flex-col">
                         <div class="flex flex-col gap-y-5 items-center mx-auto max-w-[724px] text-white mb-16">
                             <span class="text-center uppercase italic font-semibold text-body2 md:text-body4">WELCOME TO PROFARMADIRECT</span>
-                            <h1 class="text-center text-h1 font-bold lg:text-Top4">Holistic wellness for optimal living</h1>
+                            <h1 class="text-center text-h1 font-bold lg:text-Top4">Holistic wellness for optimal
+                                living</h1>
                             <span class="text-center -tracking-018 text-base font-medium">Welcome to Pro forma Direct a modern online pharmacy committed to providing top-quality pharmaceutical care. </span>
                         </div>
 
@@ -415,10 +417,16 @@
                                     </div>
                                     <button :class='showForm ? "active right-2 clicked w-10 h-10 min-w-10 top-1/2 -translate-y-1/2" : "w-14 min-w-14 h-14 right-0 top-0"'
                                             class="flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
-                                            @click="showForm = !showForm; showResults = false" aria-label="Search button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                            <path class="group-hover:fill-blue100 transition-all" d="M0.5 10.0438C0.5 4.77292 4.77292 0.5 10.0438 0.5C15.3147 0.5 19.5876 4.77292 19.5876 10.0438C19.5876 15.3147 15.3147 19.5876 10.0438 19.5876C4.77292 19.5876 0.5 15.3147 0.5 10.0438ZM10.0438 2.04764C5.62766 2.04764 2.04764 5.62766 2.04764 10.0438C2.04764 14.4599 5.62766 18.0399 10.0438 18.0399C14.4599 18.0399 18.0399 14.4599 18.0399 10.0438C18.0399 5.62766 14.4599 2.04764 10.0438 2.04764Z" fill="white"/>
-                                            <path class="group-hover:fill-blue100 transition-all" d="M15.8016 15.8016C16.1038 15.4994 16.5938 15.4994 16.896 15.8016L21.2734 20.179C21.5755 20.4812 21.5755 20.9712 21.2734 21.2734C20.9712 21.5755 20.4812 21.5755 20.179 21.2734L15.8016 16.896C15.4994 16.5938 15.4994 16.1038 15.8016 15.8016Z" fill="white"/>
+                                            @click="showForm = !showForm; showResults = false"
+                                            aria-label="Search button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                             viewBox="0 0 22 22" fill="none">
+                                            <path class="group-hover:fill-blue100 transition-all"
+                                                  d="M0.5 10.0438C0.5 4.77292 4.77292 0.5 10.0438 0.5C15.3147 0.5 19.5876 4.77292 19.5876 10.0438C19.5876 15.3147 15.3147 19.5876 10.0438 19.5876C4.77292 19.5876 0.5 15.3147 0.5 10.0438ZM10.0438 2.04764C5.62766 2.04764 2.04764 5.62766 2.04764 10.0438C2.04764 14.4599 5.62766 18.0399 10.0438 18.0399C14.4599 18.0399 18.0399 14.4599 18.0399 10.0438C18.0399 5.62766 14.4599 2.04764 10.0438 2.04764Z"
+                                                  fill="white"/>
+                                            <path class="group-hover:fill-blue100 transition-all"
+                                                  d="M15.8016 15.8016C16.1038 15.4994 16.5938 15.4994 16.896 15.8016L21.2734 20.179C21.5755 20.4812 21.5755 20.9712 21.2734 21.2734C20.9712 21.5755 20.4812 21.5755 20.179 21.2734L15.8016 16.896C15.4994 16.5938 15.4994 16.1038 15.8016 15.8016Z"
+                                                  fill="white"/>
                                         </svg>
                                     </button>
                                 </div>
@@ -430,11 +438,14 @@
                                                 <li class="text-body3 cursor-pointer">
                                                     <a href="#" class="flex items-center gap-x-6 w-full">
                                                         <div class="rounded-6xl flex items-center justify-center overflow-hidden border border-Grey w-[101px] min-w-[101px] h-[101px]">
-                                                            <img class="object-cover object-center" src="img/img-product-small-1.png" alt="">
+                                                            <img class="object-cover object-center"
+                                                                 src="img/img-product-small-1.png" alt="">
                                                         </div>
                                                         <div class="flex flex-col">
-                                                            <span class="mb-3 block font-bold text-base text-DarkBlue100" x-text="result.title"></span>
-                                                            <p class="-tracking-018 text-base font-medium text-DarkBlue50" x-text="result.price"></p>
+                                                            <span class="mb-3 block font-bold text-base text-DarkBlue100"
+                                                                  x-text="result.title"></span>
+                                                            <p class="-tracking-018 text-base font-medium text-DarkBlue50"
+                                                               x-text="result.price"></p>
                                                         </div>
                                                     </a>
                                                 </li>
@@ -618,27 +629,34 @@
     </section>
     <section class="section">
         <div class="container">
-            <div class="row gap-x-8">
-                <div class="col-span-6">
+            <div class="row gap-x-8 lg:gap-x-0">
+                <div class="col-span-6 lg:col-span-12 lg:hidden">
                     <div class="relative w-full">
                         <div class="bg-color-5 rounded-4xl absolute -bottom-[64px] left-0 max-w-[80%]"></div>
-                        <img class="relative max-w-[90%] z-[1] ml-auto rounded-4xl" width="608" src="img/doctor-team-meeting-doctr-x-webflow-template-p-800.png" alt="doctor team meeting">
+                        <img class="relative max-w-[90%] z-[1] ml-auto rounded-4xl" width="608"
+                             src="img/doctor-team-meeting-doctr-x-webflow-template-p-800.png" alt="doctor team meeting">
                     </div>
                 </div>
-                <div class="col-span-6">
-                    <div class="max-w-[560px] ml-auto flex flex-col gap-y-10">
-                       <div class="flex flex-col">
-                           <span class="uppercase text-body2 text-blue100 font-bold block mb-3">About us</span>
-                           <h3 class="main-title">
-                               Profarma Direct
-                           </h3>
-                       </div>
+                <div class="col-span-6 lg:col-span-12">
+                    <div class="max-w-[560px] lg:max-w-full ml-auto flex flex-col gap-y-10 md:gap-y-6">
+                        <div class="flex flex-col">
+                            <span class="uppercase text-body2 text-blue100 font-bold block mb-3 md:mb-2">About us</span>
+                            <h3 class="main-title">
+                                Profarma Direct
+                            </h3>
+                        </div>
                         <div>
                             <p>We provide easy access to affordable medications and healthcare solutions, delivered
                                 right to your doorstep. With
                                 a mission to ensure reliable healthcare without compromising on quality or convenience,
                                 we are here to support you every step of the way.</p>
                             <br>
+                            <div class="relative w-full minlg:hidden mt-8 mb-14">
+                                <div class="bg-color-5 rounded-4xl absolute -bottom-[24px] left-0 max-w-[80%]"></div>
+                                <img class="relative max-w-[95%] z-[1] ml-auto rounded-4xl" width="608"
+                                     src="img/doctor-team-meeting-doctr-x-webflow-template-p-800.png"
+                                     alt="doctor team meeting">
+                            </div>
                             <p>Experience the convenience, affordability, and peace of mind that come with choosing
                                 Profarma Direct as your trusted online pharmacy in Lancashire. Whether you have
                                 questions about your medication, need advice on managing your health conditions, or
@@ -661,7 +679,7 @@
                                 <p class="-tracking-018 text-base font-medium text-DarkBlue50">Happy Customers</p>
                             </div>
                         </div>
-                        <a class="button group btn-icons" href="#">
+                        <a class="button group btn-icons md:w-full" href="#">
     <span class="">More About</span>
     <svg class="ml-2 block" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
         <path class="group-hover:fill-white transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#3D65FF"/>
@@ -681,17 +699,17 @@
             <div class="row pt-16">
                 <div class="col-span-12">
                     <div class="flex flex-col">
-                        <div class="flex flex-col items-center mx-auto max-w-[560px]">
-                            <span class="uppercase text-body2 text-blue100 font-bold block mb-3">How it works</span>
-                            <h3 class="main-title text-center mb-10">
+                        <div class="flex flex-col items-center md:items-start md:max-w-full md:ml-0 mx-auto max-w-[560px]">
+                            <span class="uppercase text-body2 text-blue100 font-bold block mb-3 md:mb-2">How it works</span>
+                            <h3 class="main-title text-center mb-10 md:mb-8">
                                 How it works
                             </h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row pb-16 gap-x-8">
-                <div class="col-span-4">
+            <div class="row pb-16 gap-x-8 lg:gap-x-0 lg:gap-y-5">
+                <div class="col-span-4 lg:col-span-12">
                     <article class="flex flex-col w-full h-full items-center py-8 px-6 md:px-4 md:py-5 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl ">
     <div class="rounded-full w-[91px] h-[91px] md:w-[72px] md:h-[72px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
         <i class="icon-40 Consultation-icon48"></i>
@@ -700,7 +718,7 @@
     <p class="text-center text-base text-DarkBlue50 md:text-body">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
 </article>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-4 lg:col-span-12">
                     <article class="flex flex-col w-full h-full items-center py-8 px-6 md:px-4 md:py-5 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl ">
     <div class="rounded-full w-[91px] h-[91px] md:w-[72px] md:h-[72px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
         <i class="icon-40 Digestion-icon48"></i>
@@ -709,7 +727,7 @@
     <p class="text-center text-base text-DarkBlue50 md:text-body">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
 </article>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-4 lg:col-span-12">
                     <article class="flex flex-col w-full h-full items-center py-8 px-6 md:px-4 md:py-5 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl ">
     <div class="rounded-full w-[91px] h-[91px] md:w-[72px] md:h-[72px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
         <i class="icon-40 Approve-icon48"></i>
@@ -724,36 +742,38 @@
     </section>
     <section class="section">
         <div class="container">
-            <div class="row gap-x-8">
-                <div class="col-span-6">
-                    <div class="flex flex-col max-w-[560px]">
-                        <span class="uppercase text-body2 text-blue100 font-bold block mb-3">FAQ</span>
-                        <h3 class="main-title mb-10">
+            <div class="row gap-x-8 lg:gap-y-8 lg:gap-x-0">
+                <div class="col-span-6 lg:col-span-12">
+                    <div class="flex flex-col max-w-[560px] lg:max-w-full">
+                        <span class="uppercase text-body2 text-blue100 font-bold block mb-3 md:mb-2">FAQ</span>
+                        <h3 class="main-title mb-10 md:mb-8">
                             Frequently Asked <br>
                             Questions
                         </h3>
 
                         <div class="flex flex-col gap-y-4">
-                            <div x-data="{ isExpanded: true }" :class="isExpanded ? 'shadow-6xl'  : ' '"
-                                 class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                            <div x-data="{ isExpanded: true }"
+                                 :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
+                                 class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                                 <button id="controlsAccordionItem1" type="button"
-                                        class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                        class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                         aria-controls="accordionItem1" @click="isExpanded = ! isExpanded"
                                         :class="isExpanded ? '1'  : '2'"
                                         :aria-expanded="isExpanded ? 'true' : 'false'">
                                     Can i reorder my prescription?
-                                    <span class="flex items-center justify-center">
-                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
-                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
-                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
-                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                         fill="none">
-                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
-                                              fill="#3D65FF"/>
-                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
-                                              fill="#3D65FF"/>
-                                    </svg>
-                                </span>
+                                    <span class="flex items-center justify-center ml-2">
+                                        <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
+                                              :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                        <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
+                                             xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                             viewBox="0 0 20 20"
+                                             fill="none">
+                                            <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
+                                                  fill="#3D65FF"/>
+                                            <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
+                                                  fill="#3D65FF"/>
+                                        </svg>
+                                    </span>
                                 </button>
                                 <div x-cloak x-show="isExpanded" id="accordionItem1"
                                      aria-labelledby="controlsAccordionItem1" x-collapse>
@@ -765,15 +785,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '"
-                                 class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                            <div x-data="{ isExpanded: false }"
+                                 :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
+                                 class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                                 <button id="controlsAccordionItem2" type="button"
-                                        class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                        class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                         aria-controls="accordionItem2" @click="isExpanded = ! isExpanded"
                                         :class="isExpanded ? '1'  : '2'"
                                         :aria-expanded="isExpanded ? 'true' : 'false'">
                                     What browsers are supported?
-                                    <span class="flex items-center justify-center">
+                                    <span class="flex items-center justify-center ml-2">
                                     <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
                                           :class="isExpanded  ?  'block'  :  'hidden'"></span>
                                     <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
@@ -796,15 +817,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '"
-                                 class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                            <div x-data="{ isExpanded: false }"
+                                 :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
+                                 class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                                 <button id="controlsAccordionItem3" type="button"
-                                        class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                        class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                         aria-controls="accordionItem3" @click="isExpanded = ! isExpanded"
                                         :class="isExpanded ? '1'  : '2'"
                                         :aria-expanded="isExpanded ? 'true' : 'false'">
                                     What browsers are supported?
-                                    <span class="flex items-center justify-center">
+                                    <span class="flex items-center justify-center ml-2">
                                     <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
                                           :class="isExpanded  ?  'block'  :  'hidden'"></span>
                                     <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
@@ -827,15 +849,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div x-data="{ isExpanded: false }" :class="isExpanded ? 'shadow-6xl'  : ' '"
-                                 class="p-6 bg-white border border-blue20 rounded-[20px] overflow-hidden">
+                            <div x-data="{ isExpanded: false }"
+                                 :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
+                                 class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
                                 <button id="controlsAccordionItem4" type="button"
-                                        class="flex w-full items-center justify-between text-left text-Top3 font-bold"
+                                        class="flex w-full items-center justify-between text-left text-Top3 md:text-base font-bold"
                                         aria-controls="accordionItem4" @click="isExpanded = ! isExpanded"
                                         :class="isExpanded ? '1'  : '2'"
                                         :aria-expanded="isExpanded ? 'true' : 'false'">
                                     What browsers are supported?
-                                    <span class="flex items-center justify-center">
+                                    <span class="flex items-center justify-center ml-2">
                                     <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
                                           :class="isExpanded  ?  'block'  :  'hidden'"></span>
                                     <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
@@ -861,12 +884,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-6">
-                    <div class="relative w-full">
-                        <div class="bg-color-5 rounded-4xl absolute -bottom-[64px] right-0 max-w-[80%]"></div>
-                        <img width="610" class="max-h-full object-center object-cover rounded-4xl max-w-[90%] relative z-[1]" src="img/care-your-loved-ones-image-doctr-x-webflow-template-p-800.png"
+                <div class="col-span-6 lg:col-span-12">
+                    <div class="relative w-full md:mb-6">
+                        <div class="bg-color-5 rounded-4xl absolute -bottom-[64px] md:-bottom-6 right-0 max-w-[80%]"></div>
+                        <img width="610"
+                             class="max-h-full object-center object-cover rounded-4xl max-w-[90%] md:max-w-[94%] relative z-[1]"
+                             src="img/care-your-loved-ones-image-doctr-x-webflow-template-p-800.png"
                              alt="Care your loved ones image doctor">
                     </div>
+                    <a class="button group btn-icons mr-auto w-full mt-12 minmd:hidden" href="FAQs.html">
+    <span class="">More Questions</span>
+    <svg class="ml-2 block" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+        <path class="group-hover:fill-white transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#3D65FF"/>
+    </svg>
+    <svg class="ml-2 hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+        <path class="group-hover:fill-blue100 transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#FFFFFF"/>
+    </svg>
+</a>
                 </div>
             </div>
         </div>
@@ -876,197 +910,199 @@
             <div class="row">
                 <div class="col-span-12">
                     <div class="flex flex-col">
-                        <span class="block mx-auto text-center mb-10 text-Top1 font-bold">Shop by Top manyfacturers</span>
+                        <span class="block mx-auto text-center mb-10 md:mb-8 text-Top1 font-bold">Shop by Top manyfacturers</span>
                     </div>
                     <div class="col-span-12">
                         <div class="swiper swiper-brands pb-2">
                             <div class="swiper-wrapper py-2">
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Viatrix.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Viatrix</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/AstraZeneca.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">AstraZeneca</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Menarini.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Menarini</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Galderma.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Galderma</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Almus.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Almus</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Novo-Nordisk.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Novo Nordisk</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Roche.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Roche</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Bayer.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Bayer</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Viatrix.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Viatrix</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/AstraZeneca.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">AstraZeneca</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Menarini.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Menarini</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Galderma.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Galderma</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Almus.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Almus</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Novo-Nordisk.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Novo Nordisk</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Roche.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Roche</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 " href="#" target="_blank">
-    <span class="h-[136px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
+                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
+    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
         <img class="object-center object-cover max-h-full" src="img/icons/Bayer.png" alt="Alt Image text">
     </span>
     <div class="flex flex-col">
         <p class="text-base font-semibold text-DarkBlue100 block mb-2">Bayer</p>
-        <span class="-tracking-018 text-base text-DarkBlue50 font-medium">0 drugs</span>
+        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
     </div>
 </a>
                                 </div>
                             </div>
-                            <div class="swiper-custom relative h-12 w-[128px] mt-10 mx-auto">
+                            <div class="swiper-custom relative h-12 w-[128px] mt-10 md:mt-8 mx-auto">
                                 <div class="swiper-button-arrow swiper-button-next">
-                                    <svg class="swiper-button-icon swiper-button-icon--white" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="swiper-button-icon swiper-button-icon--white"
+                                         xmlns="http://www.w3.org/2000/svg"
                                          width="20" height="20" viewBox="0 0 20 20"
                                          fill="none">
                                         <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
                                               fill="white"/>
                                     </svg>
-                                    <svg class="swiper-button-icon swiper-button-icon--grey" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="swiper-button-icon swiper-button-icon--grey"
+                                         xmlns="http://www.w3.org/2000/svg"
                                          width="20" height="20" viewBox="0 0 20 20"
                                          fill="none">
                                         <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
@@ -1206,7 +1242,8 @@
                             <h2 class="main-title text-center mb-10 md:mb-5">
                                 Get in touch
                             </h2>
-                            <p class="text-DarkBlue50 -tracking-018 font-medium text-base text-center md:text-body">Lorem ipsum dolor
+                            <p class="text-DarkBlue50 -tracking-018 font-medium text-base text-center md:text-body">
+                                Lorem ipsum dolor
                                 sit amet consectetur commodo aliquam
                                 augue duis aliquet ipsum donec tempus ac inter.</p>
                         </div>
@@ -1604,7 +1641,7 @@
                                        <i class="phone-header-icon20"></i>
                                        <span class="text-body font-semibold text-white">Phone</span>
                                    </div>
-                                   <a href="tel:+07425899611" class="text-body font-medium">+ (07425) 899611</a>
+                                   <a href="tel:+107425899611" class="text-body font-medium">+ (07425) 899611</a>
                                </div>
                                <div class="flex flex-col gap-y-3">
                                    <div class="flex items-center gap-x-3">

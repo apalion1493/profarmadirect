@@ -340,6 +340,16 @@
 }
 
 .swiper-brands {
+
+  @media (max-width: 1023.98px) {
+    overflow: inherit;
+
+    .swiper-slide {
+      width: auto;
+    }
+  }
+
+
   @apply px-2 -mx-2
 }
 // swiper End

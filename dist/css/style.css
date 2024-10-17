@@ -2265,6 +2265,9 @@ html {
   left: 0px;
   right: 0px;
 }
+.-bottom-\[24px\]{
+  bottom: -24px;
+}
 .-bottom-\[64px\]{
   bottom: -64px;
 }
@@ -2390,6 +2393,9 @@ html {
 }
 .mb-12{
   margin-bottom: 3rem;
+}
+.mb-14{
+  margin-bottom: 3.5rem;
 }
 .mb-16{
   margin-bottom: 4rem;
@@ -2701,6 +2707,9 @@ html {
 .min-w-\[272px\]{
   min-width: 272px;
 }
+.min-w-\[136px\]{
+  min-width: 136px;
+}
 .max-w-\[309px\]{
   max-width: 309px;
 }
@@ -2742,6 +2751,9 @@ html {
 }
 .max-w-\[944px\]{
   max-width: 944px;
+}
+.max-w-\[95\%\]{
+  max-width: 95%;
 }
 .max-w-full{
   max-width: 100%;
@@ -3117,6 +3129,10 @@ html {
 .object-center{
   -o-object-position: center;
      object-position: center;
+}
+.object-right-bottom{
+  -o-object-position: right bottom;
+     object-position: right bottom;
 }
 .object-top{
   -o-object-position: top;
@@ -4536,7 +4552,7 @@ p{
   height: 454px;
   width: 510px;
   background-size: 100% auto;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
@@ -5141,6 +5157,14 @@ p{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+@media (max-width: 1023.98px) {
+  .swiper-brands {
+    overflow: inherit;
+  }
+  .swiper-brands .swiper-slide {
+    width: auto;
+  }
+}
 
 .hero-bg:before {
   content: "";
@@ -5721,6 +5745,9 @@ p{
   }
 }
 @media (max-width: 767px){
+  .md\:-bottom-6{
+    bottom: -1.5rem;
+  }
   .md\:bottom-10{
     bottom: 2.5rem;
   }
@@ -5763,6 +5790,9 @@ p{
   .md\:mb-8{
     margin-bottom: 2rem;
   }
+  .md\:ml-0{
+    margin-left: 0px;
+  }
   .md\:ml-auto{
     margin-left: auto;
   }
@@ -5802,6 +5832,9 @@ p{
   .md\:h-\[72px\]{
     height: 72px;
   }
+  .md\:h-\[108px\]{
+    height: 108px;
+  }
   .md\:max-h-\[263px\]{
     max-height: 263px;
   }
@@ -5825,6 +5858,12 @@ p{
   }
   .md\:min-w-\[266px\]{
     min-width: 266px;
+  }
+  .md\:min-w-\[\]{
+    min-width: ;
+  }
+  .md\:min-w-\[136px\]{
+    min-width: 136px;
   }
   .md\:max-w-\[288px\]{
     max-width: 288px;
@@ -5869,6 +5908,9 @@ p{
   }
   .md\:gap-y-6{
     row-gap: 1.5rem;
+  }
+  .md\:gap-y-3{
+    row-gap: 0.75rem;
   }
   .md\:self-start{
     align-self: flex-start;

@@ -82,6 +82,23 @@ window.addEventListener('DOMContentLoaded', () => {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+            1345: {
+                slidesPerView: 8,
+            },
+            1024: {
+                slidesPerView: 6,
+            },
+            768: {
+                slidesPerView: "auto",
+            },
+            640: {
+                slidesPerView: "auto",
+            },
+            100: {
+                slidesPerView: "auto",
+            }
+        }
     });
 
     const swiper6 = new Swiper('.checkboxes-alphabet-list--swiper', {
