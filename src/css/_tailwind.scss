@@ -77,6 +77,10 @@ section {
   @apply relative h-5 w-5 appearance-none rounded-full border border-blue100 bg-white disabled:cursor-not-allowed focus:ring-0 outline-0 focus:outline-0 focus:outline-inherit
 }
 
+.radio-filter {
+  @apply hidden
+}
+
 .input[type="search"]::placeholder {
 
 }
