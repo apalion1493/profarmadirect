@@ -5865,6 +5865,9 @@ p{
   .md\:h-\[211px\]{
     height: 211px;
   }
+  .md\:h-\[250px\]{
+    height: 250px;
+  }
   .md\:h-\[263px\]{
     height: 263px;
   }
@@ -5877,20 +5880,17 @@ p{
   .md\:h-\[72px\]{
     height: 72px;
   }
-  .md\:h-\[250px\]{
-    height: 250px;
-  }
   .md\:max-h-\[263px\]{
     max-height: 263px;
-  }
-  .md\:min-h-\[471px\]{
-    min-height: 471px;
   }
   .md\:min-h-\[250px\]{
     min-height: 250px;
   }
   .md\:min-h-\[443px\]{
     min-height: 443px;
+  }
+  .md\:min-h-\[471px\]{
+    min-height: 471px;
   }
   .md\:w-10{
     width: 2.5rem;
