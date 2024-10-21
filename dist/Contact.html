@@ -160,7 +160,7 @@
                             </button>
                         </div>
                         <div style="display: none" x-show="showResults && query.length > 0"
-                             class="absolute left-0 top-full mt-2 pl-1/24 w-full z-10 lg:pl-0">
+                             class="absolute left-0 top-full mt-2 pl-1/24 w-full z-[999] lg:pl-0">
                             <div class='bg-white border border-gray-200 rounded-lg shadow-shadow-2 p-6 md:px-4 md:py-5'>
                                 <ul class='flex flex-col gap-y-4 max-h-[226px] overflow-y-auto'>
                                     <template x-for="result in results" :key="result.id">
@@ -404,7 +404,7 @@
                 <div class="col-span-12">
                     <div class="pb-[120px] lg:pb-[72px] relative">
                         <div class="rounded-4xl w-full bg-color-2 absolute bottom-0 left-0 right-0 contact-color-block lg:-left-4"></div>
-                        <div class="row gap-x-8 relative z-10">
+                        <div class="row gap-x-8 lg:gap-x-0 relative z-10">
                             <div class="col-span-2 xl:col-span-1 lg:hidden"></div>
                             <div class="col-span-8 xl:col-span-10 lg:col-span-12">
                                 <form class="p-12 grid grid-cols-2 gap-x-8 gap-y-10 rounded-4xl overflow-hidden shadow-5xl bg-white mt-8 md:px-4 md:py-10 md:gap-y-5"
@@ -472,7 +472,7 @@
     </section>
     <section class="section">
         <div class="container">
-            <div class="row gap-x-8 lg:gap-y-5">
+            <div class="row gap-x-8 lg:gap-x-0 lg:gap-y-5">
                 <div class="col-span-12">
                     <div class="flex flex-col md:items-start md:max-w-full max-w-[464px] mx-auto mb-10 lg:mb-3">
                         <span class="uppercase text-body2 text-blue100 font-bold block mb-3 md:mb-2 text-center">Information</span>
