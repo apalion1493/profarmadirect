@@ -393,6 +393,13 @@
   }
 }
 
+.icon-72 {
+  @media (max-width: 1023.98px) {
+    width: 72px !important;
+    height: 72px !important;
+  }
+}
+
 .icon-16 {
   @apply md:w-4 md:h-4 md:min-w-4
 }
