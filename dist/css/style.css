@@ -2589,6 +2589,9 @@ html {
 .h-\[56px\]{
   height: 56px;
 }
+.h-\[72px\]{
+  height: 72px;
+}
 .h-\[80px\]{
   height: 80px;
 }
@@ -2673,6 +2676,9 @@ html {
 .w-\[536px\]{
   width: 536px;
 }
+.w-\[72px\]{
+  width: 72px;
+}
 .w-\[80px\]{
   width: 80px;
 }
@@ -2715,6 +2721,9 @@ html {
 }
 .min-w-\[272px\]{
   min-width: 272px;
+}
+.min-w-\[72px\]{
+  min-width: 72px;
 }
 .max-w-\[309px\]{
   max-width: 309px;
@@ -3806,6 +3815,8 @@ p{
 
 .text-block a{
   font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(61 101 255 / var(--tw-text-opacity));
   text-decoration-line: underline;
 }
 
@@ -5215,6 +5226,16 @@ p{
     height: 2.5rem;
     width: 2.5rem;
   }
+}
+
+@media (max-width: 1023.98px) {
+  .icon-40-lg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media (max-width: 767px){
   .icon-16{
     height: 1rem;
     width: 1rem;
@@ -5526,6 +5547,9 @@ p{
   }
   .xl\:col-span-4{
     grid-column: span 4 / span 4;
+  }
+  .xl\:col-span-6{
+    grid-column: span 6 / span 6;
   }
   .xl\:col-span-8{
     grid-column: span 8 / span 8;
