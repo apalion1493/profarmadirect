@@ -81,30 +81,30 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen overflow-hidden bg-LightBlue relative">
-    <header class="py-10 w-full">
+    <header class="py-10 md:py-8 w-full">
         <div class="container flex justify-center">
-            <a href="#">
-                <img width="350" height="36" src="img/Logo.svg" alt="Profarmadirect Logo">
+            <a href="index.html">
+                <img class="md:max-w-[204px]" width="350" height="36" src="img/Logo.svg" alt="Profarmadirect Logo">
             </a>
         </div>
     </header>
-    <section class="flex items-center py-[134px] flex-1 z-10 relative">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full rounded-b-[32px] overflow-hidden">
-            <img class="w-full max-h-[501px] object-cover object-top" src="img/bg-img-1.jpeg" alt="">
+    <section class="flex items-center py-[40px] md:my-auto flex-1 z-10 relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full rounded-b-[32px] lg:min-h-[50%] overflow-hidden">
+            <img class="w-full max-h-[501px] object-cover object-bottom rotate-180 lg:h-[70vh] lg:max-h-full" src="img/bg-img-1.jpeg" alt="">
             <span class="bg-gradient-main absolute top-0 left-0 w-full h-full min-h-dvh z-10 block"></span>
         </div>
         <div class="container flex relative z-20">
             <div class="p-8 rounded-[20px] w-[536px] mx-auto shadow-4xl flex flex-col items-center bg-Backgroung"> <!--blur-[31px]-->
                 <span class="uppercase text-body2 text-blue100 font-bold block mb-2">Welcome</span>
-                <p class="text-top2 font-bold text-Top2">Select your location</p>
-                <div class="mt-8 flex items-center justify-center gap-x-8 w-full">
-                    <a class="p-8 flex flex-col items-center bg-LightBlue rounded-[20px] border border-DarkBlue10 flex-1 h-full transition-all hover:shadow-3xl" href="#">
-                        <i class="mb-8 block Flag-UK"></i>
-                        <span class="text-base font-semibold text-center">United Kingdom</span>
+                <p class="text-top2 md:text-base font-bold text-Top2">Select your location</p>
+                <div class="mt-8 flex items-center justify-center md:flex-col md:gap-x-0 md:gap-y-5 gap-x-8 w-full">
+                    <a class="p-8 md:p-5 flex flex-col items-center bg-LightBlue rounded-[20px] border border-DarkBlue10 flex-1 w-full h-full transition-all hover:shadow-3xl" href="#">
+                        <i class="mb-8 md:mb-5 block Flag-UK"></i>
+                        <span class="text-base md:text-body font-semibold text-center">United Kingdom</span>
                     </a>
-                    <a class="p-8 flex flex-col items-center bg-LightBlue rounded-[20px] border border-DarkBlue10 flex-1 h-full transition-all hover:shadow-3xl" href="#">
-                        <i class="mb-8 block Flag-german"></i>
-                        <span class="text-base font-semibold text-center">Deutschland</span>
+                    <a class="p-8 md:p-5 flex flex-col items-center bg-LightBlue rounded-[20px] border border-DarkBlue10 flex-1 w-full h-full transition-all hover:shadow-3xl" href="#">
+                        <i class="mb-8 md:mb-5 block Flag-german"></i>
+                        <span class="text-base md:text-body font-semibold text-center">Deutschland</span>
                     </a>
                 </div>
             </div>

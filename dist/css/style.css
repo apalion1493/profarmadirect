@@ -3153,6 +3153,10 @@ html {
   -o-object-position: top;
      object-position: top;
 }
+.object-bottom{
+  -o-object-position: bottom;
+     object-position: bottom;
+}
 .p-0{
   padding: 0px;
 }
@@ -3248,6 +3252,10 @@ html {
 .py-\[18px\]{
   padding-top: 18px;
   padding-bottom: 18px;
+}
+.py-\[40px\]{
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .pb-10{
   padding-bottom: 2.5rem;
@@ -5657,6 +5665,18 @@ p{
   .lg\:h-screen{
     height: 100vh;
   }
+  .lg\:h-\[50\%\]{
+    height: 50%;
+  }
+  .lg\:h-\[100\%\]{
+    height: 100%;
+  }
+  .lg\:h-\[70vh\]{
+    height: 70vh;
+  }
+  .lg\:max-h-full{
+    max-height: 100%;
+  }
   .lg\:min-h-\[279px\]{
     min-height: 279px;
   }
@@ -5665,6 +5685,9 @@ p{
   }
   .lg\:min-h-screen{
     min-height: 100vh;
+  }
+  .lg\:min-h-\[50\%\]{
+    min-height: 50%;
   }
   .lg\:w-10{
     width: 2.5rem;
@@ -5742,6 +5765,10 @@ p{
   .lg\:bg-LagunaBlue{
     --tw-bg-opacity: 1;
     background-color: rgb(50 205 215 / var(--tw-bg-opacity));
+  }
+  .lg\:object-bottom{
+    -o-object-position: bottom;
+       object-position: bottom;
   }
   .lg\:p-0{
     padding: 0px;
@@ -5828,6 +5855,10 @@ p{
   }
   .md\:col-span-6{
     grid-column: span 6 / span 6;
+  }
+  .md\:my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .md\:mb-0{
     margin-bottom: 0px;
@@ -5946,6 +5977,9 @@ p{
   .md\:max-w-full{
     max-width: 100%;
   }
+  .md\:max-w-\[204px\]{
+    max-width: 204px;
+  }
   .md\:flex-col{
     flex-direction: column;
   }
@@ -6016,6 +6050,10 @@ p{
   .md\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .md\:pb-6{
     padding-bottom: 1.5rem;
