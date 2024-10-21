@@ -2776,6 +2776,9 @@ html {
 .max-w-xs{
   max-width: 20rem;
 }
+.max-w-\[204px\]{
+  max-width: 204px;
+}
 .flex-1{
   flex: 1 1 0%;
 }
@@ -5592,6 +5595,9 @@ p{
   .lg\:top-2{
     top: 0.5rem;
   }
+  .lg\:right-\[auto\]{
+    right: auto;
+  }
   .lg\:z-10{
     z-index: 10;
   }
@@ -5722,11 +5728,20 @@ p{
   .lg\:max-w-full{
     max-width: 100%;
   }
+  .lg\:max-w-\[50\%\]{
+    max-width: 50%;
+  }
+  .lg\:max-w-\[95\%\]{
+    max-width: 95%;
+  }
   .lg\:flex-col{
     flex-direction: column;
   }
   .lg\:items-start{
     align-items: flex-start;
+  }
+  .lg\:justify-center{
+    justify-content: center;
   }
   .lg\:justify-between{
     justify-content: space-between;
@@ -5770,6 +5785,10 @@ p{
     -o-object-position: bottom;
        object-position: bottom;
   }
+  .lg\:object-left-bottom{
+    -o-object-position: left bottom;
+       object-position: left bottom;
+  }
   .lg\:p-0{
     padding: 0px;
   }
@@ -5792,6 +5811,10 @@ p{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+  .lg\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
   .lg\:pb-\[72px\]{
     padding-bottom: 72px;
   }
@@ -5813,8 +5836,14 @@ p{
   .lg\:pt-10{
     padding-top: 2.5rem;
   }
+  .lg\:pb-10{
+    padding-bottom: 2.5rem;
+  }
   .lg\:text-left{
     text-align: left;
+  }
+  .lg\:text-center{
+    text-align: center;
   }
   .lg\:text-Top1{
     font-size: 24px;
@@ -5835,6 +5864,14 @@ p{
   .lg\:text-h2Mob{
     font-size: 30px;
     line-height: 120%;
+  }
+  .lg\:text-h3{
+    font-size: 40px;
+    line-height: 130%;
+  }
+  .lg\:text-h4{
+    font-size: 32px;
+    line-height: 130%;
   }
 }
 @media (max-width: 767px){
