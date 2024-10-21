@@ -7,23 +7,121 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
-    <div class="flex flex-col max-w-[309px] w-full">
+    <div class="flex w-full">
+        <div class="flex flex-col max-w-[309px] min-w-[309px] min-h-screen shadow-7xl bg-white px-6 pt-6 pb-10">
+            <a class="mb-16" href="index.html">
+                <img class="max-w-[204px] lg:mx-auto" src="img/Logo.svg" alt="Profarmadirect Logo">
+            </a>
+            <nav class="flex flex-col gap-y-8">
+                <a class="py-2 px-3 bg-blue10 rounded-[8px] flex items-center active" href="Dashboard.html">
+                <span class="w-[32px] min-w-[32px] h-[32px] flex items-center justify-center rounded-[8px] bg-blue100 mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                      <path d="M7.04132 15.1829V10.3795H10.9543V15.1829C10.9543 15.7113 11.3945 16.1436 11.9326 16.1436H14.8673C15.4054 16.1436 15.8456 15.7113 15.8456 15.1829V8.45817H17.5086C17.9586 8.45817 18.1738 7.91059 17.8315 7.62239L9.65326 0.388526C9.28152 0.0618975 8.71413 0.0618975 8.3424 0.388526L0.164202 7.62239C-0.168404 7.91059 0.0370288 8.45817 0.487025 8.45817H2.15006V15.1829C2.15006 15.7113 2.59027 16.1436 3.12831 16.1436H6.06307C6.60111 16.1436 7.04132 15.7113 7.04132 15.1829Z"
+                            fill="white"/>
+                    </svg>
+                </span>
+                    <span class="text-DarkBlue100 text-body2 font-medium">Dashboard</span>
+                </a>
+            </nav>
+            <div class="w-64" x-data="{ menu1: false, menu2: false, activeLink: 'home' }">
+                <nav class="bg-gray-800 text-white h-full p-4">
+                    <!-- Ссылка 1 -->
+                    <a href="#"
+                       :class="activeLink === 'home' ? 'bg-gray-700 text-yellow-400' : ''"
+                       @click="activeLink = 'home'"
+                       class="block py-2 px-4 rounded hover:bg-gray-700">
+                        Home
+                    </a>
 
-    </div>
-    <div class="flex flex-col w-full">
-        <header class="flex w-full items-center">
-            <div class="row-10">
+                    <!-- Выпадающий список 1 -->
+                    <div class="mt-2">
+                        <button @click="menu1 = !menu1"
+                                :class="activeLink === 'sub1.1' || activeLink === 'sub1.2' || activeLink === 'sub1.3' ? 'bg-gray-700 text-yellow-400' : ''"
+                                class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700">
+                            <span>Section 1</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform"
+                                 :class="menu1 ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="menu1" x-collapse>
+                            <a href="#"
+                               :class="activeLink === 'sub1.1' ? 'bg-gray-700 text-yellow-400' : ''"
+                               @click="activeLink = 'sub1.1'"
+                               class="block py-2 pl-8 pr-4 rounded hover:bg-gray-700">Subpage 1.1</a>
+                            <a href="#"
+                               :class="activeLink === 'sub1.2' ? 'bg-gray-700 text-yellow-400' : ''"
+                               @click="activeLink = 'sub1.2'"
+                               class="block py-2 pl-8 pr-4 rounded hover:bg-gray-700">Subpage 1.2</a>
+                            <a href="#"
+                               :class="activeLink === 'sub1.3' ? 'bg-gray-700 text-yellow-400' : ''"
+                               @click="activeLink = 'sub1.3'"
+                               class="block py-2 pl-8 pr-4 rounded hover:bg-gray-700">Subpage 1.3</a>
+                        </div>
+                    </div>
 
+                    <!-- Выпадающий список 2 -->
+                    <div class="mt-2">
+                        <button @click="menu2 = !menu2"
+                                :class="activeLink === 'sub2.1' || activeLink === 'sub2.2' ? 'bg-gray-700 text-yellow-400' : ''"
+                                class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700">
+                            <span>Section 2</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform"
+                                 :class="menu2 ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div x-show="menu2" x-collapse>
+                            <a href="#"
+                               :class="activeLink === 'sub2.1' ? 'bg-gray-700 text-yellow-400' : ''"
+                               @click="activeLink = 'sub2.1'"
+                               class="block py-2 pl-8 pr-4 rounded hover:bg-gray-700">Subpage 2.1</a>
+                            <a href="#"
+                               :class="activeLink === 'sub2.2' ? 'bg-gray-700 text-yellow-400' : ''"
+                               @click="activeLink = 'sub2.2'"
+                               class="block py-2 pl-8 pr-4 rounded hover:bg-gray-700">Subpage 2.2</a>
+                        </div>
+                    </div>
+
+                    <!-- Ссылка 2 -->
+                    <a href="#"
+                       :class="activeLink === 'about' ? 'bg-gray-700 text-yellow-400' : ''"
+                       @click="activeLink = 'about'"
+                       class="block py-2 px-4 mt-2 rounded hover:bg-gray-700">
+                        About
+                    </a>
+
+                    <!-- Ссылка 3 -->
+                    <a href="#"
+                       :class="activeLink === 'contact' ? 'bg-gray-700 text-yellow-400' : ''"
+                       @click="activeLink = 'contact'"
+                       class="block py-2 px-4 mt-2 rounded hover:bg-gray-700">
+                        Contact
+                    </a>
+                </nav>
             </div>
-        </header>
-        <div class="row-10">
-            <div class="col-span-10">
-                <p>
-                    Hello, Alexandra Vieru
-                </p>
-                <div class="flex flex-col">
-                    <p>Welcome to your dashboard! Here you can view a summary of all your orders.</p>
-                    <p>Remember: Statuses on your orders change in real time as the pharmacy deals with them. You will also be notified through email.</p>
+
+
+        </div>
+        <div class="flex flex-col w-full">
+            <header class="flex w-full items-center">
+                <div class="row-10">
+                    header
+                </div>
+            </header>
+            <div class="container-full">
+
+                <div class="row-10">
+                    <div class="col-span-10">
+                        <p>
+                            Hello, Alexandra Vieru
+                        </p>
+                        <div class="flex flex-col">
+                            <p>Welcome to your dashboard! Here you can view a summary of all your orders.</p>
+                            <p>Remember: Statuses on your orders change in real time as the pharmacy deals with them.
+                                You will also be notified through email.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

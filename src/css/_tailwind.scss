@@ -16,6 +16,10 @@
     @apply px-4 w-full minsm:max-w-[672px] minmd:max-w-[800px] minlg:max-w-[1056px] minxl:max-w-[1344px];
   }
 
+  .container-full {
+    @apply px-4 w-full max-w-full;
+  }
+
   .w-full {
     width: 100% !important;
   }
