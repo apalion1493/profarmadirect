@@ -34,6 +34,10 @@
     @apply w-full;
   }
 
+  &.db-btn {
+    @apply h-12 min-h-12 min-w-fit rounded-xl px-5 text-body2 font-semibold
+  }
+
   &.btn-icons {
     @apply bg-LightBlue text-blue100 hover:bg-blue100 hover:text-white
   }

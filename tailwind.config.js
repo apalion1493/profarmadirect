@@ -105,6 +105,7 @@ module.exports = {
                 WhiteV2: '#FEEFEE',
                 RedV2: '#C0000033',
                 RedV3: '#CB0000',
+                Blue40: '#3D65FF66',
             },
             letterSpacing: {
                 '018': '-0.18px'

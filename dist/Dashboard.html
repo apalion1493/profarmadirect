@@ -82,11 +82,11 @@
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
     <div class="flex w-full">
-        <div class="flex flex-col max-w-[309px] min-w-[309px] min-h-screen shadow-7xl bg-white px-6 pt-6 pb-10 relative z-10">
-    <a class="mb-16" href="index.html">
-        <img class="max-w-[204px] lg:mx-auto" src="img/Logo.svg" alt="Profarmadirect Logo">
-    </a>
-    <div class="w-full mb-10" x-data="{ menu1: false, menu2: false, menu3: false, activeLink: 'dashboard' }">
+        <div class="flex flex-col max-w-[309px] min-w-[309px] shadow-7xl bg-white px-6 pt-6 pb-10 z-10 ">
+<!--    <a class="mb-16" href="index.html">-->
+<!--        <img class="max-w-[204px] lg:mx-auto" src="img/Logo.svg" alt="Profarmadirect Logo">-->
+<!--    </a>-->
+    <div class="w-full mb-10 sticky top-3" x-data="{ menu1: false, menu2: false, menu3: false, activeLink: 'dashboard' }">
         <nav class="h-full flex flex-col gap-y-8">
             <!-- Ссылка 1 -->
             <a href="#"
@@ -248,7 +248,6 @@
                     </span>
         Log Out
     </a>
-
 </div>
         <div class="flex flex-col w-full">
             <header class="flex w-full items-center py-4 px-6 shadow-7xl bg-white">
@@ -293,84 +292,180 @@
                                         <p class="text-base text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
                                     </div>
                                     <div class="flex icon-16 gap-x-2">
-                                        <button class="button">View All</button>
-                                        <button class="button">Find a Treatment</button>
+                                        <a class="button db-btn" href="#">
+    <span class="">View All</span>
+</a>
+                                        <a class="button db-btn" href="#">
+    <span class="">Find a Treatment</span>
+</a>
                                     </div>
                                 </div>
-                                <div class="mt-8 overflow-hidden w-full overflow-x-auto rounded-xl border border-slate-300 dark:border-slate-700">
-                                    <table class="w-full text-left text-sm text-slate-700 dark:text-slate-300">
-                                        <thead class="border-b border-slate-300 bg-slate-100 text-sm text-black dark:border-slate-700 dark:bg-slate-800 dark:text-white">
+                                <div class="mt-8 overflow-hidden w-full overflow-x-auto rounded-xl">
+                                    <table class="w-full text-left">
+                                        <thead class="border-y py-2 uppercase text-body4 font-semibold text-DarkBlue50">
                                             <tr>
-                                                <th scope="col" class="p-4">ORDER STATUS</th>
-                                                <th scope="col" class="p-4">TREATMENTS</th>
-                                                <th scope="col" class="p-4">DATE</th>
+                                                <th scope="col" class="px-4 py-5 w-[260px] font-medium">ORDER STATUS</th>
+                                                <th scope="col" class="px-4 py-5 font-medium">TREATMENTS</th>
+                                                <th scope="col" class="px-4 py-5 w-[150px] font-medium">DATE</th>
                                             </tr>
                                         </thead>
-                                        <tbody class="divide-y divide-slate-300 dark:divide-slate-700">
+                                        <tbody class="border-[0]">
                                         <tr>
-                                            <td class="p-4">
-                                                <div class="flex w-max items-center gap-2">
-                                                    <img class="size-10 rounded-full object-cover" src="https://penguinui.s3.amazonaws.com/component-assets/avatar-8.webp" alt="user avatar" />
-                                                    <div class="flex flex-col">
-                                                        <span class="text-black dark:text-white">Alice Brown</span>
-                                                        <span class="text-sm text-slate-700 opacity-85 dark:text-slate-300">alice.brown@gmail.com</span>
+                                            <td class="p-4 pt-8">
+                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-LagunaBlue text-white">Processing</span>
+                                            </td>
+                                            <td class="p-4 pt-8">
+                                                <div class="flex flex-col max-w-[770px]">
+                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                        <span>2 tab</span>
+                                                        <span>\</span>
+                                                        <span>2 times per day</span>
+                                                        <span>\</span>
+                                                        <span>7 days</span>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="p-4">2335</td>
-                                            <td class="p-4">Nov 14, 2021</td>
+                                            <td class="p-4 pt-8">
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="p-4">
-                                                <div class="flex w-max items-center gap-2">
-                                                    <img class="size-10 rounded-full object-cover" src="https://penguinui.s3.amazonaws.com/component-assets/avatar-1.webp" alt="user avatar" />
-                                                    <div class="flex flex-col">
-                                                        <span class="text-black dark:text-white">Bob Johnson</span>
-                                                        <span class="text-sm text-slate-700 opacity-85 dark:text-slate-300">johnson.bob@penguinui.com</span>
+                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-SkyBlue text-white">Accept</span>
+                                            </td>
+                                            <td class="p-4">
+                                                <div class="flex flex-col max-w-[770px]">
+                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                        <span>2 tab</span>
+                                                        <span>\</span>
+                                                        <span>2 times per day</span>
+                                                        <span>\</span>
+                                                        <span>7 days</span>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="p-4">2338</td>
-                                            <td class="p-4">Aug 20, 2020</td>
+                                            <td class="p-4">
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="p-4">
-                                                <div class="flex w-max items-center gap-2">
-                                                    <img class="size-10 rounded-full object-cover" src="https://penguinui.s3.amazonaws.com/component-assets/avatar-2.webp" alt="user avatar" />
-                                                    <div class="flex flex-col">
-                                                        <span class="text-black dark:text-white">Ryan Thompson</span>
-                                                        <span class="text-sm text-slate-700 opacity-85 dark:text-slate-300">ryan.thompson@penguinui.com</span>
+                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-Blue40 text-white">Declined</span>
+                                            </td>
+                                            <td class="p-4">
+                                                <div class="flex flex-col max-w-[770px]">
+                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                        <span>2 tab</span>
+                                                        <span>\</span>
+                                                        <span>2 times per day</span>
+                                                        <span>\</span>
+                                                        <span>7 days</span>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="p-4">2346</td>
-                                            <td class="p-4">Feb 5, 2022</td>
+                                            <td class="p-4">
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td class="p-4">
-                                                <div class="flex w-max items-center gap-2">
-                                                    <img class="size-10 rounded-full object-cover" src="https://penguinui.s3.amazonaws.com/component-assets/avatar-4.webp" alt="user avatar" />
-                                                    <div class="flex flex-col">
-                                                        <span class="text-black dark:text-white">Emily Rodriguez</span>
-                                                        <span class="text-sm text-slate-700 opacity-85 dark:text-slate-300">emily.rodriguez@penguinui.com</span>
-                                                    </div>
-                                                </div>
+                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-blue100 text-white">Rewiew</span>
                                             </td>
-                                            <td class="p-4">2349</td>
-                                            <td class="p-4">Jun 14, 2022</td>
-                                        </tr>
-                                        <tr>
                                             <td class="p-4">
-                                                <div class="flex w-max items-center gap-2">
-                                                    <img class="size-10 rounded-full object-cover" src="https://penguinui.s3.amazonaws.com/component-assets/avatar-7.webp" alt="user avatar" />
-                                                    <div class="flex flex-col">
-                                                        <span class="text-black dark:text-white">Alex Martinez</span>
-                                                        <span class="text-sm text-slate-700 opacity-85 dark:text-slate-300">alex.martinez@penguinui.com</span>
+                                                <div class="flex flex-col max-w-[770px]">
+                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                        <span>2 tab</span>
+                                                        <span>\</span>
+                                                        <span>2 times per day</span>
+                                                        <span>\</span>
+                                                        <span>7 days</span>
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td class="p-4">2345</td>
-                                            <td class="p-4">Sep 17, 2018</td>
+                                            <td class="p-4">
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                <div class="flex w-full justify-between gap-x-4">
+                                    <div class="flex flex-col max-w-[530px]">
+                                        <span class="text-Top1 font-bold block mb-4">My Private Prescription Orders</span>
+                                        <p class="text-base text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
+                                    </div>
+                                    <div class="flex icon-16 gap-x-2">
+                                        <a class="button db-btn" href="#">
+    <span class="">View All</span>
+</a>
+                                        <a class="button db-btn" href="#">
+    <span class="">Find a Treatment</span>
+</a>
+                                    </div>
+                                </div>
+                                <div class="mt-8 overflow-hidden w-full overflow-x-auto rounded-xl">
+                                    <table class="w-full text-left table-auto">
+                                        <colgroup>
+                                            <col style="width: auto;">
+                                            <col style="width: auto;">
+                                            <col style="width: auto;">
+                                            <col style="width: auto;">
+                                            <col style="width: auto;">
+                                            <col style="width: 100px;">
+                                        </colgroup>
+                                        <thead class="border-y py-2 uppercase text-body4 font-semibold text-DarkBlue50">
+                                        <tr>
+                                            <th scope="col" class="px-4 py-5 font-medium">PRODUCT</th>
+                                            <th scope="col" class="px-4 py-5 font-medium">STATUS</th>
+                                            <th scope="col" class="px-4 py-5 font-medium">FILE</th>
+                                            <th scope="col" class="px-4 py-5 font-medium">Price</th>
+                                            <th scope="col" class="px-4 py-5 font-medium">DATE</th>
+                                            <th scope="col" class="px-4 py-5 font-medium">ACTIONS</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="border-[0]">
+                                        <tr>
+                                            <td class="p-4 pt-8">
+                                                <span class="text-base font-semibold">Differin 0.1% Tabs</span>
+                                            </td>
+                                            <td class="p-4 pt-8">
+                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-LagunaBlue text-white">Processing</span>
+                                            </td>
+                                            <td class="p-4 pt-8">
+                                                <button class="flex items-center w-fit rounded-lg bg-LightBlue overflow-hidden px-3 h-[36px]" type="button">
+                                                    <i class="Pdf-icon-16 mr-2"></i>
+                                                    <span class="text-body2 font-semibold">Prescription.doc</span>
+                                                </button>
+                                            </td>
+                                            <td class="p-4 pt-8">
+                                                <span class="text-base -tracking-018 font-medium">£16.43</span>
+                                            </td>
+                                            <td class="p-4 pt-8">
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                            </td>
+                                            <td class="p-4 pt-8">
+                                                <div class="flex items-center gap-x-2">
+                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                        <i class="Dowlnoad-icon-20-v2"></i>
+                                                    </button>
+                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                        <i class="Dowlnoad-icon-20-v2"></i>
+                                                    </button>
+                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                        <i class="Dowlnoad-icon-20-v2"></i>
+                                                    </button>
+                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                        <i class="Dowlnoad-icon-20-v2"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
                                         </tr>
                                         </tbody>
                                     </table>
