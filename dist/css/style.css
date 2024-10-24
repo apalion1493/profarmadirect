@@ -2283,6 +2283,12 @@ html {
 .-left-1\/2{
   left: -50%;
 }
+.-right-\[7px\]{
+  right: -7px;
+}
+.-top-\[7px\]{
+  top: -7px;
+}
 .bottom-0{
   bottom: 0px;
 }
@@ -2749,6 +2755,9 @@ html {
 }
 .min-w-\[140px\]{
   min-width: 140px;
+}
+.min-w-\[14px\]{
+  min-width: 14px;
 }
 .min-w-\[18px\]{
   min-width: 18px;
@@ -3265,6 +3274,10 @@ html {
 .p-8{
   padding: 2rem;
 }
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -3344,6 +3357,10 @@ html {
 .py-\[18px\]{
   padding-top: 18px;
   padding-bottom: 18px;
+}
+.py-\[2px\]{
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 .py-\[40px\]{
   padding-top: 40px;
@@ -3447,6 +3464,9 @@ html {
 }
 .text-\[44px\]{
   font-size: 44px;
+}
+.text-\[7px\]{
+  font-size: 7px;
 }
 .text-base{
   font-size: 18px;
@@ -4851,6 +4871,36 @@ p{
   display: block;
   height: 16px;
   width: 16px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.View-icon-20 {
+  background: url("../img/icons/View-icon-20.svg");
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Bin-icon-24 {
+  background: url("../img/icons/Bin-icon-24.svg");
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Comment-icon-24 {
+  background: url("../img/icons/Comment-icon-24.svg");
+  display: block;
+  height: 20px;
+  width: 20px;
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
