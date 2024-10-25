@@ -10,7 +10,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Dashboard</title>
+    <title>Basket</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -277,201 +277,145 @@
                         <div class="flex flex-col gap-y-10">
                             <div class="flex flex-col">
                                 <span class="text-h4 block mb-4 font-bold">
-                                    Hello, Alexandra Vieru
+                                   Your Basket
                                 </span>
                                 <div class="flex flex-col text-body font-medium text-DarkBlue50">
-                                    <p class="text-body block mb-2">Welcome to your dashboard! Here you can view a summary of all your orders.</p>
-                                    <p class="text-body">Remember: Statuses on your orders change in real time as the pharmacy deals with them.
-                                        You will also be notified through email.</p>
+                                    Products you have requested are listed here.
                                 </div>
                             </div>
-                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
-                                <div class="flex w-full justify-between gap-x-4">
-                                    <div class="flex flex-col max-w-[530px]">
-                                        <span class="text-Top1 font-bold block mb-4">Treatment Orders</span>
-                                        <p class="text-base text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
-                                    </div>
-                                    <div class="flex icon-16 gap-x-2">
-                                        <a class="button db-btn" href="#">
-    <span class="">View All</span>
-</a>
-                                        <a class="button db-btn" href="#">
-    <span class="">Find a Treatment</span>
-</a>
-                                    </div>
-                                </div>
-                                <div class="mt-8 overflow-hidden w-full overflow-x-auto rounded-xl">
-                                    <table class="w-full text-left">
-                                        <thead class="border-y py-2 uppercase text-body4 font-semibold text-DarkBlue50">
-                                            <tr>
-                                                <th scope="col" class="px-4 py-5 w-[260px] font-medium">ORDER STATUS</th>
-                                                <th scope="col" class="px-4 py-5 font-medium">TREATMENTS</th>
-                                                <th scope="col" class="px-4 py-5 w-[150px] font-medium">DATE</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="border-[0]">
-                                        <tr>
-                                            <td class="p-4 pt-8">
-                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-LagunaBlue text-white">Processing</span>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <div class="flex flex-col max-w-[770px]">
-                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
-                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
-                                                        <span>2 tab</span>
-                                                        <span>\</span>
-                                                        <span>2 times per day</span>
-                                                        <span>\</span>
-                                                        <span>7 days</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-4">
-                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-SkyBlue text-white">Accept</span>
-                                            </td>
-                                            <td class="p-4">
-                                                <div class="flex flex-col max-w-[770px]">
-                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
-                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
-                                                        <span>2 tab</span>
-                                                        <span>\</span>
-                                                        <span>2 times per day</span>
-                                                        <span>\</span>
-                                                        <span>7 days</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="p-4">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-4">
-                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-Blue40 text-white">Declined</span>
-                                            </td>
-                                            <td class="p-4">
-                                                <div class="flex flex-col max-w-[770px]">
-                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
-                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
-                                                        <span>2 tab</span>
-                                                        <span>\</span>
-                                                        <span>2 times per day</span>
-                                                        <span>\</span>
-                                                        <span>7 days</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="p-4">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-4">
-                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-blue100 text-white">Rewiew</span>
-                                            </td>
-                                            <td class="p-4">
-                                                <div class="flex flex-col max-w-[770px]">
-                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
-                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
-                                                        <span>2 tab</span>
-                                                        <span>\</span>
-                                                        <span>2 times per day</span>
-                                                        <span>\</span>
-                                                        <span>7 days</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="p-4">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
-                                <div class="flex w-full justify-between gap-x-4">
-                                    <div class="flex flex-col max-w-[530px]">
-                                        <span class="text-Top1 font-bold block mb-4">My Private Prescription Orders</span>
-                                        <p class="text-base text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
-                                    </div>
-                                    <div class="flex icon-16 gap-x-2">
-                                        <a class="button db-btn" href="#">
-    <span class="">View All</span>
-</a>
-                                        <a class="button db-btn" href="#">
-    <span class="">Find a Treatment</span>
-</a>
+                            <div class="row-10 gap-x-8">
+                                <div class="col-span-7">
+                                    <div class="bg-white shadow-4xl px-4 pb-4 rounded-6xl w-full">
+                                        <div class="overflow-hidden w-full overflow-x-auto rounded-xl">
+                                            <table class="w-full text-left">
+                                                <thead class="border-b py-2 uppercase text-body4 font-semibold text-DarkBlue50">
+                                                <tr>
+                                                    <th scope="col" class="px-4 py-5 w-[260px] font-medium">ORDER STATUS</th>
+                                                    <th scope="col" class="px-4 py-5 font-medium">TREATMENTS</th>
+                                                    <th scope="col" class="px-4 py-5 w-[150px] font-medium">DATE</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody class="border-[0]">
+                                                <tr>
+                                                    <td class="p-4 pt-8">
+                                                        <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-LagunaBlue text-white">Processing</span>
+                                                    </td>
+                                                    <td class="p-4 pt-8">
+                                                        <div class="flex flex-col max-w-[770px]">
+                                                            <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                            <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                                <span>2 tab</span>
+                                                                <span>\</span>
+                                                                <span>2 times per day</span>
+                                                                <span>\</span>
+                                                                <span>7 days</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="p-4 pt-8">
+                                                        <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-4">
+                                                        <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-SkyBlue text-white">Accept</span>
+                                                    </td>
+                                                    <td class="p-4">
+                                                        <div class="flex flex-col max-w-[770px]">
+                                                            <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                            <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                                <span>2 tab</span>
+                                                                <span>\</span>
+                                                                <span>2 times per day</span>
+                                                                <span>\</span>
+                                                                <span>7 days</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="p-4">
+                                                        <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-4">
+                                                        <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-Blue40 text-white">Declined</span>
+                                                    </td>
+                                                    <td class="p-4">
+                                                        <div class="flex flex-col max-w-[770px]">
+                                                            <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                            <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                                <span>2 tab</span>
+                                                                <span>\</span>
+                                                                <span>2 times per day</span>
+                                                                <span>\</span>
+                                                                <span>7 days</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="p-4">
+                                                        <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p-4">
+                                                        <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-blue100 text-white">Rewiew</span>
+                                                    </td>
+                                                    <td class="p-4">
+                                                        <div class="flex flex-col max-w-[770px]">
+                                                            <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                            <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                                <span>2 tab</span>
+                                                                <span>\</span>
+                                                                <span>2 times per day</span>
+                                                                <span>\</span>
+                                                                <span>7 days</span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="p-4">
+                                                        <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="mt-8 overflow-hidden w-full overflow-x-auto rounded-xl">
-                                    <table class="w-full text-left table-auto">
-                                        <colgroup>
-                                            <col style="width: auto;">
-                                            <col style="width: auto;">
-                                            <col style="width: auto;">
-                                            <col style="width: auto;">
-                                            <col style="width: auto;">
-                                            <col style="width: 100px;">
-                                        </colgroup>
-                                        <thead class="border-y py-2 uppercase text-body4 font-semibold text-DarkBlue50">
-                                        <tr>
-                                            <th scope="col" class="px-4 py-5 font-medium">PRODUCT</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">STATUS</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">FILE</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">Price</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">DATE</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">ACTIONS</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody class="border-[0]">
-                                        <tr>
-                                            <td class="p-4 pt-8">
-                                                <span class="text-base font-semibold">Differin 0.1% Tabs</span>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-LagunaBlue text-white">Processing</span>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <button class="flex items-center w-fit rounded-lg bg-LightBlue overflow-hidden px-3 h-[36px]" type="button">
-                                                    <i class="Pdf-icon-16 mr-2"></i>
-                                                    <span class="text-body2 font-semibold">Prescription.doc</span>
-                                                </button>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <span class="text-base -tracking-018 font-medium">£16.43</span>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <div class="flex items-center gap-x-2">
-                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
-                                                        <i class="Dowlnoad-icon-20-v2"></i>
-                                                    </button>
-                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
-                                                        <i class="View-icon-20"></i>
-                                                    </button>
-                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
-                                                        <i class="Bin-icon-24"></i>
-                                                    </button>
-                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
-                                                        <i class="Comment-icon-24"></i>
-                                                        <span class="absolute -top-[7px] -right-[7px] rounded-full flex justify-center items-center bg-blue100 text-white text-[7px] font-bold px-1 py-[2px] min-w-[14px]">2</span>
-                                                    </button>
+                                <div class="col-span-3">
+                                    <div class="bg-white shadow-4xl px-8 py-6 rounded-6xl w-full">
+                                        <div class="flex flex-col w-full min-h-[365px]">
+                                            <div class="flex items-center justify-between gap-x-2 mb-8">
+                                                <p class="text-body2 font-semibold text-DarkBlue50">You have 1 ITEM selected</p>
+                                                <div class="border-[2px] border-blue100 bg-LightBlue rounded-5xl px-4 py-2 flex items-center justify-center overflow-hidden w-fit h-[34px]">
+    <span class="mr-2 Check-box-active min-w-[18px]"></span>
+    <span class="text-blue100 font-semibold text-body2">Available</span>
+</div>
+                                            </div>
+                                            <ul class="flex flex-col gap-y-4">
+                                                <li class="flex justify-between">
+                                                    <div class="flex flex-col">
+                                                        <p class="block mb-2 font-semibold text-base">Differin 0.1% Tabs</p>
+                                                        <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                            <span>24 tabs</span>
+                                                            <span>\</span>
+                                                            <span>45MG</span>
+                                                        </div>
+                                                    </div>
+                                                    <span class="text-DarkBlue50 font-medium text-base">£16.43</span>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-auto flex flex-col gap-y-5">
+                                                <div class="flex items-center justify-between gap-x-2 pt-6 border-t border-DarkBlue10">
+                                                    <span class="font-semibold text-Top2">Total</span>
+                                                    <span class="font-semibold text-Top2">£16.43</span>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                                <a class="button db-btn w-full" href="#">
+    <span class="">Request Order</span>
+</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>

@@ -1,11 +1,11 @@
-<div class="flex flex-col max-w-[309px] min-w-[309px] shadow-7xl bg-white px-6 pt-6 pb-10 z-10 ">
-<!--    <a class="mb-16" href="index.html">-->
-<!--        <img class="max-w-[204px] lg:mx-auto" src="img/Logo.svg" alt="Profarmadirect Logo">-->
-<!--    </a>-->
+<div class="flex flex-col max-w-[309px] min-w-[309px] min-h-screen shadow-7xl bg-white px-6 pt-6 pb-10 z-10 ">
+    <a class="mb-16" href="index.html">
+        <img class="max-w-[204px] lg:mx-auto" src="img/Logo.svg" alt="Profarmadirect Logo">
+    </a>
     <div class="w-full mb-10 sticky top-3" x-data="{ menu1: false, menu2: false, menu3: false, activeLink: 'dashboard' }">
         <nav class="h-full flex flex-col gap-y-8">
             <!-- Ссылка 1 -->
-            <a href="#"
+            <a href="Dashboard.html"
                :class="activeLink === 'dashboard' ? 'bg-blue10 pl-3' : ''"
                @click="activeLink = 'dashboard'"
                class="py-2 pr-3 rounded-[8px] flex items-center text-DarkBlue100 text-body2 font-medium">
@@ -35,7 +35,7 @@
                     </svg>
                 </button>
                 <div class="flex flex-col gap-y-5 mt-5 pl-8" x-show="menu1" x-collapse>
-                    <a href="#"
+                    <a href="D-Treatment-Order-history.html"
                        @click="activeLink = 'sub1.1'"
                        class="w-full flex items-center py-2 text-DarkBlue100 text-body2 font-medium">
                                 <span :class="activeLink === 'sub1.1' ? 'bg-blue100' : 'bg-blue10'" class="w-[32px] min-w-[32px] h-[32px] flex items-center justify-center rounded-[8px] mr-3">

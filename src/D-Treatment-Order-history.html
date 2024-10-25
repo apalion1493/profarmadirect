@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Treatment Orders'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    <div class="flex w-full">
+        @@include('components/D-navigation.html')
+        <div class="flex flex-col w-full">
+            @@include('components/D-header.html')
+            <div class="container-full">
+                <div class="row-10 my-14">
+                    <div class="col-span-10">
+                        <div class="flex flex-col gap-y-10">
+                            <div class="flex flex-col">
+                                <span class="text-h4 block mb-4 font-bold">
+                                   Treatment Orders
+                                </span>
+                                <div class="flex flex-col text-body font-medium text-DarkBlue50">
+                                    Orders you have placed through our online doctor are listed here.
+                                </div>
+                            </div>
+                            <div class="bg-white shadow-4xl px-4 pb-4 rounded-6xl w-full">
+                                <div class="overflow-hidden w-full overflow-x-auto rounded-xl">
+                                    <table class="w-full text-left">
+                                        <thead class="border-b py-2 uppercase text-body4 font-semibold text-DarkBlue50">
+                                        <tr>
+                                            <th scope="col" class="px-4 py-5 w-[260px] font-medium">ORDER STATUS</th>
+                                            <th scope="col" class="px-4 py-5 font-medium">TREATMENTS</th>
+                                            <th scope="col" class="px-4 py-5 w-[150px] font-medium">DATE</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="border-[0]">
+                                        <tr>
+                                            <td class="p-4 pt-8">
+                                                @@include('components/status-elem.html', {
+                                                'Title': 'Processing',
+                                                'Style': 'bg-LagunaBlue text-white',
+                                                })
+                                            </td>
+                                            <td class="p-4 pt-8">
+                                                <div class="flex flex-col max-w-[770px]">
+                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                        <span>2 tab</span>
+                                                        <span>\</span>
+                                                        <span>2 times per day</span>
+                                                        <span>\</span>
+                                                        <span>7 days</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="p-4 pt-8">
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-4">
+                                                @@include('components/status-elem.html', {
+                                                'Title': 'Accept',
+                                                'Style': 'bg-SkyBlue text-white',
+                                                })
+                                            </td>
+                                            <td class="p-4">
+                                                <div class="flex flex-col max-w-[770px]">
+                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                        <span>2 tab</span>
+                                                        <span>\</span>
+                                                        <span>2 times per day</span>
+                                                        <span>\</span>
+                                                        <span>7 days</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="p-4">
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-4">
+                                                @@include('components/status-elem.html', {
+                                                'Title': 'Declined',
+                                                'Style': 'bg-Blue40 text-white',
+                                                })
+                                            </td>
+                                            <td class="p-4">
+                                                <div class="flex flex-col max-w-[770px]">
+                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                        <span>2 tab</span>
+                                                        <span>\</span>
+                                                        <span>2 times per day</span>
+                                                        <span>\</span>
+                                                        <span>7 days</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="p-4">
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-4">
+                                                @@include('components/status-elem.html', {
+                                                'Title': 'Rewiew',
+                                                'Style': 'bg-blue100 text-white',
+                                                })
+                                            </td>
+                                            <td class="p-4">
+                                                <div class="flex flex-col max-w-[770px]">
+                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                        <span>2 tab</span>
+                                                        <span>\</span>
+                                                        <span>2 times per day</span>
+                                                        <span>\</span>
+                                                        <span>7 days</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="p-4">
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>
