@@ -2243,8 +2243,14 @@ html {
   white-space: nowrap;
   border-width: 0;
 }
+.pointer-events-none{
+  pointer-events: none;
+}
 .visible{
   visibility: visible;
+}
+.invisible{
+  visibility: hidden;
 }
 .collapse{
   visibility: collapse;
@@ -2509,6 +2515,9 @@ html {
 .mt-auto{
   margin-top: auto;
 }
+.mr-10{
+  margin-right: 2.5rem;
+}
 .block{
   display: block;
 }
@@ -2544,6 +2553,10 @@ html {
 .size-6{
   width: 1.5rem;
   height: 1.5rem;
+}
+.size-3{
+  width: 0.75rem;
+  height: 0.75rem;
 }
 .h-0{
   height: 0px;
@@ -2637,6 +2650,9 @@ html {
 }
 .h-screen{
   height: 100vh;
+}
+.h-\[127px\]{
+  height: 127px;
 }
 .max-h-44{
   max-height: 11rem;
@@ -2737,6 +2753,9 @@ html {
 }
 .w-full{
   width: 100%;
+}
+.w-\[127px\]{
+  width: 127px;
 }
 .min-w-10{
   min-width: 2.5rem;
@@ -3599,6 +3618,10 @@ html {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-slate-100{
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 .underline{
   text-decoration-line: underline;
@@ -5533,6 +5556,23 @@ p{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
+.before\:absolute::before{
+  content: var(--tw-content);
+  position: absolute;
+}
+.before\:inset-0::before{
+  content: var(--tw-content);
+  inset: 0px;
+}
+.checked\:border-blue-700:checked{
+  --tw-border-opacity: 1;
+  border-color: rgb(29 78 216 / var(--tw-border-opacity));
+}
+.checked\:before\:bg-blue-700:checked::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
 .hover\:bg-blue10:hover{
   background-color: #3D65FF1A;
 }
@@ -5589,16 +5629,31 @@ p{
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+.focus\:outline:focus{
+  outline-style: solid;
+}
 .focus\:outline-0:focus{
   outline-width: 0px;
 }
+.focus\:outline-2:focus{
+  outline-width: 2px;
+}
+.focus\:outline-offset-2:focus{
+  outline-offset: 2px;
+}
 .focus\:outline-inherit:focus{
   outline-color: inherit;
+}
+.focus\:outline-slate-800:focus{
+  outline-color: #1e293b;
 }
 .focus\:ring-0:focus{
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.checked\:focus\:outline-blue-700:focus:checked{
+  outline-color: #1d4ed8;
 }
 .focus-visible\:bg-slate-800\/5:focus-visible{
   background-color: rgb(30 41 59 / 0.05);
@@ -5623,6 +5678,9 @@ p{
 .focus-visible\:outline-blue-700:focus-visible{
   outline-color: #1d4ed8;
 }
+.active\:outline-offset-0:active{
+  outline-offset: 0px;
+}
 .disabled\:cursor-not-allowed:disabled{
   cursor: not-allowed;
 }
@@ -5645,6 +5703,9 @@ p{
   --tw-shadow: 0px 1px 5px 1px rgba(61, 101, 255, 0.12);
   --tw-shadow-colored: 0px 1px 5px 1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.peer:checked ~ .peer-checked\:visible{
+  visibility: visible;
 }
 .peer:checked ~ .peer-checked\:flex{
   display: flex;
@@ -5719,9 +5780,17 @@ p{
 .dark\:bg-slate-800\/50:is(.dark *){
   background-color: rgb(30 41 59 / 0.5);
 }
+.dark\:bg-slate-800:is(.dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
 .dark\:text-slate-300:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+.dark\:text-slate-100:is(.dark *){
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 .dark\:file\:bg-slate-800:is(.dark *)::file-selector-button{
   --tw-bg-opacity: 1;
@@ -5731,9 +5800,24 @@ p{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.dark\:checked\:border-blue-600:checked:is(.dark *){
+  --tw-border-opacity: 1;
+  border-color: rgb(37 99 235 / var(--tw-border-opacity));
+}
+.dark\:checked\:before\:bg-blue-600:checked:is(.dark *)::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
 .dark\:hover\:text-white:hover:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.dark\:focus\:outline-slate-300:focus:is(.dark *){
+  outline-color: #cbd5e1;
+}
+.dark\:checked\:focus\:outline-blue-600:focus:checked:is(.dark *){
+  outline-color: #2563eb;
 }
 .dark\:focus-visible\:outline-blue-600:focus-visible:is(.dark *){
   outline-color: #2563eb;
