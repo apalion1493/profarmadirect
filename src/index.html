@@ -25,9 +25,8 @@
                             <span class="text-center -tracking-018 text-base font-medium">Welcome to Pro forma Direct a modern online pharmacy committed to providing top-quality pharmaceutical care. </span>
                         </div>
 
-                        <div class="flex flex-col rounded-6xl bg-LightBlue p-8 lg:px-4 lg:py-6 w-full">
-                            <div x-data="{ query: '', results: [], showResults: false, showForm: true }"
-                                 @click.away="showResults = false"
+                        <form class="flex flex-col rounded-6xl bg-LightBlue p-8 lg:px-4 lg:py-6 w-full">
+                            <div x-data="{ query: '', showForm: true }"
                                  class='flex flex-col w-full mb-6 relative' :style="{display: 'flex'}"
                                  :class='showForm ? "z-[12] lg:pr-0 lg:z-[32] w-full" : "lg:pr-[56px] w-[200px]"'>
                                 <label for="header-search" class="text-none absolute -z-10">Search</label>
@@ -37,13 +36,13 @@
                                         <div class="relative w-full">
                                             <input type="search" id="header-search" name="Search bar"
                                                    placeholder="Type your drug name..." x-model="query"
-                                                   @input.debounce.300="fetchResults" @focus="showResults = true"
+                                                   @input.debounce.300="fetchResults"
                                                    class="w-full bg-white border-0 focus:ring-0 focus:bg-transparent focus:border-0 text-base md:text-body2 outline-none p-0 leading-8 transition-colors duration-200 ease-in-out appearance-none">
                                         </div>
                                     </div>
                                     <button :class='showForm ? "active right-2 clicked w-10 h-10 min-w-10 top-1/2 -translate-y-1/2" : "w-14 min-w-14 h-14 right-0 top-0"'
+                                            type="submit"
                                             class="flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
-                                            @click="showForm = !showForm; showResults = false"
                                             aria-label="Search button">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
                                              viewBox="0 0 22 22" fill="none">
@@ -55,31 +54,6 @@
                                                   fill="white"/>
                                         </svg>
                                     </button>
-                                </div>
-                                <div x-show="showResults && query.length > 0"
-                                     class="absolute left-0 top-[100%] mt-2 w-full z-10">
-                                    <div class='bg-white border border-gray-200 rounded-lg shadow-shadow-2 p-6 md:px-4 md:py-5'>
-                                        <ul class='flex flex-col gap-y-4 max-h-[226px] overflow-y-auto'>
-                                            <template x-for="result in results" :key="result.id">
-                                                <li class="text-body3 cursor-pointer">
-                                                    <a href="#" class="flex items-center gap-x-6 w-full">
-                                                        <div class="rounded-6xl flex items-center justify-center overflow-hidden border border-Grey w-[101px] min-w-[101px] h-[101px]">
-                                                            <img class="object-cover object-center"
-                                                                 src="img/img-product-small-1.png" alt="">
-                                                        </div>
-                                                        <div class="flex flex-col">
-                                                            <span class="mb-3 block font-bold text-base text-DarkBlue100"
-                                                                  x-text="result.title"></span>
-                                                            <p class="-tracking-018 text-base font-medium text-DarkBlue50"
-                                                               x-text="result.price"></p>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </template>
-                                        </ul>
-                                        <a class='text-danger uppercase font-semibold text-body6 tracking-[0.5px] mt-6 block'
-                                           href="#">More results</a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="flex items-center lg:flex-col lg:items-start">
@@ -108,7 +82,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -132,8 +132,8 @@
                     <img width="272" src="img/Logo.svg" alt="Profarma Main Logo">
                 </a>
                 <div class="flex items-center ml-12 w-full relative lg:hidden">
-                    <div x-data="{ query: '', results: [], showResults: false, showForm: true, isMobile: 0 }"
-                         @click.away="showResults = false; showForm = true"
+                    <form x-data="{ query: '', showForm: true, isMobile: 0 }"
+                         @click.away="showForm = true"
                          x-resize.document="isMobile = $width"
                          class='flex flex-col w-full pl-1/24 lg:pl-0 transition-all lg:hidden'
                          :class='showForm ? "1" : "2"'>
@@ -145,43 +145,22 @@
                                     <div class="relative w-full">
                                         <input type="search" id="header-search" name="Search bar"
                                                placeholder="Type your drug name..." x-model="query"
-                                               @input.debounce.300="fetchResults" @focus="showResults = true"
+                                               @input.debounce.300="fetchResults"
                                                class="w-full bg-white border-0 focus:ring-0 focus:bg-transparent focus:border-0 text-base outline-none p-0 leading-8 transition-colors duration-200 ease-in-out appearance-none">
                                     </div>
                                 </div>
                             </div>
                             <button :class='showForm ? "active right-2 clicked w-10 h-10 min-w-10 lg:w-11 lg:h-11 lg:min-w-11 lg:right-0 top-1/2 -translate-y-1/2" : "w-14 min-w-14 h-14 right-0 top-0"'
                                     class="flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 lg:bg-LagunaBlue lg:border-LagunaBlue border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
-                                    @click="showForm = !showForm; showResults = false" aria-label="Search button">
+                                    type="submit"
+                                     aria-label="Search button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                     <path class="group-hover:fill-blue100 transition-all" d="M0.5 10.0438C0.5 4.77292 4.77292 0.5 10.0438 0.5C15.3147 0.5 19.5876 4.77292 19.5876 10.0438C19.5876 15.3147 15.3147 19.5876 10.0438 19.5876C4.77292 19.5876 0.5 15.3147 0.5 10.0438ZM10.0438 2.04764C5.62766 2.04764 2.04764 5.62766 2.04764 10.0438C2.04764 14.4599 5.62766 18.0399 10.0438 18.0399C14.4599 18.0399 18.0399 14.4599 18.0399 10.0438C18.0399 5.62766 14.4599 2.04764 10.0438 2.04764Z" fill="white"/>
                                     <path class="group-hover:fill-blue100 transition-all" d="M15.8016 15.8016C16.1038 15.4994 16.5938 15.4994 16.896 15.8016L21.2734 20.179C21.5755 20.4812 21.5755 20.9712 21.2734 21.2734C20.9712 21.5755 20.4812 21.5755 20.179 21.2734L15.8016 16.896C15.4994 16.5938 15.4994 16.1038 15.8016 15.8016Z" fill="white"/>
                                 </svg>
                             </button>
                         </div>
-                        <div style="display: none" x-show="showResults && query.length > 0"
-                             class="absolute left-0 top-full mt-2 pl-1/24 w-full z-[999] lg:pl-0">
-                            <div class='bg-white border border-gray-200 rounded-lg shadow-shadow-2 p-6 md:px-4 md:py-5'>
-                                <ul class='flex flex-col gap-y-4 max-h-[226px] overflow-y-auto'>
-                                    <template x-for="result in results" :key="result.id">
-                                        <li class="text-body3 cursor-pointer">
-                                            <a href="#" class="flex items-center gap-x-6 w-full">
-                                                <div class="rounded-6xl flex items-center justify-center overflow-hidden border border-Grey w-[101px] min-w-[101px] h-[101px]">
-                                                    <img class="object-cover object-center" src="img/img-product-small-1.png" alt="">
-                                                </div>
-                                                <div class="flex flex-col">
-                                                    <span class="mb-3 block font-bold text-base text-DarkBlue100" x-text="result.title"></span>
-                                                    <p class="-tracking-018 text-base font-medium text-DarkBlue50" x-text="result.price"></p>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </template>
-                                </ul>
-                                <a class='text-danger uppercase font-semibold text-body6 tracking-[0.5px] mt-6 block'
-                                   href="#">More results</a>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="flex items-center lg:hidden">
                     <a class="button" href="Login.html">Login</a>
@@ -296,8 +275,8 @@
              x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full"
              class="absolute min-h-screen minlg:hidden h-full overflow-x-auto inset-x-0 top-[100%] z-[10000] flex flex-col items-center divide-x divide-slate-300 rounded-b-xl border-b border-slate-300 bg-slate-100">
             <div class="overflow-y-scroll flex flex-col items-center w-full pt-16 pb-[250px] container">
-                <div x-cloak style="display: none" x-data="{ query: '', results: [], showResults: false, showForm: true, isMobile: 0 }"
-                     @click.away="showResults = false; showForm = true"
+                <form x-cloak style="display: none" x-data="{ query: '', showForm: true, isMobile: 0 }"
+                     @click.away="showForm = true"
                      x-resize.document="isMobile = $width"
                      class='flex flex-col w-full pl-1/24 lg:pl-0 transition-all relative mb-8' :style="{display: 'flex'}"
                      :class='showForm ? "1" : "2"'>
@@ -309,43 +288,22 @@
                                 <div class="relative w-full">
                                     <input type="search" id="header-search-mob" name="Search bar"
                                            placeholder="Type your drug name..." x-model="query"
-                                           @input.debounce.300="fetchResults" @focus="showResults = true"
+                                           @input.debounce.300="fetchResults"
                                            class="w-full bg-white border-0 focus:ring-0 focus:bg-transparent focus:border-0 text-base md:text-body2 outline-none p-0 leading-8 transition-colors duration-200 ease-in-out appearance-none">
                                 </div>
                             </div>
                         </div>
                         <button :class='showForm ? "active right-2 clicked w-10 h-10 min-w-10 lg:w-11 lg:h-11 lg:min-w-11 top-1/2 -translate-y-1/2" : "w-14 min-w-14 h-14 right-0 top-0"'
                                 class="flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
-                                @click="showForm = !showForm; showResults = false" aria-label="Search button">
+                                type="submit"
+                                aria-label="Search button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <path class="group-hover:fill-blue100 transition-all" d="M0.5 10.0438C0.5 4.77292 4.77292 0.5 10.0438 0.5C15.3147 0.5 19.5876 4.77292 19.5876 10.0438C19.5876 15.3147 15.3147 19.5876 10.0438 19.5876C4.77292 19.5876 0.5 15.3147 0.5 10.0438ZM10.0438 2.04764C5.62766 2.04764 2.04764 5.62766 2.04764 10.0438C2.04764 14.4599 5.62766 18.0399 10.0438 18.0399C14.4599 18.0399 18.0399 14.4599 18.0399 10.0438C18.0399 5.62766 14.4599 2.04764 10.0438 2.04764Z" fill="white"/>
                                 <path class="group-hover:fill-blue100 transition-all" d="M15.8016 15.8016C16.1038 15.4994 16.5938 15.4994 16.896 15.8016L21.2734 20.179C21.5755 20.4812 21.5755 20.9712 21.2734 21.2734C20.9712 21.5755 20.4812 21.5755 20.179 21.2734L15.8016 16.896C15.4994 16.5938 15.4994 16.1038 15.8016 15.8016Z" fill="white"/>
                             </svg>
                         </button>
                     </div>
-                    <div x-show="showResults && query.length > 0"
-                         class="absolute left-0 top-full mt-2 pl-1/24 w-full z-10 lg:pl-0">
-                        <div class='bg-white border border-gray-200 rounded-lg shadow-shadow-2 p-6 md:px-4 md:py-5'>
-                            <ul class='flex flex-col gap-y-4 max-h-[226px] overflow-y-auto'>
-                                <template x-for="result in results" :key="result.id">
-                                    <li class="text-body3 cursor-pointer">
-                                        <a href="#" class="flex items-center gap-x-6 w-full">
-                                            <div class="rounded-6xl flex items-center justify-center overflow-hidden border border-Grey w-[101px] min-w-[101px] h-[101px]">
-                                                <img class="object-cover object-center" src="img/img-product-small-1.png" alt="">
-                                            </div>
-                                            <div class="flex flex-col">
-                                                <span class="mb-3 block font-bold text-base text-DarkBlue100" x-text="result.title"></span>
-                                                <p class="-tracking-018 text-base font-medium text-DarkBlue50" x-text="result.price"></p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </template>
-                            </ul>
-                            <a class='text-danger uppercase font-semibold text-body6 tracking-[0.5px] mt-6 block'
-                               href="#">More results</a>
-                        </div>
-                    </div>
-                </div>
+                </form>
                 <ul class="flex flex-col gap-y-10 w-full">
                     <li class="flex items-center justify-center">
                         <a class="text-base font-semibold text-DarkBlue100 pb-3 menu-item-active" href="index.html">Home</a>
@@ -961,29 +919,6 @@
         Alpine.data('data', () => ({
         }))
     })
-
-    function fetchResults() {
-        this.results = []
-        if (this.query.length > 0) {
-            // Имитация поиска. Поменять на реальный API вызов или логику поиска.
-            this.results = [
-                {id: 1, title: 'Differin 0.1% Cream', price: '£16.43'},
-                {id: 2, title: 'Cardura (Doxazosin Mesylate)', price: '£28.99'},
-                {id: 3, title: 'Cardura (Doxazosin Mesylate)', price: '£48.99'},
-                {id: 4, title: 'Cardura (Doxazosin Mesylate)', price: '£628.99'},
-                {id: 5, title: 'Cardura (Doxazosin Mesylate)', price: '£238.99'},
-            ]
-        }
-        this.showResults = this.results.length > 0
-    }
-    //
-    // function selectResult(result) {
-    //     this.query = result.title
-    //     this.showResults = false
-    // }
-
-
-
 </script>
 </body>
 

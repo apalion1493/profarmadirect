@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Settings Update Password'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    <div class="flex w-full">
+        @@include('components/D-navigation.html')
+        <div class="flex flex-col w-full">
+            @@include('components/D-header.html')
+            <div class="container-full">
+                <div class="row-10 my-14">
+                    <div class="col-span-10">
+                        <div class="flex flex-col gap-y-10">
+                            <div class="flex flex-col">
+                                <span class="text-h4 block mb-4 font-bold">
+                                  My Consultations
+                                </span>
+                                <div class="flex flex-col text-body font-medium text-DarkBlue50">
+                                    Consultation you’ve performed in the last two weeks.
+                                </div>
+                            </div>
+                            <div class="row-10 gap-x-8">
+                                <div class="col-span-10">
+                                    <div class="bg-white shadow-4xl p-8 pt-0 rounded-6xl w-full">
+                                        <div x-data="{
+                                                data: [],
+                                                sortAsc: true,
+                                                init() {
+                                                  // Здесь можно заменить на API-запрос для загрузки данных
+                                                  this.data = [
+                                                    { id: 3 },
+                                                    { id: 1 },
+                                                    { id: 2 }
+                                                  ];
+                                                },
+                                                get sortedData() {
+                                                  return this.data.slice().sort((a, b) => this.sortAsc ? a.id - b.id : b.id - a.id);
+                                                },
+                                                sortTable() {
+                                                  this.sortAsc = !this.sortAsc;
+                                                }
+                                            }">
+                                            <table class="w-full text-left table-auto">
+                                                <thead class="border-b pb-2 uppercase text-body4 font-semibold text-DarkBlue50">
+                                                    <tr>
+                                                        <th scope="col" class="px-4 py-5 font-medium cursor-pointer" @click="sortTable()">ID</th>
+                                                        <th scope="col" class="px-4 py-5 font-medium">Status</th>
+                                                        <th scope="col" class="px-4 py-5 font-medium">CONSULTATION FORM</th>
+                                                        <th scope="col" class="px-4 py-5 font-medium">PRODUCT NAME</th>
+                                                        <th scope="col" class="px-4 py-5 font-medium">ADDED ON</th>
+                                                        <th scope="col" class="px-4 py-5 font-medium">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="border-[0]">
+                                                <template x-for="row in sortedData" :key="row.id">
+                                                    <tr>
+                                                        <td class="p-4 pt-8 text-body font-semibold" x-text="row.id"></td>
+                                                        <td class="p-4 pt-8">
+                                                            @@include('components/status-elem.html', {
+                                                            'Title': 'Rewiew',
+                                                            'Style': 'bg-blue100 text-white',
+                                                            })
+                                                        </td>
+                                                        <td class="p-4 pt-8">
+                                                            <button class="flex items-center w-fit rounded-lg bg-LightBlue overflow-hidden px-3 h-[36px]" type="button">
+                                                                <i class="Pdf-icon-16 mr-2"></i>
+                                                                <span class="text-body2 font-semibold">Consult-Form.doc</span>
+                                                            </button>
+                                                        </td>
+                                                        <td class="p-4 pt-8">
+                                                            <div class="flex flex-col">
+                                                                <span class="block mb-2 text-DarkBlue100 text-base -tracking-018 font-bold">Differin 0.1% Tabs</span>
+                                                                <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                                    <span>7 days</span>
+                                                                    <span>\</span>
+                                                                    <span>1 tab</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="p-4 pt-8">
+                                                            <time datetime="2021-11-14" class="text-base font-semibold">08.07.2024</time>
+                                                        </td>
+                                                        <td class="p-4 pt-8">
+                                                            <div>
+                                                                <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                                    <i class="Dowlnoad-icon-20-v2"></i>
+                                                                </button>
+
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </template>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>
