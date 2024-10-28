@@ -3391,6 +3391,10 @@ html {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .pb-10{
   padding-bottom: 2.5rem;
 }
