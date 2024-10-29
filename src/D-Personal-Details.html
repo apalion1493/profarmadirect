@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Medical Records/Personal Details'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    <div class="flex w-full">
+        @@include('components/D-navigation.html')
+        <div class="flex flex-col w-full">
+            @@include('components/D-header.html')
+            <div class="container-full">
+                <div class="row-10 my-14">
+                    <div class="col-span-10">
+                        <div class="flex flex-col gap-y-10">
+                            <div class="flex flex-col">
+                                <span class="text-h4 block mb-4 font-bold">
+                                   Personal Details
+                                </span>
+                                <div class="flex flex-col text-body font-medium text-DarkBlue50">
+                                    Here you will find your personal details, addresses etc.
+                                </div>
+                            </div>
+                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>
