@@ -49,31 +49,29 @@
                     <img width="272" src="img/Logo.svg" alt="Profarma Main Logo">
                 </a>
                 <div class="flex items-center ml-12 w-full relative lg:hidden">
-                    <form x-data="{ query: '', showForm: true, isMobile: 0 }"
-                         @click.away="showForm = true"
-                         x-resize.document="isMobile = $width"
-                         class='flex flex-col w-full pl-1/24 lg:pl-0 transition-all lg:hidden'
-                         :class='showForm ? "1" : "2"'>
+                    <form x-data="{ query: ''}"
+                          class='flex flex-col w-full relative' :style="{display: 'flex'}">
                         <label for="header-search" class="text-none absolute -z-10">Search</label>
                         <div class='flex items-center relative'>
-                            <div :class="isMobile > 1024 ? 'dt': 'mob'" class="flex items-center w-full">
-                                <div :class="showForm ? 'py-2 pl-6 lg:pl-4 pr-16 border opacity-100' : 'border-0 p-0 opacity-0'"
-                                     class='flex items-center rounded-[40px] lg:pr-[56px] h-[56px] w-full  overflow-hidden transition-all bg-white border-border-2 relative'>
-                                    <div class="relative w-full">
-                                        <input type="search" id="header-search" name="Search bar"
-                                               placeholder="Type your drug name..." x-model="query"
-                                               @input.debounce.300="fetchResults"
-                                               class="w-full bg-white border-0 focus:ring-0 focus:bg-transparent focus:border-0 text-base outline-none p-0 leading-8 transition-colors duration-200 ease-in-out appearance-none">
-                                    </div>
+                            <div class='flex items-center rounded-[40px] lg:pr-[56px] h-[56px] md:h-[52px] w-full overflow-hidden transition-all bg-white border-border-2 relative
+                                        py-2 pl-6 lg:pl-4 pr-16 border opacity-100'>
+                                <div class="relative w-full">
+                                    <input type="search" id="header-search" name="Search bar"
+                                           placeholder="Type your drug name..." x-model="query"
+                                           class="w-full bg-white border-0 focus:ring-0 focus:bg-transparent focus:border-0 text-base md:text-body2 outline-none p-0 leading-8 transition-colors duration-200 ease-in-out appearance-none">
                                 </div>
                             </div>
-                            <button :class='showForm ? "active right-2 clicked w-10 h-10 min-w-10 lg:w-11 lg:h-11 lg:min-w-11 lg:right-0 top-1/2 -translate-y-1/2" : "w-14 min-w-14 h-14 right-0 top-0"'
-                                    class="flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 lg:bg-LagunaBlue lg:border-LagunaBlue border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
-                                    type="submit"
-                                     aria-label="Search button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                    <path class="group-hover:fill-blue100 transition-all" d="M0.5 10.0438C0.5 4.77292 4.77292 0.5 10.0438 0.5C15.3147 0.5 19.5876 4.77292 19.5876 10.0438C19.5876 15.3147 15.3147 19.5876 10.0438 19.5876C4.77292 19.5876 0.5 15.3147 0.5 10.0438ZM10.0438 2.04764C5.62766 2.04764 2.04764 5.62766 2.04764 10.0438C2.04764 14.4599 5.62766 18.0399 10.0438 18.0399C14.4599 18.0399 18.0399 14.4599 18.0399 10.0438C18.0399 5.62766 14.4599 2.04764 10.0438 2.04764Z" fill="white"/>
-                                    <path class="group-hover:fill-blue100 transition-all" d="M15.8016 15.8016C16.1038 15.4994 16.5938 15.4994 16.896 15.8016L21.2734 20.179C21.5755 20.4812 21.5755 20.9712 21.2734 21.2734C20.9712 21.5755 20.4812 21.5755 20.179 21.2734L15.8016 16.896C15.4994 16.5938 15.4994 16.1038 15.8016 15.8016Z" fill="white"/>
+                            <button type="submit"
+                                    class="flex items-center active right-2 clicked w-10 h-10 min-w-10 top-1/2 -translate-y-1/2 justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
+                                    aria-label="Search button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                     viewBox="0 0 22 22" fill="none">
+                                    <path class="group-hover:fill-blue100 transition-all"
+                                          d="M0.5 10.0438C0.5 4.77292 4.77292 0.5 10.0438 0.5C15.3147 0.5 19.5876 4.77292 19.5876 10.0438C19.5876 15.3147 15.3147 19.5876 10.0438 19.5876C4.77292 19.5876 0.5 15.3147 0.5 10.0438ZM10.0438 2.04764C5.62766 2.04764 2.04764 5.62766 2.04764 10.0438C2.04764 14.4599 5.62766 18.0399 10.0438 18.0399C14.4599 18.0399 18.0399 14.4599 18.0399 10.0438C18.0399 5.62766 14.4599 2.04764 10.0438 2.04764Z"
+                                          fill="white"/>
+                                    <path class="group-hover:fill-blue100 transition-all"
+                                          d="M15.8016 15.8016C16.1038 15.4994 16.5938 15.4994 16.896 15.8016L21.2734 20.179C21.5755 20.4812 21.5755 20.9712 21.2734 21.2734C20.9712 21.5755 20.4812 21.5755 20.179 21.2734L15.8016 16.896C15.4994 16.5938 15.4994 16.1038 15.8016 15.8016Z"
+                                          fill="white"/>
                                 </svg>
                             </button>
                         </div>

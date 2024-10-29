@@ -24,25 +24,21 @@
                                 living</h1>
                             <span class="text-center -tracking-018 text-base font-medium">Welcome to Pro forma Direct a modern online pharmacy committed to providing top-quality pharmaceutical care. </span>
                         </div>
-
-                        <form class="flex flex-col rounded-6xl bg-LightBlue p-8 lg:px-4 lg:py-6 w-full">
-                            <div x-data="{ query: '', showForm: true }"
-                                 class='flex flex-col w-full mb-6 relative' :style="{display: 'flex'}"
-                                 :class='showForm ? "z-[12] lg:pr-0 lg:z-[32] w-full" : "lg:pr-[56px] w-[200px]"'>
+                        <div class="flex flex-col rounded-6xl bg-LightBlue p-8 lg:px-4 lg:py-6 w-full">
+                            <form x-data="{ query: ''}"
+                                 class='flex flex-col w-full relative' :style="{display: 'flex'}">
                                 <label for="header-search" class="text-none absolute -z-10">Search</label>
                                 <div class='flex items-center relative'>
-                                    <div :class='showForm ? "py-2 pl-6 lg:pl-4 pr-16 border opacity-100" : " border-0 p-0 opacity-0"'
-                                         class='flex items-center rounded-[40px] lg:pr-[56px] h-[56px] md:h-[52px] w-full overflow-hidden transition-all bg-white border-border-2 relative'>
+                                    <div class='flex items-center rounded-[40px] lg:pr-[56px] h-[56px] md:h-[52px] w-full overflow-hidden transition-all bg-white border-border-2 relative
+                                        py-2 pl-6 lg:pl-4 pr-16 border opacity-100'>
                                         <div class="relative w-full">
                                             <input type="search" id="header-search" name="Search bar"
                                                    placeholder="Type your drug name..." x-model="query"
-                                                   @input.debounce.300="fetchResults"
                                                    class="w-full bg-white border-0 focus:ring-0 focus:bg-transparent focus:border-0 text-base md:text-body2 outline-none p-0 leading-8 transition-colors duration-200 ease-in-out appearance-none">
                                         </div>
                                     </div>
-                                    <button :class='showForm ? "active right-2 clicked w-10 h-10 min-w-10 top-1/2 -translate-y-1/2" : "w-14 min-w-14 h-14 right-0 top-0"'
-                                            type="submit"
-                                            class="flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
+                                    <button type="submit"
+                                            class="flex items-center active right-2 clicked w-10 h-10 min-w-10 top-1/2 -translate-y-1/2 justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"
                                             aria-label="Search button">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
                                              viewBox="0 0 22 22" fill="none">
@@ -55,8 +51,8 @@
                                         </svg>
                                     </button>
                                 </div>
-                            </div>
-                            <div class="flex items-center lg:flex-col lg:items-start">
+                            </form>
+                            <div class="flex items-center mt-6 lg:flex-col lg:items-start">
                                 <span class="text-body font-medium text-DarkBlue50 mr-6 block lg:mb-4">Popular Searches:</span>
                                 <ul class="flex items-center gap-x-6 lg:gap-4 flex-wrap">
                                     <li class="flex items-center justify-center top-line">
@@ -82,7 +78,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

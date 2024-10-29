@@ -284,7 +284,155 @@
                                 </div>
                             </div>
                             <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                <div class="row gap-8">
+                                    <div class="col-span-6">
+                                        <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="NameId">Full Name</label>
+    <input
+        class="input user-input-icon input-icon "
+        type="text" id="NameId" placeholder="Your Name" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                    </div>
+                                    <div class="col-span-6">
+                                        <div class="flex flex-col">
+                                            <span class="mb-3 font-semibold text-body md:text-body2">Date of Birth</span>
+                                            <div class="flex gap-3">
+                                                <div class="form-group flex flex-1 flex-col items-start relative">
+                                                    <label class="text-none" for="idSelect1">Day</label>
+                                                    <select id="idSelect1" name="" class="select w-full input">
+                                                        <option disabled selected>Day</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group flex flex-1 flex-col items-start relative">
+                                                    <label class="text-none" for="idSelect2">Month</label>
+                                                    <select id="idSelect2" name="" class="select w-full input">
+                                                        <option disabled selected>Month</option>
+                                                        <option value="1">Я</option>
+                                                        <option value="2">Календарь</option>
+                                                        <option value="3">Переверну</option>
+                                                        <option value="3">И снова</option>
+                                                        <option value="3">3 Сентября</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group flex flex-1 flex-col items-start relative">
+                                                    <label class="text-none" for="idSelect3">Year</label>
+                                                    <select id="idSelect3" name="" class="select w-full input">
+                                                        <option disabled selected>Year</option>
+                                                        <option value="1">Верните</option>
+                                                        <option value="2">Мой</option>
+                                                        <option value="3">2007</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-6">
+                                        <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="EmailId">Email</label>
+    <input
+        class="input mail-input-icon input-icon "
+        type="email" id="EmailId" placeholder="example@youremail.com" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                    </div>
+                                    <div class="col-span-6">
+                                        <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="NHS_NumberId">NHS Number</label>
+    <input
+        class="input  "
+        type="text" id="NHS_NumberId" placeholder="NHS Number" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                    </div>
+                                    <div class="col-span-6">
+                                        <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="NumId">Phone Number</label>
+    <input
+        class="input phone-input-icon input-icon "
+        type="text" id="NumId" placeholder="(123) 456 - 789" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                    </div>
+                                    <div class="col-span-6">
+                                        <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="NewNumId">New Phone Number</label>
+    <input
+        class="input phone-input-icon input-icon "
+        type="text" id="NewNumId" placeholder="(123) 456 - 789" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                    </div>
+                                    <div class="col-span-6">
+                                        <div class="flex flex-col">
+                                            <span class="mb-3 font-semibold text-body md:text-body2">Gender</span>
+                                            <div class="flex md:flex-col gap-3">
+                                                <div class="flex input input--radio flex-1 items-center">
+                                                    <input id="radioMac" type="radio"
+                                                           class="input-radio-block"
+                                                           name="radioDefault" value="" checked>
+                                                    <label for="radioMac" class="text-sm">Male</label>
+                                                </div>
+                                                <div class="flex input input--radio flex-1 items-center">
+                                                    <input id="radioWindows" type="radio"
+                                                           class="input-radio-block"
+                                                           name="radioDefault" value="">
+                                                    <label for="radioWindows" class="text-sm">Female</label>
+                                                </div>
+                                                <div class="flex input input--radio flex-1 items-center">
+                                                    <input id="radioLinux" type="radio"
+                                                           class="input-radio-block"
+                                                           name="radioDefault" value="">
+                                                    <label for="radioLinux" class="text-sm">Other</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-6">
+                                        <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="passwordId">Password</label>
+    <input
+        class="input lock-input-icon input-icon "
+        type="password" id="passwordId" placeholder="**********" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                    </div>
+                                    <div class="col-span-12">
+                                        <div class="flex flex-col">
+                                            <label class="mb-3 text-body font-semibold " for="fileInput">Indification Check</label>
+                                            <p class="text-body2 text-DarkBlue50 font-medium mb-3">Upload a picture of your Passport or Driving License (Jpeg, Png, PDF, HEIC) *</p>
+                                            <input id="fileInput" type="file" class="input w-full overflow-clip rounded-xl border border-slate-300 bg-slate-100/50 text-sm text-slate-700 file:mr-4 file:cursor-pointer file:border-none file:bg-slate-100 file:px-4 file:py-2 file:font-medium file:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 disabled:cursor-not-allowed disabled:opacity-75 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-300 dark:file:bg-slate-800 dark:file:text-white dark:focus-visible:outline-blue-600" />
+                                        </div>
+                                    </div>
+                                    <div class="col-span-12">
+                                        <button class="button db-btn w-fill" type="submit" aria-label="@@ariaLabel">
+    <span>Save Changes</span>
+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                <div class="row gap-8">
+                                    <div class="col-span-12">
+                                        <div class="flex flex-col">
+                                            <span class="text-Top1 font-bold block mb-4">Add Address</span>
+                                            <p class="text-body text-DarkBlue50 font-medium mb-2">In this section, you can add alternate delivery addresses.</p>
+                                            <p class="text-body text-DarkBlue50 font-medium"><span class="font-semibold">Remember</span>:You need to have at least one address added here to complete an order for delivery.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-6">
 
+                                    </div>
+
+                                    <div class="col-span-12">
+                                        <button class="button db-btn w-fill" type="submit" aria-label="@@ariaLabel">
+    <span>Save Changes</span>
+</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

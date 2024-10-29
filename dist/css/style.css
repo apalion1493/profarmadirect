@@ -2525,6 +2525,9 @@ html {
 .mt-auto{
   margin-top: auto;
 }
+.-mb-6{
+  margin-bottom: -1.5rem;
+}
 .block{
   display: block;
 }
@@ -5935,6 +5938,12 @@ p{
   }
   .lg\:top-2{
     top: 0.5rem;
+  }
+  .lg\:right-1{
+    right: 0.25rem;
+  }
+  .lg\:right-2{
+    right: 0.5rem;
   }
   .lg\:z-10{
     z-index: 10;
