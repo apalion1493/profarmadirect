@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('overflow-hidden');
     };
 
-    burgerButton.addEventListener('click', toggleMenu);
+    burgerButton?.addEventListener('click', toggleMenu);
 })
 
 

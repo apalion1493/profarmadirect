@@ -307,12 +307,20 @@
                                             <table class="w-full text-left table-auto">
                                                 <thead class="border-b pb-2 uppercase text-body4 font-semibold text-DarkBlue50">
                                                     <tr>
-                                                        <th scope="col" class="px-4 py-5 font-medium cursor-pointer" @click="sortTable()">ID</th>
+                                                        <th scope="col" class="px-4 py-5 font-medium cursor-pointer" @click="sortTable()">
+                                                            <div class="flex items-center">
+                                                                <span>ID</span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M7.71338 4.08407C7.82547 3.97198 8.00721 3.97198 8.11931 4.08407L10.4156 6.38036C10.4977 6.46245 10.5222 6.58591 10.4778 6.69317C10.4334 6.80043 10.3287 6.87036 10.2126 6.87036H5.62005C5.50396 6.87036 5.39929 6.80043 5.35487 6.69317C5.31044 6.58591 5.335 6.46245 5.41709 6.38036L7.71338 4.08407Z" fill="#05093E" fill-opacity="0.5"/>
+                                                                    <path d="M8.11963 11.453C8.00754 11.5651 7.8258 11.5651 7.7137 11.453L5.41741 9.15675C5.33532 9.07466 5.31076 8.9512 5.35519 8.84394C5.39962 8.73668 5.50428 8.66675 5.62038 8.66675L10.213 8.66675C10.3291 8.66675 10.4337 8.73668 10.4781 8.84394C10.5226 8.9512 10.498 9.07466 10.4159 9.15675L8.11963 11.453Z" fill="#05093E" fill-opacity="0.5"/>
+                                                                </svg>
+                                                            </div>
+                                                        </th>
                                                         <th scope="col" class="px-4 py-5 font-medium">Status</th>
                                                         <th scope="col" class="px-4 py-5 font-medium">CONSULTATION FORM</th>
                                                         <th scope="col" class="px-4 py-5 font-medium">PRODUCT NAME</th>
                                                         <th scope="col" class="px-4 py-5 font-medium">ADDED ON</th>
-                                                        <th scope="col" class="px-4 py-5 font-medium">Actions</th>
+                                                        <th scope="col" class="px-4 py-5 font-medium w-[100px]">Actions</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody class="border-[0]">
@@ -342,11 +350,11 @@
                                                             <time datetime="2021-11-14" class="text-base font-semibold">08.07.2024</time>
                                                         </td>
                                                         <td class="p-4 pt-8">
-                                                            <div>
+                                                            <div class="flex items-center gap-x-3">
                                                                 <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
-                                                                    <i class="Dowlnoad-icon-20-v2"></i>
+                                                                    <i class="wastebasket-icon-20"></i>
                                                                 </button>
-
+                                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-blue100 text-white whitespace-nowrap">Doc Comment</span>
                                                             </div>
                                                         </td>
                                                     </tr>
