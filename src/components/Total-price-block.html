@@ -1,0 +1,30 @@
+<div class="flex flex-col w-full min-h-[365px]">
+    <div class="flex items-center justify-between gap-x-2 mb-8">
+        <p class="text-body2 font-semibold text-DarkBlue50">You have 1 ITEM selected</p>
+        @@include('Status-v2.html')
+    </div>
+    <ul class="flex flex-col gap-y-4">
+        <li class="flex justify-between">
+            <div class="flex flex-col">
+                <p class="block mb-2 font-semibold text-base">Differin 0.1% Tabs</p>
+                <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                    <span>24 tabs</span>
+                    <span>\</span>
+                    <span>45MG</span>
+                </div>
+            </div>
+            <span class="text-DarkBlue50 font-medium text-base">£16.43</span>
+        </li>
+    </ul>
+    <div class="mt-auto flex flex-col gap-y-5">
+        <div class="flex items-center justify-between gap-x-2 pt-6 border-t border-DarkBlue10">
+            <span class="font-semibold text-Top2">Total</span>
+            <span class="font-semibold text-Top2">£16.43</span>
+        </div>
+        @@include('Link.html', {
+        'title': 'Request Order',
+        'url': '#',
+        'style': 'db-btn w-full'
+        })
+    </div>
+</div>

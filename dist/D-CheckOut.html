@@ -10,7 +10,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Basket</title>
+    <title>Checkout</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -277,96 +277,156 @@
                         <div class="flex flex-col gap-y-10">
                             <div class="flex flex-col">
                                 <span class="text-h4 block mb-4 font-bold">
-                                   Your Basket
+                                   Checkout
                                 </span>
                                 <div class="flex flex-col text-body font-medium text-DarkBlue50">
-                                    Products you have requested are listed here.
+                                    Lorem ipsum dolor sit amet.
                                 </div>
                             </div>
-                            <div class="row-10 gap-x-8">
-                                <div class="col-span-7">
-                                    <div class="bg-white shadow-4xl px-4 pb-4 rounded-6xl w-full">
-                                        <div x-data="{ checkAll : false }" class="overflow-hidden w-full overflow-x-auto rounded-xl">
-                                            <table class="w-full text-left">
-                                                <thead class="border-b py-2 uppercase text-body4 font-semibold text-DarkBlue50">
-                                                <tr>
-                                                    <th scope="col" class="px-4 py-5">
-                                                        <label for="checkAll" class="flex items-center cursor-pointer text-slate-700 dark:text-slate-300 ">
-                                                            <div class="relative flex items-center">
-                                                                <input type="checkbox" x-model="checkAll" id="checkAll" class="before:content[''] peer relative size-4 cursor-pointer appearance-none overflow-hidden rounded border border-slate-300 bg-white before:absolute before:inset-0 checked:border-blue-700 checked:before:bg-blue-700 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-slate-800 checked:focus:outline-blue-700 active:outline-offset-0 dark:border-slate-700 dark:bg-slate-800 dark:checked:border-blue-600 dark:checked:before:bg-blue-600 dark:focus:outline-slate-300 dark:checked:focus:outline-blue-600" />
-                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="4" class="pointer-events-none invisible absolute left-1/2 top-1/2 size-3 -translate-x-1/2 -translate-y-1/2 text-slate-100 peer-checked:visible dark:text-slate-100">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                                                                </svg>
-                                                            </div>
-                                                        </label>
-                                                    </th>
-                                                    <th scope="col" class="px-4 py-5 font-medium">Product</th>
-                                                    <th scope="col" class="px-4 py-5 font-medium">Price</th>
-                                                    <th scope="col" class="px-4 py-5 font-medium">Quantity</th>
-                                                    <th scope="col" class="px-4 py-5 font-medium">Subtotal</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody class="border-[0]">
-                                                <tr>
-                                                    <td class="p-4">
-                                                        <label for="user2335" class="flex items-center cursor-pointer text-slate-700 dark:text-slate-300 ">
-                                                            <div class="relative flex items-center">
-                                                                <input type="checkbox" id="user2335" class="before:content[''] peer relative size-4 cursor-pointer appearance-none overflow-hidden rounded border border-slate-300 bg-white before:absolute before:inset-0 checked:border-blue-700 checked:before:bg-blue-700 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-slate-800 checked:focus:outline-blue-700 active:outline-offset-0 dark:border-slate-700 dark:bg-slate-800 dark:checked:border-blue-600 dark:checked:before:bg-blue-600 dark:focus:outline-slate-300 dark:checked:focus:outline-blue-600" :checked="checkAll" />
-                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="4" class="pointer-events-none invisible absolute left-1/2 top-1/2 size-3 -translate-x-1/2 -translate-y-1/2 text-slate-100 peer-checked:visible dark:text-slate-100">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                                                                </svg>
-                                                            </div>
-                                                        </label>
-                                                    </td>
-                                                    <td class="p-4 pt-8">
-                                                        <div class="flex items-center">
-                                                            <div class="mr-10 w-[127px] h-[127px] overflow-hidden rounded-xl bg-white flex justify-center items-center">
-                                                                <img src="" alt="Product Img" class="w-full max-h-full object-cover">
-                                                            </div>
-                                                            <span class="text-base font-semibold">Differin 0.1% Tabs</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="p-4 pt-8">
+                            <div class="row-10 xl:gap-x-0 xl:gap-y-8 gap-x-8">
+                                <div class="col-span-7 xl:col-span-10 2xl:col-span-6">
+                                    <div x-data="{ isExpanded: true }" class="flex flex-col gap-y-8">
+                                        <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                            <div class="flex flex-col gap-y-4">
+                                                <span class="text-Top1 font-bold">Shipping Address</span>
+                                                <div class="flex items-center justify-between gap-x-2">
+                                                    <span class="text-body text-DarkBlue50 font-medium">Moldova, Chisinau, Botanica <br>Valea-Morilor 27/2</span>
+                                                    <button class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                        <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                            <path d="M13.6482 2.05816C13.5309 1.94086 13.3719 1.87497 13.206 1.875C13.0402 1.87503 12.8811 1.94098 12.7639 2.05832L4.14096 10.6916C4.02392 10.8088 3.95817 10.9677 3.95817 11.1333V14.1667C3.95817 14.5118 4.23799 14.7917 4.58317 14.7917H7.632C7.79781 14.7917 7.95682 14.7258 8.07404 14.6085L16.6919 5.98689C16.9358 5.74283 16.9358 5.34725 16.6919 5.1032L13.6482 2.05816ZM2.2915 17.5C2.2915 17.1548 2.57133 16.875 2.9165 16.875H17.9165C18.2617 16.875 18.5415 17.1548 18.5415 17.5C18.5415 17.8452 18.2617 18.125 17.9165 18.125H2.9165C2.57133 18.125 2.2915 17.8452 2.2915 17.5Z" fill="#3D65FF"/>
+                                                        </svg>
+                                                        <span class="text-body font-semibold">Edit Address</span>
+                                                    </button>
+                                                </div>
+                                                <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                    <span class="text-body font-semibold">MD-2015</span>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col pt-8 mt-8 w-full border-t border-DarkBlue10">
+                                                <label class="custom-checkbox">
+                                                    <span class="custom-checkbox__block w-5 min-w-5 h-5">
+                                                        <i class="w-5 min-w-5 h-5 rounded-full bg-white border border-blue100 flex"></i>
+                                                    </span>
+                                                    <input x-model="isExpanded" type="checkbox" >
+                                                    <span class="checkmark">
+                                                         <i class="Check-box-active-icon20"></i>
+                                                    </span>
+                                                    <span class="ml-2 text-body2 font-medium text-DarkBlue50 md:text-body4">Add billing address</span>
+                                                </label>
+                                                <small class="text-body2 font-medium text-Error md:text-body4 mt-2 hidden">error</small>
+                                            </div>
+                                        </div>
+                                        <div x-show="isExpanded" class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                            <form class="row gap-8" action="">
+                                                <div class="col-span-12">
+                                                    <span class="text-Top1 font-bold block mb-4">Billing Address</span>
+                                                    <p class="text-body text-DarkBlue50 font-medium mb-2">In this section, you can add alternate delivery addresses.</p>
+                                                    <p class="text-body text-DarkBlue50 font-medium"><span class="font-semibold">Remember</span>:You need to have at least one address added here to complete an order for delivery.</p>
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="NameId">Full Name</label>
+    <input
+        class="input  "
+        type="text" id="NameId" placeholder="Your Name" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="SurnameId">Surname</label>
+    <input
+        class="input  "
+        type="text" id="SurnameId" placeholder="Your Surname" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <div class="form-group flex flex-col items-start relative ">
+    <label class="mb-3 font-semibold text-body md:text-body2" for="SelectIdCountry">Country</label>
+    <select id="SelectIdCountry" name="Country list" class="select w-full input">
+        <option selected>Select State</option>
+        <option value="1">Зажопинск</option>
+        <option value="2">Чигири</option>
+        <option value="3">Жопа мира</option>
+    </select>
+</div>
 
-                                                    </td>
-                                                    <td class="p-4 pt-8">
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <div class="form-group flex flex-col items-start relative ">
+    <label class="mb-3 font-semibold text-body md:text-body2" for="SelectIdCity">City</label>
+    <select id="SelectIdCity" name="City list" class="select w-full input">
+        <option selected>Select State</option>
+        <option value="1">Зажопинск</option>
+        <option value="2">Чигири</option>
+        <option value="3">Жопа мира</option>
+    </select>
+</div>
 
-                                                    </td>
-                                                    <td class="p-4 pt-8">
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="p-4">
-                                                        <label for="user2338" class="flex items-center cursor-pointer text-slate-700 dark:text-slate-300 ">
-                                                            <div class="relative flex items-center">
-                                                                <input type="checkbox" id="user2338" class="before:content[''] peer relative size-4 cursor-pointer appearance-none overflow-hidden rounded border border-slate-300 bg-white before:absolute before:inset-0 checked:border-blue-700 checked:before:bg-blue-700 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-slate-800 checked:focus:outline-blue-700 active:outline-offset-0 dark:border-slate-700 dark:bg-slate-800 dark:checked:border-blue-600 dark:checked:before:bg-blue-600 dark:focus:outline-slate-300 dark:checked:focus:outline-blue-600" :checked="checkAll" />
-                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="4" class="pointer-events-none invisible absolute left-1/2 top-1/2 size-3 -translate-x-1/2 -translate-y-1/2 text-slate-100 peer-checked:visible dark:text-slate-100">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                                                                </svg>
-                                                            </div>
-                                                        </label>
-                                                    </td>
-                                                    <td class="p-4">
-
-                                                    </td>
-                                                    <td class="p-4">
-
-                                                    </td>
-                                                    <td class="p-4">
-
-                                                    </td>
-                                                    <td class="p-4">
-
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="StreetId">Street</label>
+    <input
+        class="input  "
+        type="text" id="StreetId" placeholder="Street" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="HouseNumId">House/Flat Number or Name</label>
+    <input
+        class="input  "
+        type="text" id="HouseNumId" placeholder="House / Flat" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="CountyId">County</label>
+    <input
+        class="input  "
+        type="text" id="CountyId" placeholder="County" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="PostcodeId">Postcode</label>
+    <input
+        class="input  "
+        type="text" id="PostcodeId" placeholder="Postcode" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                                </div>
+                                                <div class="col-span-12">
+                                                    <div class="flex flex-col">
+    <label class="custom-checkbox">
+        <span class="custom-checkbox__block w-5 min-w-5 h-5">
+            <i class="w-5 min-w-5 h-5 rounded-full bg-white border border-blue100 flex"></i>
+        </span>
+        <input type="checkbox">
+        <span class="checkmark">
+             <i class="Check-box-active-icon20"></i>
+        </span>
+        <span class="ml-2 text-body2 text-DarkBlue50 md:text-body4 ">Same as billing address</span>
+    </label>
+    <small class="text-body2 font-medium text-Error md:text-body4 mt-2 hidden">Error</small>
+</div>
+                                                </div>
+                                                <div class="col-span-12">
+                                                    <button class="button db-btn w-full" type="submit" aria-label="@@ariaLabel">
+    <span>Request Order</span>
+</button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-span-3">
-                                    <div class="bg-white shadow-4xl px-8 py-6 rounded-6xl w-full">
+                                <div class="col-span-3 xl:col-span-10 2xl:col-span-4">
+                                    <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
                                         <div class="flex flex-col w-full min-h-[365px]">
     <div class="flex items-center justify-between gap-x-2 mb-8">
         <p class="text-body2 font-semibold text-DarkBlue50">You have 1 ITEM selected</p>

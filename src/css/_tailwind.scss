@@ -13,7 +13,7 @@
 
 @layer components {
   .container {
-    @apply px-4 w-full minsm:max-w-[672px] minmd:max-w-[800px] minlg:max-w-[1056px] minxl:max-w-[1344px];
+    @apply px-4 w-full minsm:max-w-[672px] minmd:max-w-[800px] minlg:max-w-[1056px] minxl:max-w-[1344px] min2xl:max-w-[1549px];
   }
 
   .container-full {

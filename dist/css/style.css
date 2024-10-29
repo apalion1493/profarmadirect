@@ -2198,6 +2198,11 @@ html {
     max-width: 1345px;
   }
 }
+@media (min-width: 1550px){
+  .container{
+    max-width: 1550px;
+  }
+}
 .container {
     width: 100%;
     padding-left: 1rem;
@@ -2221,6 +2226,11 @@ html {
 @media (min-width: 1345px){
   .container{
     max-width: 1344px;
+  }
+}
+@media (min-width: 1550px){
+  .container{
+    max-width: 1549px;
   }
 }
 .container-full {
@@ -2702,6 +2712,9 @@ html {
 .w-6{
   width: 1.5rem;
 }
+.w-\[100px\]{
+  width: 100px;
+}
 .w-\[127px\]{
   width: 127px;
 }
@@ -2744,12 +2757,6 @@ html {
 }
 .w-full{
   width: 100%;
-}
-.w-\[100px\]{
-  width: 100px;
-}
-.w-\[300px\]{
-  width: 300px;
 }
 .min-w-10{
   min-width: 2.5rem;
@@ -5823,6 +5830,20 @@ p{
 .dark\:focus-visible\:outline-blue-600:focus-visible:is(.dark *){
   outline-color: #2563eb;
 }
+@media (max-width: 1549px){
+  .\32xl\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+  .\32xl\:col-span-7{
+    grid-column: span 7 / span 7;
+  }
+  .\32xl\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+  .\32xl\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
+}
 @media (max-width: 1344px){
   .xl\:order-1{
     order: 1;
@@ -5884,6 +5905,13 @@ p{
   }
   .xl\:gap-y-6{
     row-gap: 1.5rem;
+  }
+  .xl\:gap-x-0{
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
+  .xl\:gap-y-8{
+    row-gap: 2rem;
   }
 }
 @media (max-width: 1023px){
