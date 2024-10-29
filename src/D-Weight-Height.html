@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Weight & Height'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    <div class="flex w-full">
+        @@include('components/D-navigation.html')
+        <div class="flex flex-col w-full">
+            @@include('components/D-header.html')
+            <div class="container-full">
+                <div class="row-10 my-14">
+                    <div class="col-span-10">
+                        <div class="flex flex-col gap-y-10">
+                            <div class="flex flex-col">
+                                <span class="text-h4 block mb-4 font-bold">
+                                   Weight & Height
+                                </span>
+                                <div class="flex flex-col text-body font-medium text-DarkBlue50">
+                                    Here you will find your personal details, adresses etc.
+                                </div>
+                            </div>
+                            <div class="row-10 gap-x-8">
+                                <div class="col-span-10">
+                                    <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                        <form action="">
+                                            <div class="row gap-8">
+                                                <div class="col-span-6">
+                                                    @@include('components/input.html', {
+                                                    'common-style': '',
+                                                    'idInput': 'WeightId',
+                                                    'label': 'Weight',
+                                                    'styleInput': '',
+                                                    'type': 'text',
+                                                    'placeholder': 'Weight, kg',
+                                                    'errorStyle': 'hidden',
+                                                    })
+                                                </div>
+                                                <div class="col-span-6">
+                                                    @@include('components/input.html', {
+                                                    'common-style': '',
+                                                    'idInput': 'HeightId',
+                                                    'label': 'Height',
+                                                    'styleInput': '',
+                                                    'type': 'text',
+                                                    'placeholder': 'Height, cm',
+                                                    'errorStyle': 'hidden',
+                                                    })
+                                                </div>
+                                                <div class="col-span-12">
+                                                    @@include('components/button.html', {
+                                                    'type': 'submit',
+                                                    'title': 'Save Changes',
+                                                    'style': 'db-btn'
+                                                    })
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>
