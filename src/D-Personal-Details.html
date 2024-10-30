@@ -124,19 +124,19 @@
                                                     <input id="radioMac" type="radio"
                                                            class="input-radio-block"
                                                            name="radioDefault" value="" checked>
-                                                    <label for="radioMac" class="text-sm">Male</label>
+                                                    <label for="radioMac" class="text-sm w-full">Male</label>
                                                 </div>
                                                 <div class="flex input input--radio flex-1 items-center">
                                                     <input id="radioWindows" type="radio"
                                                            class="input-radio-block"
                                                            name="radioDefault" value="">
-                                                    <label for="radioWindows" class="text-sm">Female</label>
+                                                    <label for="radioWindows" class="text-sm w-full">Female</label>
                                                 </div>
                                                 <div class="flex input input--radio flex-1 items-center">
                                                     <input id="radioLinux" type="radio"
                                                            class="input-radio-block"
                                                            name="radioDefault" value="">
-                                                    <label for="radioLinux" class="text-sm">Other</label>
+                                                    <label for="radioLinux" class="text-sm w-full">Other</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -178,26 +178,146 @@
                                         </div>
                                     </div>
                                     <div class="col-span-6">
-
+                                        @@include('components/Select.html', {
+                                        'commonStyle': '',
+                                        'idSelect': 'SelectIdCountry',
+                                        'label': 'Country',
+                                        'NameSelect': 'Country list',
+                                        })
                                     </div>
                                     <div class="col-span-6">
-
+                                        @@include('components/Select.html', {
+                                        'commonStyle': '',
+                                        'idSelect': 'SelectIdСity',
+                                        'label': 'City',
+                                        'NameSelect': 'City Name',
+                                        })
                                     </div>
                                     <div class="col-span-6">
-
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'StreetId',
+                                        'label': 'Street',
+                                        'styleInput': '',
+                                        'type': 'text',
+                                        'placeholder': 'Street',
+                                        'errorStyle': 'hidden',
+                                        })
                                     </div>
                                     <div class="col-span-6">
-
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'HouseFlatId',
+                                        'label': 'House/Flat Number or Name',
+                                        'styleInput': '',
+                                        'type': 'text',
+                                        'placeholder': 'House / Flat',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-6">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'CountyId',
+                                        'label': 'House/Flat Number or Name',
+                                        'styleInput': '',
+                                        'type': 'text',
+                                        'placeholder': 'County',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-6">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'PostcodeId',
+                                        'label': 'Postcode',
+                                        'styleInput': '',
+                                        'type': 'text',
+                                        'placeholder': 'Postcode',
+                                        'errorStyle': 'hidden',
+                                        })
                                     </div>
 
                                     <div class="col-span-12">
                                         @@include('components/button.html', {
                                         'type': 'submit',
-                                        'title': 'Save Changes',
+                                        'title': 'Add Delivery Address',
                                         'style': 'db-btn w-fill'
                                         })
                                     </div>
                                 </div>
+                            </div>
+                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                <div class="flex flex-col mb-8">
+                                    <span class="text-Top1 font-bold block mb-4">My Addresses</span>
+                                    <p class="text-body text-DarkBlue50 font-medium mb-2">In this section, you can view and delete the addresses you have already added to your account.</p>
+                                </div>
+                                <table class="w-full text-left table-auto">
+                                    <colgroup>
+                                        <col style="width: auto;">
+                                        <col style="width: auto;">
+                                        <col style="width: auto;">
+                                        <col style="width: auto;">
+                                        <col style="width: 300px;">
+                                        <col style="width: 100px;">
+                                    </colgroup>
+                                    <thead class="border-b py-2 uppercase text-body4 font-semibold text-DarkBlue50">
+                                    <tr>
+                                        <th scope="col" class="px-4 py-5 font-medium">COUNTRY</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">CITY</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">COUNTY</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">STREET</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">HOUSE/FLAT NUMBER OR NAME</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">POSTCODE</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="border-[0]">
+                                    <tr>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Moldova</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Chisinau</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Botanica</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Valea-Morilor</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">27/2</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                <span class="text-body font-semibold whitespace-nowrap">MD-2015</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Moldova</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Bender</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Center</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Lenina</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">227/22</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                <span class="text-body font-semibold whitespace-nowrap">MD-3200</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

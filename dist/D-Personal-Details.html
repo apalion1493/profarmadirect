@@ -307,19 +307,19 @@
                                                     <input id="radioMac" type="radio"
                                                            class="input-radio-block"
                                                            name="radioDefault" value="" checked>
-                                                    <label for="radioMac" class="text-sm">Male</label>
+                                                    <label for="radioMac" class="text-sm w-full">Male</label>
                                                 </div>
                                                 <div class="flex input input--radio flex-1 items-center">
                                                     <input id="radioWindows" type="radio"
                                                            class="input-radio-block"
                                                            name="radioDefault" value="">
-                                                    <label for="radioWindows" class="text-sm">Female</label>
+                                                    <label for="radioWindows" class="text-sm w-full">Female</label>
                                                 </div>
                                                 <div class="flex input input--radio flex-1 items-center">
                                                     <input id="radioLinux" type="radio"
                                                            class="input-radio-block"
                                                            name="radioDefault" value="">
-                                                    <label for="radioLinux" class="text-sm">Other</label>
+                                                    <label for="radioLinux" class="text-sm w-full">Other</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -357,24 +357,144 @@
                                         </div>
                                     </div>
                                     <div class="col-span-6">
+                                        <div class="form-group flex flex-col items-start relative ">
+    <label class="mb-3 font-semibold text-body md:text-body2" for="SelectIdCountry">Country</label>
+    <select id="SelectIdCountry" name="Country list" class="select w-full input">
+        <option selected>Select State</option>
+        <option value="1">Зажопинск</option>
+        <option value="2">Чигири</option>
+        <option value="3">Жопа мира</option>
+    </select>
+</div>
 
                                     </div>
                                     <div class="col-span-6">
+                                        <div class="form-group flex flex-col items-start relative ">
+    <label class="mb-3 font-semibold text-body md:text-body2" for="SelectIdСity">City</label>
+    <select id="SelectIdСity" name="City Name" class="select w-full input">
+        <option selected>Select State</option>
+        <option value="1">Зажопинск</option>
+        <option value="2">Чигири</option>
+        <option value="3">Жопа мира</option>
+    </select>
+</div>
 
                                     </div>
                                     <div class="col-span-6">
-
+                                        <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="StreetId">Street</label>
+    <input
+        class="input  "
+        type="text" id="StreetId" placeholder="Street" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
                                     </div>
                                     <div class="col-span-6">
-
+                                        <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="HouseFlatId">House/Flat Number or Name</label>
+    <input
+        class="input  "
+        type="text" id="HouseFlatId" placeholder="House / Flat" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                    </div>
+                                    <div class="col-span-6">
+                                        <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="CountyId">House/Flat Number or Name</label>
+    <input
+        class="input  "
+        type="text" id="CountyId" placeholder="County" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
+                                    </div>
+                                    <div class="col-span-6">
+                                        <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="PostcodeId">Postcode</label>
+    <input
+        class="input  "
+        type="text" id="PostcodeId" placeholder="Postcode" required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
                                     </div>
 
                                     <div class="col-span-12">
                                         <button class="button db-btn w-fill" type="submit" aria-label="@@ariaLabel">
-    <span>Save Changes</span>
+    <span>Add Delivery Address</span>
 </button>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                <div class="flex flex-col mb-8">
+                                    <span class="text-Top1 font-bold block mb-4">My Addresses</span>
+                                    <p class="text-body text-DarkBlue50 font-medium mb-2">In this section, you can view and delete the addresses you have already added to your account.</p>
+                                </div>
+                                <table class="w-full text-left table-auto">
+                                    <colgroup>
+                                        <col style="width: auto;">
+                                        <col style="width: auto;">
+                                        <col style="width: auto;">
+                                        <col style="width: auto;">
+                                        <col style="width: 300px;">
+                                        <col style="width: 100px;">
+                                    </colgroup>
+                                    <thead class="border-b py-2 uppercase text-body4 font-semibold text-DarkBlue50">
+                                    <tr>
+                                        <th scope="col" class="px-4 py-5 font-medium">COUNTRY</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">CITY</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">COUNTY</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">STREET</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">HOUSE/FLAT NUMBER OR NAME</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">POSTCODE</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="border-[0]">
+                                    <tr>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Moldova</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Chisinau</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Botanica</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Valea-Morilor</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">27/2</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                <span class="text-body font-semibold whitespace-nowrap">MD-2015</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Moldova</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Bender</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Center</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Lenina</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">227/22</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                <span class="text-body font-semibold whitespace-nowrap">MD-3200</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
