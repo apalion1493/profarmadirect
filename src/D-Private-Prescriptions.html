@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('components/head.html', {
+'title': 'Private Prescriptions'
+})
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    <div class="flex w-full">
+        @@include('components/D-navigation.html')
+        <div class="flex flex-col w-full">
+            @@include('components/D-header.html')
+            <div class="container-full">
+                <div class="row-10 my-14">
+                    <div class="col-span-10">
+                        <div class="flex flex-col gap-y-10">
+                            <div class="flex flex-col">
+                                <span class="text-h4 block mb-4 font-bold">
+                                   Add a Prescription
+                                </span>
+                                <p class="text-body text-DarkBlue50 font-medium mb-2">Upload your private prescription here. We will get in touch with you via messages or email to inform you of the cost.</p>
+                                <p class="text-body text-DarkBlue50 font-medium"><span class="font-semibold">Remember</span>:You need to have at least one address added here to complete an order for delivery.</p>
+
+                            </div>
+                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                <div class="row gap-8">
+                                    <div class="col-span-6">
+                                        <div class="flex flex-col">
+                                            <label class="mb-3 text-body font-semibold " for="fileInput">Private Prescription upload (JPEG, PNG, HEIC or PDF)*</label>
+                                            <input id="fileInput" type="file" class="input w-full overflow-clip rounded-xl border border-slate-300 bg-slate-100/50 text-sm text-slate-700 file:mr-4 file:cursor-pointer file:border-none file:bg-slate-100 file:px-4 file:py-2 file:font-medium file:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 disabled:cursor-not-allowed disabled:opacity-75 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-300 dark:file:bg-slate-800 dark:file:text-white dark:focus-visible:outline-blue-600" />
+                                        </div>
+                                    </div>
+                                    <div class="col-span-6">
+
+                                    </div>
+                                    <div class="col-span-12">
+                                        @@include('components/button.html', {
+                                        'type': 'submit',
+                                        'title': 'Save Changes',
+                                        'style': 'db-btn w-fill'
+                                        })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                <div class="row gap-8">
+                                    <div class="col-span-12">
+                                        <div class="flex flex-col">
+                                            <span class="text-Top1 font-bold block mb-4">Add Address</span>
+                                            <p class="text-body text-DarkBlue50 font-medium mb-2">In this section, you can add alternate delivery addresses.</p>
+                                            <p class="text-body text-DarkBlue50 font-medium"><span class="font-semibold">Remember</span>:You need to have at least one address added here to complete an order for delivery.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-6">
+                                        @@include('components/Select.html', {
+                                        'commonStyle': '',
+                                        'idSelect': 'SelectIdCountry',
+                                        'label': 'Country',
+                                        'NameSelect': 'Country list',
+                                        })
+                                    </div>
+                                    <div class="col-span-6">
+                                        @@include('components/Select.html', {
+                                        'commonStyle': '',
+                                        'idSelect': 'SelectIdСity',
+                                        'label': 'City',
+                                        'NameSelect': 'City Name',
+                                        })
+                                    </div>
+                                    <div class="col-span-6">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'StreetId',
+                                        'label': 'Street',
+                                        'styleInput': '',
+                                        'type': 'text',
+                                        'placeholder': 'Street',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-6">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'HouseFlatId',
+                                        'label': 'House/Flat Number or Name',
+                                        'styleInput': '',
+                                        'type': 'text',
+                                        'placeholder': 'House / Flat',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-6">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'CountyId',
+                                        'label': 'House/Flat Number or Name',
+                                        'styleInput': '',
+                                        'type': 'text',
+                                        'placeholder': 'County',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+                                    <div class="col-span-6">
+                                        @@include('components/input.html', {
+                                        'common-style': '',
+                                        'idInput': 'PostcodeId',
+                                        'label': 'Postcode',
+                                        'styleInput': '',
+                                        'type': 'text',
+                                        'placeholder': 'Postcode',
+                                        'errorStyle': 'hidden',
+                                        })
+                                    </div>
+
+                                    <div class="col-span-12">
+                                        @@include('components/button.html', {
+                                        'type': 'submit',
+                                        'title': 'Add Delivery Address',
+                                        'style': 'db-btn w-fill'
+                                        })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                <div class="flex flex-col mb-8">
+                                    <span class="text-Top1 font-bold block mb-4">My Addresses</span>
+                                    <p class="text-body text-DarkBlue50 font-medium mb-2">In this section, you can view and delete the addresses you have already added to your account.</p>
+                                </div>
+                                <table class="w-full text-left table-auto">
+                                    <colgroup>
+                                        <col style="width: auto;">
+                                        <col style="width: auto;">
+                                        <col style="width: auto;">
+                                        <col style="width: auto;">
+                                        <col style="width: 300px;">
+                                        <col style="width: 100px;">
+                                    </colgroup>
+                                    <thead class="border-b py-2 uppercase text-body4 font-semibold text-DarkBlue50">
+                                    <tr>
+                                        <th scope="col" class="px-4 py-5 font-medium">COUNTRY</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">CITY</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">COUNTY</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">STREET</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">HOUSE/FLAT NUMBER OR NAME</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">POSTCODE</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="border-[0]">
+                                    <tr>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Moldova</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Chisinau</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Botanica</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">Valea-Morilor</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-body font-semibold">27/2</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                <span class="text-body font-semibold whitespace-nowrap">MD-2015</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Moldova</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Bender</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Center</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">Lenina</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <span class="text-body font-semibold">227/22</span>
+                                        </td>
+                                        <td class="p-4">
+                                            <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                <span class="text-body font-semibold whitespace-nowrap">MD-3200</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+@@include('components/script.html')
+</body>
+
+</html>
