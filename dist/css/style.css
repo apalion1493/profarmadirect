@@ -2803,6 +2803,9 @@ html {
 .max-w-\[309px\]{
   max-width: 309px;
 }
+.max-w-\[404px\]{
+  max-width: 404px;
+}
 .max-w-\[448px\]{
   max-width: 448px;
 }
@@ -3232,6 +3235,9 @@ html {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-DarkBlue30{
+  background-color: #05093E4D;
 }
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
@@ -4959,6 +4965,26 @@ p{
   background-repeat: no-repeat;
 }
 
+.Car-icon-24 {
+  background: url("../img/icons/Car-icon-24.svg");
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Tracking-icon-20 {
+  background: url("../img/icons/Traking-icon-20.svg");
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .button{
   display: flex;
   height: 3.5rem;
@@ -5711,6 +5737,9 @@ p{
   --tw-shadow: 0px 1px 5px 1px rgba(61, 101, 255, 0.12);
   --tw-shadow-colored: 0px 1px 5px 1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.group:disabled .group-disabled\:fill-DarkBlue30{
+  fill: #05093E4D;
 }
 .peer:checked ~ .peer-checked\:visible{
   visibility: visible;

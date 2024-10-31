@@ -212,20 +212,32 @@
                                 <span class="text-h4 block mb-4 font-bold">
                                    Add a Prescription
                                 </span>
-                                <p class="text-body text-DarkBlue50 font-medium mb-2">Upload your private prescription here. We will get in touch with you via messages or email to inform you of the cost.</p>
-                                <p class="text-body text-DarkBlue50 font-medium"><span class="font-semibold">Remember</span>:You need to have at least one address added here to complete an order for delivery.</p>
+                                <p class="text-body text-DarkBlue50 font-medium mb-2">Upload your private prescription
+                                    here. We will get in touch with you via messages or email to inform you of the
+                                    cost.</p>
+                                <p class="text-body text-DarkBlue50 font-medium"><span
+                                        class="font-semibold">Remember</span>:You need to have at least one address
+                                    added here to complete an order for delivery.</p>
 
                             </div>
                             <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
                                 <div class="row gap-8">
                                     <div class="col-span-6">
                                         <div class="flex flex-col">
-                                            <label class="mb-3 text-body font-semibold " for="fileInput">Private Prescription upload (JPEG, PNG, HEIC or PDF)*</label>
-                                            <input id="fileInput" type="file" class="input w-full overflow-clip rounded-xl border border-slate-300 bg-slate-100/50 text-sm text-slate-700 file:mr-4 file:cursor-pointer file:border-none file:bg-slate-100 file:px-4 file:py-2 file:font-medium file:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 disabled:cursor-not-allowed disabled:opacity-75 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-300 dark:file:bg-slate-800 dark:file:text-white dark:focus-visible:outline-blue-600" />
+                                            <label class="mb-3 text-body font-semibold " for="fileInput">Private
+                                                Prescription upload (JPEG, PNG, HEIC or PDF)*</label>
+                                            <input id="fileInput" type="file"
+                                                   class="input w-full overflow-clip rounded-xl border border-slate-300 bg-slate-100/50 text-sm text-slate-700 file:mr-4 file:cursor-pointer file:border-none file:bg-slate-100 file:px-4 file:py-2 file:font-medium file:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700 disabled:cursor-not-allowed disabled:opacity-75 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-300 dark:file:bg-slate-800 dark:file:text-white dark:focus-visible:outline-blue-600"/>
                                         </div>
                                     </div>
                                     <div class="col-span-6">
-
+                                        <div class="form-group flex flex-col items-start ">
+    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="DetailsId">Private Prescription Details</label>
+    <input
+        class="input  "
+        type="text" id="DetailsId" placeholder="Type Details..." required>
+    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
+</div>
                                     </div>
                                     <div class="col-span-12">
                                         <button class="button db-btn w-fill" type="submit" aria-label="@@ariaLabel">
@@ -235,86 +247,10 @@
                                 </div>
                             </div>
                             <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
-                                <div class="row gap-8">
-                                    <div class="col-span-12">
-                                        <div class="flex flex-col">
-                                            <span class="text-Top1 font-bold block mb-4">Add Address</span>
-                                            <p class="text-body text-DarkBlue50 font-medium mb-2">In this section, you can add alternate delivery addresses.</p>
-                                            <p class="text-body text-DarkBlue50 font-medium"><span class="font-semibold">Remember</span>:You need to have at least one address added here to complete an order for delivery.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-span-6">
-                                        <div class="form-group flex flex-col items-start relative ">
-    <label class="mb-3 font-semibold text-body md:text-body2" for="SelectIdCountry">Country</label>
-    <select id="SelectIdCountry" name="Country list" class="select w-full input">
-        <option selected>Select State</option>
-        <option value="1">Зажопинск</option>
-        <option value="2">Чигири</option>
-        <option value="3">Жопа мира</option>
-    </select>
-</div>
-
-                                    </div>
-                                    <div class="col-span-6">
-                                        <div class="form-group flex flex-col items-start relative ">
-    <label class="mb-3 font-semibold text-body md:text-body2" for="SelectIdСity">City</label>
-    <select id="SelectIdСity" name="City Name" class="select w-full input">
-        <option selected>Select State</option>
-        <option value="1">Зажопинск</option>
-        <option value="2">Чигири</option>
-        <option value="3">Жопа мира</option>
-    </select>
-</div>
-
-                                    </div>
-                                    <div class="col-span-6">
-                                        <div class="form-group flex flex-col items-start ">
-    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="StreetId">Street</label>
-    <input
-        class="input  "
-        type="text" id="StreetId" placeholder="Street" required>
-    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
-</div>
-                                    </div>
-                                    <div class="col-span-6">
-                                        <div class="form-group flex flex-col items-start ">
-    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="HouseFlatId">House/Flat Number or Name</label>
-    <input
-        class="input  "
-        type="text" id="HouseFlatId" placeholder="House / Flat" required>
-    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
-</div>
-                                    </div>
-                                    <div class="col-span-6">
-                                        <div class="form-group flex flex-col items-start ">
-    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="CountyId">House/Flat Number or Name</label>
-    <input
-        class="input  "
-        type="text" id="CountyId" placeholder="County" required>
-    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
-</div>
-                                    </div>
-                                    <div class="col-span-6">
-                                        <div class="form-group flex flex-col items-start ">
-    <label class="mb-3 font-semibold text-body md:text-body2 @@StyleLabel" for="PostcodeId">Postcode</label>
-    <input
-        class="input  "
-        type="text" id="PostcodeId" placeholder="Postcode" required>
-    <small class="self-end text-body2 font-semibold text-Error mt-1 hidden">Name is required</small>
-</div>
-                                    </div>
-
-                                    <div class="col-span-12">
-                                        <button class="button db-btn w-fill" type="submit" aria-label="@@ariaLabel">
-    <span>Add Delivery Address</span>
-</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
                                 <div class="flex flex-col mb-8">
                                     <span class="text-Top1 font-bold block mb-4">My Addresses</span>
-                                    <p class="text-body text-DarkBlue50 font-medium mb-2">In this section, you can view and delete the addresses you have already added to your account.</p>
+                                    <p class="text-body text-DarkBlue50 font-medium mb-2">In this section, you can view
+                                        and delete the addresses you have already added to your account.</p>
                                 </div>
                                 <table class="w-full text-left table-auto">
                                     <colgroup>
@@ -322,66 +258,239 @@
                                         <col style="width: auto;">
                                         <col style="width: auto;">
                                         <col style="width: auto;">
-                                        <col style="width: 300px;">
                                         <col style="width: 100px;">
                                     </colgroup>
                                     <thead class="border-b py-2 uppercase text-body4 font-semibold text-DarkBlue50">
                                     <tr>
-                                        <th scope="col" class="px-4 py-5 font-medium">COUNTRY</th>
-                                        <th scope="col" class="px-4 py-5 font-medium">CITY</th>
-                                        <th scope="col" class="px-4 py-5 font-medium">COUNTY</th>
-                                        <th scope="col" class="px-4 py-5 font-medium">STREET</th>
-                                        <th scope="col" class="px-4 py-5 font-medium">HOUSE/FLAT NUMBER OR NAME</th>
-                                        <th scope="col" class="px-4 py-5 font-medium">POSTCODE</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">PRODUCT NAME</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">ORDER STATUS</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">AMOUNT PRICE</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">Tracking number</th>
+                                        <th scope="col" class="px-4 py-5 font-medium">ACTIONS</th>
                                     </tr>
                                     </thead>
                                     <tbody class="border-[0]">
                                     <tr>
                                         <td class="p-4 pt-8">
-                                            <span class="text-body font-semibold">Moldova</span>
+                                            <span class="text-base font-semibold">Differin 0.1% Tabs</span>
                                         </td>
                                         <td class="p-4 pt-8">
-                                            <span class="text-body font-semibold">Chisinau</span>
+                                            <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-blue100 text-white">Delivered</span>
                                         </td>
                                         <td class="p-4 pt-8">
-                                            <span class="text-body font-semibold">Botanica</span>
-                                        </td>
-                                        <td class="p-4 pt-8">
-                                            <span class="text-body font-semibold">Valea-Morilor</span>
-                                        </td>
-                                        <td class="p-4 pt-8">
-                                            <span class="text-body font-semibold">27/2</span>
+                                            <p class="text-base -tracking-018 font-medium">£16.43</p>
                                         </td>
                                         <td class="p-4 pt-8">
                                             <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
-                                                <span class="text-body font-semibold whitespace-nowrap">MD-2015</span>
+                                                <i class="Tracking-icon-20 mr-2"></i>
+                                                <span class="text-body font-semibold whitespace-nowrap">TR 02496GT</span>
+                                            </div>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <div class="flex items-center gap-x-2">
+                                                <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                         viewBox="0 0 20 20" fill="none">
+                                                        <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10.88 15.76V16.12C10.88 16.6 10.49 17 10 17C9.52 17 9.12 16.61 9.12 16.12V15.7C8.49 15.55 7.19 15.09 6.43 13.6C6.2 13.16 6.42 12.61 6.88 12.42L6.95 12.39C7.36 12.22 7.82 12.39 8.03 12.78C8.35 13.39 8.98 14.15 10.15 14.15C11.08 14.15 12.13 13.67 12.13 12.54C12.13 11.58 11.43 11.08 9.85 10.51C8.75 10.12 6.5 9.48 6.5 7.2C6.5 7.1 6.51 4.8 9.12 4.24V3.88C9.12 3.39 9.52 3 10 3C10.48 3 10.88 3.39 10.88 3.88V4.25C11.95 4.44 12.63 5.01 13.04 5.55C13.38 5.99 13.2 6.63 12.68 6.85C12.32 7 11.9 6.88 11.66 6.57C11.38 6.19 10.88 5.8 10.06 5.8C9.36 5.8 8.25 6.17 8.25 7.19C8.25 8.14 9.11 8.5 10.89 9.09C13.29 9.92 13.9 11.14 13.9 12.54C13.9 15.17 11.4 15.67 10.88 15.76Z"
+                                                              fill="#05093E" fill-opacity="0.5"/>
+                                                    </svg>
+                                                </span>
+                                                <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                    <i class="Car-icon-24"></i>
+                                                </span>
+                                                <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                        <path d="M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM14.3 14.3C14.2075 14.3927 14.0976 14.4663 13.9766 14.5164C13.8557 14.5666 13.726 14.5924 13.595 14.5924C13.464 14.5924 13.3343 14.5666 13.2134 14.5164C13.0924 14.4663 12.9825 14.3927 12.89 14.3L10 11.41L7.11 14.3C6.92302 14.487 6.66943 14.592 6.405 14.592C6.14057 14.592 5.88698 14.487 5.7 14.3C5.51302 14.113 5.40798 13.8594 5.40798 13.595C5.40798 13.4641 5.43377 13.3344 5.48387 13.2135C5.53398 13.0925 5.60742 12.9826 5.7 12.89L8.59 10L5.7 7.11C5.51302 6.92302 5.40798 6.66943 5.40798 6.405C5.40798 6.14057 5.51302 5.88698 5.7 5.7C5.88698 5.51302 6.14057 5.40798 6.405 5.40798C6.66943 5.40798 6.92302 5.51302 7.11 5.7L10 8.59L12.89 5.7C12.9826 5.60742 13.0925 5.53398 13.2135 5.48387C13.3344 5.43377 13.4641 5.40798 13.595 5.40798C13.7259 5.40798 13.8556 5.43377 13.9765 5.48387C14.0975 5.53398 14.2074 5.60742 14.3 5.7C14.3926 5.79258 14.466 5.90249 14.5161 6.02346C14.5662 6.14442 14.592 6.27407 14.592 6.405C14.592 6.53593 14.5662 6.66558 14.5161 6.78654C14.466 6.90751 14.3926 7.01742 14.3 7.11L11.41 10L14.3 12.89C14.68 13.27 14.68 13.91 14.3 14.3Z" fill="#3D65FF"/>
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="p-4">
-                                            <span class="text-body font-semibold">Moldova</span>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-base font-semibold">Differin 0.1% Tabs</span>
                                         </td>
-                                        <td class="p-4">
-                                            <span class="text-body font-semibold">Bender</span>
+                                        <td class="p-4 pt-8">
+                                            <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-SkyBlue text-white">Shipping</span>
                                         </td>
-                                        <td class="p-4">
-                                            <span class="text-body font-semibold">Center</span>
+                                        <td class="p-4 pt-8">
+                                            <p class="text-base -tracking-018 font-medium">£16.43</p>
                                         </td>
-                                        <td class="p-4">
-                                            <span class="text-body font-semibold">Lenina</span>
-                                        </td>
-                                        <td class="p-4">
-                                            <span class="text-body font-semibold">227/22</span>
-                                        </td>
-                                        <td class="p-4">
+                                        <td class="p-4 pt-8">
                                             <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
-                                                <span class="text-body font-semibold whitespace-nowrap">MD-3200</span>
+                                                <i class="Tracking-icon-20 mr-2"></i>
+                                                <span class="text-body font-semibold whitespace-nowrap">TR 02496GT</span>
+                                            </div>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <div class="flex items-center gap-x-2">
+                                                <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                         viewBox="0 0 20 20" fill="none">
+                                                        <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10.88 15.76V16.12C10.88 16.6 10.49 17 10 17C9.52 17 9.12 16.61 9.12 16.12V15.7C8.49 15.55 7.19 15.09 6.43 13.6C6.2 13.16 6.42 12.61 6.88 12.42L6.95 12.39C7.36 12.22 7.82 12.39 8.03 12.78C8.35 13.39 8.98 14.15 10.15 14.15C11.08 14.15 12.13 13.67 12.13 12.54C12.13 11.58 11.43 11.08 9.85 10.51C8.75 10.12 6.5 9.48 6.5 7.2C6.5 7.1 6.51 4.8 9.12 4.24V3.88C9.12 3.39 9.52 3 10 3C10.48 3 10.88 3.39 10.88 3.88V4.25C11.95 4.44 12.63 5.01 13.04 5.55C13.38 5.99 13.2 6.63 12.68 6.85C12.32 7 11.9 6.88 11.66 6.57C11.38 6.19 10.88 5.8 10.06 5.8C9.36 5.8 8.25 6.17 8.25 7.19C8.25 8.14 9.11 8.5 10.89 9.09C13.29 9.92 13.9 11.14 13.9 12.54C13.9 15.17 11.4 15.67 10.88 15.76Z"
+                                                              fill="#05093E" fill-opacity="0.5"/>
+                                                    </svg>
+                                                </span>
+                                                <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                    <i class="Car-icon-24"></i>
+                                                </span>
+                                                <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                        <path d="M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM14.3 14.3C14.2075 14.3927 14.0976 14.4663 13.9766 14.5164C13.8557 14.5666 13.726 14.5924 13.595 14.5924C13.464 14.5924 13.3343 14.5666 13.2134 14.5164C13.0924 14.4663 12.9825 14.3927 12.89 14.3L10 11.41L7.11 14.3C6.92302 14.487 6.66943 14.592 6.405 14.592C6.14057 14.592 5.88698 14.487 5.7 14.3C5.51302 14.113 5.40798 13.8594 5.40798 13.595C5.40798 13.4641 5.43377 13.3344 5.48387 13.2135C5.53398 13.0925 5.60742 12.9826 5.7 12.89L8.59 10L5.7 7.11C5.51302 6.92302 5.40798 6.66943 5.40798 6.405C5.40798 6.14057 5.51302 5.88698 5.7 5.7C5.88698 5.51302 6.14057 5.40798 6.405 5.40798C6.66943 5.40798 6.92302 5.51302 7.11 5.7L10 8.59L12.89 5.7C12.9826 5.60742 13.0925 5.53398 13.2135 5.48387C13.3344 5.43377 13.4641 5.40798 13.595 5.40798C13.7259 5.40798 13.8556 5.43377 13.9765 5.48387C14.0975 5.53398 14.2074 5.60742 14.3 5.7C14.3926 5.79258 14.466 5.90249 14.5161 6.02346C14.5662 6.14442 14.592 6.27407 14.592 6.405C14.592 6.53593 14.5662 6.66558 14.5161 6.78654C14.466 6.90751 14.3926 7.01742 14.3 7.11L11.41 10L14.3 12.89C14.68 13.27 14.68 13.91 14.3 14.3Z" fill="#3D65FF"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-base font-semibold">Differin 0.1% Tabs</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-LagunaBlue text-white">Payed</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <p class="text-base -tracking-018 font-medium">£16.43</p>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                <i class="Tracking-icon-20 mr-2"></i>
+                                                <span class="text-body font-semibold whitespace-nowrap">TR 02496GT</span>
+                                            </div>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <div class="flex items-center gap-x-2">
+                                                <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                         viewBox="0 0 20 20" fill="none">
+                                                        <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10.88 15.76V16.12C10.88 16.6 10.49 17 10 17C9.52 17 9.12 16.61 9.12 16.12V15.7C8.49 15.55 7.19 15.09 6.43 13.6C6.2 13.16 6.42 12.61 6.88 12.42L6.95 12.39C7.36 12.22 7.82 12.39 8.03 12.78C8.35 13.39 8.98 14.15 10.15 14.15C11.08 14.15 12.13 13.67 12.13 12.54C12.13 11.58 11.43 11.08 9.85 10.51C8.75 10.12 6.5 9.48 6.5 7.2C6.5 7.1 6.51 4.8 9.12 4.24V3.88C9.12 3.39 9.52 3 10 3C10.48 3 10.88 3.39 10.88 3.88V4.25C11.95 4.44 12.63 5.01 13.04 5.55C13.38 5.99 13.2 6.63 12.68 6.85C12.32 7 11.9 6.88 11.66 6.57C11.38 6.19 10.88 5.8 10.06 5.8C9.36 5.8 8.25 6.17 8.25 7.19C8.25 8.14 9.11 8.5 10.89 9.09C13.29 9.92 13.9 11.14 13.9 12.54C13.9 15.17 11.4 15.67 10.88 15.76Z"
+                                                              fill="#05093E" fill-opacity="0.5"/>
+                                                    </svg>
+                                                </span>
+                                                <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                    <i class="Car-icon-24"></i>
+                                                </span>
+                                                <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                        <path d="M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM14.3 14.3C14.2075 14.3927 14.0976 14.4663 13.9766 14.5164C13.8557 14.5666 13.726 14.5924 13.595 14.5924C13.464 14.5924 13.3343 14.5666 13.2134 14.5164C13.0924 14.4663 12.9825 14.3927 12.89 14.3L10 11.41L7.11 14.3C6.92302 14.487 6.66943 14.592 6.405 14.592C6.14057 14.592 5.88698 14.487 5.7 14.3C5.51302 14.113 5.40798 13.8594 5.40798 13.595C5.40798 13.4641 5.43377 13.3344 5.48387 13.2135C5.53398 13.0925 5.60742 12.9826 5.7 12.89L8.59 10L5.7 7.11C5.51302 6.92302 5.40798 6.66943 5.40798 6.405C5.40798 6.14057 5.51302 5.88698 5.7 5.7C5.88698 5.51302 6.14057 5.40798 6.405 5.40798C6.66943 5.40798 6.92302 5.51302 7.11 5.7L10 8.59L12.89 5.7C12.9826 5.60742 13.0925 5.53398 13.2135 5.48387C13.3344 5.43377 13.4641 5.40798 13.595 5.40798C13.7259 5.40798 13.8556 5.43377 13.9765 5.48387C14.0975 5.53398 14.2074 5.60742 14.3 5.7C14.3926 5.79258 14.466 5.90249 14.5161 6.02346C14.5662 6.14442 14.592 6.27407 14.592 6.405C14.592 6.53593 14.5662 6.66558 14.5161 6.78654C14.466 6.90751 14.3926 7.01742 14.3 7.11L11.41 10L14.3 12.89C14.68 13.27 14.68 13.91 14.3 14.3Z" fill="#3D65FF"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-base font-semibold">Differin 0.1% Tabs</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-Blue40 text-white">Waiting for Payment</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <p class="text-base -tracking-018 font-medium">£16.43</p>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                <i class="Tracking-icon-20 mr-2"></i>
+                                                <span class="text-body font-semibold whitespace-nowrap">TR 02496GT</span>
+                                            </div>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <div class="flex items-center gap-x-2">
+                                                <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                         viewBox="0 0 20 20" fill="none">
+                                                        <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10.88 15.76V16.12C10.88 16.6 10.49 17 10 17C9.52 17 9.12 16.61 9.12 16.12V15.7C8.49 15.55 7.19 15.09 6.43 13.6C6.2 13.16 6.42 12.61 6.88 12.42L6.95 12.39C7.36 12.22 7.82 12.39 8.03 12.78C8.35 13.39 8.98 14.15 10.15 14.15C11.08 14.15 12.13 13.67 12.13 12.54C12.13 11.58 11.43 11.08 9.85 10.51C8.75 10.12 6.5 9.48 6.5 7.2C6.5 7.1 6.51 4.8 9.12 4.24V3.88C9.12 3.39 9.52 3 10 3C10.48 3 10.88 3.39 10.88 3.88V4.25C11.95 4.44 12.63 5.01 13.04 5.55C13.38 5.99 13.2 6.63 12.68 6.85C12.32 7 11.9 6.88 11.66 6.57C11.38 6.19 10.88 5.8 10.06 5.8C9.36 5.8 8.25 6.17 8.25 7.19C8.25 8.14 9.11 8.5 10.89 9.09C13.29 9.92 13.9 11.14 13.9 12.54C13.9 15.17 11.4 15.67 10.88 15.76Z"
+                                                              fill="#05093E" fill-opacity="0.5"/>
+                                                    </svg>
+                                                </span>
+                                                <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                    <i class="Car-icon-24"></i>
+                                                </span>
+                                                <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                        <path d="M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM14.3 14.3C14.2075 14.3927 14.0976 14.4663 13.9766 14.5164C13.8557 14.5666 13.726 14.5924 13.595 14.5924C13.464 14.5924 13.3343 14.5666 13.2134 14.5164C13.0924 14.4663 12.9825 14.3927 12.89 14.3L10 11.41L7.11 14.3C6.92302 14.487 6.66943 14.592 6.405 14.592C6.14057 14.592 5.88698 14.487 5.7 14.3C5.51302 14.113 5.40798 13.8594 5.40798 13.595C5.40798 13.4641 5.43377 13.3344 5.48387 13.2135C5.53398 13.0925 5.60742 12.9826 5.7 12.89L8.59 10L5.7 7.11C5.51302 6.92302 5.40798 6.66943 5.40798 6.405C5.40798 6.14057 5.51302 5.88698 5.7 5.7C5.88698 5.51302 6.14057 5.40798 6.405 5.40798C6.66943 5.40798 6.92302 5.51302 7.11 5.7L10 8.59L12.89 5.7C12.9826 5.60742 13.0925 5.53398 13.2135 5.48387C13.3344 5.43377 13.4641 5.40798 13.595 5.40798C13.7259 5.40798 13.8556 5.43377 13.9765 5.48387C14.0975 5.53398 14.2074 5.60742 14.3 5.7C14.3926 5.79258 14.466 5.90249 14.5161 6.02346C14.5662 6.14442 14.592 6.27407 14.592 6.405C14.592 6.53593 14.5662 6.66558 14.5161 6.78654C14.466 6.90751 14.3926 7.01742 14.3 7.11L11.41 10L14.3 12.89C14.68 13.27 14.68 13.91 14.3 14.3Z" fill="#3D65FF"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 pt-8">
+                                            <span class="text-base font-semibold">Differin 0.1% Tabs</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 bg-DarkBlue30 text-white">Canceled</span>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <p class="text-base -tracking-018 font-medium">£16.43</p>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                <i class="Tracking-icon-20 mr-2"></i>
+                                                <span class="text-body font-semibold whitespace-nowrap">TR 02496GT</span>
+                                            </div>
+                                        </td>
+                                        <td class="p-4 pt-8">
+                                            <div class="flex items-center gap-x-2">
+                                                <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                         viewBox="0 0 20 20" fill="none">
+                                                        <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10.88 15.76V16.12C10.88 16.6 10.49 17 10 17C9.52 17 9.12 16.61 9.12 16.12V15.7C8.49 15.55 7.19 15.09 6.43 13.6C6.2 13.16 6.42 12.61 6.88 12.42L6.95 12.39C7.36 12.22 7.82 12.39 8.03 12.78C8.35 13.39 8.98 14.15 10.15 14.15C11.08 14.15 12.13 13.67 12.13 12.54C12.13 11.58 11.43 11.08 9.85 10.51C8.75 10.12 6.5 9.48 6.5 7.2C6.5 7.1 6.51 4.8 9.12 4.24V3.88C9.12 3.39 9.52 3 10 3C10.48 3 10.88 3.39 10.88 3.88V4.25C11.95 4.44 12.63 5.01 13.04 5.55C13.38 5.99 13.2 6.63 12.68 6.85C12.32 7 11.9 6.88 11.66 6.57C11.38 6.19 10.88 5.8 10.06 5.8C9.36 5.8 8.25 6.17 8.25 7.19C8.25 8.14 9.11 8.5 10.89 9.09C13.29 9.92 13.9 11.14 13.9 12.54C13.9 15.17 11.4 15.67 10.88 15.76Z"
+                                                              fill="#05093E" fill-opacity="0.5"/>
+                                                    </svg>
+                                                </span>
+                                                <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                    <i class="Car-icon-24"></i>
+                                                </span>
+                                                <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg group" disabled type="button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                        <path class="group-disabled:fill-DarkBlue30" d="M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM14.3 14.3C14.2075 14.3927 14.0976 14.4663 13.9766 14.5164C13.8557 14.5666 13.726 14.5924 13.595 14.5924C13.464 14.5924 13.3343 14.5666 13.2134 14.5164C13.0924 14.4663 12.9825 14.3927 12.89 14.3L10 11.41L7.11 14.3C6.92302 14.487 6.66943 14.592 6.405 14.592C6.14057 14.592 5.88698 14.487 5.7 14.3C5.51302 14.113 5.40798 13.8594 5.40798 13.595C5.40798 13.4641 5.43377 13.3344 5.48387 13.2135C5.53398 13.0925 5.60742 12.9826 5.7 12.89L8.59 10L5.7 7.11C5.51302 6.92302 5.40798 6.66943 5.40798 6.405C5.40798 6.14057 5.51302 5.88698 5.7 5.7C5.88698 5.51302 6.14057 5.40798 6.405 5.40798C6.66943 5.40798 6.92302 5.51302 7.11 5.7L10 8.59L12.89 5.7C12.9826 5.60742 13.0925 5.53398 13.2135 5.48387C13.3344 5.43377 13.4641 5.40798 13.595 5.40798C13.7259 5.40798 13.8556 5.43377 13.9765 5.48387C14.0975 5.53398 14.2074 5.60742 14.3 5.7C14.3926 5.79258 14.466 5.90249 14.5161 6.02346C14.5662 6.14442 14.592 6.27407 14.592 6.405C14.592 6.53593 14.5662 6.66558 14.5161 6.78654C14.466 6.90751 14.3926 7.01742 14.3 7.11L11.41 10L14.3 12.89C14.68 13.27 14.68 13.91 14.3 14.3Z" fill="#3D65FF"/>
+                                                    </svg>
+                                                </button>
                                             </div>
                                         </td>
                                     </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="flex items-center justify-between w-full">
+                                <span>Showing 1 to 10 of 20 results</span>
+                                <div class="max-w-[404px] flex items-center justify-center ml-auto w-full">
+                                    <nav class="w-full flex justify-between" aria-label="pagination">
+    <a href="#" class="pagination-button pagination-button--disabled" aria-label="previous page">
+        Previous
+        <svg class="pagination-button--icon hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M9.45032 19.0959C9.6669 19.0959 9.85849 19.0439 10.0251 18.9399C10.1917 18.8359 10.3125 18.6919 10.3874 18.5079C10.4624 18.3239 10.4791 18.1359 10.4374 17.9439C10.3958 17.7519 10.3083 17.5919 10.175 17.4639L2.42813 9.99995L10.175 2.55995C10.275 2.46395 10.35 2.35595 10.3999 2.23595C10.4499 2.11595 10.4749 1.99195 10.4749 1.86395C10.4749 1.73595 10.4499 1.61595 10.3999 1.50395C10.35 1.39195 10.275 1.28795 10.175 1.19195C10.0751 1.09595 9.96261 1.02395 9.83766 0.975948C9.71271 0.927948 9.59609 0.903948 9.4878 0.903948C9.37951 0.903948 9.24207 0.935949 9.07547 0.999949C8.95885 1.04795 8.85056 1.11995 8.7506 1.21595L0.303982 9.32795C0.104061 9.51995 0.0041008 9.74795 0.0041008 10.0119C0.0041008 10.2759 0.104061 10.5039 0.303982 10.6959L8.7506 18.8079C8.95052 18.9999 9.18376 19.0959 9.45032 19.0959ZM1.0037 10.9599H18.9965C19.2797 10.9599 19.5171 10.8679 19.7087 10.6839C19.9003 10.4999 19.9961 10.2759 19.9961 10.0119C19.9961 9.74795 19.8961 9.51995 19.6962 9.32795C19.4963 9.13595 19.2631 9.03995 18.9965 9.03995H1.0037C0.737141 9.03995 0.503901 9.13595 0.303982 9.32795C0.104061 9.51995 0.0041008 9.74795 0.0041008 10.0119C0.0041008 10.2759 0.0998955 10.4999 0.291487 10.6839C0.483076 10.8679 0.720482 10.9599 1.0037 10.9599Z" fill="white"/>
+        </svg>
+        <svg class="pagination-button--icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M9.45032 19.0959C9.6669 19.0959 9.85849 19.0439 10.0251 18.9399C10.1917 18.8359 10.3125 18.6919 10.3874 18.5079C10.4624 18.3239 10.4791 18.1359 10.4374 17.9439C10.3958 17.7519 10.3083 17.5919 10.175 17.4639L2.42813 9.99995L10.175 2.55995C10.275 2.46395 10.35 2.35595 10.3999 2.23595C10.4499 2.11595 10.4749 1.99195 10.4749 1.86395C10.4749 1.73595 10.4499 1.61595 10.3999 1.50395C10.35 1.39195 10.275 1.28795 10.175 1.19195C10.0751 1.09595 9.96261 1.02395 9.83766 0.975948C9.71271 0.927948 9.59609 0.903948 9.4878 0.903948C9.37951 0.903948 9.24207 0.935949 9.07547 0.999949C8.95885 1.04795 8.85056 1.11995 8.7506 1.21595L0.303982 9.32795C0.104061 9.51995 0.0041008 9.74795 0.0041008 10.0119C0.0041008 10.2759 0.104061 10.5039 0.303982 10.6959L8.7506 18.8079C8.95052 18.9999 9.18376 19.0959 9.45032 19.0959ZM1.0037 10.9599H18.9965C19.2797 10.9599 19.5171 10.8679 19.7087 10.6839C19.9003 10.4999 19.9961 10.2759 19.9961 10.0119C19.9961 9.74795 19.8961 9.51995 19.6962 9.32795C19.4963 9.13595 19.2631 9.03995 18.9965 9.03995H1.0037C0.737141 9.03995 0.503901 9.13595 0.303982 9.32795C0.104061 9.51995 0.0041008 9.74795 0.0041008 10.0119C0.0041008 10.2759 0.0998955 10.4999 0.291487 10.6839C0.483076 10.8679 0.720482 10.9599 1.0037 10.9599Z" fill="#BFC6D6"/>
+        </svg>
+    </a>
+    <ul class="flex flex-shrink-0 items-center gap-x-2 text-body leading-100 font-medium">
+        <li class="flex items-center justify-center"><a href="#" class="flex size-10 items-center justify-center rounded-full border border-blue100 p-1 bg-blue100 text-white " aria-label="page 1">1</a></li>
+        <li class="flex items-center justify-center"><a href="#" class="flex size-10 items-center justify-center rounded-full border border-blue100 p-1 text-DarkBlue100" aria-current="page" aria-label="page 2">2</a></li>
+        <li class="flex items-center justify-center"><a href="#" class="flex size-10 items-center justify-center rounded-full border border-blue100 p-1 text-DarkBlue100 sm:hidden" aria-current="page" aria-label="page 3">3</a></li>
+        <li class="flex items-center justify-center">
+            <a href="#" class="flex size-10 items-center justify-center rounded-full border border-blue100 p-1 text-DarkBlue100" aria-label="more pages">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+            </a>
+        </li>
+        <li class="flex items-center justify-center"><a href="#" class="flex size-10 items-center justify-center rounded-full border border-blue100 p-1 text-DarkBlue100" aria-label="page 10">10</a></li>
+    </ul>
+    <a href="#" class="pagination-button pagination-button--active" aria-label="next page">
+        Next
+        <svg class="pagination-button--icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10.5497 19.0959C10.3331 19.0959 10.1415 19.0439 9.97491 18.9399C9.80831 18.8359 9.68753 18.6919 9.61256 18.5079C9.53759 18.3239 9.52093 18.1359 9.56258 17.9439C9.60423 17.7519 9.69169 17.5919 9.82497 17.4639L17.5719 9.99995L9.82497 2.55995C9.72501 2.46395 9.65004 2.35595 9.60006 2.23595C9.55008 2.11595 9.52509 1.99195 9.52509 1.86395C9.52509 1.73595 9.55008 1.61595 9.60006 1.50395C9.65004 1.39195 9.72501 1.28795 9.82497 1.19195C9.92493 1.09595 10.0374 1.02395 10.1623 0.975948C10.2873 0.927948 10.4039 0.903948 10.5122 0.903948C10.6205 0.903948 10.7579 0.935949 10.9245 0.999949C11.0412 1.04795 11.1494 1.11995 11.2494 1.21595L19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.8959 10.5039 19.696 10.6959L11.2494 18.8079C11.0495 18.9999 10.8162 19.0959 10.5497 19.0959ZM18.9963 10.9599H1.00351C0.720286 10.9599 0.482881 10.8679 0.291291 10.6839C0.0997012 10.4999 0.00390625 10.2759 0.00390625 10.0119C0.00390625 9.74795 0.103866 9.51995 0.303786 9.32795C0.503706 9.13595 0.736946 9.03995 1.00351 9.03995H18.9963C19.2629 9.03995 19.4961 9.13595 19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.9001 10.4999 19.7085 10.6839C19.5169 10.8679 19.2795 10.9599 18.9963 10.9599Z" fill="white"/>
+        </svg>
+        <svg class="pagination-button--icon hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10.5497 19.0959C10.3331 19.0959 10.1415 19.0439 9.97491 18.9399C9.80831 18.8359 9.68753 18.6919 9.61256 18.5079C9.53759 18.3239 9.52093 18.1359 9.56258 17.9439C9.60423 17.7519 9.69169 17.5919 9.82497 17.4639L17.5719 9.99995L9.82497 2.55995C9.72501 2.46395 9.65004 2.35595 9.60006 2.23595C9.55008 2.11595 9.52509 1.99195 9.52509 1.86395C9.52509 1.73595 9.55008 1.61595 9.60006 1.50395C9.65004 1.39195 9.72501 1.28795 9.82497 1.19195C9.92493 1.09595 10.0374 1.02395 10.1623 0.975948C10.2873 0.927948 10.4039 0.903948 10.5122 0.903948C10.6205 0.903948 10.7579 0.935949 10.9245 0.999949C11.0412 1.04795 11.1494 1.11995 11.2494 1.21595L19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.8959 10.5039 19.696 10.6959L11.2494 18.8079C11.0495 18.9999 10.8162 19.0959 10.5497 19.0959ZM18.9963 10.9599H1.00351C0.720286 10.9599 0.482881 10.8679 0.291291 10.6839C0.0997012 10.4999 0.00390625 10.2759 0.00390625 10.0119C0.00390625 9.74795 0.103866 9.51995 0.303786 9.32795C0.503706 9.13595 0.736946 9.03995 1.00351 9.03995H18.9963C19.2629 9.03995 19.4961 9.13595 19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.9001 10.4999 19.7085 10.6839C19.5169 10.8679 19.2795 10.9599 18.9963 10.9599Z" fill="#BFC6D6"/>
+        </svg>
+    </a>
+</nav>
+
+                                </div>
                             </div>
                         </div>
                     </div>
