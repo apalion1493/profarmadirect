@@ -2658,6 +2658,9 @@ html {
 .h-screen{
   height: 100vh;
 }
+.h-\[48px\]{
+  height: 48px;
+}
 .max-h-44{
   max-height: 11rem;
 }
@@ -2757,6 +2760,12 @@ html {
 }
 .w-full{
   width: 100%;
+}
+.w-20{
+  width: 5rem;
+}
+.w-\[50px\]{
+  width: 50px;
 }
 .min-w-10{
   min-width: 2.5rem;
@@ -2955,6 +2964,9 @@ html {
 .gap-8{
   gap: 2rem;
 }
+.gap-1{
+  gap: 0.25rem;
+}
 .gap-x-1{
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
@@ -3087,6 +3099,9 @@ html {
 .rounded-xl{
   border-radius: 0.75rem;
 }
+.rounded-none{
+  border-radius: 0px;
+}
 .rounded-b-4xl{
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
@@ -3107,6 +3122,22 @@ html {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
+.rounded-l-xl{
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+.rounded-r-xl{
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+.rounded-l-full{
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+.rounded-r-full{
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
 .border{
   border-width: 1px;
 }
@@ -3117,6 +3148,9 @@ html {
   border-width: 0;
 }
 .border-\[2px\]{
+  border-width: 2px;
+}
+.border-2{
   border-width: 2px;
 }
 .border-y{
@@ -3131,6 +3165,9 @@ html {
 }
 .border-t-\[2px\]{
   border-top-width: 2px;
+}
+.border-none{
+  border-style: none;
 }
 .border-DarkBlue10{
   border-color: #05093E1A;
@@ -3395,6 +3432,10 @@ html {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -3478,6 +3519,9 @@ html {
 }
 .pt-\[46px\]{
   padding-top: 46px;
+}
+.pl-1{
+  padding-left: 0.25rem;
 }
 .text-left{
   text-align: left;
@@ -3626,6 +3670,10 @@ html {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 .underline{
   text-decoration-line: underline;
@@ -5640,6 +5688,9 @@ p{
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
+.hover\:opacity-75:hover{
+  opacity: 0.75;
+}
 .hover\:shadow-3xl:hover{
   --tw-shadow: 0px 1px 5px 1px rgba(61, 101, 255, 0.12);
   --tw-shadow-colored: 0px 1px 5px 1px var(--tw-shadow-color);
@@ -5689,6 +5740,9 @@ p{
 .checked\:focus\:outline-blue-700:focus:checked{
   outline-color: #1d4ed8;
 }
+.focus-visible\:z-10:focus-visible{
+  z-index: 10;
+}
 .focus-visible\:bg-slate-800\/5:focus-visible{
   background-color: rgb(30 41 59 / 0.05);
 }
@@ -5706,11 +5760,20 @@ p{
 .focus-visible\:outline-2:focus-visible{
   outline-width: 2px;
 }
+.focus-visible\:outline-0:focus-visible{
+  outline-width: 0px;
+}
 .focus-visible\:outline-offset-2:focus-visible{
   outline-offset: 2px;
 }
+.focus-visible\:outline-offset-0:focus-visible{
+  outline-offset: 0px;
+}
 .focus-visible\:outline-blue-700:focus-visible{
   outline-color: #1d4ed8;
+}
+.active\:opacity-100:active{
+  opacity: 1;
 }
 .active\:outline-offset-0:active{
   outline-offset: 0px;
@@ -5828,6 +5891,10 @@ p{
 .dark\:text-slate-300:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+.dark\:text-white:is(.dark *){
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .dark\:file\:bg-slate-800:is(.dark *)::file-selector-button{
   --tw-bg-opacity: 1;

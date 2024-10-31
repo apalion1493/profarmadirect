@@ -30,7 +30,7 @@
                                             <table class="w-full text-left">
                                                 <thead class="border-b py-2 uppercase text-body4 font-semibold text-DarkBlue50">
                                                 <tr>
-                                                    <th scope="col" class="px-4 py-5">
+                                                    <th scope="col" class="px-4 py-5 w-[50px]">
                                                         <label for="checkAll" class="flex items-center cursor-pointer text-slate-700 dark:text-slate-300 ">
                                                             <div class="relative flex items-center">
                                                                 <input type="checkbox" x-model="checkAll" id="checkAll" class="before:content[''] peer relative size-4 cursor-pointer appearance-none overflow-hidden rounded border border-slate-300 bg-white before:absolute before:inset-0 checked:border-blue-700 checked:before:bg-blue-700 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-slate-800 checked:focus:outline-blue-700 active:outline-offset-0 dark:border-slate-700 dark:bg-slate-800 dark:checked:border-blue-600 dark:checked:before:bg-blue-600 dark:focus:outline-slate-300 dark:checked:focus:outline-blue-600" />
@@ -40,7 +40,7 @@
                                                             </div>
                                                         </label>
                                                     </th>
-                                                    <th scope="col" class="px-4 py-5 font-medium">Product</th>
+                                                    <th scope="col" class="px-4 py-5 font-medium text-center">Product</th>
                                                     <th scope="col" class="px-4 py-5 font-medium">Price</th>
                                                     <th scope="col" class="px-4 py-5 font-medium">Quantity</th>
                                                     <th scope="col" class="px-4 py-5 font-medium">Subtotal</th>
@@ -60,20 +60,20 @@
                                                     </td>
                                                     <td class="p-4 pt-8">
                                                         <div class="flex items-center">
-                                                            <div class="mr-10 w-[127px] h-[127px] overflow-hidden rounded-xl bg-white flex justify-center items-center">
-                                                                <img src="" alt="Product Img" class="w-full max-h-full object-cover">
+                                                            <div class="mr-10 w-[127px] h-[127px] overflow-hidden rounded-xl flex justify-center items-center bg-Backgroung">
+                                                                <img src="img/Differin-adapalene-01-45-g-cream-1-tube1.png" alt="Product Img" class="w-full max-h-full object-cover">
                                                             </div>
                                                             <span class="text-base font-semibold">Differin 0.1% Tabs</span>
                                                         </div>
                                                     </td>
                                                     <td class="p-4 pt-8">
-
+                                                        <span class="-tracking-018 text-DarkBlue50 font-medium text-base">£16.43</span>
                                                     </td>
                                                     <td class="p-4 pt-8">
-
+                                                        @@include('components/Counter.html')
                                                     </td>
                                                     <td class="p-4 pt-8">
-
+                                                        <span class="text-DarkBlue100 font-semibold text-base">£16.43</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -87,17 +87,22 @@
                                                             </div>
                                                         </label>
                                                     </td>
-                                                    <td class="p-4">
-
+                                                    <td class="p-4 pt-8">
+                                                        <div class="flex items-center">
+                                                            <div class="mr-10 w-[127px] h-[127px] overflow-hidden rounded-xl flex justify-center items-center bg-Backgroung">
+                                                                <img src="img/Differin-adapalene-01-45-g-cream-1-tube1.png" alt="Product Img" class="w-full max-h-full object-cover">
+                                                            </div>
+                                                            <span class="text-base font-semibold">Differin 0.1% Tabs</span>
+                                                        </div>
                                                     </td>
-                                                    <td class="p-4">
-
+                                                    <td class="p-4 pt-8">
+                                                        <span class="-tracking-018 text-DarkBlue50 font-medium text-base">£16.43</span>
                                                     </td>
-                                                    <td class="p-4">
-
+                                                    <td class="p-4 pt-8">
+                                                        @@include('components/Counter.html')
                                                     </td>
-                                                    <td class="p-4">
-
+                                                    <td class="p-4 pt-8">
+                                                        <span class="text-DarkBlue100 font-semibold text-base">£16.43</span>
                                                     </td>
                                                 </tr>
                                                 </tbody>
