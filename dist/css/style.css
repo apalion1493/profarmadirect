@@ -2239,6 +2239,12 @@ html {
     padding-left: 2rem;
     padding-right: 1.5rem;
   }
+@media (max-width: 767px){
+  .container-full{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 .w-full {
     width: 100% !important;
   }
@@ -6377,6 +6383,10 @@ p{
     margin-top: auto;
     margin-bottom: auto;
   }
+  .md\:my-10{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
   .md\:mb-0{
     margin-bottom: 0px;
   }
@@ -6578,6 +6588,10 @@ p{
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  .md\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
   .md\:pb-5{
     padding-bottom: 1.25rem;
   }
@@ -6639,6 +6653,10 @@ p{
   .md\:text-h2Mob{
     font-size: 30px;
     line-height: 120%;
+  }
+  .md\:text-Top1{
+    font-size: 24px;
+    line-height: 130%;
   }
 }
 @media (max-width: 639px){
