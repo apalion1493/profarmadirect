@@ -26,7 +26,7 @@
                                 </div>
                             </div>
                             <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
-                                <div class="flex w-full justify-between gap-x-4">
+                                <div class="flex w-full justify-between gap-4 flex-wrap">
                                     <div class="flex flex-col max-w-[530px]">
                                         <span class="text-Top1 font-bold block mb-4">Treatment Orders</span>
                                         <p class="text-base text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
@@ -44,12 +44,12 @@
                                         })
                                     </div>
                                 </div>
-                                <div class="mt-8 overflow-hidden w-full overflow-x-auto rounded-xl">
+                                <div class="mt-8 overflow-hidden w-full overflow-x-scroll rounded-xl">
                                     <table class="w-full text-left">
                                         <thead class="border-y py-2 uppercase text-body4 font-semibold text-DarkBlue50">
                                             <tr>
-                                                <th scope="col" class="px-4 py-5 w-[260px] font-medium">ORDER STATUS</th>
-                                                <th scope="col" class="px-4 py-5 font-medium">TREATMENTS</th>
+                                                <th scope="col" class="px-4 py-5 w-[260px] xl:w-[160px] font-medium">ORDER STATUS</th>
+                                                <th scope="col" class="px-4 py-5 min-w-[600px] font-medium">TREATMENTS</th>
                                                 <th scope="col" class="px-4 py-5 w-[150px] font-medium">DATE</th>
                                             </tr>
                                         </thead>
@@ -74,7 +74,7 @@
                                                 </div>
                                             </td>
                                             <td class="p-4 pt-8">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
                                             </td>
                                         </tr>
                                         <tr>
@@ -97,7 +97,7 @@
                                                 </div>
                                             </td>
                                             <td class="p-4">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
                                             </td>
                                         </tr>
                                         <tr>
@@ -120,7 +120,7 @@
                                                 </div>
                                             </td>
                                             <td class="p-4">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
                                             </td>
                                         </tr>
                                         <tr>
@@ -143,7 +143,7 @@
                                                 </div>
                                             </td>
                                             <td class="p-4">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -151,7 +151,7 @@
                                 </div>
                             </div>
                             <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
-                                <div class="flex w-full justify-between gap-x-4">
+                                <div class="flex w-full justify-between gap-4 flex-wrap">
                                     <div class="flex flex-col max-w-[530px]">
                                         <span class="text-Top1 font-bold block mb-4">My Private Prescription Orders</span>
                                         <p class="text-base text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
@@ -169,24 +169,16 @@
                                         })
                                     </div>
                                 </div>
-                                <div x-data="{modalCommentsIsOpen: false, modalViewIsOpen: false}" class="mt-8 overflow-hidden w-full overflow-x-auto rounded-xl">
+                                <div x-data="{modalCommentsIsOpen: false, modalViewIsOpen: false}" class="mt-8 overflow-hidden w-full overflow-x-scroll rounded-xl">
                                     <table class="w-full text-left table-auto">
-                                        <colgroup>
-                                            <col style="width: auto;">
-                                            <col style="width: auto;">
-                                            <col style="width: auto;">
-                                            <col style="width: auto;">
-                                            <col style="width: auto;">
-                                            <col style="width: 100px;">
-                                        </colgroup>
                                         <thead class="border-y py-2 uppercase text-body4 font-semibold text-DarkBlue50">
                                         <tr>
-                                            <th scope="col" class="px-4 py-5 font-medium">PRODUCT</th>
+                                            <th scope="col" class="px-4 py-5 font-medium min-w-[200px]">PRODUCT</th>
                                             <th scope="col" class="px-4 py-5 font-medium">STATUS</th>
                                             <th scope="col" class="px-4 py-5 font-medium">FILE</th>
                                             <th scope="col" class="px-4 py-5 font-medium">Price</th>
                                             <th scope="col" class="px-4 py-5 font-medium">DATE</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">ACTIONS</th>
+                                            <th scope="col" class="px-4 py-5 font-medium w-[100px]">ACTIONS</th>
                                         </tr>
                                         </thead>
                                         <tbody class="border-[0]">
@@ -201,7 +193,7 @@
                                                 })
                                             </td>
                                             <td class="p-4 pt-8">
-                                                <button class="flex items-center w-fit rounded-lg bg-LightBlue overflow-hidden px-3 h-[36px]" type="button">
+                                                <button class="flex items-center w-fit rounded-lg bg-LightBlue overflow-hidden whitespace-nowrap px-3 h-[36px]" type="button">
                                                     <i class="Pdf-icon-16 mr-2"></i>
                                                     <span class="text-body2 font-semibold">Prescription.doc</span>
                                                 </button>
@@ -210,7 +202,7 @@
                                                 <span class="text-base -tracking-018 font-medium">£16.43</span>
                                             </td>
                                             <td class="p-4 pt-8">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">Nov 14, 2021</time>
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
                                             </td>
                                             <td class="p-4 pt-8">
                                                 <div class="flex items-center gap-x-2">
