@@ -408,6 +408,10 @@
   @apply md:w-4 md:h-4 md:min-w-4
 }
 
+.icon-25 {
+  @apply md:w-[25px] md:h-[25px] md:min-w-[25px]
+}
+
 .menu-item-active {
   position: relative;
 

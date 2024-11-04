@@ -7,7 +7,7 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
-    <div class="flex w-full">
+    <div x-data="{isMob: false}" class="flex w-full relative">
         @@include('components/D-navigation.html')
         <div class="flex flex-col w-full">
             @@include('components/D-header.html')
@@ -26,12 +26,12 @@
                                 </div>
                             </div>
                             <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
-                                <div class="flex w-full justify-between gap-4 flex-wrap">
+                                <div class="flex w-full justify-between gap-4 flex-wrap md:flex-col">
                                     <div class="flex flex-col max-w-[530px]">
                                         <span class="text-Top1 font-bold block mb-4">Treatment Orders</span>
                                         <p class="text-base text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
                                     </div>
-                                    <div class="flex icon-16 gap-x-2">
+                                    <div class="flex items-center gap-x-2">
                                         @@include('components/Link.html', {
                                         'title': 'View All',
                                         'url': '#',
@@ -151,12 +151,12 @@
                                 </div>
                             </div>
                             <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
-                                <div class="flex w-full justify-between gap-4 flex-wrap">
+                                <div class="flex w-full justify-between gap-4 flex-wrap md:flex-col">
                                     <div class="flex flex-col max-w-[530px]">
                                         <span class="text-Top1 font-bold block mb-4">My Private Prescription Orders</span>
                                         <p class="text-base text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
                                     </div>
-                                    <div class="flex icon-16 gap-x-2">
+                                    <div class="flex items-center gap-x-2">
                                         @@include('components/Link.html', {
                                         'title': 'View All',
                                         'url': '#',

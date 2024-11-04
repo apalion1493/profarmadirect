@@ -1,11 +1,17 @@
-<header class="flex w-full items-center py-4 px-6 shadow-7xl bg-white">
+<header class="flex w-full items-center py-4 px-6 md:px-4 md:pt-8 md:pb-5 shadow-7xl bg-white">
     <div class="w-full flex items-center justify-between">
-        <a class="w-10 h-10 min-w-10 overflow-hidden group hover:bg-blue10 transition-all rounded-7xl flex items-center justify-center bg-blue100" href="#">
+        <a class="lg:hidden w-10 h-10 min-w-10 overflow-hidden group hover:bg-blue10 transition-all rounded-7xl flex items-center justify-center bg-blue100" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
                 <path class="group-hover:fill-blue100 fill-white transition-all" d="M15 6.75C15.4142 6.75 15.75 6.41421 15.75 6C15.75 5.58579 15.4142 5.25 15 5.25L15 6.75ZM0.46967 5.46967C0.176777 5.76256 0.176777 6.23744 0.46967 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989592 6.3033 0.696698C6.01041 0.403805 5.53553 0.403805 5.24264 0.696698L0.46967 5.46967ZM15 5.25L1 5.25L1 6.75L15 6.75L15 5.25Z" fill="none"/>
             </svg>
         </a>
-        <div class="flex items-center gap-x-6 ml-auto">
+        <button class="minlg:hidden text-none bg-blue100 flex flex-col gap-y-1 justify-center px-[10px] rounded-7xl h-10 min-w-10" aria-label="Open menu" @click="isMob = !isMob">
+            Burger
+            <span :class="isMob ? 'rotate-45 transform translate-y-[6px]' : 'translate-y-0'" class="w-5 transition-all duration-300 border-t-[2px] border-white rounded-full block"></span>
+            <span :class="isMob ? 'opacity-0' : ''" class="w-3 border-t-[2px] border-white rounded-full block"></span>
+            <span :class="isMob ? '-rotate-45 transform -translate-y-[6px]' : 'translate-y-0'" class="w-5 transition-all duration-300 border-t-[2px] border-white rounded-full block"></span>
+        </button>
+        <div class="flex items-center gap-x-6 md:gap-x-4 ml-auto">
             <a class="w-10 h-10 min-w-10 overflow-hidden group hover:bg-blue100 transition-all rounded-7xl flex items-center justify-center bg-blue10" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
                     <path class="group-hover:fill-white fill-blue100 transition-all" d="M14.4 0.5H1.6C0.72 0.5 0 1.23125 0 2.125V11.875C0 12.7688 0.72 13.5 1.6 13.5H14.4C15.28 13.5 16 12.7688 16 11.875V2.125C16 1.23125 15.28 0.5 14.4 0.5ZM14.08 3.95312L8.848 7.27625C8.328 7.60938 7.672 7.60938 7.152 7.27625L1.92 3.95312C1.83978 3.90739 1.76954 3.8456 1.71351 3.77149C1.65749 3.69739 1.61685 3.61251 1.59406 3.52199C1.57127 3.43147 1.5668 3.3372 1.58093 3.24487C1.59505 3.15255 1.62747 3.0641 1.67623 2.98487C1.72498 2.90564 1.78906 2.83728 1.86458 2.78393C1.9401 2.73058 2.0255 2.69335 2.1156 2.67449C2.2057 2.65563 2.29863 2.65554 2.38876 2.67421C2.4789 2.69288 2.56437 2.72993 2.64 2.78312L8 6.1875L13.36 2.78312C13.4356 2.72993 13.5211 2.69288 13.6112 2.67421C13.7014 2.65554 13.7943 2.65563 13.8844 2.67449C13.9745 2.69335 14.0599 2.73058 14.1354 2.78393C14.2109 2.83728 14.275 2.90564 14.3238 2.98487C14.3725 3.0641 14.405 3.15255 14.4191 3.24487C14.4332 3.3372 14.4287 3.43147 14.4059 3.52199C14.3832 3.61251 14.3425 3.69739 14.2865 3.77149C14.2305 3.8456 14.1602 3.90739 14.08 3.95312Z" fill="none"/>

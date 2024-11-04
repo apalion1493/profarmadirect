@@ -7,7 +7,7 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
-    <div class="flex w-full">
+    <div x-data="{isMob: false}" class="flex w-full relative">
         @@include('components/D-navigation.html')
         <div class="flex flex-col w-full">
             @@include('components/D-header.html')
