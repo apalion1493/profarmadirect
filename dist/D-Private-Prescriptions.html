@@ -16,8 +16,8 @@
 <main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
     <div x-data="{isMob: false}" class="flex w-full relative">
         <div :class="isMob ? 'lg:left-0 lg:z-[999]' : 'lg:-left-[359px] lg:-z-20'"
-     class="flex lg:fixed lg:top-0 lg:transition-all lg:w-full ">
-    <div class="flex flex-col max-w-[309px] min-w-[309px] lg:max-w-[359px] lg:min-w-[320px] min-h-screen shadow-7xl bg-white px-6 md:px-4 md:pt-8 pt-6 pb-10 z-10 ">
+     class="flex lg:fixed lg:top-0 lg:transition-all lg:w-full min-h-screen lg:h-screen">
+    <div class="flex flex-col max-w-[309px] min-w-[309px] lg:max-w-[359px] lg:min-w-[320px] lg:overflow-y-scroll shadow-7xl bg-white px-6 md:px-4 md:pt-8 pt-6 pb-10 z-10 ">
         <div class="flex items-center gap-x-3 justify-between mb-16 md:mb-20">
             <button class="minlg:hidden text-none bg-blue100 flex flex-col gap-y-1 justify-center px-[10px] rounded-7xl h-10 min-w-10"
                     aria-label="Open menu" @click="isMob = !isMob">
@@ -33,7 +33,7 @@
                 <img class="max-w-[204px] lg:mx-auto" src="img/Logo.svg" alt="Profarmadirect Logo">
             </a>
         </div>
-        <div class="w-full mb-10 sticky top-3"
+        <div class="w-full mb-[100px] sticky top-3"
              x-data="{ menu1: false, menu2: false, menu3: false, activeLink: 'dashboard' }">
             <nav class="h-full flex flex-col gap-y-8">
                 <!-- Ссылка 1 -->

@@ -2534,6 +2534,9 @@ html {
 .mt-auto{
   margin-top: auto;
 }
+.mb-\[100px\]{
+  margin-bottom: 100px;
+}
 .block{
   display: block;
 }
@@ -6260,6 +6263,9 @@ p{
   .lg\:gap-y-8{
     row-gap: 2rem;
   }
+  .lg\:overflow-y-scroll{
+    overflow-y: scroll;
+  }
   .lg\:object-left-bottom{
     -o-object-position: left bottom;
        object-position: left bottom;
@@ -6379,13 +6385,13 @@ p{
   .md\:col-span-6{
     grid-column: span 6 / span 6;
   }
-  .md\:my-auto{
-    margin-top: auto;
-    margin-bottom: auto;
-  }
   .md\:my-10{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+  }
+  .md\:my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .md\:mb-0{
     margin-bottom: 0px;
@@ -6584,13 +6590,13 @@ p{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
-  .md\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
   .md\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+  .md\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .md\:pb-5{
     padding-bottom: 1.25rem;
@@ -6621,6 +6627,10 @@ p{
   }
   .md\:text-center{
     text-align: center;
+  }
+  .md\:text-Top1{
+    font-size: 24px;
+    line-height: 130%;
   }
   .md\:text-Top2{
     font-size: 22px;
@@ -6653,10 +6663,6 @@ p{
   .md\:text-h2Mob{
     font-size: 30px;
     line-height: 120%;
-  }
-  .md\:text-Top1{
-    font-size: 24px;
-    line-height: 130%;
   }
 }
 @media (max-width: 639px){
