@@ -12,23 +12,23 @@
         <div class="flex flex-col w-full">
             @@include('components/D-header.html')
             <div class="container-full">
-                <div class="row-10 my-14">
+                <div class="row-10 my-14 md:my-10">
                     <div class="col-span-10">
-                        <div class="flex flex-col gap-y-10">
+                        <div class="flex flex-col gap-y-10 md:gap-y-6">
                             <div class="flex flex-col">
-                                <span class="text-h4 block mb-4 font-bold">
+                                <span class="text-h4 md:text-Top1 block mb-4 md:mb-3 font-bold">
                                    Weight & Height
                                 </span>
-                                <div class="flex flex-col text-body font-medium text-DarkBlue50">
+                                <div class="flex flex-col text-body font-medium text-DarkBlue50 md:mb-3">
                                     Here you will find your personal details, adresses etc.
                                 </div>
                             </div>
                             <div class="row-10 gap-x-8">
                                 <div class="col-span-10">
-                                    <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
+                                    <div class="bg-white shadow-4xl p-8 md:px-4 md:py-6 rounded-6xl w-full">
                                         <form action="">
-                                            <div class="row gap-8">
-                                                <div class="col-span-6">
+                                            <div class="row gap-8 sm:gap-x-0">
+                                                <div class="col-span-6 sm:col-span-12">
                                                     @@include('components/input.html', {
                                                     'common-style': '',
                                                     'idInput': 'WeightId',
@@ -39,7 +39,7 @@
                                                     'errorStyle': 'hidden',
                                                     })
                                                 </div>
-                                                <div class="col-span-6">
+                                                <div class="col-span-6 sm:col-span-12">
                                                     @@include('components/input.html', {
                                                     'common-style': '',
                                                     'idInput': 'HeightId',
@@ -54,7 +54,7 @@
                                                     @@include('components/button.html', {
                                                     'type': 'submit',
                                                     'title': 'Save Changes',
-                                                    'style': 'db-btn'
+                                                    'style': 'db-btn md:w-full'
                                                     })
                                                 </div>
                                             </div>
