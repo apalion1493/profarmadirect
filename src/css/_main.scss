@@ -35,7 +35,7 @@
   }
 
   &.db-btn {
-    @apply h-12 min-h-12 min-w-fit rounded-xl px-5 text-body2 font-semibold
+    @apply h-12 min-h-12 md:h-11 md:min-h-11 md:text-body min-w-fit rounded-xl px-5 text-body2 font-semibold
   }
 
   &.btn-icons {

@@ -108,7 +108,7 @@
                 <!-- Выпадающий список 2 -->
                 <div class="mt-2">
                     <button @click="menu2 = !menu2"
-                            :class="activeLink === 'sub2.1' || activeLink === 'sub2.2' || activeLink === 'sub2.3' ? 'bg-blue10 pl-3' : ''"
+                            :class="activeLink === 'sub2.1' || activeLink === 'sub2.2' || activeLink === 'sub2.3' || activeLink === 'sub2.4' ? 'bg-blue10 pl-3' : ''"
                             class="w-full flex items-center py-2 pr-3 rounded-[8px] text-DarkBlue100 text-body2 md:text-body font-medium">
                             <span :class="activeLink === 'sub2.1' || activeLink === 'sub2.2' || activeLink === 'sub2.3' ? 'bg-blue100' : 'bg-blue10'"
                                   class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
@@ -173,6 +173,19 @@
                                     </svg>
                                 </span>
                             Consultation</a>
+                        <a href="D-CheckOut.html"
+                           @click="activeLink = 'sub2.4'"
+                           class="w-full flex items-center py-2 text-DarkBlue100 text-body2 md:text-body font-medium">
+                                <span :class="activeLink === 'sub2.1' ? 'bg-blue100' : 'bg-blue10'"
+                                      class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                    <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="14" height="17"
+                                         viewBox="0 0 14 17" fill="none">
+                                      <path :class="activeLink === 'sub2.1' ? 'fill-white' : 'fill-DarkBlue30'"
+                                            d="M3.58333 3.56022C3.58333 1.60422 5.16899 0.0185547 7.125 0.0185547C9.08101 0.0185547 10.6667 1.60422 10.6667 3.56022C10.6667 5.51623 9.08101 7.10189 7.125 7.10189C5.16899 7.10189 3.58333 5.51623 3.58333 3.56022ZM6.18084 9.18522H8.06916C8.97928 9.18522 9.70053 9.18521 10.2819 9.23271C10.8764 9.28128 11.3794 9.38261 11.8387 9.61663C12.5835 9.99613 13.1891 10.6017 13.5686 11.3465C13.8026 11.8058 13.9039 12.3089 13.9525 12.9033C14 13.4847 14 14.2059 14 15.116V15.6436C14 15.9887 13.7202 16.2686 13.375 16.2686H0.875C0.529822 16.2686 0.25 15.9887 0.25 15.6436V15.1161C0.249995 14.2059 0.249992 13.4847 0.29749 12.9033C0.346062 12.3089 0.447402 11.8058 0.681434 11.3465C1.06093 10.6017 1.66647 9.99615 2.41129 9.61664C2.8706 9.38262 3.37363 9.28128 3.96812 9.23271C4.54947 9.18521 5.27072 9.18522 6.18084 9.18522Z"
+                                            fill="none"/>
+                                    </svg>
+                                </span>
+                            Checkout</a>
                     </div>
                 </div>
                 <!-- Выпадающий список 3 -->

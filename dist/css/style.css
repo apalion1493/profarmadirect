@@ -3063,6 +3063,9 @@ html {
 .gap-y-10{
   row-gap: 2.5rem;
 }
+.gap-y-12{
+  row-gap: 3rem;
+}
 .gap-y-2{
   row-gap: 0.5rem;
 }
@@ -3107,9 +3110,6 @@ html {
 }
 .overflow-y-auto{
   overflow-y: auto;
-}
-.overflow-x-scroll{
-  overflow-x: scroll;
 }
 .overflow-y-scroll{
   overflow-y: scroll;
@@ -5202,6 +5202,14 @@ p{
   line-height: 120%;
   font-weight: 600;
 }
+@media (max-width: 767px){
+  .button.db-btn{
+    height: 2.75rem;
+    min-height: 2.75rem;
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
 .button.btn-icons{
   --tw-bg-opacity: 1;
   background-color: rgb(239 246 255 / var(--tw-bg-opacity));
@@ -6151,6 +6159,9 @@ p{
   .xl\:col-span-8{
     grid-column: span 8 / span 8;
   }
+  .xl\:hidden{
+    display: none;
+  }
   .xl\:w-\[160px\]{
     width: 160px;
   }
@@ -6162,11 +6173,11 @@ p{
     -moz-column-gap: 1rem;
          column-gap: 1rem;
   }
+  .xl\:gap-y-12{
+    row-gap: 3rem;
+  }
   .xl\:gap-y-6{
     row-gap: 1.5rem;
-  }
-  .xl\:gap-y-8{
-    row-gap: 2rem;
   }
 }
 
@@ -6540,6 +6551,9 @@ p{
   .md\:ml-auto{
     margin-left: auto;
   }
+  .md\:mr-0{
+    margin-right: 0px;
+  }
   .md\:mt-5{
     margin-top: 1.25rem;
   }
@@ -6587,6 +6601,9 @@ p{
   }
   .md\:min-h-\[250px\]{
     min-height: 250px;
+  }
+  .md\:min-h-\[300px\]{
+    min-height: 300px;
   }
   .md\:min-h-\[443px\]{
     min-height: 443px;
@@ -6683,6 +6700,9 @@ p{
   .md\:bg-cover{
     background-size: cover;
   }
+  .md\:p-2{
+    padding: 0.5rem;
+  }
   .md\:p-4{
     padding: 1rem;
   }
@@ -6774,6 +6794,10 @@ p{
   .md\:text-h2Mob{
     font-size: 30px;
     line-height: 120%;
+  }
+  .md\:text-none{
+    font-size: 0px;
+    line-height: 0px;
   }
 }
 
