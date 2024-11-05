@@ -426,3 +426,11 @@
     border-bottom: 2px solid #3D65FF;
   }
 }
+
+.consultation-list {
+  .consultation-list__item:not(:last-child) {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #05093E1A;
+    margin-bottom: 24px;
+  }
+}
