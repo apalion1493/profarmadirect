@@ -6694,6 +6694,10 @@ p{
   .md\:border{
     border-width: 1px;
   }
+  .md\:border-y{
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
   .md\:border-White20{
     border-color: #FFFFFF33;
   }
@@ -6728,6 +6732,10 @@ p{
   .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .md\:pb-5{
     padding-bottom: 1.25rem;
