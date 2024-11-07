@@ -2809,6 +2809,9 @@ html {
 .min-w-5{
   min-width: 1.25rem;
 }
+.min-w-6{
+  min-width: 1.5rem;
+}
 .min-w-\[136px\]{
   min-width: 136px;
 }
@@ -2817,6 +2820,9 @@ html {
 }
 .min-w-\[14px\]{
   min-width: 14px;
+}
+.min-w-\[150px\]{
+  min-width: 150px;
 }
 .min-w-\[18px\]{
   min-width: 18px;
@@ -2827,6 +2833,9 @@ html {
 .min-w-\[210px\]{
   min-width: 210px;
 }
+.min-w-\[260px\]{
+  min-width: 260px;
+}
 .min-w-\[272px\]{
   min-width: 272px;
 }
@@ -2835,6 +2844,9 @@ html {
 }
 .min-w-\[32px\]{
   min-width: 32px;
+}
+.min-w-\[350px\]{
+  min-width: 350px;
 }
 .min-w-\[600px\]{
   min-width: 600px;
@@ -3125,6 +3137,9 @@ html {
 }
 .overflow-y-scroll{
   overflow-y: scroll;
+}
+.text-ellipsis{
+  text-overflow: ellipsis;
 }
 .whitespace-nowrap{
   white-space: nowrap;
@@ -3575,6 +3590,9 @@ html {
 .pt-16{
   padding-top: 4rem;
 }
+.pt-2{
+  padding-top: 0.5rem;
+}
 .pt-20{
   padding-top: 5rem;
 }
@@ -3589,9 +3607,6 @@ html {
 }
 .pt-\[46px\]{
   padding-top: 46px;
-}
-.pt-2{
-  padding-top: 0.5rem;
 }
 .text-left{
   text-align: left;
@@ -5637,6 +5652,10 @@ p{
   }
 }
 
+.w-text {
+  max-width: calc(100% - 40px);
+}
+
 @media (max-width: 767px){
   .icon-40{
     height: 2.5rem;
@@ -6691,6 +6710,9 @@ p{
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
+  .md\:gap-y-12{
+    row-gap: 3rem;
+  }
   .md\:gap-y-3{
     row-gap: 0.75rem;
   }
@@ -6702,12 +6724,6 @@ p{
   }
   .md\:gap-y-6{
     row-gap: 1.5rem;
-  }
-  .md\:gap-y-8{
-    row-gap: 2rem;
-  }
-  .md\:gap-y-12{
-    row-gap: 3rem;
   }
   .md\:self-start{
     align-self: flex-start;

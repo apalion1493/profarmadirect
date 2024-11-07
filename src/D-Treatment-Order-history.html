@@ -12,25 +12,25 @@
         <div class="flex flex-col w-full">
             @@include('components/D-header.html')
             <div class="container-full">
-                <div class="row-10 my-14">
+                <div class="row-10 my-14 md:my-10">
                     <div class="col-span-10">
-                        <div class="flex flex-col gap-y-10">
+                        <div class="flex flex-col gap-y-10 md:gap-y-12">
                             <div class="flex flex-col">
-                                <span class="text-h4 block mb-4 font-bold">
+                                <span class="text-h4 md:text-Top1 block mb-4 md:mb-3 font-bold">
                                    Treatment Orders
                                 </span>
-                                <div class="flex flex-col text-body font-medium text-DarkBlue50">
+                                <div class="flex flex-col text-body font-medium text-DarkBlue50 md:mb-3">
                                     Orders you have placed through our online doctor are listed here.
                                 </div>
                             </div>
-                            <div class="bg-white shadow-4xl px-4 pb-4 rounded-6xl w-full">
-                                <div class="overflow-hidden w-full overflow-x-auto rounded-xl">
+                            <div class="bg-white shadow-4xl px-4 pb-4 lg:pt-6 rounded-6xl w-full">
+                                <div class="overflow-hidden w-full overflow-x-auto rounded-xl lg:hidden">
                                     <table class="w-full text-left">
                                         <thead class="border-b py-2 uppercase text-body4 font-semibold text-DarkBlue50">
                                         <tr>
-                                            <th scope="col" class="px-4 py-5 w-[260px] font-medium">ORDER STATUS</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">TREATMENTS</th>
-                                            <th scope="col" class="px-4 py-5 w-[150px] font-medium">DATE</th>
+                                            <th scope="col" class="px-4 py-5 min-w-[260px] font-medium">ORDER STATUS</th>
+                                            <th scope="col" class="px-4 py-5 min-w-[350px] font-medium">TREATMENTS</th>
+                                            <th scope="col" class="px-4 py-5 min-w-[150px] font-medium">DATE</th>
                                         </tr>
                                         </thead>
                                         <tbody class="border-[0]">
@@ -129,6 +129,97 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <div class="flex flex-col minlg:hidden">
+                                    <div class="flex flex-col consultation-list">
+                                        <div class="flex flex-col gap-y-6 consultation-list__item">
+                                            <div class="flex items-center gap-x-2">
+                                                @@include('components/status-elem.html', {
+                                                'Title': 'Delivered',
+                                                'Style': 'bg-blue10 text-blue100',
+                                                })
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">14.07.2024</time>
+                                            </div>
+                                            <div class="p-4 border border-slate-300 rounded-xl">
+                                                <div class="flex justify-between w-full" x-data="{ allText: true }">
+                                                    <div class="flex flex-col w-text">
+                                                        <span :class="allText ? 'whitespace-nowrap text-ellipsis' : ''" class="block mb-3 text-DarkBlue100 text-body -tracking-018 font-medium overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                        <div class="flex items-center gap-x-1 text-body2 -tracking-018 font-medium text-DarkBlue50">
+                                                            <span>2 tab</span>
+                                                            <span>\</span>
+                                                            <span>2 times per day</span>
+                                                            <span>\</span>
+                                                            <span>7 days</span>
+                                                        </div>
+                                                    </div>
+                                                    <span @click="allText = !allText" class="w-6 min-w-6 h-6 ml-2 rounded flex items-center justify-center overflow-hidden bg-blue10">
+                                                        <svg :class="!allText  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                            <path d="M11 1.5127L6 6.51269L1 1.5127" stroke="#060B52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-y-6 consultation-list__item">
+                                            <div class="flex items-center gap-x-2">
+                                                @@include('components/status-elem.html', {
+                                                'Title': 'Processed',
+                                                'Style': 'bg-blue100 text-white',
+                                                })
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">14.07.2024</time>
+                                            </div>
+                                            <div class="p-4 border border-slate-300 rounded-xl">
+                                                <div class="flex justify-between w-full" x-data="{ allText: true }">
+                                                    <div class="flex flex-col w-text">
+                                                        <span :class="allText ? 'whitespace-nowrap text-ellipsis' : ''" class="block mb-3 text-DarkBlue100 text-body -tracking-018 font-medium overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                        <div class="flex items-center gap-x-1 text-body2 -tracking-018 font-medium text-DarkBlue50">
+                                                            <span>2 tab</span>
+                                                            <span>\</span>
+                                                            <span>2 times per day</span>
+                                                            <span>\</span>
+                                                            <span>7 days</span>
+                                                        </div>
+                                                    </div>
+                                                    <span @click="allText = !allText" class="w-6 min-w-6 h-6 ml-2 rounded flex items-center justify-center overflow-hidden bg-blue10">
+                                                        <svg :class="!allText  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                            <path d="M11 1.5127L6 6.51269L1 1.5127" stroke="#060B52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-y-6 consultation-list__item">
+                                            <div class="flex items-center gap-x-2">
+                                                @@include('components/status-elem.html', {
+                                                'Title': 'Aproved',
+                                                'Style': 'bg-LagunaBlue text-white',
+                                                })
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">14.07.2024</time>
+                                            </div>
+                                            <div class="p-4 border border-slate-300 rounded-xl">
+                                                <div class="flex justify-between w-full" x-data="{ allText: true }">
+                                                    <div class="flex flex-col w-text">
+                                                        <span :class="allText ? 'whitespace-nowrap text-ellipsis' : ''" class="block mb-3 text-DarkBlue100 text-body -tracking-018 font-medium overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                        <div class="flex items-center gap-x-1 text-body2 -tracking-018 font-medium text-DarkBlue50">
+                                                            <span>2 tab</span>
+                                                            <span>\</span>
+                                                            <span>2 times per day</span>
+                                                            <span>\</span>
+                                                            <span>7 days</span>
+                                                        </div>
+                                                    </div>
+                                                    <span @click="allText = !allText" class="w-6 min-w-6 h-6 ml-2 rounded flex items-center justify-center overflow-hidden bg-blue10">
+                                                        <svg :class="!allText  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                            <path d="M11 1.5127L6 6.51269L1 1.5127" stroke="#060B52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-center w-full minlg:hidden">
+                                @@include('components/Pagination.html')
                             </div>
                         </div>
                     </div>

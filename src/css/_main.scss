@@ -386,6 +386,10 @@
   @apply lg:-right-2
 }
 
+.w-text {
+  max-width: calc(100% - 40px);
+}
+
 .icon-40 {
   @apply md:w-10 md:h-10
 }

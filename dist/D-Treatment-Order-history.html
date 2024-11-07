@@ -299,25 +299,25 @@
     </div>
 </header>
             <div class="container-full">
-                <div class="row-10 my-14">
+                <div class="row-10 my-14 md:my-10">
                     <div class="col-span-10">
-                        <div class="flex flex-col gap-y-10">
+                        <div class="flex flex-col gap-y-10 md:gap-y-12">
                             <div class="flex flex-col">
-                                <span class="text-h4 block mb-4 font-bold">
+                                <span class="text-h4 md:text-Top1 block mb-4 md:mb-3 font-bold">
                                    Treatment Orders
                                 </span>
-                                <div class="flex flex-col text-body font-medium text-DarkBlue50">
+                                <div class="flex flex-col text-body font-medium text-DarkBlue50 md:mb-3">
                                     Orders you have placed through our online doctor are listed here.
                                 </div>
                             </div>
-                            <div class="bg-white shadow-4xl px-4 pb-4 rounded-6xl w-full">
-                                <div class="overflow-hidden w-full overflow-x-auto rounded-xl">
+                            <div class="bg-white shadow-4xl px-4 pb-4 lg:pt-6 rounded-6xl w-full">
+                                <div class="overflow-hidden w-full overflow-x-auto rounded-xl lg:hidden">
                                     <table class="w-full text-left">
                                         <thead class="border-b py-2 uppercase text-body4 font-semibold text-DarkBlue50">
                                         <tr>
-                                            <th scope="col" class="px-4 py-5 w-[260px] font-medium">ORDER STATUS</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">TREATMENTS</th>
-                                            <th scope="col" class="px-4 py-5 w-[150px] font-medium">DATE</th>
+                                            <th scope="col" class="px-4 py-5 min-w-[260px] font-medium">ORDER STATUS</th>
+                                            <th scope="col" class="px-4 py-5 min-w-[350px] font-medium">TREATMENTS</th>
+                                            <th scope="col" class="px-4 py-5 min-w-[150px] font-medium">DATE</th>
                                         </tr>
                                         </thead>
                                         <tbody class="border-[0]">
@@ -404,6 +404,121 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <div class="flex flex-col minlg:hidden">
+                                    <div class="flex flex-col consultation-list">
+                                        <div class="flex flex-col gap-y-6 consultation-list__item">
+                                            <div class="flex items-center gap-x-2">
+                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 whitespace-nowrap bg-blue10 text-blue100">Delivered</span>
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">14.07.2024</time>
+                                            </div>
+                                            <div class="p-4 border border-slate-300 rounded-xl">
+                                                <div class="flex justify-between w-full" x-data="{ allText: true }">
+                                                    <div class="flex flex-col w-text">
+                                                        <span :class="allText ? 'whitespace-nowrap text-ellipsis' : ''" class="block mb-3 text-DarkBlue100 text-body -tracking-018 font-medium overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                        <div class="flex items-center gap-x-1 text-body2 -tracking-018 font-medium text-DarkBlue50">
+                                                            <span>2 tab</span>
+                                                            <span>\</span>
+                                                            <span>2 times per day</span>
+                                                            <span>\</span>
+                                                            <span>7 days</span>
+                                                        </div>
+                                                    </div>
+                                                    <span @click="allText = !allText" class="w-6 min-w-6 h-6 ml-2 rounded flex items-center justify-center overflow-hidden bg-blue10">
+                                                        <svg :class="!allText  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                            <path d="M11 1.5127L6 6.51269L1 1.5127" stroke="#060B52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-y-6 consultation-list__item">
+                                            <div class="flex items-center gap-x-2">
+                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 whitespace-nowrap bg-blue100 text-white">Processed</span>
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">14.07.2024</time>
+                                            </div>
+                                            <div class="p-4 border border-slate-300 rounded-xl">
+                                                <div class="flex justify-between w-full" x-data="{ allText: true }">
+                                                    <div class="flex flex-col w-text">
+                                                        <span :class="allText ? 'whitespace-nowrap text-ellipsis' : ''" class="block mb-3 text-DarkBlue100 text-body -tracking-018 font-medium overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                        <div class="flex items-center gap-x-1 text-body2 -tracking-018 font-medium text-DarkBlue50">
+                                                            <span>2 tab</span>
+                                                            <span>\</span>
+                                                            <span>2 times per day</span>
+                                                            <span>\</span>
+                                                            <span>7 days</span>
+                                                        </div>
+                                                    </div>
+                                                    <span @click="allText = !allText" class="w-6 min-w-6 h-6 ml-2 rounded flex items-center justify-center overflow-hidden bg-blue10">
+                                                        <svg :class="!allText  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                            <path d="M11 1.5127L6 6.51269L1 1.5127" stroke="#060B52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col gap-y-6 consultation-list__item">
+                                            <div class="flex items-center gap-x-2">
+                                                <span class="rounded-7xl w-fit px-3 py-2 font-semibold text-body2 whitespace-nowrap bg-LagunaBlue text-white">Aproved</span>
+                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">14.07.2024</time>
+                                            </div>
+                                            <div class="p-4 border border-slate-300 rounded-xl">
+                                                <div class="flex justify-between w-full" x-data="{ allText: true }">
+                                                    <div class="flex flex-col w-text">
+                                                        <span :class="allText ? 'whitespace-nowrap text-ellipsis' : ''" class="block mb-3 text-DarkBlue100 text-body -tracking-018 font-medium overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                        <div class="flex items-center gap-x-1 text-body2 -tracking-018 font-medium text-DarkBlue50">
+                                                            <span>2 tab</span>
+                                                            <span>\</span>
+                                                            <span>2 times per day</span>
+                                                            <span>\</span>
+                                                            <span>7 days</span>
+                                                        </div>
+                                                    </div>
+                                                    <span @click="allText = !allText" class="w-6 min-w-6 h-6 ml-2 rounded flex items-center justify-center overflow-hidden bg-blue10">
+                                                        <svg :class="!allText  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                            <path d="M11 1.5127L6 6.51269L1 1.5127" stroke="#060B52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-center w-full minlg:hidden">
+                                <nav class="w-full flex justify-between" aria-label="pagination">
+    <a href="#" class="pagination-button pagination-button--disabled" aria-label="previous page">
+        Previous
+        <svg class="pagination-button--icon hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M9.45032 19.0959C9.6669 19.0959 9.85849 19.0439 10.0251 18.9399C10.1917 18.8359 10.3125 18.6919 10.3874 18.5079C10.4624 18.3239 10.4791 18.1359 10.4374 17.9439C10.3958 17.7519 10.3083 17.5919 10.175 17.4639L2.42813 9.99995L10.175 2.55995C10.275 2.46395 10.35 2.35595 10.3999 2.23595C10.4499 2.11595 10.4749 1.99195 10.4749 1.86395C10.4749 1.73595 10.4499 1.61595 10.3999 1.50395C10.35 1.39195 10.275 1.28795 10.175 1.19195C10.0751 1.09595 9.96261 1.02395 9.83766 0.975948C9.71271 0.927948 9.59609 0.903948 9.4878 0.903948C9.37951 0.903948 9.24207 0.935949 9.07547 0.999949C8.95885 1.04795 8.85056 1.11995 8.7506 1.21595L0.303982 9.32795C0.104061 9.51995 0.0041008 9.74795 0.0041008 10.0119C0.0041008 10.2759 0.104061 10.5039 0.303982 10.6959L8.7506 18.8079C8.95052 18.9999 9.18376 19.0959 9.45032 19.0959ZM1.0037 10.9599H18.9965C19.2797 10.9599 19.5171 10.8679 19.7087 10.6839C19.9003 10.4999 19.9961 10.2759 19.9961 10.0119C19.9961 9.74795 19.8961 9.51995 19.6962 9.32795C19.4963 9.13595 19.2631 9.03995 18.9965 9.03995H1.0037C0.737141 9.03995 0.503901 9.13595 0.303982 9.32795C0.104061 9.51995 0.0041008 9.74795 0.0041008 10.0119C0.0041008 10.2759 0.0998955 10.4999 0.291487 10.6839C0.483076 10.8679 0.720482 10.9599 1.0037 10.9599Z" fill="white"/>
+        </svg>
+        <svg class="pagination-button--icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M9.45032 19.0959C9.6669 19.0959 9.85849 19.0439 10.0251 18.9399C10.1917 18.8359 10.3125 18.6919 10.3874 18.5079C10.4624 18.3239 10.4791 18.1359 10.4374 17.9439C10.3958 17.7519 10.3083 17.5919 10.175 17.4639L2.42813 9.99995L10.175 2.55995C10.275 2.46395 10.35 2.35595 10.3999 2.23595C10.4499 2.11595 10.4749 1.99195 10.4749 1.86395C10.4749 1.73595 10.4499 1.61595 10.3999 1.50395C10.35 1.39195 10.275 1.28795 10.175 1.19195C10.0751 1.09595 9.96261 1.02395 9.83766 0.975948C9.71271 0.927948 9.59609 0.903948 9.4878 0.903948C9.37951 0.903948 9.24207 0.935949 9.07547 0.999949C8.95885 1.04795 8.85056 1.11995 8.7506 1.21595L0.303982 9.32795C0.104061 9.51995 0.0041008 9.74795 0.0041008 10.0119C0.0041008 10.2759 0.104061 10.5039 0.303982 10.6959L8.7506 18.8079C8.95052 18.9999 9.18376 19.0959 9.45032 19.0959ZM1.0037 10.9599H18.9965C19.2797 10.9599 19.5171 10.8679 19.7087 10.6839C19.9003 10.4999 19.9961 10.2759 19.9961 10.0119C19.9961 9.74795 19.8961 9.51995 19.6962 9.32795C19.4963 9.13595 19.2631 9.03995 18.9965 9.03995H1.0037C0.737141 9.03995 0.503901 9.13595 0.303982 9.32795C0.104061 9.51995 0.0041008 9.74795 0.0041008 10.0119C0.0041008 10.2759 0.0998955 10.4999 0.291487 10.6839C0.483076 10.8679 0.720482 10.9599 1.0037 10.9599Z" fill="#BFC6D6"/>
+        </svg>
+    </a>
+    <ul class="flex flex-shrink-0 items-center gap-x-2 text-body leading-100 font-medium">
+        <li class="flex items-center justify-center"><a href="#" class="flex size-10 items-center justify-center rounded-full border border-blue100 p-1 bg-blue100 text-white " aria-label="page 1">1</a></li>
+        <li class="flex items-center justify-center"><a href="#" class="flex size-10 items-center justify-center rounded-full border border-blue100 p-1 text-DarkBlue100" aria-current="page" aria-label="page 2">2</a></li>
+        <li class="flex items-center justify-center"><a href="#" class="flex size-10 items-center justify-center rounded-full border border-blue100 p-1 text-DarkBlue100 sm:hidden" aria-current="page" aria-label="page 3">3</a></li>
+        <li class="flex items-center justify-center">
+            <a href="#" class="flex size-10 items-center justify-center rounded-full border border-blue100 p-1 text-DarkBlue100" aria-label="more pages">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+            </a>
+        </li>
+        <li class="flex items-center justify-center"><a href="#" class="flex size-10 items-center justify-center rounded-full border border-blue100 p-1 text-DarkBlue100" aria-label="page 10">10</a></li>
+    </ul>
+    <a href="#" class="pagination-button pagination-button--active" aria-label="next page">
+        Next
+        <svg class="pagination-button--icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10.5497 19.0959C10.3331 19.0959 10.1415 19.0439 9.97491 18.9399C9.80831 18.8359 9.68753 18.6919 9.61256 18.5079C9.53759 18.3239 9.52093 18.1359 9.56258 17.9439C9.60423 17.7519 9.69169 17.5919 9.82497 17.4639L17.5719 9.99995L9.82497 2.55995C9.72501 2.46395 9.65004 2.35595 9.60006 2.23595C9.55008 2.11595 9.52509 1.99195 9.52509 1.86395C9.52509 1.73595 9.55008 1.61595 9.60006 1.50395C9.65004 1.39195 9.72501 1.28795 9.82497 1.19195C9.92493 1.09595 10.0374 1.02395 10.1623 0.975948C10.2873 0.927948 10.4039 0.903948 10.5122 0.903948C10.6205 0.903948 10.7579 0.935949 10.9245 0.999949C11.0412 1.04795 11.1494 1.11995 11.2494 1.21595L19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.8959 10.5039 19.696 10.6959L11.2494 18.8079C11.0495 18.9999 10.8162 19.0959 10.5497 19.0959ZM18.9963 10.9599H1.00351C0.720286 10.9599 0.482881 10.8679 0.291291 10.6839C0.0997012 10.4999 0.00390625 10.2759 0.00390625 10.0119C0.00390625 9.74795 0.103866 9.51995 0.303786 9.32795C0.503706 9.13595 0.736946 9.03995 1.00351 9.03995H18.9963C19.2629 9.03995 19.4961 9.13595 19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.9001 10.4999 19.7085 10.6839C19.5169 10.8679 19.2795 10.9599 18.9963 10.9599Z" fill="white"/>
+        </svg>
+        <svg class="pagination-button--icon hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10.5497 19.0959C10.3331 19.0959 10.1415 19.0439 9.97491 18.9399C9.80831 18.8359 9.68753 18.6919 9.61256 18.5079C9.53759 18.3239 9.52093 18.1359 9.56258 17.9439C9.60423 17.7519 9.69169 17.5919 9.82497 17.4639L17.5719 9.99995L9.82497 2.55995C9.72501 2.46395 9.65004 2.35595 9.60006 2.23595C9.55008 2.11595 9.52509 1.99195 9.52509 1.86395C9.52509 1.73595 9.55008 1.61595 9.60006 1.50395C9.65004 1.39195 9.72501 1.28795 9.82497 1.19195C9.92493 1.09595 10.0374 1.02395 10.1623 0.975948C10.2873 0.927948 10.4039 0.903948 10.5122 0.903948C10.6205 0.903948 10.7579 0.935949 10.9245 0.999949C11.0412 1.04795 11.1494 1.11995 11.2494 1.21595L19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.8959 10.5039 19.696 10.6959L11.2494 18.8079C11.0495 18.9999 10.8162 19.0959 10.5497 19.0959ZM18.9963 10.9599H1.00351C0.720286 10.9599 0.482881 10.8679 0.291291 10.6839C0.0997012 10.4999 0.00390625 10.2759 0.00390625 10.0119C0.00390625 9.74795 0.103866 9.51995 0.303786 9.32795C0.503706 9.13595 0.736946 9.03995 1.00351 9.03995H18.9963C19.2629 9.03995 19.4961 9.13595 19.696 9.32795C19.8959 9.51995 19.9959 9.74795 19.9959 10.0119C19.9959 10.2759 19.9001 10.4999 19.7085 10.6839C19.5169 10.8679 19.2795 10.9599 18.9963 10.9599Z" fill="#BFC6D6"/>
+        </svg>
+    </a>
+</nav>
+
                             </div>
                         </div>
                     </div>
