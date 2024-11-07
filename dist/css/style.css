@@ -2377,6 +2377,18 @@ html {
 .z-\[9\]{
   z-index: 9;
 }
+.order-1{
+  order: 1;
+}
+.order-2{
+  order: 2;
+}
+.order-3{
+  order: 3;
+}
+.order-4{
+  order: 4;
+}
 .col-span-1{
   grid-column: span 1 / span 1;
 }
@@ -3577,6 +3589,9 @@ html {
 }
 .pt-\[46px\]{
   padding-top: 46px;
+}
+.pt-2{
+  padding-top: 0.5rem;
 }
 .text-left{
   text-align: left;
@@ -6447,6 +6462,9 @@ p{
   .lg\:pt-10{
     padding-top: 2.5rem;
   }
+  .lg\:pt-6{
+    padding-top: 1.5rem;
+  }
   .lg\:text-left{
     text-align: left;
   }
@@ -6685,6 +6703,12 @@ p{
   .md\:gap-y-6{
     row-gap: 1.5rem;
   }
+  .md\:gap-y-8{
+    row-gap: 2rem;
+  }
+  .md\:gap-y-12{
+    row-gap: 3rem;
+  }
   .md\:self-start{
     align-self: flex-start;
   }
@@ -6717,6 +6741,10 @@ p{
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   .md\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -6732,10 +6760,6 @@ p{
   .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-  .md\:py-0{
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
   .md\:pb-5{
     padding-bottom: 1.25rem;
