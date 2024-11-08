@@ -12,296 +12,488 @@
         <div class="flex flex-col w-full">
             @@include('components/D-header.html')
             <div class="container-full">
-                <div class="row-10 my-14">
+                <div class="row-10 my-14 md:my-10">
                     <div class="col-span-10">
-                        <div class="flex flex-col gap-y-10">
+                        <div class="flex flex-col gap-y-10 md:gap-y-12">
                             <div class="flex flex-col">
-                                <span class="text-h4 block mb-4 font-bold">
+                                <span class="text-h4 md:text-Top1 block mb-4 md:mb-3 font-bold">
                                     Hello, Alexandra Vieru
                                 </span>
                                 <div class="flex flex-col text-body font-medium text-DarkBlue50">
                                     <p class="text-body block mb-2">Welcome to your dashboard! Here you can view a summary of all your orders.</p>
-                                    <p class="text-body">Remember: Statuses on your orders change in real time as the pharmacy deals with them.
+                                    <p class="text-body md:text-body2">Remember: Statuses on your orders change in real time as the pharmacy deals with them.
                                         You will also be notified through email.</p>
                                 </div>
                             </div>
-                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
-                                <div class="flex w-full justify-between gap-4 flex-wrap md:flex-col">
-                                    <div class="flex flex-col max-w-[530px]">
-                                        <span class="text-Top1 font-bold block mb-4">Treatment Orders</span>
-                                        <p class="text-base text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
+                            <div class="flex flex-col gap-y-5">
+                                <div class="bg-white shadow-4xl p-8 md:px-4 md:py-6 rounded-6xl w-full">
+                                    <div class="flex w-full justify-between gap-4 flex-wrap md:flex-col">
+                                        <div class="flex flex-col max-w-[530px] lg:border-b lg:border-DarkBlue10 lg:pb-8">
+                                            <span class="text-Top1 md:text-base md:mb-3 font-bold block mb-4">Treatment Orders</span>
+                                            <p class="text-base md:text-body text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
+                                        </div>
+                                        <div class="flex items-center gap-x-2 lg:hidden">
+                                            @@include('components/Link.html', {
+                                            'title': 'View All',
+                                            'url': '#',
+                                            'style': 'db-btn'
+                                            })
+                                            @@include('components/Link.html', {
+                                            'title': 'Find a Treatment',
+                                            'url': '#',
+                                            'style': 'db-btn'
+                                            })
+                                        </div>
                                     </div>
-                                    <div class="flex items-center gap-x-2">
-                                        @@include('components/Link.html', {
-                                        'title': 'View All',
-                                        'url': '#',
-                                        'style': 'db-btn'
-                                        })
-                                        @@include('components/Link.html', {
-                                        'title': 'Find a Treatment',
-                                        'url': '#',
-                                        'style': 'db-btn'
-                                        })
-                                    </div>
-                                </div>
-                                <div class="mt-8 overflow-hidden w-full overflow-x-auto rounded-xl">
-                                    <table class="w-full text-left">
-                                        <thead class="border-y py-2 uppercase text-body4 font-semibold text-DarkBlue50">
+                                    <div class="mt-8 md:mt-6 overflow-hidden w-full overflow-x-auto rounded-xl">
+                                        <table class="w-full text-left lg:hidden">
+                                            <thead class="border-y py-2 uppercase text-body4 font-semibold text-DarkBlue50">
                                             <tr>
                                                 <th scope="col" class="px-4 py-5 w-[260px] xl:w-[160px] font-medium">ORDER STATUS</th>
                                                 <th scope="col" class="px-4 py-5 min-w-[600px] font-medium">TREATMENTS</th>
                                                 <th scope="col" class="px-4 py-5 w-[150px] font-medium">DATE</th>
                                             </tr>
-                                        </thead>
-                                        <tbody class="border-[0]">
-                                        <tr>
-                                            <td class="p-4 pt-8">
-                                                @@include('components/status-elem.html', {
-                                                'Title': 'Processing',
-                                                'Style': 'bg-LagunaBlue text-white',
-                                                })
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <div class="flex flex-col max-w-[770px]">
-                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
-                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
-                                                        <span>2 tab</span>
-                                                        <span>\</span>
-                                                        <span>2 times per day</span>
-                                                        <span>\</span>
-                                                        <span>7 days</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-4">
-                                                @@include('components/status-elem.html', {
-                                                'Title': 'Accept',
-                                                'Style': 'bg-SkyBlue text-white',
-                                                })
-                                            </td>
-                                            <td class="p-4">
-                                                <div class="flex flex-col max-w-[770px]">
-                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
-                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
-                                                        <span>2 tab</span>
-                                                        <span>\</span>
-                                                        <span>2 times per day</span>
-                                                        <span>\</span>
-                                                        <span>7 days</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="p-4">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-4">
-                                                @@include('components/status-elem.html', {
-                                                'Title': 'Declined',
-                                                'Style': 'bg-Blue40 text-white',
-                                                })
-                                            </td>
-                                            <td class="p-4">
-                                                <div class="flex flex-col max-w-[770px]">
-                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
-                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
-                                                        <span>2 tab</span>
-                                                        <span>\</span>
-                                                        <span>2 times per day</span>
-                                                        <span>\</span>
-                                                        <span>7 days</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="p-4">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-4">
-                                                @@include('components/status-elem.html', {
-                                                'Title': 'Rewiew',
-                                                'Style': 'bg-blue100 text-white',
-                                                })
-                                            </td>
-                                            <td class="p-4">
-                                                <div class="flex flex-col max-w-[770px]">
-                                                    <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
-                                                    <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
-                                                        <span>2 tab</span>
-                                                        <span>\</span>
-                                                        <span>2 times per day</span>
-                                                        <span>\</span>
-                                                        <span>7 days</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="p-4">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="bg-white shadow-4xl p-8 rounded-6xl w-full">
-                                <div class="flex w-full justify-between gap-4 flex-wrap md:flex-col">
-                                    <div class="flex flex-col max-w-[530px]">
-                                        <span class="text-Top1 font-bold block mb-4">My Private Prescription Orders</span>
-                                        <p class="text-base text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
-                                    </div>
-                                    <div class="flex items-center gap-x-2">
-                                        @@include('components/Link.html', {
-                                        'title': 'View All',
-                                        'url': '#',
-                                        'style': 'db-btn'
-                                        })
-                                        @@include('components/Link.html', {
-                                        'title': 'Find a Treatment',
-                                        'url': '#',
-                                        'style': 'db-btn'
-                                        })
-                                    </div>
-                                </div>
-                                <div x-data="{modalCommentsIsOpen: false, modalViewIsOpen: false}" class="mt-8 overflow-hidden w-full overflow-x-auto rounded-xl">
-                                    <table class="w-full text-left table-auto">
-                                        <thead class="border-y py-2 uppercase text-body4 font-semibold text-DarkBlue50">
-                                        <tr>
-                                            <th scope="col" class="px-4 py-5 font-medium min-w-[200px]">PRODUCT</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">STATUS</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">FILE</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">Price</th>
-                                            <th scope="col" class="px-4 py-5 font-medium">DATE</th>
-                                            <th scope="col" class="px-4 py-5 font-medium w-[100px]">ACTIONS</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody class="border-[0]">
-                                        <tr>
-                                            <td class="p-4 pt-8">
-                                                <span class="text-base font-semibold">Differin 0.1% Tabs</span>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                @@include('components/status-elem.html', {
-                                                'Title': 'Processing',
-                                                'Style': 'bg-LagunaBlue text-white',
-                                                })
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <button class="flex items-center w-fit rounded-lg bg-LightBlue overflow-hidden whitespace-nowrap px-3 h-[36px]" type="button">
-                                                    <i class="Pdf-icon-16 mr-2"></i>
-                                                    <span class="text-body2 font-semibold">Prescription.doc</span>
-                                                </button>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <span class="text-base -tracking-018 font-medium">£16.43</span>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
-                                            </td>
-                                            <td class="p-4 pt-8">
-                                                <div class="flex items-center gap-x-2">
-                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
-                                                        <i class="Dowlnoad-icon-20-v2"></i>
-                                                    </button>
-                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button" @click="modalViewIsOpen = true">
-                                                        <i class="View-icon-20"></i>
-                                                    </button>
-                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
-                                                        <i class="Bin-icon-24"></i>
-                                                    </button>
-                                                    <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button" @click="modalCommentsIsOpen = true">
-                                                        <i class="Comment-icon-24"></i>
-                                                        <span class="absolute -top-[7px] -right-[7px] rounded-full flex justify-center items-center bg-blue100 text-white text-[7px] font-bold px-1 py-[2px] min-w-[14px]">2</span>
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                    <div x-cloak x-show="modalCommentsIsOpen" x-transition.opacity.duration.200ms x-trap.inert.noscroll="modalCommentsIsOpen" @keydown.esc.window="modalCommentsIsOpen = false" @click.self="modalCommentsIsOpen = false" class="fixed inset-0 z-30 flex items-center justify-center bg-black/20 p-4 pb-8 backdrop-blur-md lg:p-4" role="dialog" aria-modal="true" aria-labelledby="defaultModalTitle">
-                                        <!-- Modal Dialog -->
-                                        <div x-show="modalCommentsIsOpen" x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity" x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100" class="flex max-w-[553px] w-full flex-col overflow-hidden rounded-6xl bg-white">
-                                            <!-- Dialog Header -->
-                                            <div class="flex items-center justify-between py-5 pl-8 pr-6">
-                                                <h3 class="text-Top3 font-semibold">Comments</h3>
-                                                <button @click="modalCommentsIsOpen = false" aria-label="close modal">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M13.2256 1.01953L7.96094 6.28418L2.69629 1.01953C2.16982 0.493066 1.46787 0.493067 0.941406 1.01953C0.414941 1.546 0.414941 2.24795 0.941406 2.77441L6.20605 8.03906L0.941406 13.3037C0.414941 13.8302 0.414941 14.5321 0.941406 15.0586C1.46787 15.5851 2.16982 15.5851 2.69629 15.0586L7.96094 9.79395L13.2256 15.0586C13.7521 15.5851 14.454 15.5851 14.9805 15.0586C15.5069 14.5321 15.5069 13.8302 14.9805 13.3037L9.71582 8.03906L14.9805 2.77441C15.5069 2.24795 15.5069 1.546 14.9805 1.01953C14.454 0.493067 13.7521 0.493066 13.2256 1.01953Z" fill="#060B52"/>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <!-- Dialog Body -->
-                                            <div class="px-8 pt-6 pb-8 border-t border-blue10 flex flex-col gap-y-8">
-                                                <div class="flex flex-col gap-y-3">
-                                                    <div class="flex items-center gap-x-3">
-                                                        <div class="w-12 h-12 rounded-full bg-blue20 overflow-hidden flex justify-center items-center">
-                                                            <img class="object-cover object-center hidden" src="" alt="A">
-                                                            <span class="text-Top3 font-semibold">A</span>
-                                                        </div>
-                                                        <div class="flex flex-col">
-                                                            <span class="text-body2 font-semibold block mb-1">Anik Lamakani</span>
-                                                            <p class="text-DarkBlue50 text-body4 font-medium">Yesterday at 10:48 AM</p>
+                                            </thead>
+                                            <tbody class="border-[0]">
+                                            <tr>
+                                                <td class="p-4 pt-8">
+                                                    @@include('components/status-elem.html', {
+                                                    'Title': 'Processing',
+                                                    'Style': 'bg-LagunaBlue text-white',
+                                                    })
+                                                </td>
+                                                <td class="p-4 pt-8">
+                                                    <div class="flex flex-col max-w-[770px]">
+                                                        <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                        <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                            <span>2 tab</span>
+                                                            <span>\</span>
+                                                            <span>2 times per day</span>
+                                                            <span>\</span>
+                                                            <span>7 days</span>
                                                         </div>
                                                     </div>
-                                                    <p class="text-body2 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, tellus sed aliquam cursus, enim ipsum dolor.</p>
-                                                </div>
-                                                <div class="flex flex-col gap-y-3">
-                                                    <div class="flex items-center gap-x-3">
-                                                        <div class="w-12 h-12 rounded-full bg-blue20 overflow-hidden flex justify-center items-center">
-                                                            <img class="object-cover object-center hidden" src="" alt="A">
-                                                            <span class="text-Top3 font-semibold">A</span>
-                                                        </div>
-                                                        <div class="flex flex-col">
-                                                            <span class="text-body2 font-semibold block mb-1">Anik Lamakani</span>
-                                                            <p class="text-DarkBlue50 text-body4 font-medium">Yesterday at 10:48 AM</p>
+                                                </td>
+                                                <td class="p-4 pt-8">
+                                                    <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-4">
+                                                    @@include('components/status-elem.html', {
+                                                    'Title': 'Accept',
+                                                    'Style': 'bg-SkyBlue text-white',
+                                                    })
+                                                </td>
+                                                <td class="p-4">
+                                                    <div class="flex flex-col max-w-[770px]">
+                                                        <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                        <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                            <span>2 tab</span>
+                                                            <span>\</span>
+                                                            <span>2 times per day</span>
+                                                            <span>\</span>
+                                                            <span>7 days</span>
                                                         </div>
                                                     </div>
-                                                    <p class="text-body2 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, tellus sed aliquam cursus, enim ipsum dolor.</p>
+                                                </td>
+                                                <td class="p-4">
+                                                    <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-4">
+                                                    @@include('components/status-elem.html', {
+                                                    'Title': 'Declined',
+                                                    'Style': 'bg-Blue40 text-white',
+                                                    })
+                                                </td>
+                                                <td class="p-4">
+                                                    <div class="flex flex-col max-w-[770px]">
+                                                        <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                        <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                            <span>2 tab</span>
+                                                            <span>\</span>
+                                                            <span>2 times per day</span>
+                                                            <span>\</span>
+                                                            <span>7 days</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="p-4">
+                                                    <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-4">
+                                                    @@include('components/status-elem.html', {
+                                                    'Title': 'Rewiew',
+                                                    'Style': 'bg-blue100 text-white',
+                                                    })
+                                                </td>
+                                                <td class="p-4">
+                                                    <div class="flex flex-col max-w-[770px]">
+                                                        <span class="block mb-3 text-DarkBlue100 text-base -tracking-018 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                        <div class="flex items-center gap-x-3 text-base -tracking-018 font-medium text-DarkBlue50">
+                                                            <span>2 tab</span>
+                                                            <span>\</span>
+                                                            <span>2 times per day</span>
+                                                            <span>\</span>
+                                                            <span>7 days</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="p-4">
+                                                    <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="flex flex-col minlg:hidden">
+                                            <div class="flex flex-col consultation-list">
+                                                <div class="flex flex-col gap-y-6 consultation-list__item">
+                                                    <div class="flex items-center justify-between gap-x-2">
+                                                        <span class="uppercase text-body4 text-DarkBlue50 font-semibold">id:
+                                                            <span class="text-body text-DarkBlue100 inline-block ml-1">3</span>
+                                                        </span>
+                                                       <div class="flex items-center gap-x-2">
+                                                           @@include('components/status-elem.html', {
+                                                           'Title': 'Delivered',
+                                                           'Style': 'bg-blue10 text-blue100',
+                                                           })
+                                                           <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">14.07.2024</time>
+                                                       </div>
+                                                    </div>
+                                                    <div class="p-4 border border-slate-300 rounded-xl">
+                                                        <div class="flex justify-between w-full" x-data="{ allText: true }">
+                                                            <div class="flex flex-col w-text">
+                                                                <span @click="allText = !allText" :class="allText ? 'whitespace-nowrap text-ellipsis' : ''" class="block mb-3 text-DarkBlue100 text-body -tracking-018 font-medium overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                                <div class="flex items-center gap-x-1 text-body2 -tracking-018 font-medium text-DarkBlue50">
+                                                                    <span>2 tab</span>
+                                                                    <span>\</span>
+                                                                    <span>2 times per day</span>
+                                                                    <span>\</span>
+                                                                    <span>7 days</span>
+                                                                </div>
+                                                            </div>
+                                                            <span @click="allText = !allText" class="w-6 min-w-6 h-6 ml-2 rounded flex items-center justify-center overflow-hidden bg-blue10">
+                                                        <svg :class="!allText  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                            <path d="M11 1.5127L6 6.51269L1 1.5127" stroke="#060B52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex flex-col gap-y-6 consultation-list__item">
+                                                    <div class="flex items-center justify-between gap-x-2">
+                                                        <span class="uppercase text-body4 text-DarkBlue50 font-semibold">id:
+                                                            <span class="text-body text-DarkBlue100 inline-block ml-1">4</span>
+                                                        </span>
+                                                        <div class="flex items-center gap-x-2">
+                                                            @@include('components/status-elem.html', {
+                                                            'Title': 'Delivered',
+                                                            'Style': 'bg-blue10 text-blue100',
+                                                            })
+                                                            <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">14.07.2024</time>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-4 border border-slate-300 rounded-xl">
+                                                        <div class="flex justify-between w-full" x-data="{ allText: true }">
+                                                            <div class="flex flex-col w-text">
+                                                                <span @click="allText = !allText" :class="allText ? 'whitespace-nowrap text-ellipsis' : ''" class="block mb-3 text-DarkBlue100 text-body -tracking-018 font-medium overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                                <div class="flex items-center gap-x-1 text-body2 -tracking-018 font-medium text-DarkBlue50">
+                                                                    <span>2 tab</span>
+                                                                    <span>\</span>
+                                                                    <span>2 times per day</span>
+                                                                    <span>\</span>
+                                                                    <span>7 days</span>
+                                                                </div>
+                                                            </div>
+                                                            <span @click="allText = !allText" class="w-6 min-w-6 h-6 ml-2 rounded flex items-center justify-center overflow-hidden bg-blue10">
+                                                        <svg :class="!allText  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                            <path d="M11 1.5127L6 6.51269L1 1.5127" stroke="#060B52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex flex-col gap-y-6 consultation-list__item">
+                                                    <div class="flex items-center justify-between gap-x-2">
+                                                        <span class="uppercase text-body4 text-DarkBlue50 font-semibold">id:
+                                                            <span class="text-body text-DarkBlue100 inline-block ml-1">5</span>
+                                                        </span>
+                                                        <div class="flex items-center gap-x-2">
+                                                            @@include('components/status-elem.html', {
+                                                            'Title': 'Processed',
+                                                            'Style': 'bg-blue100 text-white',
+                                                            })
+                                                            <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">14.07.2024</time>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p-4 border border-slate-300 rounded-xl">
+                                                        <div class="flex justify-between w-full" x-data="{ allText: true }">
+                                                            <div class="flex flex-col w-text">
+                                                                <span @click="allText = !allText" :class="allText ? 'whitespace-nowrap text-ellipsis' : ''" class="block mb-3 text-DarkBlue100 text-body -tracking-018 font-medium overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </span>
+                                                                <div class="flex items-center gap-x-1 text-body2 -tracking-018 font-medium text-DarkBlue50">
+                                                                    <span>2 tab</span>
+                                                                    <span>\</span>
+                                                                    <span>2 times per day</span>
+                                                                    <span>\</span>
+                                                                    <span>7 days</span>
+                                                                </div>
+                                                            </div>
+                                                            <span @click="allText = !allText" class="w-6 min-w-6 h-6 ml-2 rounded flex items-center justify-center overflow-hidden bg-blue10">
+                                                        <svg :class="!allText  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                            <path d="M11 1.5127L6 6.51269L1 1.5127" stroke="#060B52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div x-cloak x-show="modalViewIsOpen" x-transition.opacity.duration.200ms x-trap.inert.noscroll="modalViewIsOpen" @keydown.esc.window="modalViewIsOpen = false" @click.self="modalViewIsOpen = false" class="fixed inset-0 z-30 flex items-center justify-center bg-black/20 p-4 pb-8 backdrop-blur-md lg:p-4" role="dialog" aria-modal="true" aria-labelledby="defaultModalTitle">
-                                        <!-- Modal Dialog -->
-                                        <div x-show="modalViewIsOpen" x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity" x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100" class="flex max-w-[553px] w-full flex-col overflow-hidden rounded-6xl bg-white">
-                                            <!-- Dialog Header -->
-                                            <div class="flex items-center justify-between py-5 pl-8 pr-6">
-                                                <h3 class="text-Top3 font-semibold">View Order</h3>
-                                                <button @click="modalViewIsOpen = false" aria-label="close modal">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M13.2256 1.01953L7.96094 6.28418L2.69629 1.01953C2.16982 0.493066 1.46787 0.493067 0.941406 1.01953C0.414941 1.546 0.414941 2.24795 0.941406 2.77441L6.20605 8.03906L0.941406 13.3037C0.414941 13.8302 0.414941 14.5321 0.941406 15.0586C1.46787 15.5851 2.16982 15.5851 2.69629 15.0586L7.96094 9.79395L13.2256 15.0586C13.7521 15.5851 14.454 15.5851 14.9805 15.0586C15.5069 14.5321 15.5069 13.8302 14.9805 13.3037L9.71582 8.03906L14.9805 2.77441C15.5069 2.24795 15.5069 1.546 14.9805 1.01953C14.454 0.493067 13.7521 0.493066 13.2256 1.01953Z" fill="#060B52"/>
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                            <!-- Dialog Body -->
-                                            <div class="px-8 pt-6 pb-8 border-t border-blue10 flex flex-col gap-y-6">
-                                                <div class="flex items-center justify-between">
+                                </div>
+                                <div class="flex items-center gap-x-2 minlg:hidden">
+                                    @@include('components/Link.html', {
+                                    'title': 'View All',
+                                    'url': '#',
+                                    'style': 'db-btn flex-[1.2]'
+                                    })
+                                    @@include('components/Link.html', {
+                                    'title': 'Find a Treatment',
+                                    'url': '#',
+                                    'style': 'db-btn flex-[2]'
+                                    })
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-y-5">
+                                <div class="bg-white shadow-4xl p-8 md:px-4 md:py-6 rounded-6xl w-full">
+                                    <div class="flex w-full justify-between gap-4 flex-wrap md:flex-col">
+                                        <div class="flex flex-col max-w-[530px] lg:border-b lg:border-DarkBlue10 lg:pb-8">
+                                            <span class="text-Top1 md:text-base md:mb-3 font-bold block mb-4">My Private Prescription Orders</span>
+                                            <p class="text-body md:text-body text-DarkBlue50 font-medium">Orders you have placed through our online doctor are listed here.</p>
+                                        </div>
+                                        <div class="flex items-center gap-x-2 lg:hidden">
+                                            @@include('components/Link.html', {
+                                            'title': 'View All',
+                                            'url': '#',
+                                            'style': 'db-btn'
+                                            })
+                                            @@include('components/Link.html', {
+                                            'title': 'Find a Treatment',
+                                            'url': '#',
+                                            'style': 'db-btn'
+                                            })
+                                        </div>
+                                    </div>
+                                    <div x-data="{modalCommentsIsOpen: false, modalViewIsOpen: false}" class="mt-8 overflow-hidden w-full overflow-x-auto rounded-xl">
+                                        <table class="w-full text-left table-auto lg:hidden">
+                                            <thead class="border-y py-2 uppercase text-body4 font-semibold text-DarkBlue50">
+                                            <tr>
+                                                <th scope="col" class="px-4 py-5 font-medium min-w-[200px]">PRODUCT</th>
+                                                <th scope="col" class="px-4 py-5 font-medium">STATUS</th>
+                                                <th scope="col" class="px-4 py-5 font-medium">FILE</th>
+                                                <th scope="col" class="px-4 py-5 font-medium">Price</th>
+                                                <th scope="col" class="px-4 py-5 font-medium">DATE</th>
+                                                <th scope="col" class="px-4 py-5 font-medium w-[100px]">ACTIONS</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody class="border-[0]">
+                                            <tr>
+                                                <td class="p-4 pt-8">
                                                     <span class="text-base font-semibold">Differin 0.1% Tabs</span>
+                                                </td>
+                                                <td class="p-4 pt-8">
                                                     @@include('components/status-elem.html', {
-                                                    'Title': 'Delivered',
-                                                    'Style': 'bg-blue100 text-white',
+                                                    'Title': 'Processing',
+                                                    'Style': 'bg-LagunaBlue text-white',
                                                     })
-                                                </div>
-                                                <div class="flex flex-col gap-y-4">
-                                                    <span class="text-body4 text-DarkBlue50 font-semibold uppercase">amount price</span>
-                                                    <span class="-tracking-018 text-base font-medium">£16.43</span>
-                                                </div>
-                                                <div class="flex flex-col gap-y-4">
-                                                    <span class="text-body4 text-DarkBlue50 font-semibold uppercase">Tracking number</span>
-                                                    <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
-                                                        <i class="Tracking-icon-20 mr-2"></i>
-                                                        <span class="text-body font-semibold whitespace-nowrap">TR 02496GT</span>
+                                                </td>
+                                                <td class="p-4 pt-8">
+                                                    <button class="flex items-center w-fit rounded-lg bg-LightBlue overflow-hidden whitespace-nowrap px-3 h-[36px]" type="button">
+                                                        <i class="Pdf-icon-16 mr-2"></i>
+                                                        <span class="text-body2 font-semibold">Prescription.doc</span>
+                                                    </button>
+                                                </td>
+                                                <td class="p-4 pt-8">
+                                                    <span class="text-base -tracking-018 font-medium">£16.43</span>
+                                                </td>
+                                                <td class="p-4 pt-8">
+                                                    <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl whitespace-nowrap">Nov 14, 2021</time>
+                                                </td>
+                                                <td class="p-4 pt-8">
+                                                    <div class="flex items-center gap-x-2">
+                                                        <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                            <i class="Dowlnoad-icon-20-v2"></i>
+                                                        </button>
+                                                        <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button" @click="modalViewIsOpen = true">
+                                                            <i class="View-icon-20"></i>
+                                                        </button>
+                                                        <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                            <i class="Bin-icon-24"></i>
+                                                        </button>
+                                                        <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button" @click="modalCommentsIsOpen = true">
+                                                            <i class="Comment-icon-24"></i>
+                                                            <span class="absolute -top-[7px] -right-[7px] rounded-full flex justify-center items-center bg-blue100 text-white text-[7px] font-bold px-1 py-[2px] min-w-[14px]">2</span>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="minlg:hidden w-full">
+                                            <div class="flex flex-col consultation-list">
+                                                <div class="flex flex-col gap-y-6 consultation-list__item">
+                                                    <div class="flex items-center gap-x-2">
+                                                        @@include('components/status-elem.html', {
+                                                        'Title': 'Accept',
+                                                        'Style': 'bg-SkyBlue text-white',
+                                                        })
+                                                        <time datetime="2021-11-14" class="px-3 py-2 text-body2 text-DarkBlue100 font-semibold bg-LightBlue rounded-7xl">14.07.2024</time>
+                                                    </div>
+                                                    <div class="p-4 border border-slate-300 rounded-xl">
+                                                        <div x-data="{ isExpanded: false }"
+                                                             class="overflow-hidden">
+                                                            <button id="controlsAccordionItem3" type="button"
+                                                                    class="flex w-full justify-between gap-2"
+                                                                    aria-controls="accordionItem3"
+                                                                    @click="isExpanded = ! isExpanded"
+                                                                    :class="isExpanded ? ''  : ''"
+                                                                    :aria-expanded="isExpanded ? 'true' : 'false'">
+                                                                <span class="flex flex-col text-left">
+                                                                    <span class="block mb-4 uppercase text-body4 text-DarkBlue50 font-semibold">Product</span>
+                                                                    <div class="flex flex-col">
+                                                                        <span class="block text-DarkBlue100 text-base md:text-body md:font-semibold -tracking-018 font-bold">Differin 0.1% Tabs</span>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="w-6 h-6 rounded flex items-center justify-center overflow-hidden bg-blue10">
+                                                                    <svg :class="isExpanded  ?  'rotate-180'  :  ''" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                                      <path d="M11 1.5127L6 6.51269L1 1.5127" stroke="#060B52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                            <div x-cloak x-show="isExpanded" id="accordionItem3"
+                                                                 role="region"
+                                                                 class="border-none"
+                                                                 aria-labelledby="controlsAccordionItem3" x-collapse>
+                                                                <div class="pt-6 flex flex-col gap-y-6">
+                                                                    <div class="flex flex-col gap-y-4">
+                                                                        <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Request amount</span>
+                                                                        <span class="text-base -tracking-018 font-medium">£16.43</span>
+                                                                    </div>
+                                                                    <div class="flex flex-col gap-y-4">
+                                                                        <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Prescription</span>
+                                                                        <button class="flex items-center w-fit rounded-lg bg-LightBlue overflow-hidden whitespace-nowrap px-3 h-[36px]"
+                                                                                type="button">
+                                                                            <i class="Pdf-icon-16 mr-2"></i>
+                                                                            <span class="text-body2 font-semibold">Prescription.doc</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="flex flex-col gap-y-4">
+                                                                        <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Actions</span>
+                                                                        <div class="flex items-center gap-x-2">
+                                                                            <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                                                <i class="Dowlnoad-icon-20-v2"></i>
+                                                                            </button>
+                                                                            <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button" @click="modalViewIsOpen = true">
+                                                                                <i class="View-icon-20"></i>
+                                                                            </button>
+                                                                            <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                                                <i class="Bin-icon-24"></i>
+                                                                            </button>
+                                                                            <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button" @click="modalCommentsIsOpen = true">
+                                                                                <i class="Comment-icon-24"></i>
+                                                                                <span class="absolute -top-[7px] -right-[7px] rounded-full flex justify-center items-center bg-blue100 text-white text-[7px] font-bold px-1 py-[2px] min-w-[14px]">2</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-col gap-y-4">
-                                                    <span class="text-body4 text-DarkBlue50 font-semibold uppercase">Actions</span>
-                                                    <div class="flex items-center gap-x-2">
+                                            </div>
+                                        </div>
+                                        <div style="display: none" x-cloak x-show="modalCommentsIsOpen" x-transition.opacity.duration.200ms x-trap.inert.noscroll="modalCommentsIsOpen" @keydown.esc.window="modalCommentsIsOpen = false" @click.self="modalCommentsIsOpen = false" class="fixed inset-0 z-30 flex items-center justify-center bg-black/20 p-4 pb-8 backdrop-blur-md lg:p-4" role="dialog" aria-modal="true" aria-labelledby="defaultModalTitle">
+                                            <!-- Modal Dialog -->
+                                            <div x-show="modalCommentsIsOpen" x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity" x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100" class="flex max-w-[553px] w-full flex-col overflow-hidden rounded-6xl bg-white">
+                                                <!-- Dialog Header -->
+                                                <div class="flex items-center justify-between py-5 pl-8 pr-6 lg:px-4 lg:py-4">
+                                                    <h3 class="text-Top3 font-semibold lg:text-base">Comments</h3>
+                                                    <button @click="modalCommentsIsOpen = false" aria-label="close modal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                            <path d="M13.2256 1.01953L7.96094 6.28418L2.69629 1.01953C2.16982 0.493066 1.46787 0.493067 0.941406 1.01953C0.414941 1.546 0.414941 2.24795 0.941406 2.77441L6.20605 8.03906L0.941406 13.3037C0.414941 13.8302 0.414941 14.5321 0.941406 15.0586C1.46787 15.5851 2.16982 15.5851 2.69629 15.0586L7.96094 9.79395L13.2256 15.0586C13.7521 15.5851 14.454 15.5851 14.9805 15.0586C15.5069 14.5321 15.5069 13.8302 14.9805 13.3037L9.71582 8.03906L14.9805 2.77441C15.5069 2.24795 15.5069 1.546 14.9805 1.01953C14.454 0.493067 13.7521 0.493066 13.2256 1.01953Z" fill="#060B52"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <!-- Dialog Body -->
+                                                <div class="px-8 pt-6 pb-8 lg:px-4 lg:pb-6 border-t border-blue10 flex flex-col gap-y-8">
+                                                    <div class="flex flex-col gap-y-3">
+                                                        <div class="flex items-center gap-x-3">
+                                                            <div class="w-12 h-12 rounded-full bg-blue20 overflow-hidden flex justify-center items-center">
+                                                                <img class="object-cover object-center hidden" src="" alt="A">
+                                                                <span class="text-Top3 font-semibold">A</span>
+                                                            </div>
+                                                            <div class="flex flex-col">
+                                                                <span class="text-body2 font-semibold block mb-1">Anik Lamakani</span>
+                                                                <p class="text-DarkBlue50 text-body4 font-medium">Yesterday at 10:48 AM</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-body2 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, tellus sed aliquam cursus, enim ipsum dolor.</p>
+                                                    </div>
+                                                    <div class="flex flex-col gap-y-3">
+                                                        <div class="flex items-center gap-x-3">
+                                                            <div class="w-12 h-12 rounded-full bg-blue20 overflow-hidden flex justify-center items-center">
+                                                                <img class="object-cover object-center hidden" src="" alt="A">
+                                                                <span class="text-Top3 font-semibold">A</span>
+                                                            </div>
+                                                            <div class="flex flex-col">
+                                                                <span class="text-body2 font-semibold block mb-1">Anik Lamakani</span>
+                                                                <p class="text-DarkBlue50 text-body4 font-medium">Yesterday at 10:48 AM</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="text-body2 font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat, tellus sed aliquam cursus, enim ipsum dolor.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="display: none" x-cloak x-show="modalViewIsOpen" x-transition.opacity.duration.200ms x-trap.inert.noscroll="modalViewIsOpen" @keydown.esc.window="modalViewIsOpen = false" @click.self="modalViewIsOpen = false" class="fixed inset-0 z-30 flex items-center justify-center bg-black/20 p-4 pb-8 backdrop-blur-md lg:p-4" role="dialog" aria-modal="true" aria-labelledby="defaultModalTitle">
+                                            <!-- Modal Dialog -->
+                                            <div x-show="modalViewIsOpen" x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity" x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100" class="flex max-w-[553px] w-full flex-col overflow-hidden rounded-6xl bg-white">
+                                                <!-- Dialog Header -->
+                                                <div class="flex items-center justify-between py-5 pl-8 pr-6 lg:px-4">
+                                                    <h3 class="text-Top3 font-semibold lg:text-base">View Order</h3>
+                                                    <button @click="modalViewIsOpen = false" aria-label="close modal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                            <path d="M13.2256 1.01953L7.96094 6.28418L2.69629 1.01953C2.16982 0.493066 1.46787 0.493067 0.941406 1.01953C0.414941 1.546 0.414941 2.24795 0.941406 2.77441L6.20605 8.03906L0.941406 13.3037C0.414941 13.8302 0.414941 14.5321 0.941406 15.0586C1.46787 15.5851 2.16982 15.5851 2.69629 15.0586L7.96094 9.79395L13.2256 15.0586C13.7521 15.5851 14.454 15.5851 14.9805 15.0586C15.5069 14.5321 15.5069 13.8302 14.9805 13.3037L9.71582 8.03906L14.9805 2.77441C15.5069 2.24795 15.5069 1.546 14.9805 1.01953C14.454 0.493067 13.7521 0.493066 13.2256 1.01953Z" fill="#060B52"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <!-- Dialog Body -->
+                                                <div class="px-8 pt-6 pb-8 border-t border-blue10 flex flex-col gap-y-6 lg:px-4 lg:pb-6 lg:pt-4">
+                                                    <div class="flex items-center justify-between">
+                                                        <span class="text-base font-semibold lg:text-body">Differin 0.1% Tabs</span>
+                                                        @@include('components/status-elem.html', {
+                                                        'Title': 'Delivered',
+                                                        'Style': 'bg-blue100 text-white',
+                                                        })
+                                                    </div>
+                                                    <div class="flex flex-col gap-y-4">
+                                                        <span class="text-body4 text-DarkBlue50 font-semibold uppercase">amount price</span>
+                                                        <span class="-tracking-018 text-base font-medium">£16.43</span>
+                                                    </div>
+                                                    <div class="flex flex-col gap-y-4">
+                                                        <span class="text-body4 text-DarkBlue50 font-semibold uppercase">Tracking number</span>
+                                                        <div class="flex items-center justify-center w-fit px-3 py-2 rounded-7xl bg-LightBlue">
+                                                            <i class="Tracking-icon-20 mr-2"></i>
+                                                            <span class="text-body font-semibold whitespace-nowrap">TR 02496GT</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-col gap-y-4">
+                                                        <span class="text-body4 text-DarkBlue50 font-semibold uppercase">Actions</span>
+                                                        <div class="flex items-center gap-x-2">
                                                         <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                                  viewBox="0 0 20 20" fill="none">
@@ -309,19 +501,32 @@
                                                                       fill="#05093E" fill-opacity="0.5"/>
                                                             </svg>
                                                         </span>
-                                                        <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                            <span class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
                                                             <i class="Car-icon-24"></i>
                                                         </span>
-                                                        <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg group" type="button">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                                                <path class="group-disabled:fill-DarkBlue30" d="M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM14.3 14.3C14.2075 14.3927 14.0976 14.4663 13.9766 14.5164C13.8557 14.5666 13.726 14.5924 13.595 14.5924C13.464 14.5924 13.3343 14.5666 13.2134 14.5164C13.0924 14.4663 12.9825 14.3927 12.89 14.3L10 11.41L7.11 14.3C6.92302 14.487 6.66943 14.592 6.405 14.592C6.14057 14.592 5.88698 14.487 5.7 14.3C5.51302 14.113 5.40798 13.8594 5.40798 13.595C5.40798 13.4641 5.43377 13.3344 5.48387 13.2135C5.53398 13.0925 5.60742 12.9826 5.7 12.89L8.59 10L5.7 7.11C5.51302 6.92302 5.40798 6.66943 5.40798 6.405C5.40798 6.14057 5.51302 5.88698 5.7 5.7C5.88698 5.51302 6.14057 5.40798 6.405 5.40798C6.66943 5.40798 6.92302 5.51302 7.11 5.7L10 8.59L12.89 5.7C12.9826 5.60742 13.0925 5.53398 13.2135 5.48387C13.3344 5.43377 13.4641 5.40798 13.595 5.40798C13.7259 5.40798 13.8556 5.43377 13.9765 5.48387C14.0975 5.53398 14.2074 5.60742 14.3 5.7C14.3926 5.79258 14.466 5.90249 14.5161 6.02346C14.5662 6.14442 14.592 6.27407 14.592 6.405C14.592 6.53593 14.5662 6.66558 14.5161 6.78654C14.466 6.90751 14.3926 7.01742 14.3 7.11L11.41 10L14.3 12.89C14.68 13.27 14.68 13.91 14.3 14.3Z" fill="#3D65FF"/>
-                                                            </svg>
-                                                        </button>
+                                                            <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg group" type="button">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                    <path class="group-disabled:fill-DarkBlue30" d="M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM14.3 14.3C14.2075 14.3927 14.0976 14.4663 13.9766 14.5164C13.8557 14.5666 13.726 14.5924 13.595 14.5924C13.464 14.5924 13.3343 14.5666 13.2134 14.5164C13.0924 14.4663 12.9825 14.3927 12.89 14.3L10 11.41L7.11 14.3C6.92302 14.487 6.66943 14.592 6.405 14.592C6.14057 14.592 5.88698 14.487 5.7 14.3C5.51302 14.113 5.40798 13.8594 5.40798 13.595C5.40798 13.4641 5.43377 13.3344 5.48387 13.2135C5.53398 13.0925 5.60742 12.9826 5.7 12.89L8.59 10L5.7 7.11C5.51302 6.92302 5.40798 6.66943 5.40798 6.405C5.40798 6.14057 5.51302 5.88698 5.7 5.7C5.88698 5.51302 6.14057 5.40798 6.405 5.40798C6.66943 5.40798 6.92302 5.51302 7.11 5.7L10 8.59L12.89 5.7C12.9826 5.60742 13.0925 5.53398 13.2135 5.48387C13.3344 5.43377 13.4641 5.40798 13.595 5.40798C13.7259 5.40798 13.8556 5.43377 13.9765 5.48387C14.0975 5.53398 14.2074 5.60742 14.3 5.7C14.3926 5.79258 14.466 5.90249 14.5161 6.02346C14.5662 6.14442 14.592 6.27407 14.592 6.405C14.592 6.53593 14.5662 6.66558 14.5161 6.78654C14.466 6.90751 14.3926 7.01742 14.3 7.11L11.41 10L14.3 12.89C14.68 13.27 14.68 13.91 14.3 14.3Z" fill="#3D65FF"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="flex items-center gap-x-2 minlg:hidden">
+                                    @@include('components/Link.html', {
+                                    'title': 'View All',
+                                    'url': '#',
+                                    'style': 'db-btn flex-[1.2]'
+                                    })
+                                    @@include('components/Link.html', {
+                                    'title': 'Find a Treatment',
+                                    'url': '#',
+                                    'style': 'db-btn flex-[2]'
+                                    })
                                 </div>
                             </div>
                         </div>

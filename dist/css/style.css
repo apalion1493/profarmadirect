@@ -2923,6 +2923,15 @@ html {
 .flex-1{
   flex: 1 1 0%;
 }
+.flex-\[1\.5\]{
+  flex: 1.5;
+}
+.flex-\[2\]{
+  flex: 2;
+}
+.flex-\[1\.2\]{
+  flex: 1.2;
+}
 .flex-shrink-0{
   flex-shrink: 0;
 }
@@ -6421,6 +6430,12 @@ p{
   .lg\:overflow-y-scroll{
     overflow-y: scroll;
   }
+  .lg\:border-b{
+    border-bottom-width: 1px;
+  }
+  .lg\:border-DarkBlue10{
+    border-color: #05093E1A;
+  }
   .lg\:object-left-bottom{
     -o-object-position: left bottom;
        object-position: left bottom;
@@ -6454,6 +6469,10 @@ p{
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+  .lg\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   .lg\:pb-10{
     padding-bottom: 2.5rem;
   }
@@ -6483,6 +6502,12 @@ p{
   }
   .lg\:pt-6{
     padding-top: 1.5rem;
+  }
+  .lg\:pb-8{
+    padding-bottom: 2rem;
+  }
+  .lg\:pt-4{
+    padding-top: 1rem;
   }
   .lg\:text-left{
     text-align: left;
@@ -6846,6 +6871,9 @@ p{
   .md\:text-none{
     font-size: 0px;
     line-height: 0px;
+  }
+  .md\:font-semibold{
+    font-weight: 600;
   }
 }
 

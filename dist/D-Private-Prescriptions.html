@@ -570,7 +570,7 @@
                                                                 <span class="flex flex-col text-left">
                                                                     <span class="block mb-4 uppercase text-body4 text-DarkBlue50 font-semibold">Product name</span>
                                                                     <div class="flex flex-col">
-                                                                        <span class="block mb-2 text-DarkBlue100 text-base -tracking-018 font-bold">Differin 0.1% Tabs</span>
+                                                                        <span class="block mb-2 text-DarkBlue100 text-base md:text-body md:font-semibold -tracking-018 font-bold md:mb-0">Differin 0.1% Tabs</span>
                                                                     </div>
                                                                 </span>
                                                         <span class="w-6 h-6 rounded flex items-center justify-center overflow-hidden bg-blue10">
@@ -633,7 +633,7 @@
                                                                 <span class="flex flex-col text-left">
                                                                     <span class="block mb-4 uppercase text-body4 text-DarkBlue50 font-semibold">Product name</span>
                                                                     <div class="flex flex-col">
-                                                                        <span class="block mb-2 text-DarkBlue100 text-base -tracking-018 font-bold">Differin 0.1% Tabs</span>
+                                                                        <span class="block mb-2 text-DarkBlue100 text-base md:text-body md:font-semibold -tracking-018 font-bold md:mb-0">Differin 0.1% Tabs</span>
                                                                     </div>
                                                                 </span>
                                                         <span class="w-6 h-6 rounded flex items-center justify-center overflow-hidden bg-blue10">
@@ -696,7 +696,7 @@
                                                                 <span class="flex flex-col text-left">
                                                                     <span class="block mb-4 uppercase text-body4 text-DarkBlue50 font-semibold">Product name</span>
                                                                     <div class="flex flex-col">
-                                                                        <span class="block mb-2 text-DarkBlue100 text-base -tracking-018 font-bold">Differin 0.1% Tabs</span>
+                                                                        <span class="block mb-2 text-DarkBlue100 text-base md:text-body md:font-semibold -tracking-018 font-bold md:mb-0">Differin 0.1% Tabs</span>
                                                                     </div>
                                                                 </span>
                                                         <span class="w-6 h-6 rounded flex items-center justify-center overflow-hidden bg-blue10">
@@ -744,8 +744,8 @@
                                         <!-- Modal Dialog -->
                                         <div x-show="modalCanselIsOpen" x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity" x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100" class="flex max-w-[553px] w-full flex-col overflow-hidden rounded-6xl bg-white">
                                             <!-- Dialog Header -->
-                                            <div class="flex items-center justify-between py-5 pl-8 pr-6">
-                                                <h3 class="text-Top3 font-semibold">Cancel Product?</h3>
+                                            <div class="flex items-center justify-between py-5 pl-8 pr-6 lg:p-4">
+                                                <h3 class="text-Top3 lg:text-base font-semibold">Cancel Product?</h3>
                                                 <button @click="modalCanselIsOpen = false" aria-label="close modal">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                         <path d="M13.2256 1.01953L7.96094 6.28418L2.69629 1.01953C2.16982 0.493066 1.46787 0.493067 0.941406 1.01953C0.414941 1.546 0.414941 2.24795 0.941406 2.77441L6.20605 8.03906L0.941406 13.3037C0.414941 13.8302 0.414941 14.5321 0.941406 15.0586C1.46787 15.5851 2.16982 15.5851 2.69629 15.0586L7.96094 9.79395L13.2256 15.0586C13.7521 15.5851 14.454 15.5851 14.9805 15.0586C15.5069 14.5321 15.5069 13.8302 14.9805 13.3037L9.71582 8.03906L14.9805 2.77441C15.5069 2.24795 15.5069 1.546 14.9805 1.01953C14.454 0.493067 13.7521 0.493066 13.2256 1.01953Z" fill="#060B52"/>
@@ -753,7 +753,7 @@
                                                 </button>
                                             </div>
                                             <!-- Dialog Body -->
-                                            <div class="px-8 pt-6 pb-8 border-t border-blue10 flex flex-col items-center gap-y-6">
+                                            <div class="px-8 pt-6 pb-8 lg:pb-6 lg:px-4 border-t border-blue10 flex flex-col items-center gap-y-6">
                                                 <p class="text-body font-medium">Are you sure you would like to do this?</p>
                                                 <div class="flex items-center gap-x-3">
                                                     <button class="button db-btn btn-icons w-fill" type="button" @click="modalCanselIsOpen = false" aria-label="Return Button">
