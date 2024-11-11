@@ -299,22 +299,22 @@
     </div>
 </header>
             <div class="container-full">
-                <div class="row-10 my-14">
+                <div class="row-10 my-14 md:my-10">
                     <div class="col-span-10">
-                        <div class="flex flex-col gap-y-10">
+                        <div class="flex flex-col gap-y-10 md:gap-y-12">
                             <div class="flex flex-col">
-                                <span class="text-h4 block mb-4 font-bold">
+                                <span class="text-h4 md:text-Top1 block mb-4 md:mb-3 font-bold">
                                    Your Basket
                                 </span>
                                 <div class="flex flex-col text-body font-medium text-DarkBlue50">
                                     Products you have requested are listed here.
                                 </div>
                             </div>
-                            <div class="row-10 gap-x-8">
-                                <div class="col-span-7">
-                                    <div class="bg-white shadow-4xl px-4 pb-4 rounded-6xl w-full">
-                                        <div x-data="{ checkAll : false }" class="overflow-hidden w-full overflow-x-auto rounded-xl">
-                                            <table class="w-full text-left">
+                            <div class="row-10 gap-x-8 gap-y-12">
+                                <div class="col-span-7 2xl:col-span-10">
+                                    <div class="bg-white shadow-4xl px-4 pb-4 md:px-4 md:py-6 rounded-6xl w-full">
+                                        <div x-data="{ checkAll : false }" class="minmd:overflow-hidden w-full minmd:overflow-x-auto md:rounded-none rounded-xl">
+                                            <table class="w-full text-left lg:hidden">
                                                 <thead class="border-b py-2 uppercase text-body4 font-semibold text-DarkBlue50">
                                                 <tr>
                                                     <th scope="col" class="px-4 py-5 w-[50px]">
@@ -347,7 +347,7 @@
                                                     </td>
                                                     <td class="p-4 pt-8">
                                                         <div class="flex items-center">
-                                                            <div class="mr-10 w-[127px] h-[127px] overflow-hidden rounded-xl flex justify-center items-center bg-Backgroung">
+                                                            <div class="mr-10 min-w-[127px] w-[127px] h-[127px] overflow-hidden rounded-xl flex justify-center items-center bg-Backgroung">
                                                                 <img src="img/Differin-adapalene-01-45-g-cream-1-tube1.png" alt="Product Img" class="w-full max-h-full object-cover">
                                                             </div>
                                                             <span class="text-base font-semibold">Differin 0.1% Tabs</span>
@@ -360,13 +360,13 @@
                                                         <div x-data="{ currentVal: 1, minVal: 0, maxVal: 100, decimalPoints: 0, incrementAmount: 1 }" class="flex">
     <label for="counterInput" class="text-none">Items(s)</label>
     <div @dblclick.prevent class="flex items-center rounded-5xl overflow-hidden border-2 border-blue100 w-fit">
-        <button @click="currentVal = Math.max(minVal, currentVal - incrementAmount)" class="flex h-[48px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="subtract">
+        <button @click="currentVal = Math.max(minVal, currentVal - incrementAmount)" class="flex h-[48px] lg:h-[36px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="subtract">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                 <path d="M0.5 7.5C0.5 7.08579 0.835786 6.75 1.25 6.75C1.25 6.75 14.3358 6.75 14.75 6.75C15.1642 6.75 15.5 7.08579 15.5 7.5C15.5 7.91421 15.1642 8.25 14.75 8.25H1.25C0.835787 8.25 0.5 7.91421 0.5 7.5Z" fill="#3D65FF"/>
             </svg>
         </button>
-        <input x-model="currentVal.toFixed(decimalPoints)" size="2" oninput="this.size=Math.max(this.value.length, 10)" id="counterInput" type="text" class="border-x-none h-[48px] w-fit text-base text-blue100 font-semibold rounded-none px-0 border-none text-center  focus-visible:z-10 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" readonly />
-        <button @click="currentVal = Math.min(maxVal, currentVal + incrementAmount)" class="flex h-[48px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="add">
+        <input x-model="currentVal.toFixed(decimalPoints)" size="2" oninput="this.size=Math.max(this.value.length, 10)" id="counterInput" type="text" class="border-x-none h-[48px] lg:h-[36px] w-fit text-base text-blue100 font-semibold rounded-none px-0 border-none text-center  focus-visible:z-10 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" readonly />
+        <button @click="currentVal = Math.min(maxVal, currentVal + incrementAmount)" class="flex h-[48px] lg:h-[36px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="add">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                 <path d="M7.25 0.75C7.25 0.335787 7.58579 0 8 0C8.41421 0 8.75 0.335786 8.75 0.75V14.25C8.75 14.6642 8.41421 15 8 15C7.58579 15 7.25 14.6642 7.25 14.25V0.75Z" fill="#3D65FF"/>
                 <path d="M0.5 7.5C0.5 7.08579 0.835786 6.75 1.25 6.75C1.25 6.75 14.3358 6.75 14.75 6.75C15.1642 6.75 15.5 7.08579 15.5 7.5C15.5 7.91421 15.1642 8.25 14.75 8.25H1.25C0.835787 8.25 0.5 7.91421 0.5 7.5Z" fill="#3D65FF"/>
@@ -393,7 +393,7 @@
                                                     </td>
                                                     <td class="p-4 pt-8">
                                                         <div class="flex items-center">
-                                                            <div class="mr-10 w-[127px] h-[127px] overflow-hidden rounded-xl flex justify-center items-center bg-Backgroung">
+                                                            <div class="mr-10 min-w-[127px] w-[127px] h-[127px] overflow-hidden rounded-xl flex justify-center items-center bg-Backgroung">
                                                                 <img src="img/Differin-adapalene-01-45-g-cream-1-tube1.png" alt="Product Img" class="w-full max-h-full object-cover">
                                                             </div>
                                                             <span class="text-base font-semibold">Differin 0.1% Tabs</span>
@@ -406,13 +406,13 @@
                                                         <div x-data="{ currentVal: 1, minVal: 0, maxVal: 100, decimalPoints: 0, incrementAmount: 1 }" class="flex">
     <label for="counterInput" class="text-none">Items(s)</label>
     <div @dblclick.prevent class="flex items-center rounded-5xl overflow-hidden border-2 border-blue100 w-fit">
-        <button @click="currentVal = Math.max(minVal, currentVal - incrementAmount)" class="flex h-[48px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="subtract">
+        <button @click="currentVal = Math.max(minVal, currentVal - incrementAmount)" class="flex h-[48px] lg:h-[36px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="subtract">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                 <path d="M0.5 7.5C0.5 7.08579 0.835786 6.75 1.25 6.75C1.25 6.75 14.3358 6.75 14.75 6.75C15.1642 6.75 15.5 7.08579 15.5 7.5C15.5 7.91421 15.1642 8.25 14.75 8.25H1.25C0.835787 8.25 0.5 7.91421 0.5 7.5Z" fill="#3D65FF"/>
             </svg>
         </button>
-        <input x-model="currentVal.toFixed(decimalPoints)" size="2" oninput="this.size=Math.max(this.value.length, 10)" id="counterInput" type="text" class="border-x-none h-[48px] w-fit text-base text-blue100 font-semibold rounded-none px-0 border-none text-center  focus-visible:z-10 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" readonly />
-        <button @click="currentVal = Math.min(maxVal, currentVal + incrementAmount)" class="flex h-[48px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="add">
+        <input x-model="currentVal.toFixed(decimalPoints)" size="2" oninput="this.size=Math.max(this.value.length, 10)" id="counterInput" type="text" class="border-x-none h-[48px] lg:h-[36px] w-fit text-base text-blue100 font-semibold rounded-none px-0 border-none text-center  focus-visible:z-10 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" readonly />
+        <button @click="currentVal = Math.min(maxVal, currentVal + incrementAmount)" class="flex h-[48px] lg:h-[36px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="add">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                 <path d="M7.25 0.75C7.25 0.335787 7.58579 0 8 0C8.41421 0 8.75 0.335786 8.75 0.75V14.25C8.75 14.6642 8.41421 15 8 15C7.58579 15 7.25 14.6642 7.25 14.25V0.75Z" fill="#3D65FF"/>
                 <path d="M0.5 7.5C0.5 7.08579 0.835786 6.75 1.25 6.75C1.25 6.75 14.3358 6.75 14.75 6.75C15.1642 6.75 15.5 7.08579 15.5 7.5C15.5 7.91421 15.1642 8.25 14.75 8.25H1.25C0.835787 8.25 0.5 7.91421 0.5 7.5Z" fill="#3D65FF"/>
@@ -428,10 +428,200 @@
                                                 </tr>
                                                 </tbody>
                                             </table>
+                                            <div class="minlg:hidden w-full">
+                                                <div class="flex flex-col consultation-list">
+                                                    <div class="flex flex-col gap-y-6 consultation-list__item">
+                                                        <div class="flex">
+                                                            <label for="user123" class="flex items-center cursor-pointer text-slate-700 dark:text-slate-300 ">
+                                                                <div class="relative flex items-center">
+                                                                    <input type="checkbox" id="user123" class="before:content[''] peer relative size-4 cursor-pointer appearance-none overflow-hidden rounded border border-slate-300 bg-white before:absolute before:inset-0 checked:border-blue-700 checked:before:bg-blue-700 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-slate-800 checked:focus:outline-blue-700 active:outline-offset-0 dark:border-slate-700 dark:bg-slate-800 dark:checked:border-blue-600 dark:checked:before:bg-blue-600 dark:focus:outline-slate-300 dark:checked:focus:outline-blue-600" />
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="4" class="pointer-events-none invisible absolute left-1/2 top-1/2 size-3 -translate-x-1/2 -translate-y-1/2 text-slate-100 peer-checked:visible dark:text-slate-100">
+                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="flex gap-x-5 sm3:flex-col sm3:gap-x-0 sm3:gap-y-4">
+                                                            <div class="flex flex-col gap-y-4">
+                                                                <a href="#" class="max-w-[148px] sm3:max-w-full w-full h-[152px] overflow-hidden rounded-xl flex justify-center items-center bg-Backgroung">
+                                                                    <img src="img/Differin-adapalene-01-45-g-cream-1-tube1.png" alt="Product Img" class="w-full max-h-full h-full object-cover sm3:object-contain">
+                                                                </a>
+                                                                <div x-data="{ currentVal: 1, minVal: 0, maxVal: 100, decimalPoints: 0, incrementAmount: 1 }" class="flex">
+    <label for="counterInput" class="text-none">Items(s)</label>
+    <div @dblclick.prevent class="flex items-center rounded-5xl overflow-hidden border-2 border-blue100 w-fit">
+        <button @click="currentVal = Math.max(minVal, currentVal - incrementAmount)" class="flex h-[48px] lg:h-[36px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="subtract">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                <path d="M0.5 7.5C0.5 7.08579 0.835786 6.75 1.25 6.75C1.25 6.75 14.3358 6.75 14.75 6.75C15.1642 6.75 15.5 7.08579 15.5 7.5C15.5 7.91421 15.1642 8.25 14.75 8.25H1.25C0.835787 8.25 0.5 7.91421 0.5 7.5Z" fill="#3D65FF"/>
+            </svg>
+        </button>
+        <input x-model="currentVal.toFixed(decimalPoints)" size="2" oninput="this.size=Math.max(this.value.length, 10)" id="counterInput" type="text" class="border-x-none h-[48px] lg:h-[36px] w-fit text-base text-blue100 font-semibold rounded-none px-0 border-none text-center  focus-visible:z-10 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" readonly />
+        <button @click="currentVal = Math.min(maxVal, currentVal + incrementAmount)" class="flex h-[48px] lg:h-[36px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="add">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                <path d="M7.25 0.75C7.25 0.335787 7.58579 0 8 0C8.41421 0 8.75 0.335786 8.75 0.75V14.25C8.75 14.6642 8.41421 15 8 15C7.58579 15 7.25 14.6642 7.25 14.25V0.75Z" fill="#3D65FF"/>
+                <path d="M0.5 7.5C0.5 7.08579 0.835786 6.75 1.25 6.75C1.25 6.75 14.3358 6.75 14.75 6.75C15.1642 6.75 15.5 7.08579 15.5 7.5C15.5 7.91421 15.1642 8.25 14.75 8.25H1.25C0.835787 8.25 0.5 7.91421 0.5 7.5Z" fill="#3D65FF"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+                                                            </div>
+                                                            <div class="flex flex-col gap-y-[18px] flex-1">
+                                                                <div class="flex flex-col gap-y-2">
+                                                                    <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Name</span>
+                                                                    <div class="flex flex-col">
+                                                                        <a href="#" class="block mb-2 text-DarkBlue100 text-body font-semibold hover:text-blue100">Differin 0.1% Tabs</a>
+                                                                        <div class="flex items-center gap-x-3 text-body2 font-medium text-DarkBlue50">
+                                                                            <span>7 days</span>
+                                                                            <span>\</span>
+                                                                            <span>1 tab</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex flex-col gap-y-2">
+                                                                    <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Total Price</span>
+                                                                    <span class="text-base -tracking-018 font-medium">£16.43</span>
+                                                                </div>
+                                                                <div class="flex flex-col gap-y-2">
+                                                                    <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Actions</span>
+                                                                    <div class="flex items-center gap-x-2">
+                                                                        <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                                            <i class="Bin-icon-blue-24"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-col gap-y-6 consultation-list__item">
+                                                        <div class="flex">
+                                                            <label for="user1234" class="flex items-center cursor-pointer text-slate-700 dark:text-slate-300 ">
+                                                                <div class="relative flex items-center">
+                                                                    <input type="checkbox" id="user1234" class="before:content[''] peer relative size-4 cursor-pointer appearance-none overflow-hidden rounded border border-slate-300 bg-white before:absolute before:inset-0 checked:border-blue-700 checked:before:bg-blue-700 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-slate-800 checked:focus:outline-blue-700 active:outline-offset-0 dark:border-slate-700 dark:bg-slate-800 dark:checked:border-blue-600 dark:checked:before:bg-blue-600 dark:focus:outline-slate-300 dark:checked:focus:outline-blue-600" />
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="4" class="pointer-events-none invisible absolute left-1/2 top-1/2 size-3 -translate-x-1/2 -translate-y-1/2 text-slate-100 peer-checked:visible dark:text-slate-100">
+                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="flex gap-x-5 sm3:flex-col sm3:gap-x-0 sm3:gap-y-4">
+                                                            <div class="flex flex-col gap-y-4">
+                                                                <a href="#" class="max-w-[148px] sm3:max-w-full w-full h-[152px] overflow-hidden rounded-xl flex justify-center items-center bg-Backgroung">
+                                                                    <img src="img/Differin-adapalene-01-45-g-cream-1-tube1.png" alt="Product Img" class="w-full max-h-full h-full object-cover sm3:object-contain">
+                                                                </a>
+                                                                <div x-data="{ currentVal: 1, minVal: 0, maxVal: 100, decimalPoints: 0, incrementAmount: 1 }" class="flex">
+    <label for="counterInput" class="text-none">Items(s)</label>
+    <div @dblclick.prevent class="flex items-center rounded-5xl overflow-hidden border-2 border-blue100 w-fit">
+        <button @click="currentVal = Math.max(minVal, currentVal - incrementAmount)" class="flex h-[48px] lg:h-[36px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="subtract">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                <path d="M0.5 7.5C0.5 7.08579 0.835786 6.75 1.25 6.75C1.25 6.75 14.3358 6.75 14.75 6.75C15.1642 6.75 15.5 7.08579 15.5 7.5C15.5 7.91421 15.1642 8.25 14.75 8.25H1.25C0.835787 8.25 0.5 7.91421 0.5 7.5Z" fill="#3D65FF"/>
+            </svg>
+        </button>
+        <input x-model="currentVal.toFixed(decimalPoints)" size="2" oninput="this.size=Math.max(this.value.length, 10)" id="counterInput" type="text" class="border-x-none h-[48px] lg:h-[36px] w-fit text-base text-blue100 font-semibold rounded-none px-0 border-none text-center  focus-visible:z-10 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" readonly />
+        <button @click="currentVal = Math.min(maxVal, currentVal + incrementAmount)" class="flex h-[48px] lg:h-[36px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="add">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                <path d="M7.25 0.75C7.25 0.335787 7.58579 0 8 0C8.41421 0 8.75 0.335786 8.75 0.75V14.25C8.75 14.6642 8.41421 15 8 15C7.58579 15 7.25 14.6642 7.25 14.25V0.75Z" fill="#3D65FF"/>
+                <path d="M0.5 7.5C0.5 7.08579 0.835786 6.75 1.25 6.75C1.25 6.75 14.3358 6.75 14.75 6.75C15.1642 6.75 15.5 7.08579 15.5 7.5C15.5 7.91421 15.1642 8.25 14.75 8.25H1.25C0.835787 8.25 0.5 7.91421 0.5 7.5Z" fill="#3D65FF"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+                                                            </div>
+                                                            <div class="flex flex-col gap-y-[18px] flex-1">
+                                                                <div class="flex flex-col gap-y-2">
+                                                                    <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Name</span>
+                                                                    <div class="flex flex-col">
+                                                                        <a href="#" class="block mb-2 text-DarkBlue100 text-body font-semibold hover:text-blue100">Differin 0.1% Tabs</a>
+                                                                        <div class="flex items-center gap-x-3 text-body2 font-medium text-DarkBlue50">
+                                                                            <span>7 days</span>
+                                                                            <span>\</span>
+                                                                            <span>1 tab</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex flex-col gap-y-2">
+                                                                    <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Total Price</span>
+                                                                    <span class="text-base -tracking-018 font-medium">£16.43</span>
+                                                                </div>
+                                                                <div class="flex flex-col gap-y-2">
+                                                                    <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Actions</span>
+                                                                    <div class="flex items-center gap-x-2">
+                                                                        <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                                            <i class="Bin-icon-blue-24"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-col gap-y-6 consultation-list__item">
+                                                        <div class="flex">
+                                                            <label for="user1236" class="flex items-center cursor-pointer text-slate-700 dark:text-slate-300 ">
+                                                                <div class="relative flex items-center">
+                                                                    <input type="checkbox" id="user1236" class="before:content[''] peer relative size-4 cursor-pointer appearance-none overflow-hidden rounded border border-slate-300 bg-white before:absolute before:inset-0 checked:border-blue-700 checked:before:bg-blue-700 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-slate-800 checked:focus:outline-blue-700 active:outline-offset-0 dark:border-slate-700 dark:bg-slate-800 dark:checked:border-blue-600 dark:checked:before:bg-blue-600 dark:focus:outline-slate-300 dark:checked:focus:outline-blue-600" />
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="4" class="pointer-events-none invisible absolute left-1/2 top-1/2 size-3 -translate-x-1/2 -translate-y-1/2 text-slate-100 peer-checked:visible dark:text-slate-100">
+                                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="flex gap-x-5 sm3:flex-col sm3:gap-x-0 sm3:gap-y-4">
+                                                            <div class="flex flex-col gap-y-4">
+                                                                <a href="#" class="max-w-[148px] sm3:max-w-full w-full h-[152px] overflow-hidden rounded-xl flex justify-center items-center bg-Backgroung">
+                                                                    <img src="img/Differin-adapalene-01-45-g-cream-1-tube1.png" alt="Product Img" class="w-full max-h-full h-full object-cover sm3:object-contain">
+                                                                </a>
+                                                                <div x-data="{ currentVal: 1, minVal: 0, maxVal: 100, decimalPoints: 0, incrementAmount: 1 }" class="flex">
+    <label for="counterInput" class="text-none">Items(s)</label>
+    <div @dblclick.prevent class="flex items-center rounded-5xl overflow-hidden border-2 border-blue100 w-fit">
+        <button @click="currentVal = Math.max(minVal, currentVal - incrementAmount)" class="flex h-[48px] lg:h-[36px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="subtract">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                <path d="M0.5 7.5C0.5 7.08579 0.835786 6.75 1.25 6.75C1.25 6.75 14.3358 6.75 14.75 6.75C15.1642 6.75 15.5 7.08579 15.5 7.5C15.5 7.91421 15.1642 8.25 14.75 8.25H1.25C0.835787 8.25 0.5 7.91421 0.5 7.5Z" fill="#3D65FF"/>
+            </svg>
+        </button>
+        <input x-model="currentVal.toFixed(decimalPoints)" size="2" oninput="this.size=Math.max(this.value.length, 10)" id="counterInput" type="text" class="border-x-none h-[48px] lg:h-[36px] w-fit text-base text-blue100 font-semibold rounded-none px-0 border-none text-center  focus-visible:z-10 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" readonly />
+        <button @click="currentVal = Math.min(maxVal, currentVal + incrementAmount)" class="flex h-[48px] lg:h-[36px] items-center justify-center  px-4 py-2 focus:outline-none focus:border-0 focus-visible:outline-none focus-visible:outline-0 focus-visible:outline-offset-0 focus-visible:outline-blue-700" aria-label="add">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+                <path d="M7.25 0.75C7.25 0.335787 7.58579 0 8 0C8.41421 0 8.75 0.335786 8.75 0.75V14.25C8.75 14.6642 8.41421 15 8 15C7.58579 15 7.25 14.6642 7.25 14.25V0.75Z" fill="#3D65FF"/>
+                <path d="M0.5 7.5C0.5 7.08579 0.835786 6.75 1.25 6.75C1.25 6.75 14.3358 6.75 14.75 6.75C15.1642 6.75 15.5 7.08579 15.5 7.5C15.5 7.91421 15.1642 8.25 14.75 8.25H1.25C0.835787 8.25 0.5 7.91421 0.5 7.5Z" fill="#3D65FF"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+                                                            </div>
+                                                            <div class="flex flex-col gap-y-[18px] flex-1">
+                                                                <div class="flex flex-col gap-y-2">
+                                                                    <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Name</span>
+                                                                    <div class="flex flex-col">
+                                                                        <a href="#" class="block mb-2 text-DarkBlue100 text-body font-semibold hover:text-blue100">Differin 0.1% Tabs</a>
+                                                                        <div class="flex items-center gap-x-3 text-body2 font-medium text-DarkBlue50">
+                                                                            <span>7 days</span>
+                                                                            <span>\</span>
+                                                                            <span>1 tab</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="flex flex-col gap-y-2">
+                                                                    <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Total Price</span>
+                                                                    <span class="text-base -tracking-018 font-medium">£16.43</span>
+                                                                </div>
+                                                                <div class="flex flex-col gap-y-2">
+                                                                    <span class="uppercase text-body4 text-DarkBlue50 font-semibold">Actions</span>
+                                                                    <div class="flex items-center gap-x-2">
+                                                                        <button class="w-10 h-10 bg-LightBlue min-w-10 flex items-center justify-center relative rounded-lg" type="button">
+                                                                            <i class="Bin-icon-blue-24"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-span-3">
+                                <div class="col-span-3 2xl:col-span-10">
                                     <div class="bg-white shadow-4xl px-8 py-6 rounded-6xl w-full">
                                         <div class="flex flex-col w-full min-h-[365px] md:min-h-[300px]">
     <div class="flex items-center justify-between gap-x-2 mb-8">

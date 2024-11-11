@@ -54,6 +54,7 @@ module.exports = {
             md: {max: '767px'},
             sm: {max: '639px'},
             sm2: {max: '480px'},
+            sm3: {max: '360px'},
 
             minsm: {min: '640px'},
             minmd: {min: '768px'},

@@ -2625,6 +2625,9 @@ html {
 .h-\[140px\]{
   height: 140px;
 }
+.h-\[152px\]{
+  height: 152px;
+}
 .h-\[161px\]{
   height: 161px;
 }
@@ -2812,6 +2815,9 @@ html {
 .min-w-6{
   min-width: 1.5rem;
 }
+.min-w-\[127px\]{
+  min-width: 127px;
+}
 .min-w-\[136px\]{
   min-width: 136px;
 }
@@ -2853,6 +2859,9 @@ html {
 }
 .min-w-\[72px\]{
   min-width: 72px;
+}
+.max-w-\[148px\]{
+  max-width: 148px;
 }
 .max-w-\[204px\]{
   max-width: 204px;
@@ -2923,14 +2932,11 @@ html {
 .flex-1{
   flex: 1 1 0%;
 }
-.flex-\[1\.5\]{
-  flex: 1.5;
+.flex-\[1\.2\]{
+  flex: 1.2;
 }
 .flex-\[2\]{
   flex: 2;
-}
-.flex-\[1\.2\]{
-  flex: 1.2;
 }
 .flex-shrink-0{
   flex-shrink: 0;
@@ -3116,6 +3122,9 @@ html {
 }
 .gap-y-8{
   row-gap: 2rem;
+}
+.gap-y-\[18px\]{
+  row-gap: 18px;
 }
 .divide-x > :not([hidden]) ~ :not([hidden]){
   --tw-divide-x-reverse: 0;
@@ -5085,6 +5094,16 @@ p{
   background-repeat: no-repeat;
 }
 
+.Bin-icon-blue-24 {
+  background: url("../img/icons/Bin-icon-blue-24.svg");
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .Comment-icon-24 {
   background: url("../img/icons/Comment-icon-24.svg");
   display: block;
@@ -6139,6 +6158,9 @@ p{
 }
 
 @media (max-width: 1549px){
+  .\32xl\:col-span-10{
+    grid-column: span 10 / span 10;
+  }
   .\32xl\:col-span-4{
     grid-column: span 4 / span 4;
   }
@@ -6316,6 +6338,9 @@ p{
   .lg\:h-14{
     height: 3.5rem;
   }
+  .lg\:h-\[36px\]{
+    height: 36px;
+  }
   .lg\:h-\[43px\]{
     height: 43px;
   }
@@ -6457,6 +6482,10 @@ p{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
+  .lg\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   .lg\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -6469,15 +6498,14 @@ p{
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  .lg\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
   .lg\:pb-10{
     padding-bottom: 2.5rem;
   }
   .lg\:pb-6{
     padding-bottom: 1.5rem;
+  }
+  .lg\:pb-8{
+    padding-bottom: 2rem;
   }
   .lg\:pb-\[72px\]{
     padding-bottom: 72px;
@@ -6500,14 +6528,11 @@ p{
   .lg\:pt-10{
     padding-top: 2.5rem;
   }
-  .lg\:pt-6{
-    padding-top: 1.5rem;
-  }
-  .lg\:pb-8{
-    padding-bottom: 2rem;
-  }
   .lg\:pt-4{
     padding-top: 1rem;
+  }
+  .lg\:pt-6{
+    padding-top: 1.5rem;
   }
   .lg\:text-left{
     text-align: left;
@@ -6756,6 +6781,9 @@ p{
   .md\:overflow-y-scroll{
     overflow-y: scroll;
   }
+  .md\:rounded-none{
+    border-radius: 0px;
+  }
   .md\:border{
     border-width: 1px;
   }
@@ -6899,9 +6927,35 @@ p{
   }
 }
 
+@media (max-width: 360px){
+  .sm3\:max-w-full{
+    max-width: 100%;
+  }
+  .sm3\:flex-col{
+    flex-direction: column;
+  }
+  .sm3\:gap-x-0{
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
+  .sm3\:gap-y-4{
+    row-gap: 1rem;
+  }
+  .sm3\:object-contain{
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
 @media (min-width: 768px){
   .minmd\:hidden{
     display: none;
+  }
+  .minmd\:overflow-hidden{
+    overflow: hidden;
+  }
+  .minmd\:overflow-x-auto{
+    overflow-x: auto;
   }
 }
 
