@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Marketing Preferences</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+
+<body class="">
+<main id="content" class="flex flex-col items-center min-h-screen overflow-hidden">
+    <div x-data="{isMob: false}" class="flex w-full relative">
+        <div :class="isMob ? 'lg:left-0 lg:z-[999]' : 'lg:-left-[359px] lg:-z-20'"
+     class="flex lg:fixed lg:top-0 lg:transition-all lg:w-full min-h-screen lg:h-screen">
+    <div class="flex flex-col max-w-[309px] min-w-[309px] lg:max-w-[359px] lg:min-w-[320px] lg:overflow-y-scroll shadow-7xl bg-white px-6 md:px-4 md:pt-8 pt-6 pb-10 z-10 ">
+        <div class="flex items-center gap-x-3 justify-between mb-16 md:mb-20">
+            <button class="minlg:hidden text-none bg-blue100 flex flex-col gap-y-1 justify-center px-[10px] rounded-7xl h-10 min-w-10"
+                    aria-label="Open menu" @click="isMob = !isMob">
+                Burger
+                <span :class="isMob ? 'rotate-45 transform translate-y-[6px]' : 'translate-y-0'"
+                      class="w-5 transition-all duration-300 border-t-[2px] border-white rounded-full block"></span>
+                <span :class="isMob ? 'opacity-0' : ''"
+                      class="w-3 border-t-[2px] border-white rounded-full block"></span>
+                <span :class="isMob ? '-rotate-45 transform -translate-y-[6px]' : 'translate-y-0'"
+                      class="w-5 transition-all duration-300 border-t-[2px] border-white rounded-full block"></span>
+            </button>
+            <a class="" href="index.html">
+                <img class="max-w-[204px] lg:mx-auto" src="img/Logo.svg" alt="Profarmadirect Logo">
+            </a>
+        </div>
+        <div class="w-full mb-[100px] sticky top-3"
+             x-data="{ menu1: false, menu2: false, menu3: false, activeLink: 'dashboard' }">
+            <nav class="h-full flex flex-col gap-y-8">
+                <!-- Ссылка 1 -->
+                <a href="Dashboard.html"
+                   :class="activeLink === 'dashboard' ? 'bg-blue10 pl-3' : ''"
+                   @click="activeLink = 'dashboard'"
+                   class="py-2 pr-3 rounded-[8px] flex items-center text-DarkBlue100 text-body2 md:text-body font-medium">
+                        <span :class="activeLink === 'dashboard' ? 'bg-blue100' : 'bg-blue10'"
+                              class="w-[32px] md:w-10 md:min-w-10 md:h-10 min-w-[32px] h-[32px] flex items-center justify-center rounded-[8px] mr-3">
+                            <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+                                 viewBox="0 0 18 17" fill="none">
+                              <path :class="activeLink === 'dashboard' ? 'fill-white' : 'fill-DarkBlue30'"
+                                    d="M7.04132 15.1829V10.3795H10.9543V15.1829C10.9543 15.7113 11.3945 16.1436 11.9326 16.1436H14.8673C15.4054 16.1436 15.8456 15.7113 15.8456 15.1829V8.45817H17.5086C17.9586 8.45817 18.1738 7.91059 17.8315 7.62239L9.65326 0.388526C9.28152 0.0618975 8.71413 0.0618975 8.3424 0.388526L0.164202 7.62239C-0.168404 7.91059 0.0370288 8.45817 0.487025 8.45817H2.15006V15.1829C2.15006 15.7113 2.59027 16.1436 3.12831 16.1436H6.06307C6.60111 16.1436 7.04132 15.7113 7.04132 15.1829Z"
+                                    fill="none"/>
+                            </svg>
+                        </span>
+                    Dashboard
+                </a>
+
+                <!-- Выпадающий список 1 -->
+                <div class="mt-2">
+                    <button @click="menu1 = !menu1"
+                            :class="activeLink === 'sub1.1' || activeLink === 'sub1.2' || activeLink === 'sub1.3' ? 'bg-blue10 pl-3' : ''"
+                            class="w-full flex items-center py-2 pr-3 rounded-[8px] text-DarkBlue100 text-body2 md:text-body font-medium">
+                            <span :class="activeLink === 'sub1.1' || activeLink === 'sub1.2' || activeLink === 'sub1.3' ? 'bg-blue100' : 'bg-blue10'"
+                                  class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="18" height="20"
+                                     viewBox="0 0 18 20" fill="none">
+                                  <path :class="activeLink === 'sub1.1' || activeLink === 'sub1.2' || activeLink === 'sub1.3' ? 'fill-white' : 'fill-DarkBlue30'"
+                                        d="M3.95834 0.976562C3.76009 0.976562 3.57149 1.06214 3.44095 1.21134L0.232613 4.87801C0.0752654 5.05783 0.0284059 5.2965 0.0865032 5.51105C0.070726 5.60135 0.0625 5.69425 0.0625 5.78906V17.7057C0.0625 18.5917 0.78071 19.3099 1.66667 19.3099H16.3333C17.2193 19.3099 17.9375 18.5917 17.9375 17.7057V5.78906C17.9375 5.69426 17.9293 5.60139 17.9135 5.5111C17.9716 5.29654 17.9248 5.05785 17.7674 4.87801L14.5591 1.21134C14.4285 1.06214 14.2399 0.976562 14.0417 0.976562H3.95834ZM15.3339 4.1849H2.66614L4.27031 2.35156H13.7297L15.3339 4.1849ZM5.53951 10.3762C5.53951 9.9965 5.84731 9.6887 6.227 9.6887H11.727C12.1067 9.6887 12.4145 9.9965 12.4145 10.3762C12.4145 10.7559 12.1067 11.0637 11.727 11.0637H6.227C5.84731 11.0637 5.53951 10.7559 5.53951 10.3762Z"
+                                        fill="none"/>
+                                </svg>
+                            </span>
+                        <span>Treatment Orders</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform ml-auto"
+                             :class="menu1 ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="flex flex-col gap-y-5 mt-5 pl-8" x-show="menu1" x-collapse>
+                        <a href="D-Treatment-Order-history.html"
+                           @click="activeLink = 'sub1.1'"
+                           class="w-full flex items-center py-2 text-DarkBlue100 text-body2 md:text-body font-medium">
+                                <span :class="activeLink === 'sub1.1' ? 'bg-blue100' : 'bg-blue10'"
+                                      class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                    <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+                                         viewBox="0 0 18 17" fill="none">
+                                      <path :class="activeLink === 'sub1.1' ? 'fill-white' : 'fill-DarkBlue30'"
+                                            d="M10.2453 0.146656C5.73084 0.0222364 2.0324 3.65708 2.0324 8.14509H0.444819C0.0457067 8.14509 -0.149415 8.625 0.134398 8.9005L2.6089 11.3889C2.78628 11.5666 3.06122 11.5666 3.23861 11.3889L5.71311 8.9005C5.77439 8.83785 5.8158 8.75842 5.83212 8.67222C5.84843 8.58603 5.83891 8.49693 5.80476 8.41614C5.77062 8.33536 5.71337 8.26651 5.64024 8.21828C5.56711 8.17004 5.48137 8.14457 5.39382 8.14509H3.80623C3.80623 4.6791 6.62663 1.87965 10.1033 1.92409C13.4027 1.96852 16.1787 4.7502 16.2231 8.05622C16.2674 11.5311 13.4736 14.3661 10.0147 14.3661C8.58672 14.3661 7.26521 13.8773 6.21865 13.0508C6.04877 12.9167 5.83563 12.8499 5.61977 12.863C5.40391 12.8761 5.20039 12.9682 5.04792 13.1219C4.67541 13.4952 4.70202 14.1261 5.11887 14.4461C6.51233 15.5503 8.23813 16.1486 10.0147 16.1435C14.4936 16.1435 18.1211 12.4376 17.9969 7.91402C17.8816 3.74595 14.4049 0.262189 10.2453 0.146656ZM9.79292 4.59023C9.42929 4.59023 9.12774 4.89239 9.12774 5.25677V8.52724C9.12774 8.83829 9.29625 9.13156 9.56232 9.29153L12.3295 10.9357C12.6488 11.1223 13.0568 11.0156 13.243 10.7046C13.4293 10.3847 13.3229 9.97584 13.0124 9.78921L10.4581 8.26951V5.24788C10.4581 4.89239 10.1566 4.59023 9.79292 4.59023Z"
+                                            fill="none"/>
+                                    </svg>
+                                </span>
+                            Orders History</a>
+                        <a href="D-Basket.html"
+                           @click="activeLink = 'sub1.2'"
+                           class="w-full flex items-center py-2 text-DarkBlue100 text-body2 md:text-body font-medium">
+                                <span :class="activeLink === 'sub1.2' ? 'bg-blue100' : 'bg-blue10'"
+                                      class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                    <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                         viewBox="0 0 18 18" fill="none">
+                                      <path :class="activeLink === 'sub1.2' ? 'fill-white' : 'fill-DarkBlue30'"
+                                            d="M1.65053 2.13269C1.75297 1.28196 2.44962 0.643555 3.27554 0.643555H14.7245C15.5504 0.643555 16.247 1.28195 16.3495 2.1327L17.9871 15.7327C18.1093 16.7473 17.3471 17.6436 16.3621 17.6436H1.63788C0.652828 17.6436 -0.109288 16.7473 0.0128867 15.7327L1.65053 2.13269ZM4.47538 5.57754C4.12868 5.75749 3.98816 6.19512 4.1615 6.55502L4.78926 6.22919C4.1615 6.55502 4.16195 6.55593 4.16195 6.55593L4.16241 6.55689L4.16341 6.55895L4.1657 6.56361L4.17145 6.57506C4.17581 6.58362 4.18123 6.59404 4.18776 6.60619C4.20082 6.63047 4.21834 6.66168 4.2407 6.69882C4.28539 6.77305 4.34959 6.87119 4.43637 6.98499C4.61001 7.21268 4.87448 7.5035 5.25376 7.78984C6.02079 8.36892 7.21902 8.90062 9.00034 8.90062C10.7817 8.90062 11.9799 8.36892 12.7469 7.78984C13.1262 7.5035 13.3907 7.21268 13.5643 6.98499C13.6511 6.87119 13.7153 6.77305 13.76 6.69882C13.7823 6.66168 13.7999 6.63047 13.8129 6.60619C13.8194 6.59404 13.8249 6.58362 13.8292 6.57506L13.835 6.56361L13.8373 6.55895L13.8383 6.55689L13.8387 6.55593C13.8387 6.55593 13.8392 6.55502 13.2114 6.22919L13.8392 6.55502C14.0125 6.19512 13.872 5.75749 13.5253 5.57754C13.1813 5.399 12.7637 5.54119 12.5878 5.8949L12.5873 5.89584C12.5851 5.90002 12.5793 5.91054 12.5697 5.92653C12.5504 5.95855 12.5159 6.01219 12.4637 6.08054C12.3596 6.21713 12.1854 6.41203 11.9213 6.6114C11.4016 7.00375 10.4943 7.44348 9.00034 7.44348C7.50637 7.44348 6.59906 7.00375 6.07937 6.6114C5.81529 6.41203 5.6411 6.21713 5.53693 6.08054C5.48481 6.01219 5.45031 5.95855 5.43103 5.92653C5.4214 5.91054 5.41561 5.90002 5.41337 5.89584L5.41287 5.8949C5.23702 5.54119 4.81935 5.399 4.47538 5.57754Z"
+                                            fill="none"/>
+                                    </svg>
+                                </span>
+                            Go to Busket</a>
+                    </div>
+                </div>
+
+                <a href="D-Private-Prescriptions.html"
+                   :class="activeLink === 'PP' ? 'bg-blue10 pl-3' : ''"
+                   @click="activeLink = 'PP'"
+                   class="py-2 pr-3 rounded-[8px] flex items-center text-DarkBlue100 text-body2 md:text-body font-medium">
+                        <span :class="activeLink === 'PP' ? 'bg-blue100' : 'bg-blue10'"
+                              class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                            <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="14" height="21"
+                                 viewBox="0 0 14 21" fill="none">
+                              <path :class="activeLink === 'PP' ? 'fill-white' : 'fill-DarkBlue30'"
+                                    d="M8 20.1436V18.1436H10V20.1436L9 19.3936L8 20.1436Z" fill="none"/>
+                              <path :class="activeLink === 'PP' ? 'fill-white' : 'fill-DarkBlue30'" fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0 1.64355V16.6436C0 17.472 0.67155 18.1436 1.5 18.1436H8V16.376C7.4022 16.0302 7 15.3839 7 14.6436C7 13.539 7.89545 12.6436 9 12.6436C10.1046 12.6436 11 13.539 11 14.6436C11 15.3839 10.5978 16.0302 10 16.376V18.1436H12.5C13.3285 18.1436 14 17.472 14 16.6436V1.64355C14 0.81513 13.3285 0.143555 12.5 0.143555H1.5C0.67155 0.143555 0 0.81513 0 1.64355ZM9 15.6436C9.5523 15.6436 10 15.1959 10 14.6436C10 14.0913 9.5523 13.6436 9 13.6436C8.4477 13.6436 8 14.0913 8 14.6436C8 15.1959 8.4477 15.6436 9 15.6436ZM4 3.64355C4 3.3674 4.22385 3.14355 4.5 3.14355H9.5C9.77615 3.14355 10 3.3674 10 3.64355C10 3.9197 9.77615 4.14355 9.5 4.14355H4.5C4.22385 4.14355 4 3.9197 4 3.64355ZM2.5 6.14355C2.22385 6.14355 2 6.3674 2 6.64355C2 6.9197 2.22385 7.14355 2.5 7.14355H11.5C11.7761 7.14355 12 6.9197 12 6.64355C12 6.3674 11.7761 6.14355 11.5 6.14355H2.5ZM2 8.64355C2 8.3674 2.22385 8.14355 2.5 8.14355H11.5C11.7761 8.14355 12 8.3674 12 8.64355C12 8.9197 11.7761 9.14355 11.5 9.14355H2.5C2.22385 9.14355 2 8.9197 2 8.64355ZM2.5 10.1436C2.22385 10.1436 2 10.3674 2 10.6436C2 10.9197 2.22385 11.1436 2.5 11.1436H11.5C11.7761 11.1436 12 10.9197 12 10.6436C12 10.3674 11.7761 10.1436 11.5 10.1436H2.5Z"
+                                    fill="none"/>
+                            </svg>
+                        </span>
+                    Private Prescriptions
+                </a>
+
+                <!-- Выпадающий список 2 -->
+                <div class="mt-2">
+                    <button @click="menu2 = !menu2"
+                            :class="activeLink === 'sub2.1' || activeLink === 'sub2.2' || activeLink === 'sub2.3' || activeLink === 'sub2.4' ? 'bg-blue10 pl-3' : ''"
+                            class="w-full flex items-center py-2 pr-3 rounded-[8px] text-DarkBlue100 text-body2 md:text-body font-medium">
+                            <span :class="activeLink === 'sub2.1' || activeLink === 'sub2.2' || activeLink === 'sub2.3' ? 'bg-blue100' : 'bg-blue10'"
+                                  class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="16" height="21"
+                                     viewBox="0 0 16 21" fill="none">
+                                  <path :class="activeLink === 'sub2.1' || activeLink === 'sub2.2' || activeLink === 'sub2.3' ? 'fill-white' : 'fill-DarkBlue30'"
+                                        fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.85714 0.143555C4.96952 0.143555 4.25 0.81513 4.25 1.64355H2.10714C1.21952 1.64355 0.5 2.31513 0.5 3.14355V18.6436C0.5 19.472 1.21952 20.1436 2.10714 20.1436H13.8929C14.7805 20.1436 15.5 19.472 15.5 18.6436V3.14355C15.5 2.31513 14.7805 1.64355 13.8929 1.64355H11.75C11.75 0.81513 11.0305 0.143555 10.1429 0.143555H5.85714ZM5.32143 1.64355C5.32143 1.36741 5.56127 1.14355 5.85714 1.14355H10.1429C10.4387 1.14355 10.6786 1.36741 10.6786 1.64355V2.64355C10.6786 2.91969 10.4387 3.14355 10.1429 3.14355H5.85714C5.56127 3.14355 5.32143 2.91969 5.32143 2.64355V1.64355ZM5.32143 5.64355V7.14355H3.71429V8.14355H5.32143V9.64355H6.39286V8.14355H8V7.14355H6.39286V5.64355H5.32143ZM4.25 11.1436C3.95412 11.1436 3.71429 11.3674 3.71429 11.6436C3.71429 11.9197 3.95412 12.1436 4.25 12.1436H11.75C12.0459 12.1436 12.2857 11.9197 12.2857 11.6436C12.2857 11.3674 12.0459 11.1436 11.75 11.1436H4.25ZM3.71429 14.1436C3.71429 13.8674 3.95412 13.6436 4.25 13.6436H11.75C12.0459 13.6436 12.2857 13.8674 12.2857 14.1436C12.2857 14.4197 12.0459 14.6436 11.75 14.6436H4.25C3.95412 14.6436 3.71429 14.4197 3.71429 14.1436ZM4.25 16.1436C3.95412 16.1436 3.71429 16.3674 3.71429 16.6436C3.71429 16.9197 3.95412 17.1436 4.25 17.1436H11.75C12.0459 17.1436 12.2857 16.9197 12.2857 16.6436C12.2857 16.3674 12.0459 16.1436 11.75 16.1436H4.25Z"
+                                        fill="none"/>
+                                </svg>
+                            </span>
+                        <span>Medical Records</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform ml-auto"
+                             :class="menu2 ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="flex flex-col gap-y-5 mt-5 pl-8" x-show="menu2" x-collapse>
+                        <a href="D-Personal-Details.html"
+                           @click="activeLink = 'sub2.1'"
+                           class="w-full flex items-center py-2 text-DarkBlue100 text-body2 md:text-body font-medium">
+                                <span :class="activeLink === 'sub2.1' ? 'bg-blue100' : 'bg-blue10'"
+                                      class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                    <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="14" height="17"
+                                         viewBox="0 0 14 17" fill="none">
+                                      <path :class="activeLink === 'sub2.1' ? 'fill-white' : 'fill-DarkBlue30'"
+                                            d="M3.58333 3.56022C3.58333 1.60422 5.16899 0.0185547 7.125 0.0185547C9.08101 0.0185547 10.6667 1.60422 10.6667 3.56022C10.6667 5.51623 9.08101 7.10189 7.125 7.10189C5.16899 7.10189 3.58333 5.51623 3.58333 3.56022ZM6.18084 9.18522H8.06916C8.97928 9.18522 9.70053 9.18521 10.2819 9.23271C10.8764 9.28128 11.3794 9.38261 11.8387 9.61663C12.5835 9.99613 13.1891 10.6017 13.5686 11.3465C13.8026 11.8058 13.9039 12.3089 13.9525 12.9033C14 13.4847 14 14.2059 14 15.116V15.6436C14 15.9887 13.7202 16.2686 13.375 16.2686H0.875C0.529822 16.2686 0.25 15.9887 0.25 15.6436V15.1161C0.249995 14.2059 0.249992 13.4847 0.29749 12.9033C0.346062 12.3089 0.447402 11.8058 0.681434 11.3465C1.06093 10.6017 1.66647 9.99615 2.41129 9.61664C2.8706 9.38262 3.37363 9.28128 3.96812 9.23271C4.54947 9.18521 5.27072 9.18522 6.18084 9.18522Z"
+                                            fill="none"/>
+                                    </svg>
+                                </span>
+                            Personal Details</a>
+                        <a href="D-Weight-Height.html"
+                           @click="activeLink = 'sub2.2'"
+                           class="w-full flex items-center py-2 text-DarkBlue100 text-body2 md:text-body font-medium">
+                                <span :class="activeLink === 'sub2.2' ? 'bg-blue100' : 'bg-blue10'"
+                                      class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                    <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                         viewBox="0 0 20 21" fill="none">
+                                      <path :class="activeLink === 'sub2.2' ? 'fill-white' : 'fill-DarkBlue30'"
+                                            d="M1.03906 3.06055C1.03906 2.02501 1.87853 1.18555 2.91406 1.18555H17.0807C18.1163 1.18555 18.9557 2.02502 18.9557 3.06055V17.2272C18.9557 18.2628 18.1163 19.1022 17.0807 19.1022H2.91406C1.87854 19.1022 1.03906 18.2628 1.03906 17.2272V3.06055ZM5.47805 8.48244C6.75978 6.94047 8.25761 6.20793 9.99741 6.20793C11.7372 6.20793 13.235 6.94047 14.5168 8.48244C14.7374 8.74789 15.1315 8.78421 15.3969 8.56356C15.6624 8.34292 15.6987 7.94886 15.478 7.68341C13.989 5.89205 12.1535 4.95793 9.99741 4.95793C7.8413 4.95793 6.0058 5.89205 4.51678 7.68341C4.29613 7.94886 4.33245 8.34292 4.59789 8.56356C4.86334 8.78421 5.2574 8.74789 5.47805 8.48244ZM9.9974 13.0605C10.6878 13.0605 11.2474 12.5009 11.2474 11.8105C11.2474 11.1202 10.6878 10.5605 9.9974 10.5605C9.95746 10.5605 9.91796 10.5624 9.87899 10.5661L8.42241 8.53026C8.22156 8.24953 7.83116 8.18478 7.55044 8.38563C7.26971 8.58648 7.20496 8.97688 7.40581 9.2576L8.86034 11.2906C8.78782 11.4489 8.7474 11.625 8.7474 11.8105C8.7474 12.5009 9.30702 13.0605 9.9974 13.0605Z"
+                                            fill="none"/>
+                                    </svg>
+                                </span>
+                            Weight&Height</a>
+                        <a href="D-My-Consultations.html"
+                           @click="activeLink = 'sub2.3'"
+                           class="w-full flex items-center py-2 text-DarkBlue100 text-body2 md:text-body font-medium">
+                                <span :class="activeLink === 'sub2.3' ? 'bg-blue100' : 'bg-blue10'"
+                                      class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                    <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                         viewBox="0 0 20 20" fill="none">
+                                      <path :class="activeLink === 'sub2.3' ? 'fill-white' : 'fill-DarkBlue30'"
+                                            fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.66667 2.22689C3.66667 1.35244 4.37553 0.643555 5.25 0.643555H9.47222C10.3467 0.643555 11.0556 1.35244 11.0556 2.22689H12.6389C13.5134 2.22689 14.2222 2.93575 14.2222 3.81022V18.0602C14.2222 18.9347 13.5134 19.6436 12.6389 19.6436H2.08333C1.20888 19.6436 0.5 18.9347 0.5 18.0602V3.81022C0.5 2.93575 1.20888 2.22689 2.08333 2.22689H3.66667ZM5.25 1.69911C4.95851 1.69911 4.72222 1.93541 4.72222 2.22689V3.28244C4.72222 3.57394 4.95851 3.81022 5.25 3.81022H9.47222C9.76371 3.81022 10 3.57394 10 3.28244V2.22689C10 1.93541 9.76371 1.69911 9.47222 1.69911H5.25ZM4.72222 6.97689V8.56022H3.13889V9.61578H4.72222V11.1991H5.77778V9.61578H7.36111V8.56022H5.77778V6.97689H4.72222ZM3.66667 12.7824C3.37517 12.7824 3.13889 13.0187 3.13889 13.3102C3.13889 13.6017 3.37517 13.838 3.66667 13.838H11.0556C11.347 13.838 11.5833 13.6017 11.5833 13.3102C11.5833 13.0187 11.347 12.7824 11.0556 12.7824H3.66667ZM3.13889 15.9491C3.13889 15.6576 3.37517 15.4213 3.66667 15.4213H11.0556C11.347 15.4213 11.5833 15.6576 11.5833 15.9491C11.5833 16.2406 11.347 16.4769 11.0556 16.4769H3.66667C3.37517 16.4769 3.13889 16.2406 3.13889 15.9491Z"
+                                            fill="none"/>
+                                      <path :class="activeLink === 'sub2.3' ? 'fill-white' : 'fill-DarkBlue30'"
+                                            d="M16.3333 6.97689C16.3333 6.10241 17.0422 5.39355 17.9167 5.39355C18.7911 5.39355 19.5 6.10241 19.5 6.97689V8.56022H16.3333V6.97689Z"
+                                            fill="none"/>
+                                      <path :class="activeLink === 'sub2.3' ? 'fill-white' : 'fill-DarkBlue30'"
+                                            d="M16.3333 17.5324V9.61578H19.5V17.5324L17.9167 19.6436L16.3333 17.5324Z"
+                                            fill="none"/>
+                                    </svg>
+                                </span>
+                            Consultation</a>
+                        <a href="D-CheckOut.html"
+                           @click="activeLink = 'sub2.4'"
+                           class="w-full flex items-center py-2 text-DarkBlue100 text-body2 md:text-body font-medium">
+                                <span :class="activeLink === 'sub2.1' ? 'bg-blue100' : 'bg-blue10'"
+                                      class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                    <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="14" height="17"
+                                         viewBox="0 0 14 17" fill="none">
+                                      <path :class="activeLink === 'sub2.1' ? 'fill-white' : 'fill-DarkBlue30'"
+                                            d="M3.58333 3.56022C3.58333 1.60422 5.16899 0.0185547 7.125 0.0185547C9.08101 0.0185547 10.6667 1.60422 10.6667 3.56022C10.6667 5.51623 9.08101 7.10189 7.125 7.10189C5.16899 7.10189 3.58333 5.51623 3.58333 3.56022ZM6.18084 9.18522H8.06916C8.97928 9.18522 9.70053 9.18521 10.2819 9.23271C10.8764 9.28128 11.3794 9.38261 11.8387 9.61663C12.5835 9.99613 13.1891 10.6017 13.5686 11.3465C13.8026 11.8058 13.9039 12.3089 13.9525 12.9033C14 13.4847 14 14.2059 14 15.116V15.6436C14 15.9887 13.7202 16.2686 13.375 16.2686H0.875C0.529822 16.2686 0.25 15.9887 0.25 15.6436V15.1161C0.249995 14.2059 0.249992 13.4847 0.29749 12.9033C0.346062 12.3089 0.447402 11.8058 0.681434 11.3465C1.06093 10.6017 1.66647 9.99615 2.41129 9.61664C2.8706 9.38262 3.37363 9.28128 3.96812 9.23271C4.54947 9.18521 5.27072 9.18522 6.18084 9.18522Z"
+                                            fill="none"/>
+                                    </svg>
+                                </span>
+                            Checkout</a>
+                    </div>
+                </div>
+                <!-- Выпадающий список 3 -->
+                <div class="mt-2">
+                    <button @click="menu3 = !menu3"
+                            :class="activeLink === 'sub3.1' || activeLink === 'sub3.2' ? 'bg-blue10 pl-3' : ''"
+                            class="w-full flex items-center py-2 pr-3 rounded-[8px] text-DarkBlue100 text-body2 md:text-body font-medium">
+                             <span :class="activeLink === 'sub3.1' || activeLink === 'sub3.2' ? 'bg-blue100' : 'bg-blue10'"
+                                   class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                 <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                                      viewBox="0 0 16 17" fill="none">
+                                  <path :class="activeLink === 'sub3.1' || activeLink === 'sub3.2' ? 'fill-white' : 'fill-DarkBlue30'"
+                                        d="M14.1707 8.14355C14.1707 7.95955 14.1625 7.78355 14.1461 7.59955L15.6764 6.47155C16.0055 6.23155 16.096 5.78355 15.8903 5.43155L14.3518 2.84755C14.2531 2.6781 14.0935 2.55007 13.9037 2.48805C13.7139 2.42603 13.5072 2.4344 13.3233 2.51155L11.5543 3.23955C11.2499 3.03155 10.929 2.84755 10.5917 2.69555L10.3531 0.847555C10.3037 0.447555 9.94996 0.143555 9.53857 0.143555H6.46966C6.05004 0.143555 5.69626 0.447555 5.64689 0.847555L5.40829 2.69555C5.07095 2.84755 4.75007 3.03155 4.44565 3.23955L2.6767 2.51155C2.29823 2.35155 1.85394 2.49555 1.64825 2.84755L0.109673 5.43955C-0.0960185 5.79155 -0.00551424 6.23155 0.323592 6.47955L1.85394 7.60755C1.81983 7.96679 1.81983 8.32832 1.85394 8.68755L0.323592 9.81555C-0.00551424 10.0556 -0.0960185 10.5036 0.109673 10.8556L1.64825 13.4396C1.85394 13.7916 2.29823 13.9356 2.6767 13.7756L4.44565 13.0476C4.75007 13.2556 5.07095 13.4396 5.40829 13.5916L5.64689 15.4396C5.69626 15.8396 6.05004 16.1436 6.46143 16.1436H9.53034C9.94173 16.1436 10.2955 15.8396 10.3449 15.4396L10.5835 13.5916C10.9208 13.4396 11.2417 13.2556 11.5461 13.0476L13.3151 13.7756C13.6935 13.9356 14.1378 13.7916 14.3435 13.4396L15.8821 10.8556C16.0878 10.5036 15.9973 10.0636 15.6682 9.81555L14.1378 8.68755C14.1625 8.50355 14.1707 8.32755 14.1707 8.14355ZM8.03291 10.9436C6.44497 10.9436 5.15323 9.68755 5.15323 8.14355C5.15323 6.59955 6.44497 5.34355 8.03291 5.34355C9.62085 5.34355 10.9126 6.59955 10.9126 8.14355C10.9126 9.68755 9.62085 10.9436 8.03291 10.9436Z"
+                                        fill="none"/>
+                                </svg>
+                            </span>
+                        <span>Settings</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform ml-auto"
+                             :class="menu3 ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="flex flex-col gap-y-5 mt-5 pl-8" x-show="menu3" x-collapse>
+                        <a href="D-Settings-Update-Password.html"
+                           @click="activeLink = 'sub3.1'"
+                           class="w-full flex items-center py-2 text-DarkBlue100 text-body2 md:text-body font-medium">
+                                <span :class="activeLink === 'sub3.1' ? 'bg-blue100' : 'bg-blue10'"
+                                      class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                   <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="20" height="21"
+                                        viewBox="0 0 20 21" fill="none">
+                                      <path :class="activeLink === 'sub3.1' ? 'fill-white' : 'fill-DarkBlue30'"
+                                            d="M5.20833 8.68555V5.97721C5.20833 3.33085 7.35366 1.18555 10 1.18555C12.6463 1.18555 14.7917 3.33085 14.7917 5.97721V8.68555H16.6667C17.4721 8.68555 18.125 9.33846 18.125 10.1439V17.6439C18.125 18.4493 17.4721 19.1022 16.6667 19.1022H3.33333C2.52792 19.1022 1.875 18.4493 1.875 17.6439V10.1439C1.875 9.33846 2.52792 8.68555 3.33333 8.68555H5.20833ZM6.45833 5.97721V8.68555H13.5417V5.97721C13.5417 4.02121 11.956 2.43555 10 2.43555C8.04401 2.43555 6.45833 4.02121 6.45833 5.97721ZM10 12.0189C9.65482 12.0189 9.375 12.2987 9.375 12.6439V15.1439C9.375 15.4891 9.65482 15.7689 10 15.7689C10.3452 15.7689 10.625 15.4891 10.625 15.1439V12.6439C10.625 12.2987 10.3452 12.0189 10 12.0189Z"
+                                            fill="none"/>
+                                    </svg>
+                                </span>
+                            Update password</a>
+                        <a href="D-Marketing-Preferences.html"
+                           @click="activeLink = 'sub3.2'"
+                           class="w-full flex items-center py-2 text-DarkBlue100 text-body2 md:text-body font-medium">
+                                <span :class="activeLink === 'sub3.2' ? 'bg-blue100' : 'bg-blue10'"
+                                      class="w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                                    <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                                         viewBox="0 0 16 14" fill="none">
+                                      <path :class="activeLink === 'sub3.2' ? 'fill-white' : 'fill-DarkBlue30'"
+                                            d="M14.4 0.643555H1.6C0.72 0.643555 0 1.3748 0 2.26855V12.0186C0 12.9123 0.72 13.6436 1.6 13.6436H14.4C15.28 13.6436 16 12.9123 16 12.0186V2.26855C16 1.3748 15.28 0.643555 14.4 0.643555ZM14.08 4.09668L8.848 7.4198C8.328 7.75293 7.672 7.75293 7.152 7.4198L1.92 4.09668C1.83978 4.05094 1.76954 3.98915 1.71351 3.91505C1.65749 3.84094 1.61685 3.75606 1.59406 3.66554C1.57127 3.57503 1.5668 3.48075 1.58093 3.38843C1.59505 3.29611 1.62747 3.20765 1.67623 3.12842C1.72498 3.0492 1.78906 2.98084 1.86458 2.92749C1.9401 2.87414 2.0255 2.83691 2.1156 2.81805C2.2057 2.79919 2.29863 2.79909 2.38876 2.81776C2.4789 2.83643 2.56437 2.87349 2.64 2.92668L8 6.33105L13.36 2.92668C13.4356 2.87349 13.5211 2.83643 13.6112 2.81776C13.7014 2.79909 13.7943 2.79919 13.8844 2.81805C13.9745 2.83691 14.0599 2.87414 14.1354 2.92749C14.2109 2.98084 14.275 3.0492 14.3238 3.12842C14.3725 3.20765 14.405 3.29611 14.4191 3.38843C14.4332 3.48075 14.4287 3.57503 14.4059 3.66554C14.3832 3.75606 14.3425 3.84094 14.2865 3.91505C14.2305 3.98915 14.1602 4.05094 14.08 4.09668Z"
+                                            fill="none"/>
+                                    </svg>
+                                </span>
+                            Marketing Preferences</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <a href="index.html" class="py-2 pr-3 mt-auto rounded-[8px] flex items-center text-DarkBlue100 text-body2 md:text-body font-medium">
+                    <span class="bg-blue10 w-[32px] min-w-[32px] h-[32px] md:w-10 md:min-w-10 md:h-10 flex items-center justify-center rounded-[8px] mr-3">
+                            <svg class="icon-25" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                 viewBox="0 0 18 18" fill="none">
+                              <path d="M2.07692 18C0.92987 18 -4.06459e-08 17.0701 -9.07852e-08 15.9231L-6.9602e-07 2.07692C-7.46159e-07 0.929871 0.929869 -4.06459e-08 2.07692 -9.07852e-08L15.9231 -6.9602e-07C17.0701 -7.46159e-07 18 0.92987 18 2.07692L18 15.9231C18 17.0701 17.0701 18 15.9231 18L2.07692 18ZM6.66431 8.51046C6.39395 8.78083 6.39395 9.21917 6.66431 9.48954L10.3566 13.1818C10.627 13.4522 11.0653 13.4522 11.3357 13.1818C11.6061 12.9115 11.6061 12.4731 11.3357 12.2028L8.82522 9.69231L14.5385 9.69231C14.9208 9.69231 15.2308 9.38235 15.2308 9C15.2308 8.61765 14.9208 8.30769 14.5385 8.30769L8.82522 8.30769L11.3357 5.79723C11.6061 5.52686 11.6061 5.08852 11.3357 4.81816C11.0653 4.54779 10.627 4.54779 10.3566 4.81816L6.66431 8.51046ZM3.69231 12.6923C3.69231 13.0747 4.00226 13.3846 4.38462 13.3846C4.76697 13.3846 5.07692 13.0747 5.07692 12.6923L5.07692 5.30769C5.07692 4.92534 4.76697 4.61538 4.38461 4.61538C4.00226 4.61538 3.69231 4.92534 3.69231 5.30769L3.69231 12.6923Z"
+                                    fill="#05093E" fill-opacity="0.3"/>
+                            </svg>
+                    </span>
+            Log Out
+        </a>
+    </div>
+    <div :class="isMob ? 'opacity-100 delay-100' : 'opacity-0'" @click="isMob = !isMob"
+         class="flex items-center minlg:hidden justify-center transition-all bg-black bg-opacity-50 flex-1"></div>
+</div>
+        <div class="flex flex-col w-full">
+            <header class="flex w-full items-center py-4 px-6 md:px-4 md:pt-8 md:pb-5 shadow-7xl bg-white">
+    <div class="w-full flex items-center justify-between">
+        <a class="lg:hidden w-10 h-10 min-w-10 overflow-hidden group hover:bg-blue10 transition-all rounded-7xl flex items-center justify-center bg-blue100" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                <path class="group-hover:fill-blue100 fill-white transition-all" d="M15 6.75C15.4142 6.75 15.75 6.41421 15.75 6C15.75 5.58579 15.4142 5.25 15 5.25L15 6.75ZM0.46967 5.46967C0.176777 5.76256 0.176777 6.23744 0.46967 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989592 6.3033 0.696698C6.01041 0.403805 5.53553 0.403805 5.24264 0.696698L0.46967 5.46967ZM15 5.25L1 5.25L1 6.75L15 6.75L15 5.25Z" fill="none"/>
+            </svg>
+        </a>
+        <button class="minlg:hidden text-none bg-blue100 flex flex-col gap-y-1 justify-center px-[10px] rounded-7xl h-10 min-w-10" aria-label="Open menu" @click="isMob = !isMob">
+            Burger
+            <span :class="isMob ? 'rotate-45 transform translate-y-[6px]' : 'translate-y-0'" class="w-5 transition-all duration-300 border-t-[2px] border-white rounded-full block"></span>
+            <span :class="isMob ? 'opacity-0' : ''" class="w-3 border-t-[2px] border-white rounded-full block"></span>
+            <span :class="isMob ? '-rotate-45 transform -translate-y-[6px]' : 'translate-y-0'" class="w-5 transition-all duration-300 border-t-[2px] border-white rounded-full block"></span>
+        </button>
+        <div class="flex items-center gap-x-6 md:gap-x-4 ml-auto">
+            <a class="w-10 h-10 min-w-10 overflow-hidden group hover:bg-blue100 transition-all rounded-7xl flex items-center justify-center bg-blue10" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                    <path class="group-hover:fill-white fill-blue100 transition-all" d="M14.4 0.5H1.6C0.72 0.5 0 1.23125 0 2.125V11.875C0 12.7688 0.72 13.5 1.6 13.5H14.4C15.28 13.5 16 12.7688 16 11.875V2.125C16 1.23125 15.28 0.5 14.4 0.5ZM14.08 3.95312L8.848 7.27625C8.328 7.60938 7.672 7.60938 7.152 7.27625L1.92 3.95312C1.83978 3.90739 1.76954 3.8456 1.71351 3.77149C1.65749 3.69739 1.61685 3.61251 1.59406 3.52199C1.57127 3.43147 1.5668 3.3372 1.58093 3.24487C1.59505 3.15255 1.62747 3.0641 1.67623 2.98487C1.72498 2.90564 1.78906 2.83728 1.86458 2.78393C1.9401 2.73058 2.0255 2.69335 2.1156 2.67449C2.2057 2.65563 2.29863 2.65554 2.38876 2.67421C2.4789 2.69288 2.56437 2.72993 2.64 2.78312L8 6.1875L13.36 2.78312C13.4356 2.72993 13.5211 2.69288 13.6112 2.67421C13.7014 2.65554 13.7943 2.65563 13.8844 2.67449C13.9745 2.69335 14.0599 2.73058 14.1354 2.78393C14.2109 2.83728 14.275 2.90564 14.3238 2.98487C14.3725 3.0641 14.405 3.15255 14.4191 3.24487C14.4332 3.3372 14.4287 3.43147 14.4059 3.52199C14.3832 3.61251 14.3425 3.69739 14.2865 3.77149C14.2305 3.8456 14.1602 3.90739 14.08 3.95312Z" fill="none"/>
+                </svg>
+            </a>
+            <a class="w-10 h-10 min-w-10 overflow-hidden group hover:bg-blue100 transition-all rounded-7xl flex items-center justify-center bg-blue10" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none">
+                    <path class="group-hover:stroke-white stroke-blue100 transition-all" d="M1.5 6.68098C1.5 -0.226994 12.5 -0.226994 12.5 6.68098C12.5 11.6148 7.50013 10.6278 7.50013 16.5487M7.51333 22.5L7.528 22.4841" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+            <div class="container-full">
+                <div class="row-10 my-14 md:my-10">
+                    <div class="col-span-10">
+                        <div class="flex flex-col gap-y-10 md:gap-y-6">
+                            <div class="flex flex-col">
+                                <span class="text-h4 md:text-Top1 block mb-4 md:mb-3 font-bold">
+                                   Marketing Preferences
+                                </span>
+                            </div>
+                            <div class="row-10 gap-x-8">
+                                <div class="col-span-10">
+                                    <div class="bg-white shadow-4xl p-8 md:px-4 md:py-6 rounded-6xl w-full">
+                                        <span class="block text-Top1 font-bold mb-4 md:text-base md:mb-3">Marketing Preferences</span>
+                                        <p class="text-body">Our subscribed users periodically receive important updates about the services we offer and any ongoing promotions. You will need to be subscribed to gain the benefit!</p>
+                                        <a class="button db-btn mt-8 md:w-full" href="#">
+    <span class="">Unsubscribe Me</span>
+</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="./js/scripts.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('data', () => ({
+        }))
+    })
+</script>
+</body>
+
+</html>
