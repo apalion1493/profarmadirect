@@ -2718,6 +2718,9 @@ html {
 .min-h-screen{
   min-height: 100vh;
 }
+.min-h-\[533px\]{
+  min-height: 533px;
+}
 .w-10{
   width: 2.5rem;
 }
@@ -6669,6 +6672,9 @@ p{
   }
   .md\:min-h-\[471px\]{
     min-height: 471px;
+  }
+  .md\:min-h-\[409px\]{
+    min-height: 409px;
   }
   .md\:w-10{
     width: 2.5rem;
