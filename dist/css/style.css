@@ -5725,6 +5725,11 @@ p{
   min-width: 256px;
 }
 
+.w475 {
+  max-width: 475px;
+  width: 100%;
+}
+
 @media (max-width: 1023px){
   .lg\:w-full {
     width: 100% !important;
@@ -6563,10 +6568,6 @@ p{
   .md\:my-auto{
     margin-top: auto;
     margin-bottom: auto;
-  }
-  .md\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
   }
   .md\:mb-0{
     margin-bottom: 0px;
