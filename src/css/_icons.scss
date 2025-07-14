@@ -507,3 +507,18 @@
   background: url("../img/icons/Traking-icon-20.svg");
   @apply block h-[20px] w-[20px] bg-100-auto bg-center bg-no-repeat;
 }
+
+.Prescription {
+  background: url("../img/icons/Prescription.svg");
+  @apply block h-[48px] w-[48px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.Customer-Support {
+  background: url("../img/icons/Customer-Support.svg");
+  @apply block h-[48px] w-[48px] bg-100-auto bg-center bg-no-repeat;
+}
+
+.Delivery {
+  background: url("../img/icons/Delivery.svg");
+  @apply block h-[48px] w-[48px] bg-100-auto bg-center bg-no-repeat;
+}

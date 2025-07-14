@@ -5147,6 +5147,36 @@ p{
   background-repeat: no-repeat;
 }
 
+.Prescription {
+  background: url("../img/icons/Prescription.svg");
+  display: block;
+  height: 48px;
+  width: 48px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Customer-Support {
+  background: url("../img/icons/Customer-Support.svg");
+  display: block;
+  height: 48px;
+  width: 48px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Delivery {
+  background: url("../img/icons/Delivery.svg");
+  display: block;
+  height: 48px;
+  width: 48px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .button{
   display: flex;
   height: 3.5rem;
@@ -6714,14 +6744,14 @@ p{
   .md\:max-w-\[204px\]{
     max-width: 204px;
   }
+  .md\:max-w-\[281px\]{
+    max-width: 281px;
+  }
   .md\:max-w-\[94\%\]{
     max-width: 94%;
   }
   .md\:max-w-full{
     max-width: 100%;
-  }
-  .md\:max-w-\[281px\]{
-    max-width: 281px;
   }
   .md\:flex-col{
     flex-direction: column;
@@ -6777,11 +6807,11 @@ p{
     border-top-width: 1px;
     border-bottom-width: 1px;
   }
-  .md\:border-b-0{
-    border-bottom-width: 0px;
-  }
   .md\:border-b{
     border-bottom-width: 1px;
+  }
+  .md\:border-b-0{
+    border-bottom-width: 0px;
   }
   .md\:bg-cover{
     background-size: cover;
@@ -6839,9 +6869,6 @@ p{
   }
   .md\:pt-\[60px\]{
     padding-top: 60px;
-  }
-  .md\:pt-6{
-    padding-top: 1.5rem;
   }
   .md\:text-left{
     text-align: left;
