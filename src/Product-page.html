@@ -13,9 +13,9 @@
 
     <section class="section">
         <div class="container">
-            <div class="row gap-x-8">
-                <div class="col-span-5 lg:col-span-12">
-                    <div class="sticky top-3 flex flex-col">
+            <div class="flex lg:flex-col gap-x-8">
+                <div class="flex min-w-[448px] lg:min-w-full mr-20 lg:mr-0">
+                    <div class="sticky top-3 flex flex-col w-full">
                         <div class="flex mb-6 lg:mb-8">
                             <nav class="font-medium text-body2 text-DarkBlue30" aria-label="breadcrumb">
                                 <ol class="flex flex-wrap items-center gap-3">
@@ -48,104 +48,12 @@
                             })
                             <h1 class="text-h3 lg:text-h2Mob font-bold text-DarkBlue100">Differin 0.1% Cream</h1>
                         </div>
-                        <div class="max-w-[448px] lg:mx-auto lg:max-w-[343px] lg:mb-8">
-                            <div class="swiper gallery-swiper-big">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="img/Product-img-1.png" alt="Product img 1"/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Product img 1"/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Product img 1"/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Product img 1"/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Product img 1"/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="Product img 1"/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="Product img 1"/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="Product img 1"/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Product img 1"/>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="https://swiperjs.com/demos/images/nature-10.jpg" alt="Product img 1"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div thumbsSlider="" class="swiper gallery-swiper mt-6 lg:mt-4">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="img/Product-img-1.png" alt="Product img 1"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Product img 1"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Product img 1"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Product img 1"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Product img 1"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="Product img 1"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="Product img 1"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="Product img 1"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Product img 1"/>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="https://swiperjs.com/demos/images/nature-10.jpg" alt="Product img 1"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-7">
-                        <div class="flex flex-col">
-
+                        <div class="max-w-[448px] lg:max-w-[343px] lg:mb-8 border border-DarkBlue10 rounded-[20px] overflow-hidden sm:mx-auto">
+                          <img src="img/Product-img-1.png" alt="Product img 1"/>
                         </div>
                     </div>
                 </div>
-                <div class="col-span-7 lg:col-span-12">
+                <div class="">
                     <form class="flex flex-col gap-y-8">
                         <div class="flex flex-col gap-y-3 lg:hidden">
                             @@include('components/Categories-tag-2.html', {
@@ -155,37 +63,14 @@
                             <h1 class="text-h3 font-bold text-DarkBlue100">Differin 0.1% Cream</h1>
                             <span class="text-DarkBlue50 text-Top1 font-medium">£16.43</span>
                         </div>
-                        <div class="flex flex-col lg:gap-y-8">
-                            <div class="minlg:hidden flex items-center gap-x-4">
+                        <div class="minlg:hidden flex flex-col lg:gap-y-8">
+                            <div class="flex items-center gap-x-4">
                                 <span class="text-base font-semibold block">Price:</span>
                                 <span class="font-medium text-DarkBlue50 text-Top2">£16.43</span>
                             </div>
-                            <div class="flex flex-col">
-                                <span class="text-base font-semibold block mb-4">Available Srenght:</span>
-                                <div class="flex items-center gap-x-3">
-                                    <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] lg:h-[43px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
-                                        <input type="radio" id="osMac" aria-describedby="macDescription" class="sr-only peer" name="Available_Srenght" value="45" checked >
-                                        <span class="flex flex-col">
-                                            <span class="" aria-hidden="true">45g</span>
-                                        </span>
-                                    </label>
-                                    <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] lg:h-[43px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
-                                        <input type="radio" id="osWindows" aria-describedby="windowsDescription" class="sr-only peer" name="Available_Srenght" value="75">
-                                        <span class="flex flex-col">
-                                            <span class="" aria-hidden="true">75g</span>
-                                        </span>
-                                    </label>
-                                    <label class="cursor-pointer relative flex items-center rounded-5xl bg-LightBlue px-4 py-3 h-[38px] lg:h-[43px] w-fit transition-transform text-body font-medium has-[:checked]:text-blue100 has-[:checked]:font-semibold has-[:checked]:border-[2px] has-[:checked]:border-blue100 has-[:focus]:outline has-[:focus]:outline-0 has-[:focus]:outline-offset-0 has-[:focus]:outline-transparent border-[2px] border-slate-300">
-                                        <input type="radio" id="osLinux" aria-describedby="linuxDescription" class="sr-only peer" name="Available_Srenght" value="100">
-                                        <span class="flex flex-col">
-                                            <span class="" aria-hidden="true">100g</span>
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-base font-semibold block mb-4 lg:mb-3">Available Srenght:</span>
+                            <span class="text-base font-semibold block mb-4 lg:mb-3">Description:</span>
                             <p class="-tracking-018 text-base lg:text-body font-medium text-DarkBlue50">Differin is a brand name for a medication containing the active ingredient adapalene. It
                                 is primarily used to treat acne.</p>
                         </div>
@@ -198,16 +83,11 @@
                                 preventing the formation of acne lesions.</p>
                         </div>
                         <div class="flex items-center gap-x-4 lg:flex-col lg:gap-y-4 lg:gap-x-0">
-                            @@include('components/button.html', {
-                            'title': 'Request a Prescription',
-                            'type': 'submit',
-                            'style': 'lg:w-full'
+                            @@include('components/button-icon.html', {
+                            'title': 'Order',
+                            'type': 'button',
+                            'style': 'lg:w-full w256'
                             })
-
-<!--                            @@include('components/Link-icon.html', {-->
-<!--                            'title': 'Send Us Prescription',-->
-<!--                            'style': 'flex-1 btn-icons lg:w-full'-->
-<!--                            })-->
                         </div>
                     </form>
                 </div>
@@ -349,49 +229,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <span class="Border-wave"></span>
-            <div class="row py-14 gap-x-8 gap-y-10 lg:gap-y-5">
-                <div class="col-span-12">
-                    <div class="flex flex-col items-center lg:mb-3 md:items-start">
-                        @@include('components/Title-small.html', {
-                        'Title': 'How it works',
-                        'Style': 'mb-3 md:mb-2'
-                        })
-                        <h2 class="main-title">
-                            How it works
-                        </h2>
-                    </div>
-                </div>
-                <div class="col-span-4 lg:col-span-12">
-                    @@include('components/Information-card.html', {
-                    'Style': '',
-                    'Icon': 'Consultation-icon48',
-                    'Title': 'Consultattion',
-                    'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.',
-                    })
-                </div>
-                <div class="col-span-4 lg:col-span-12">
-                    @@include('components/Information-card.html', {
-                    'Style': '',
-                    'Icon': 'Digestion-icon48',
-                    'Title': 'Delivery',
-                    'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.',
-                    })
-                </div>
-                <div class="col-span-4 lg:col-span-12">
-                    @@include('components/Information-card.html', {
-                    'Style': '',
-                    'Icon': 'Approve-icon48',
-                    'Title': 'Approve',
-                    'Text': 'Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.',
-                    })
-                </div>
-            </div>
-            <span class="Border-wave"></span>
         </div>
     </section>
     <section class="section">
