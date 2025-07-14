@@ -18,6 +18,10 @@
     @apply h-[38px] min-h-[38px] min-w-fit bg-LightBlue border-LightBlue text-body px-4 text-blue100 hover:border-blue100 hover:text-blue100 disabled:border-DarkBlue10 disabled:text-DarkBlue50
   }
 
+  &.btn-footer {
+    white-space: nowrap;
+  }
+
   &.btn-small {
     @apply h-[33px] min-h-[33px] text-body2 min-w-[0] px-5 md:px-3
   }

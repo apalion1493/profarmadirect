@@ -2431,10 +2431,6 @@ html {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
 }
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
 .mb-0{
   margin-bottom: 0px;
 }
@@ -2926,23 +2922,17 @@ html {
 .max-w-xs{
   max-width: 20rem;
 }
-.max-w-\[274px\]{
-  max-width: 274px;
-}
-.max-w-\[321px\]{
-  max-width: 321px;
-}
 .flex-1{
   flex: 1 1 0%;
+}
+.flex-\[1\.1\]{
+  flex: 1.1;
 }
 .flex-\[1\.2\]{
   flex: 1.2;
 }
 .flex-\[2\]{
   flex: 2;
-}
-.flex-\[1\.1\]{
-  flex: 1.1;
 }
 .flex-shrink-0{
   flex-shrink: 0;
@@ -3101,10 +3091,6 @@ html {
 .gap-x-8{
   -moz-column-gap: 2rem;
        column-gap: 2rem;
-}
-.gap-x-\[18px\]{
-  -moz-column-gap: 18px;
-       column-gap: 18px;
 }
 .gap-y-1{
   row-gap: 0.25rem;
@@ -3366,10 +3352,6 @@ html {
 .bg-gray-800{
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-.bg-red-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
 .bg-slate-100{
   --tw-bg-opacity: 1;
@@ -3749,9 +3731,9 @@ html {
   --tw-text-opacity: 1;
   color: rgb(242 95 95 / var(--tw-text-opacity));
 }
-.text-Grey{
+.text-LagunaBlue{
   --tw-text-opacity: 1;
-  color: rgb(191 198 214 / var(--tw-text-opacity));
+  color: rgb(50 205 215 / var(--tw-text-opacity));
 }
 .text-RedV3{
   --tw-text-opacity: 1;
@@ -3784,10 +3766,6 @@ html {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-LagunaBlue{
-  --tw-text-opacity: 1;
-  color: rgb(50 205 215 / var(--tw-text-opacity));
 }
 .underline{
   text-decoration-line: underline;
@@ -5227,6 +5205,9 @@ p{
 .button.categories:disabled{
   border-color: #05093E1A;
   color: #05093E80;
+}
+.button.btn-footer {
+  white-space: nowrap;
 }
 .button.btn-small{
   height: 33px;
@@ -6739,6 +6720,9 @@ p{
   .md\:max-w-full{
     max-width: 100%;
   }
+  .md\:max-w-\[281px\]{
+    max-width: 281px;
+  }
   .md\:flex-col{
     flex-direction: column;
   }
@@ -6789,24 +6773,21 @@ p{
   .md\:rounded-none{
     border-radius: 0px;
   }
-  .md\:border{
-    border-width: 1px;
-  }
   .md\:border-y{
     border-top-width: 1px;
     border-bottom-width: 1px;
   }
-  .md\:border-White20{
-    border-color: #FFFFFF33;
+  .md\:border-b-0{
+    border-bottom-width: 0px;
+  }
+  .md\:border-b{
+    border-bottom-width: 1px;
   }
   .md\:bg-cover{
     background-size: cover;
   }
   .md\:p-2{
     padding: 0.5rem;
-  }
-  .md\:p-4{
-    padding: 1rem;
   }
   .md\:p-5{
     padding: 1.25rem;
@@ -6858,6 +6839,9 @@ p{
   }
   .md\:pt-\[60px\]{
     padding-top: 60px;
+  }
+  .md\:pt-6{
+    padding-top: 1.5rem;
   }
   .md\:text-left{
     text-align: left;
@@ -6974,8 +6958,5 @@ p{
   }
   .minlg\:w-full{
     width: 100%;
-  }
-  .minlg\:cursor-auto{
-    cursor: auto;
   }
 }
