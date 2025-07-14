@@ -5360,6 +5360,10 @@ p{
   display: block;
   font-weight: 700;
 }
+.text-content a{
+  --tw-text-opacity: 1;
+  color: rgb(61 101 255 / var(--tw-text-opacity));
+}
 
 .text-content--tou h1, .text-content--tou h2, .text-content--tou h3, .text-content--tou h4, .text-content--tou h5, .text-content--tou h6, .text-content--tou .h1, .text-content--tou .h2, .text-content--tou .h3, .text-content--tou .h4, .text-content--tou .h5, .text-content--tou .h6{
   font-weight: 600;
@@ -6430,6 +6434,14 @@ p{
   }
   .lg\:border-DarkBlue10{
     border-color: #05093E1A;
+  }
+  .lg\:border-blue100{
+    --tw-border-opacity: 1;
+    border-color: rgb(61 101 255 / var(--tw-border-opacity));
+  }
+  .lg\:bg-LightBlue{
+    --tw-bg-opacity: 1;
+    background-color: rgb(239 246 255 / var(--tw-bg-opacity));
   }
   .lg\:object-left-bottom{
     -o-object-position: left bottom;
