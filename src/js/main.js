@@ -142,4 +142,37 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  const input = document.getElementById("file-upload");
+  const wrapper = document.getElementById("file-wrapper");
+
+  input.addEventListener("change", () => {
+    wrapper.textContent = input.files?.[0]?.name || "Файл не выбран";
+  });
+
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  const openBtn = document.getElementById('openModalBtn');
+  const modal   = document.getElementById('modal');
+  const form    = modal.querySelector('form');
+
+  function showModal() {
+    modal.classList.remove('hidden');
+  }
+  function hideModal() {
+    modal.classList.add('hidden');
+  }
+  openBtn.addEventListener('click', showModal);
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      hideModal();
+    }
+  });
+  form.addEventListener('submit', (event) => {
+    hideModal();
+  });
+});
+
+
 // TODO test

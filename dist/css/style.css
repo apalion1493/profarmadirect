@@ -2509,6 +2509,9 @@ html {
 .mr-auto{
   margin-right: auto;
 }
+.mt-0{
+  margin-top: 0px;
+}
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -2544,9 +2547,6 @@ html {
 }
 .mt-auto{
   margin-top: auto;
-}
-.mt-0{
-  margin-top: 0px;
 }
 .block{
   display: block;
@@ -4950,6 +4950,16 @@ p{
   background: url("../img/icons/Question-icon20.svg") no-repeat 16px 50%;
 }
 
+.location-input-icon {
+  background-size: 20px 20px;
+  background: url("../img/icons/Location.svg") no-repeat 16px 50%;
+}
+
+.Upload {
+  background-size: 20px 20px;
+  background: url("../img/icons/Upload.svg") no-repeat 16px 50%;
+}
+
 .Research-icon {
   background: url("../img/Research-icon.svg");
   display: block;
@@ -6336,9 +6346,6 @@ p{
   }
   .lg\:mr-0{
     margin-right: 0px;
-  }
-  .lg\:mt-0{
-    margin-top: 0px;
   }
   .lg\:mt-5{
     margin-top: 1.25rem;

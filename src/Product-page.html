@@ -7,313 +7,389 @@
 
 <body class="">
 <main id="content" class="flex flex-col items-center min-h-screen">
-    @@include('components/Header.html', {
-    'commonStyle': ' ',
-    })
+  @@include('components/Header.html', {
+  'commonStyle': ' ',
+  })
 
-    <section class="section">
-        <div class="container">
-            <div class="flex lg:flex-col gap-x-8">
-                <div class="flex min-w-[448px] lg:min-w-full mr-20 lg:mr-0">
-                    <div class="sticky top-3 flex flex-col w-full">
-                        <div class="flex mb-6 lg:mb-8">
-                            <nav class="font-medium text-body2 text-DarkBlue30" aria-label="breadcrumb">
-                                <ol class="flex flex-wrap items-center gap-3">
-                                    <li class="flex items-center">
-                                        <a href="index.html" class="hover:text-black dark:hover:text-white">Home</a>
-                                        <svg class="ml-3" width="3" height="4" viewBox="0 0 3 4" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.49683 3.424C1.27283 3.424 1.06283 3.37267 0.866828 3.27C0.670828 3.158 0.512162 3.004 0.390828 2.808C0.278828 2.612 0.222828 2.388 0.222828 2.136C0.222828 1.89333 0.278828 1.67867 0.390828 1.492C0.512162 1.296 0.670828 1.142 0.866828 1.03C1.06283 0.918 1.27283 0.862 1.49683 0.862C1.73016 0.862 1.94016 0.918 2.12683 1.03C2.32283 1.142 2.47683 1.296 2.58883 1.492C2.70083 1.67867 2.75683 1.89333 2.75683 2.136C2.75683 2.388 2.70083 2.612 2.58883 2.808C2.47683 3.004 2.32283 3.158 2.12683 3.27C1.94016 3.37267 1.73016 3.424 1.49683 3.424Z"
-                                                  fill="#05093E" fill-opacity="0.3"/>
-                                        </svg>
-                                    </li>
-                                    <li class="flex items-center">
-                                        <a href="Shop.html" class="hover:text-black dark:hover:text-white">Shop</a>
-                                        <svg class="ml-3" width="3" height="4" viewBox="0 0 3 4" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.49683 3.424C1.27283 3.424 1.06283 3.37267 0.866828 3.27C0.670828 3.158 0.512162 3.004 0.390828 2.808C0.278828 2.612 0.222828 2.388 0.222828 2.136C0.222828 1.89333 0.278828 1.67867 0.390828 1.492C0.512162 1.296 0.670828 1.142 0.866828 1.03C1.06283 0.918 1.27283 0.862 1.49683 0.862C1.73016 0.862 1.94016 0.918 2.12683 1.03C2.32283 1.142 2.47683 1.296 2.58883 1.492C2.70083 1.67867 2.75683 1.89333 2.75683 2.136C2.75683 2.388 2.70083 2.612 2.58883 2.808C2.47683 3.004 2.32283 3.158 2.12683 3.27C1.94016 3.37267 1.73016 3.424 1.49683 3.424Z"
-                                                  fill="#05093E" fill-opacity="0.3"/>
-                                        </svg>
-                                    </li>
-                                    <li class="flex items-center text-DarkBlue50 font-semibold" aria-current="page">
-                                        Product Name
-                                    </li>
-                                </ol>
-                            </nav>
-                        </div>
-                        <div class="flex flex-col gap-y-3 lg:gap-y-4 minlg:hidden lg:mb-8">
-                            @@include('components/Categories-tag-2.html', {
-                            'Style': 'active-tag',
-                            'Title': 'Brand'
-                            })
-                            <h1 class="text-h3 lg:text-h2Mob font-bold text-DarkBlue100">Differin 0.1% Cream</h1>
-                        </div>
-                        <div class="max-w-[448px] lg:max-w-[343px] lg:mb-8 border border-DarkBlue10 rounded-[20px] overflow-hidden sm:mx-auto">
-                          <img src="img/Product-img-1.png" alt="Product img 1"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <form class="flex flex-col gap-y-8">
-                        <div class="flex flex-col gap-y-3 lg:hidden">
-                            @@include('components/Categories-tag-2.html', {
-                            'Style': 'active-tag',
-                            'Title': 'Brand'
-                            })
-                            <h1 class="text-h3 font-bold text-DarkBlue100">Differin 0.1% Cream</h1>
-                            <span class="text-DarkBlue50 text-Top1 font-medium">£16.43</span>
-                        </div>
-                        <div class="minlg:hidden flex flex-col lg:gap-y-8">
-                            <div class="flex items-center gap-x-4">
-                                <span class="text-base font-semibold block">Price:</span>
-                                <span class="font-medium text-DarkBlue50 text-Top2">£16.43</span>
-                            </div>
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-base font-semibold block mb-4 lg:mb-3">Description:</span>
-                            <p class="-tracking-018 text-base lg:text-body font-medium text-DarkBlue50">Differin is a brand name for a medication containing the active ingredient adapalene. It
-                                is primarily used to treat acne.</p>
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-base font-semibold block mb-4 lg:mb-3">Use for:</span>
-                            <p class="-tracking-018 text-base lg:text-body font-medium text-DarkBlue50">Adapalene, the active ingredient in Differin, works by binding to specific receptors in
-                                the skin cells called retinoic acid receptors. It regulates the growth and
-                                differentiation of skin cells, preventing the formation of clogged pores, and reducing
-                                inflammation. This helps to improve acne by promoting the turnover of skin cells and
-                                preventing the formation of acne lesions.</p>
-                        </div>
-                        <div class="flex items-center gap-x-4 lg:flex-col lg:gap-y-4 lg:gap-x-0">
-                            @@include('components/button-icon.html', {
-                            'title': 'Order',
-                            'type': 'button',
-                            'style': 'lg:w-full w256'
-                            })
-                        </div>
-                    </form>
-                </div>
+  <section class="section">
+    <div class="container">
+      <div class="flex lg:flex-col gap-x-8">
+        <div class="flex min-w-[448px] lg:min-w-full mr-20 lg:mr-0">
+          <div class="sticky top-3 flex flex-col w-full">
+            <div class="flex mb-6 lg:mb-8">
+              <nav class="font-medium text-body2 text-DarkBlue30" aria-label="breadcrumb">
+                <ol class="flex flex-wrap items-center gap-3">
+                  <li class="flex items-center">
+                    <a href="index.html" class="hover:text-black dark:hover:text-white">Home</a>
+                    <svg class="ml-3" width="3" height="4" viewBox="0 0 3 4" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.49683 3.424C1.27283 3.424 1.06283 3.37267 0.866828 3.27C0.670828 3.158 0.512162 3.004 0.390828 2.808C0.278828 2.612 0.222828 2.388 0.222828 2.136C0.222828 1.89333 0.278828 1.67867 0.390828 1.492C0.512162 1.296 0.670828 1.142 0.866828 1.03C1.06283 0.918 1.27283 0.862 1.49683 0.862C1.73016 0.862 1.94016 0.918 2.12683 1.03C2.32283 1.142 2.47683 1.296 2.58883 1.492C2.70083 1.67867 2.75683 1.89333 2.75683 2.136C2.75683 2.388 2.70083 2.612 2.58883 2.808C2.47683 3.004 2.32283 3.158 2.12683 3.27C1.94016 3.37267 1.73016 3.424 1.49683 3.424Z"
+                        fill="#05093E" fill-opacity="0.3"/>
+                    </svg>
+                  </li>
+                  <li class="flex items-center">
+                    <a href="Shop.html" class="hover:text-black dark:hover:text-white">Shop</a>
+                    <svg class="ml-3" width="3" height="4" viewBox="0 0 3 4" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.49683 3.424C1.27283 3.424 1.06283 3.37267 0.866828 3.27C0.670828 3.158 0.512162 3.004 0.390828 2.808C0.278828 2.612 0.222828 2.388 0.222828 2.136C0.222828 1.89333 0.278828 1.67867 0.390828 1.492C0.512162 1.296 0.670828 1.142 0.866828 1.03C1.06283 0.918 1.27283 0.862 1.49683 0.862C1.73016 0.862 1.94016 0.918 2.12683 1.03C2.32283 1.142 2.47683 1.296 2.58883 1.492C2.70083 1.67867 2.75683 1.89333 2.75683 2.136C2.75683 2.388 2.70083 2.612 2.58883 2.808C2.47683 3.004 2.32283 3.158 2.12683 3.27C1.94016 3.37267 1.73016 3.424 1.49683 3.424Z"
+                        fill="#05093E" fill-opacity="0.3"/>
+                    </svg>
+                  </li>
+                  <li class="flex items-center text-DarkBlue50 font-semibold" aria-current="page">
+                    Product Name
+                  </li>
+                </ol>
+              </nav>
             </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-span-12">
-                    <div class="flex flex-col gap-y-5 lg:gap-y-4">
-                        <div x-data="{ isExpanded: true }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
-                            <button id="controlsAccordionItem3" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
-                                    aria-controls="accordionItem3" @click="isExpanded = ! isExpanded"
-                                    :class="isExpanded ? '1'  : '2'"
-                                    :aria-expanded="isExpanded ? 'true' : 'false'">
-                                Description:
-                                <span class="flex items-center justify-center">
-                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
-                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
-                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
-                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                         fill="none">
-                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
-                                              fill="#3D65FF"/>
-                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
-                                              fill="#3D65FF"/>
-                                    </svg>
-                                </span>
-                            </button>
-                            <div x-cloak x-show="isExpanded" id="accordionItem3"
-                                 aria-labelledby="controlsAccordionItem3" x-collapse>
-                                <div class="pt-4 text-body lg:text-body text-DarkBlue50 font-medium">
-                                    Differin (adapalene) is a topical retinoid medication that is applied to the
-                                    skin. It works by normalizing the growth of skin cells and reducing
-                                    inflammation, helping to prevent the formation of acne lesions such as
-                                    blackheads, whiteheads, and pimples.
-                                </div>
-                            </div>
-                        </div>
-                        <div x-data="{ isExpanded: false }"
-                             :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
-                            <button id="controlsAccordionItem4" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
-                                    aria-controls="accordionItem4" @click="isExpanded = ! isExpanded"
-                                    :class="isExpanded ? '1'  : '2'"
-                                    :aria-expanded="isExpanded ? 'true' : 'false'">
-                                How it works
-                                <span class="flex items-center justify-center">
-                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
-                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
-                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
-                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                         fill="none">
-                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
-                                              fill="#3D65FF"/>
-                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
-                                              fill="#3D65FF"/>
-                                    </svg>
-                                </span>
-                            </button>
-                            <div x-cloak x-show="isExpanded" id="accordionItem4"
-                                 aria-labelledby="controlsAccordionItem4" x-collapse>
-                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    Differin (adapalene) is a topical retinoid medication that is applied to the
-                                    skin. It works by normalizing the growth of skin cells and reducing
-                                    inflammation, helping to prevent the formation of acne lesions such as
-                                    blackheads, whiteheads, and pimples.
-                                </div>
-                            </div>
-                        </div>
-                        <div x-data="{ isExpanded: false }"
-                             :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
-                            <button id="controlsAccordionItem5" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
-                                    aria-controls="accordionItem5" @click="isExpanded = ! isExpanded"
-                                    :class="isExpanded ? '1'  : '2'"
-                                    :aria-expanded="isExpanded ? 'true' : 'false'">
-                                Wornings
-                                <span class="flex items-center justify-center">
-                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
-                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
-                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
-                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                         fill="none">
-                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
-                                              fill="#3D65FF"/>
-                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
-                                              fill="#3D65FF"/>
-                                    </svg>
-                                </span>
-                            </button>
-                            <div x-cloak x-show="isExpanded" id="accordionItem5"
-                                 aria-labelledby="controlsAccordionItem5" x-collapse>
-                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    Differin (adapalene) is a topical retinoid medication that is applied to the
-                                    skin. It works by normalizing the growth of skin cells and reducing
-                                    inflammation, helping to prevent the formation of acne lesions such as
-                                    blackheads, whiteheads, and pimples.
-                                </div>
-                            </div>
-                        </div>
-                        <div x-data="{ isExpanded: false }"
-                             :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
-                             class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
-                            <button id="controlsAccordionItem6" type="button"
-                                    class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
-                                    aria-controls="accordionItem6" @click="isExpanded = ! isExpanded"
-                                    :class="isExpanded ? '1'  : '2'"
-                                    :aria-expanded="isExpanded ? 'true' : 'false'">
-                                Ingredients
-                                <span class="flex items-center justify-center">
-                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
-                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
-                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
-                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                         fill="none">
-                                        <path d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
-                                              fill="#3D65FF"/>
-                                        <path d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
-                                              fill="#3D65FF"/>
-                                    </svg>
-                                </span>
-                            </button>
-                            <div x-cloak x-show="isExpanded" id="accordionItem6"
-                                 aria-labelledby="controlsAccordionItem6" x-collapse>
-                                <div class="pt-4 text-body text-DarkBlue50 font-medium">
-                                    Differin (adapalene) is a topical retinoid medication that is applied to the
-                                    skin. It works by normalizing the growth of skin cells and reducing
-                                    inflammation, helping to prevent the formation of acne lesions such as
-                                    blackheads, whiteheads, and pimples.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex flex-col gap-y-3 lg:gap-y-4 minlg:hidden lg:mb-8">
+              @@include('components/Categories-tag-2.html', {
+              'Style': 'active-tag',
+              'Title': 'Brand'
+              })
+              <h1 class="text-h3 lg:text-h2Mob font-bold text-DarkBlue100">Differin 0.1% Cream</h1>
             </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-span-12">
-                    <div class="flex flex-col">
-                        @@include('components/Title-small.html', {
-                        'Title': 'SHOP',
-                        'Style': 'mb-3 md:mb-2'
-                        })
-                        <h2 class="main-title mb-10 md:mb-8">
-                            Related Products
-                        </h2>
-                    </div>
-                </div>
-                <div class="col-span-12">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                @@include('components/Product-card.html')
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('components/Product-card.html')
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('components/Product-card.html')
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('components/Product-card.html')
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('components/Product-card.html')
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('components/Product-card.html')
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('components/Product-card.html')
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('components/Product-card.html')
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('components/Product-card.html')
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-custom relative h-12 w-full mt-10 md:mt-8">
-                        <div class="swiper-button-arrow swiper-button-next">
-                            <svg class="swiper-button-icon swiper-button-icon--white" xmlns="http://www.w3.org/2000/svg"
-                                 width="20" height="20" viewBox="0 0 20 20"
-                                 fill="none">
-                                <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
-                                      fill="white"/>
-                            </svg>
-                            <svg class="swiper-button-icon swiper-button-icon--grey" xmlns="http://www.w3.org/2000/svg"
-                                 width="20" height="20" viewBox="0 0 20 20"
-                                 fill="none">
-                                <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
-                                      fill="#BFC6D6"/>
-                            </svg>
-                        </div>
-                        <div class="swiper-button-arrow swiper-button-prev">
-                            <svg class="swiper-button-icon rotate-180 swiper-button-icon--white"
-                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                 fill="none">
-                                <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
-                                      fill="white"/>
-                            </svg>
-                            <svg class="swiper-button-icon rotate-180 swiper-button-icon--grey"
-                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                 fill="none">
-                                <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
-                                      fill="#BFC6D6"/>
-                            </svg>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
+            <div
+              class="max-w-[448px] lg:max-w-[343px] lg:mb-8 border border-DarkBlue10 rounded-[20px] overflow-hidden sm:mx-auto">
+              <img src="img/Product-img-1.png" alt="Product img 1"/>
             </div>
+          </div>
         </div>
-    </section>
+        <div class="">
+          <form class="flex flex-col gap-y-8">
+            <div class="flex flex-col gap-y-3 lg:hidden">
+              @@include('components/Categories-tag-2.html', {
+              'Style': 'active-tag',
+              'Title': 'Brand'
+              })
+              <h1 class="text-h3 font-bold text-DarkBlue100">Differin 0.1% Cream</h1>
+              <span class="text-DarkBlue50 text-Top1 font-medium">£16.43</span>
+            </div>
+            <div class="minlg:hidden flex flex-col lg:gap-y-8">
+              <div class="flex items-center gap-x-4">
+                <span class="text-base font-semibold block">Price:</span>
+                <span class="font-medium text-DarkBlue50 text-Top2">£16.43</span>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-base font-semibold block mb-4 lg:mb-3">Description:</span>
+              <p class="-tracking-018 text-base lg:text-body font-medium text-DarkBlue50">Differin is a brand name for a
+                medication containing the active ingredient adapalene. It
+                is primarily used to treat acne.</p>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-base font-semibold block mb-4 lg:mb-3">Use for:</span>
+              <p class="-tracking-018 text-base lg:text-body font-medium text-DarkBlue50">Adapalene, the active
+                ingredient in Differin, works by binding to specific receptors in
+                the skin cells called retinoic acid receptors. It regulates the growth and
+                differentiation of skin cells, preventing the formation of clogged pores, and reducing
+                inflammation. This helps to improve acne by promoting the turnover of skin cells and
+                preventing the formation of acne lesions.</p>
+            </div>
+            <div class="flex items-center gap-x-4 lg:flex-col lg:gap-y-4 lg:gap-x-0">
+              <button id="openModalBtn" class="button group lg:w-full w256" type="button" aria-label="Order button">
+                <span class="">Order</span>
+                <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                  <path class="group-hover:fill-blue100 transition-all" d="M1 6.75C0.585786 6.75 0.25 6.41421 0.25 6C0.25 5.58579 0.585786 5.25 1 5.25L1 6.75ZM15.5303 5.46967C15.8232 5.76256 15.8232 6.23744 15.5303 6.53033L10.7574 11.3033C10.4645 11.5962 9.98959 11.5962 9.6967 11.3033C9.40381 11.0104 9.40381 10.5355 9.6967 10.2426L13.9393 6L9.6967 1.75736C9.40381 1.46447 9.40381 0.989592 9.6967 0.696698C9.98959 0.403805 10.4645 0.403805 10.7574 0.696698L15.5303 5.46967ZM1 5.25L15 5.25L15 6.75L1 6.75L1 5.25Z" fill="white"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12">
+          <div class="flex flex-col gap-y-5 lg:gap-y-4">
+            <div x-data="{ isExpanded: true }" :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
+                 class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
+              <button id="controlsAccordionItem3" type="button"
+                      class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
+                      aria-controls="accordionItem3" @click="isExpanded = ! isExpanded"
+                      :class="isExpanded ? '1'  : '2'"
+                      :aria-expanded="isExpanded ? 'true' : 'false'">
+                Description:
+                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
+                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
+                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                         fill="none">
+                                        <path
+                                          d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
+                                          fill="#3D65FF"/>
+                                        <path
+                                          d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
+                                          fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+              </button>
+              <div x-cloak x-show="isExpanded" id="accordionItem3"
+                   aria-labelledby="controlsAccordionItem3" x-collapse>
+                <div class="pt-4 text-body lg:text-body text-DarkBlue50 font-medium">
+                  Differin (adapalene) is a topical retinoid medication that is applied to the
+                  skin. It works by normalizing the growth of skin cells and reducing
+                  inflammation, helping to prevent the formation of acne lesions such as
+                  blackheads, whiteheads, and pimples.
+                </div>
+              </div>
+            </div>
+            <div x-data="{ isExpanded: false }"
+                 :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
+                 class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
+              <button id="controlsAccordionItem4" type="button"
+                      class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
+                      aria-controls="accordionItem4" @click="isExpanded = ! isExpanded"
+                      :class="isExpanded ? '1'  : '2'"
+                      :aria-expanded="isExpanded ? 'true' : 'false'">
+                How it works
+                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
+                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
+                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                         fill="none">
+                                        <path
+                                          d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
+                                          fill="#3D65FF"/>
+                                        <path
+                                          d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
+                                          fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+              </button>
+              <div x-cloak x-show="isExpanded" id="accordionItem4"
+                   aria-labelledby="controlsAccordionItem4" x-collapse>
+                <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                  Differin (adapalene) is a topical retinoid medication that is applied to the
+                  skin. It works by normalizing the growth of skin cells and reducing
+                  inflammation, helping to prevent the formation of acne lesions such as
+                  blackheads, whiteheads, and pimples.
+                </div>
+              </div>
+            </div>
+            <div x-data="{ isExpanded: false }"
+                 :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
+                 class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
+              <button id="controlsAccordionItem5" type="button"
+                      class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
+                      aria-controls="accordionItem5" @click="isExpanded = ! isExpanded"
+                      :class="isExpanded ? '1'  : '2'"
+                      :aria-expanded="isExpanded ? 'true' : 'false'">
+                Wornings
+                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
+                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
+                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                         fill="none">
+                                        <path
+                                          d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
+                                          fill="#3D65FF"/>
+                                        <path
+                                          d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
+                                          fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+              </button>
+              <div x-cloak x-show="isExpanded" id="accordionItem5"
+                   aria-labelledby="controlsAccordionItem5" x-collapse>
+                <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                  Differin (adapalene) is a topical retinoid medication that is applied to the
+                  skin. It works by normalizing the growth of skin cells and reducing
+                  inflammation, helping to prevent the formation of acne lesions such as
+                  blackheads, whiteheads, and pimples.
+                </div>
+              </div>
+            </div>
+            <div x-data="{ isExpanded: false }"
+                 :class="isExpanded ? 'shadow-6xl bg-LightBlue'  : 'bg-white'"
+                 class="p-6 lg:px-4 lg:py-5 border border-blue20 rounded-[20px] overflow-hidden">
+              <button id="controlsAccordionItem6" type="button"
+                      class="flex w-full items-center justify-between text-left text-Top3 lg:text-base font-bold"
+                      aria-controls="accordionItem6" @click="isExpanded = ! isExpanded"
+                      :class="isExpanded ? '1'  : '2'"
+                      :aria-expanded="isExpanded ? 'true' : 'false'">
+                Ingredients
+                <span class="flex items-center justify-center">
+                                    <span class="minus-icon-accordion w-5 border-t-[2px] border-LagunaBlue"
+                                          :class="isExpanded  ?  'block'  :  'hidden'"></span>
+                                    <svg class="plus-icon-accordion" :class="isExpanded  ?  'hidden'  :  'block'"
+                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                         fill="none">
+                                        <path
+                                          d="M9 1C9 0.447716 9.44772 0 10 0C10.5523 0 11 0.447715 11 1V19C11 19.5523 10.5523 20 10 20C9.44772 20 9 19.5523 9 19V1Z"
+                                          fill="#3D65FF"/>
+                                        <path
+                                          d="M0 10C0 9.44772 0.447715 9 1 9H19C19.5523 9 20 9.44772 20 10C20 10.5523 19.5523 11 19 11H1C0.447716 11 0 10.5523 0 10Z"
+                                          fill="#3D65FF"/>
+                                    </svg>
+                                </span>
+              </button>
+              <div x-cloak x-show="isExpanded" id="accordionItem6"
+                   aria-labelledby="controlsAccordionItem6" x-collapse>
+                <div class="pt-4 text-body text-DarkBlue50 font-medium">
+                  Differin (adapalene) is a topical retinoid medication that is applied to the
+                  skin. It works by normalizing the growth of skin cells and reducing
+                  inflammation, helping to prevent the formation of acne lesions such as
+                  blackheads, whiteheads, and pimples.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-span-12">
+          <div class="flex flex-col">
+            @@include('components/Title-small.html', {
+            'Title': 'SHOP',
+            'Style': 'mb-3 md:mb-2'
+            })
+            <h2 class="main-title mb-10 md:mb-8">
+              Related Products
+            </h2>
+          </div>
+        </div>
+        <div class="col-span-12">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                @@include('components/Product-card.html')
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Product-card.html')
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Product-card.html')
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Product-card.html')
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Product-card.html')
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Product-card.html')
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Product-card.html')
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Product-card.html')
+              </div>
+              <div class="swiper-slide">
+                @@include('components/Product-card.html')
+              </div>
+            </div>
+          </div>
+          <div class="swiper-custom relative h-12 w-full mt-10 md:mt-8">
+            <div class="swiper-button-arrow swiper-button-next">
+              <svg class="swiper-button-icon swiper-button-icon--white" xmlns="http://www.w3.org/2000/svg"
+                   width="20" height="20" viewBox="0 0 20 20"
+                   fill="none">
+                <path
+                  d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                  fill="white"/>
+              </svg>
+              <svg class="swiper-button-icon swiper-button-icon--grey" xmlns="http://www.w3.org/2000/svg"
+                   width="20" height="20" viewBox="0 0 20 20"
+                   fill="none">
+                <path
+                  d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                  fill="#BFC6D6"/>
+              </svg>
+            </div>
+            <div class="swiper-button-arrow swiper-button-prev">
+              <svg class="swiper-button-icon rotate-180 swiper-button-icon--white"
+                   xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                   fill="none">
+                <path
+                  d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                  fill="white"/>
+              </svg>
+              <svg class="swiper-button-icon rotate-180 swiper-button-icon--grey"
+                   xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                   fill="none">
+                <path
+                  d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
+                  fill="#BFC6D6"/>
+              </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    @@include('components/Footer.html')
+  <div id="modal" class="hidden fixed inset-0 z-[10000] bg-gray-800 bg-opacity-50 flex items-center justify-center px-4">
+    <div class="bg-white rounded-lg shadow-lg p-8 lg:px-4 w-full max-w-[672px] max-h-screen md:overflow-y-scroll relative">
+      <div class="flex flex-col">
+        <form class="flex flex-col gap-6 mt-8">
+          <div class="flex gap-6 flex-row sm:flex-col">
+            @@include('components/input.html', {
+            'common-style': 'w-full',
+            'idInput': 'NameId',
+            'label': 'Full Name',
+            'styleInput': 'user-input-icon input-icon',
+            'type': 'text',
+            'placeholder': 'Your Name',
+            'errorStyle': 'hidden',
+            })
+            @@include('components/input.html', {
+            'common-style': 'w-full',
+            'idInput': 'EmailId',
+            'label': 'Email',
+            'styleInput': 'mail-input-icon input-icon',
+            'type': 'email',
+            'placeholder': 'example@youremail.com',
+            'errorStyle': 'hidden',
+            })
+          </div>
+          <div class="flex gap-6 flex-row sm:flex-col">
+            @@include('components/input.html', {
+            'common-style': 'w-full',
+            'idInput': 'NumId',
+            'label': 'Phone Number',
+            'styleInput': 'phone-input-icon input-icon',
+            'type': 'text',
+            'placeholder': '(123) 456 - 789',
+            'errorStyle': 'hidden',
+            })
+            @@include('components/input.html', {
+            'common-style': 'w-full',
+            'idInput': 'AddressId',
+            'label': 'Address',
+            'styleInput': 'location-input-icon input-icon',
+            'type': 'text',
+            'placeholder': 'Type your address...',
+            'errorStyle': 'hidden',
+            })
+          </div>
+          <button type="submit"
+                  class="button w-full mt-2 px-6 py-3 text-h8 md:text-h10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
+            <span class="font-medium">Order</span>
+            <svg class="fill-white group-hover:fill-primary ml-3" xmlns="http://www.w3.org/2000/svg" width="22"
+                 height="10" viewBox="0 0 22 10" fill="none">
+              <path
+                d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  @@include('components/Footer.html')
 </main>
 
 @@include('components/script.html')
