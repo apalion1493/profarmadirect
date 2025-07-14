@@ -27,25 +27,17 @@
                                 <a class="text-body font-semibold" href="index.html">Home</a>
                             </li>
                             <li>
-                                <a class="text-body font-semibold" href="All-conditions.html">Conditions</a>
+                                <a class="text-body font-semibold" href="Shop.html">Shop</a>
                             </li>
-<!--                            <li>-->
-<!--                                <a class="text-body font-semibold" href="Shop.html">Shop</a>-->
-<!--                            </li>-->
-<!--                            <li>-->
-<!--                                <a class="text-body font-semibold" href="Medications-list.html">A-Z Medications</a>-->
-<!--                            </li>-->
                             <li>
                                 <a class="text-body font-semibold" href="About.html">About Us</a>
-                            </li>
-                            <li>
-                                <a class="text-body font-semibold" href="Blog.html">Blog</a>
                             </li>
                             <li>
                                 <a class="text-body font-semibold" href="Contact.html">Contact</a>
                             </li>
                         </ul>
                     </div>
+                    <span class="text-Top3 text-white font-semibold lg:hidden">Send Your Prescription</span>
                     <div class="flex items-center gap-x-8 lg:justify-between lg:w-full xl:gap-x-4 lg:gap-x-2">
                         <a class="flex items-center gap-x-3 md:gap-x-2 md:text-body4" href="tel:+107425899611">
                             <i class="phone-header-icon20 icon-16"></i>
@@ -59,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full bg-LightBlue py-6 border-b border-blue10">
+        <div class="w-full bg-LightBlue py-6 md:py-5 border-b border-blue10">
             <div class="container flex items-center gap-x-4 lg:gap-x-3">
                 <a class="min-w-[272px] lg:min-w-[204px] lg:w-[204px]" href="index.html">
                     <img width="272" src="img/Logo.svg" alt="Profarma Main Logo">
@@ -93,21 +85,6 @@
                         </div>
                     </form>
                 </div>
-                <div class="flex items-center lg:hidden">
-                    <a class="button" href="Login.html">Login</a>
-                    <div class=" items-center gap-x-4 hidden">
-                        <a class="button" href="#">My Account</a>
-                        <a class="w-14 min-w-14 h-14 relative flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <path class="group-hover:fill-blue100 transition-all" d="M11.3334 27.5C12.622 27.5 13.6667 26.4554 13.6667 25.1667C13.6667 23.878 12.622 22.8334 11.3334 22.8334C10.0447 22.8334 9.00005 23.878 9.00005 25.1667C9.00005 26.4554 10.0447 27.5 11.3334 27.5Z" fill="white"/>
-                                <path class="group-hover:fill-blue100 transition-all" d="M22.6667 27.5C23.9554 27.5 25 26.4554 25 25.1667C25 23.878 23.9554 22.8334 22.6667 22.8334C21.378 22.8334 20.3334 23.878 20.3334 25.1667C20.3334 26.4554 21.378 27.5 22.6667 27.5Z" fill="white"/>
-                                <path class="group-hover:fill-blue100 transition-all" d="M0.167995 0.945345C0.474347 0.485816 1.09522 0.361642 1.55475 0.667995L7.55475 4.66799C7.76791 4.8101 7.9184 5.0286 7.97518 5.27842L11.1316 19.1667H22.9185L25.6636 9.83338H14.3334C13.7811 9.83338 13.3334 9.38566 13.3334 8.83338C13.3334 8.28109 13.7811 7.83338 14.3334 7.83338H27C27.3152 7.83338 27.6119 7.98195 27.8007 8.23428C27.9895 8.48662 28.0483 8.8132 27.9594 9.11555L24.6261 20.4489C24.5009 20.8745 24.1103 21.1667 23.6667 21.1667H10.3334C9.86648 21.1667 9.46172 20.8436 9.35825 20.3883L6.11334 6.11076L0.445345 2.3321C-0.0141836 2.02574 -0.138358 1.40487 0.167995 0.945345Z" fill="white"/>
-                                <path class="group-hover:fill-blue100 transition-all" d="M13.3334 14.8334C13.3334 14.2811 13.7811 13.8334 14.3334 13.8334H25C25.5523 13.8334 26 14.2811 26 14.8334C26 15.3857 25.5523 15.8334 25 15.8334H14.3334C13.7811 15.8334 13.3334 15.3857 13.3334 14.8334Z" fill="white"/>
-                            </svg>
-                            <span class="min-w-4 h-4 flex items-center justify-center text-white font-bold text-body3 absolute top-0 right-0 bg-DarkBlue100 rounded-full">10</span>
-                        </a>
-                    </div>
-                </div>
                 <button id="burger-button" @click="mobileMenuIsOpen = !mobileMenuIsOpen" :aria-expanded="mobileMenuIsOpen"
                         :class="mobileMenuIsOpen ? '0' : null" type="button"
                         class="w-11 min-w-11 h-11 flex justify-center items-center rounded-full overflow-hidden bg-blue100 ml-auto minlg:hidden" aria-label="mobile menu"
@@ -123,79 +100,6 @@
                 </button>
             </div>
         </div>
-<!--        <div class="w-full bg-LightBlue py-6 border-b border-blue10 hidden">-->
-<!--            <div class="container flex items-center gap-x-4">-->
-<!--                <a class="min-w-[272px]" href="index.html">-->
-<!--                    <img width="272" src="img/Logo.svg" alt="Profarma Main Logo">-->
-<!--                </a>-->
-<!--                <div class="flex items-center ml-12 w-full relative">-->
-<!--                    <div style="display: none" x-data="{ query: '', results: [], showResults: false, showForm: false }"-->
-<!--                         @click.away="showResults = false; showForm = false"-->
-<!--                         class='flex flex-col w-full pl-1/24 lg:pl-0 transition-all' :style="{display: 'flex'}"-->
-<!--                         :class='showForm ? "z-[12] lg:pr-0 lg:z-[32] w-full" : "lg:pr-[56px] w-[200px]"'>-->
-<!--                        <label for="header-search" class="text-none absolute -z-10">Search</label>-->
-<!--                        <div class='flex items-center relative'>-->
-<!--                            <div :class='showForm ? "py-2 pl-6 lg:pl-4 pr-16 border opacity-100" : " border-0 p-0 opacity-0"'-->
-<!--                                 class='flex items-center rounded-[40px] lg:pr-[56px] h-[56px] w-full  overflow-hidden transition-all bg-white border-border-2 relative'>-->
-<!--                                <div class="relative w-full">-->
-<!--                                    <input type="search" id="header-search" name="Search bar"-->
-<!--                                           placeholder="Type your drug name..." x-model="query"-->
-<!--                                           @input.debounce.300="fetchResults" @focus="showResults = true"-->
-<!--                                           class="w-full bg-white border-0 focus:ring-0 focus:bg-transparent focus:border-0 text-base outline-none p-0 leading-8 transition-colors duration-200 ease-in-out appearance-none">-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <button :class='showForm ? "active right-2 clicked w-10 h-10 min-w-10 top-1/2 -translate-y-1/2" : "w-14 min-w-14 h-14 right-0 top-0"'-->
-<!--                                    class="flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group ml-auto absolute z-30 lg:p-0 lg:bg-secondary lg:border-secondary lg:hover:bg-primary lg:hover:border-primary"-->
-<!--                                    @click="showForm = !showForm; showResults = false" aria-label="Search button">-->
-<!--                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">-->
-<!--                                    <path class="group-hover:fill-blue100 transition-all" d="M0.5 10.0438C0.5 4.77292 4.77292 0.5 10.0438 0.5C15.3147 0.5 19.5876 4.77292 19.5876 10.0438C19.5876 15.3147 15.3147 19.5876 10.0438 19.5876C4.77292 19.5876 0.5 15.3147 0.5 10.0438ZM10.0438 2.04764C5.62766 2.04764 2.04764 5.62766 2.04764 10.0438C2.04764 14.4599 5.62766 18.0399 10.0438 18.0399C14.4599 18.0399 18.0399 14.4599 18.0399 10.0438C18.0399 5.62766 14.4599 2.04764 10.0438 2.04764Z" fill="white"/>-->
-<!--                                    <path class="group-hover:fill-blue100 transition-all" d="M15.8016 15.8016C16.1038 15.4994 16.5938 15.4994 16.896 15.8016L21.2734 20.179C21.5755 20.4812 21.5755 20.9712 21.2734 21.2734C20.9712 21.5755 20.4812 21.5755 20.179 21.2734L15.8016 16.896C15.4994 16.5938 15.4994 16.1038 15.8016 15.8016Z" fill="white"/>-->
-<!--                                </svg>-->
-<!--                            </button>-->
-<!--                        </div>-->
-<!--                        <div x-show="showResults && query.length > 0"-->
-<!--                             class="absolute left-0 top-full mt-2 pl-1/24 w-full z-10 lg:pl-0">-->
-<!--                            <div-->
-<!--                                    class='bg-white border border-gray-200 rounded-lg shadow-shadow-2 p-6 md:px-4 md:py-5'>-->
-<!--                                <ul class='flex flex-col gap-y-4'>-->
-<!--                                    <template x-for="result in results" :key="result.id">-->
-<!--                                        <li class="text-body3 hover:bg-gray-100 cursor-pointer">-->
-<!--                                            <div>-->
-<!--                                                <div>-->
-<!--                                                    <img src="" alt="">-->
-<!--                                                    <div>-->
-<!--                                                        <span x-text="result.title"></span>-->
-<!--                                                        <p x-text="result.price"></p>-->
-<!--                                                    </div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </li>-->
-<!--                                    </template>-->
-<!--                                </ul>-->
-<!--                                <a class='text-danger uppercase font-semibold text-body6 tracking-[0.5px] mt-6 block'-->
-<!--                                   href="#">More results</a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="flex items-center">-->
-<!--                    <div class="items-center gap-x-4 flex">-->
-<!--                        <a class="button text-nowrap" href="#">My Account</a>-->
-<!--                        <a class="w-14 min-w-14 h-14 relative flex items-center justify-center rounded-4xl text-white text-base text-center font-semibold bg-blue100 border border-blue100 transition-all hover:bg-transparent hover:text-blue100 group" href="#">-->
-<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">-->
-<!--                                <path class="group-hover:fill-blue100 transition-all" d="M11.3334 27.5C12.622 27.5 13.6667 26.4554 13.6667 25.1667C13.6667 23.878 12.622 22.8334 11.3334 22.8334C10.0447 22.8334 9.00005 23.878 9.00005 25.1667C9.00005 26.4554 10.0447 27.5 11.3334 27.5Z" fill="white"/>-->
-<!--                                <path class="group-hover:fill-blue100 transition-all" d="M22.6667 27.5C23.9554 27.5 25 26.4554 25 25.1667C25 23.878 23.9554 22.8334 22.6667 22.8334C21.378 22.8334 20.3334 23.878 20.3334 25.1667C20.3334 26.4554 21.378 27.5 22.6667 27.5Z" fill="white"/>-->
-<!--                                <path class="group-hover:fill-blue100 transition-all" d="M0.167995 0.945345C0.474347 0.485816 1.09522 0.361642 1.55475 0.667995L7.55475 4.66799C7.76791 4.8101 7.9184 5.0286 7.97518 5.27842L11.1316 19.1667H22.9185L25.6636 9.83338H14.3334C13.7811 9.83338 13.3334 9.38566 13.3334 8.83338C13.3334 8.28109 13.7811 7.83338 14.3334 7.83338H27C27.3152 7.83338 27.6119 7.98195 27.8007 8.23428C27.9895 8.48662 28.0483 8.8132 27.9594 9.11555L24.6261 20.4489C24.5009 20.8745 24.1103 21.1667 23.6667 21.1667H10.3334C9.86648 21.1667 9.46172 20.8436 9.35825 20.3883L6.11334 6.11076L0.445345 2.3321C-0.0141836 2.02574 -0.138358 1.40487 0.167995 0.945345Z" fill="white"/>-->
-<!--                                <path class="group-hover:fill-blue100 transition-all" d="M13.3334 14.8334C13.3334 14.2811 13.7811 13.8334 14.3334 13.8334H25C25.5523 13.8334 26 14.2811 26 14.8334C26 15.3857 25.5523 15.8334 25 15.8334H14.3334C13.7811 15.8334 13.3334 15.3857 13.3334 14.8334Z" fill="white"/>-->
-<!--                            </svg>-->
-<!--                            <span class="min-w-4 h-4 flex items-center justify-center text-white font-bold text-body3 absolute top-0 right-0 bg-DarkBlue100 rounded-full">10</span>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-
         <!-- Mobile Menu Button -->
 
         <!-- Mobile Menu -->
@@ -274,6 +178,7 @@
 
 </header>
 
+
     <section class="relative">
         <div class="hero-bg rounded-b-4xl overflow-hidden w-full h-full bg-center bg-cover absolute top-0 -left-1/2 translate-x-1/2"
              style="background-image: url(img/img-hero-block.png);"></div>
@@ -315,173 +220,8 @@
                                     </button>
                                 </div>
                             </form>
-                            <div class="flex items-center mt-6 lg:flex-col lg:items-start">
-                                <span class="text-body font-medium text-DarkBlue50 mr-6 block lg:mb-4">Popular Searches:</span>
-                                <ul class="flex items-center gap-x-6 lg:gap-4 flex-wrap">
-                                    <li class="flex items-center justify-center top-line">
-                                        <a class="button btn-small" href="#">
-    <span class="">Acne</span>
-</a>
-                                    </li>
-                                    <li class="flex items-center justify-center top-line">
-                                        <a class="button btn-small" href="#">
-    <span class="">Migraine</span>
-</a>
-                                    </li>
-                                    <li class="flex items-center justify-center">
-                                        <a class="button btn-small" href="#">
-    <span class="">Weight Loss</span>
-</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row gap-x-8 mb-10">
-                <div class="col-span-12">
-                    <div class="flex items-center w-full">
-                        <div class="flex flex-col">
-                            <span class="uppercase text-body2 text-blue100 font-bold block mb-3">OUR CONDITIONS</span>
-                            <h2 class="main-title">
-                                Conditions
-                            </h2>
-                        </div>
-
-                        <a class="button group btn-icons ml-auto md:hidden" href="All-conditions.html">
-    <span class="">All Conditions</span>
-    <svg class="ml-2 block" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
-        <path class="group-hover:fill-white transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#3D65FF"/>
-    </svg>
-    <svg class="ml-2 hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
-        <path class="group-hover:fill-blue100 transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#FFFFFF"/>
-    </svg>
-</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-span-12">
-                    <div class="swiper condition-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <article class="group flex w-full md:min-w-[266px] h-full flex-col text-slate-700 relative pt-[46px] md:pt-[36px] ">
-    <!-- Image -->
-    <div class="w-[91px] h-[91px] md:w-[72px] md:h-[72px] absolute top-0 left-5 flex items-center justify-center bg-LightBlue border border-LightBlue transition-all group-hover:border-blue20 overflow-hidden rounded-full">
-        <i class="icon-40 Skin-Care-icon48"></i>
-    </div>
-    <!-- Content -->
-    <div class="flex flex-col gap-4 pt-16 md:pt-12 p-6 h-full bg-white border border-DarkBlue10 rounded-[20px] transition-all group-hover:shadow-3xl">
-        <span class="mb-4 block font-bold text-Top2 md:text-base md:mb-0">Skin Care</span>
-        <ul class="flex flex-col gap-y-2 mb-4 md:mb-1">
-            <li>
-                <a class="text-base md:text-body text-DarkBlue50 hover:underline" href="#">Acne (12)</a>
-            </li>
-            <li>
-                <a class="text-base md:text-body text-DarkBlue50 hover:underline" href="#">Rosacea (1)</a>
-            </li>
-        </ul>
-
-        <!-- Button -->
-        <a class="button mt-auto btn-medium sm2:w-full" href="Contition-Sub-Page.html">
-    <span class="">View Products</span>
-</a>
-    </div>
-</article>
-                            </div>
-                            <div class="swiper-slide">
-                                <article class="group flex w-full md:min-w-[266px] h-full flex-col text-slate-700 relative pt-[46px] md:pt-[36px] ">
-    <!-- Image -->
-    <div class="w-[91px] h-[91px] md:w-[72px] md:h-[72px] absolute top-0 left-5 flex items-center justify-center bg-LightBlue border border-LightBlue transition-all group-hover:border-blue20 overflow-hidden rounded-full">
-        <i class="icon-40 General-Health-icon48"></i>
-    </div>
-    <!-- Content -->
-    <div class="flex flex-col gap-4 pt-16 md:pt-12 p-6 h-full bg-white border border-DarkBlue10 rounded-[20px] transition-all group-hover:shadow-3xl">
-        <span class="mb-4 block font-bold text-Top2 md:text-base md:mb-0">General Health</span>
-        <ul class="flex flex-col gap-y-2 mb-4 md:mb-1">
-            <li>
-                <a class="text-base md:text-body text-DarkBlue50 hover:underline" href="#">Acne (12)</a>
-            </li>
-            <li>
-                <a class="text-base md:text-body text-DarkBlue50 hover:underline" href="#">Rosacea (1)</a>
-            </li>
-        </ul>
-
-        <!-- Button -->
-        <a class="button mt-auto btn-medium sm2:w-full" href="Contition-Sub-Page.html">
-    <span class="">View Products</span>
-</a>
-    </div>
-</article>
-                            </div>
-                            <div class="swiper-slide">
-                                <article class="group flex w-full md:min-w-[266px] h-full flex-col text-slate-700 relative pt-[46px] md:pt-[36px] ">
-    <!-- Image -->
-    <div class="w-[91px] h-[91px] md:w-[72px] md:h-[72px] absolute top-0 left-5 flex items-center justify-center bg-LightBlue border border-LightBlue transition-all group-hover:border-blue20 overflow-hidden rounded-full">
-        <i class="icon-40 small-intestine48"></i>
-    </div>
-    <!-- Content -->
-    <div class="flex flex-col gap-4 pt-16 md:pt-12 p-6 h-full bg-white border border-DarkBlue10 rounded-[20px] transition-all group-hover:shadow-3xl">
-        <span class="mb-4 block font-bold text-Top2 md:text-base md:mb-0">Digestion</span>
-        <ul class="flex flex-col gap-y-2 mb-4 md:mb-1">
-            <li>
-                <a class="text-base md:text-body text-DarkBlue50 hover:underline" href="#">Acne (12)</a>
-            </li>
-            <li>
-                <a class="text-base md:text-body text-DarkBlue50 hover:underline" href="#">Rosacea (1)</a>
-            </li>
-        </ul>
-
-        <!-- Button -->
-        <a class="button mt-auto btn-medium sm2:w-full" href="Contition-Sub-Page.html">
-    <span class="">View Products</span>
-</a>
-    </div>
-</article>
-                            </div>
-                            <div class="swiper-slide">
-                                <article class="group flex w-full md:min-w-[266px] h-full flex-col text-slate-700 relative pt-[46px] md:pt-[36px] ">
-    <!-- Image -->
-    <div class="w-[91px] h-[91px] md:w-[72px] md:h-[72px] absolute top-0 left-5 flex items-center justify-center bg-LightBlue border border-LightBlue transition-all group-hover:border-blue20 overflow-hidden rounded-full">
-        <i class="icon-40 Mens-Health-icon48"></i>
-    </div>
-    <!-- Content -->
-    <div class="flex flex-col gap-4 pt-16 md:pt-12 p-6 h-full bg-white border border-DarkBlue10 rounded-[20px] transition-all group-hover:shadow-3xl">
-        <span class="mb-4 block font-bold text-Top2 md:text-base md:mb-0">Men’s Health</span>
-        <ul class="flex flex-col gap-y-2 mb-4 md:mb-1">
-            <li>
-                <a class="text-base md:text-body text-DarkBlue50 hover:underline" href="#">Acne (12)</a>
-            </li>
-            <li>
-                <a class="text-base md:text-body text-DarkBlue50 hover:underline" href="#">Rosacea (1)</a>
-            </li>
-        </ul>
-
-        <!-- Button -->
-        <a class="button mt-auto btn-medium sm2:w-full" href="Contition-Sub-Page.html">
-    <span class="">View Products</span>
-</a>
-    </div>
-</article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-12">
-                    <a class="button group btn-icons mr-auto w-full mt-8 minmd:hidden" href="All-conditions.html">
-    <span class="">All Conditions</span>
-    <svg class="ml-2 block" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
-        <path class="group-hover:fill-white transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#3D65FF"/>
-    </svg>
-    <svg class="ml-2 hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
-        <path class="group-hover:fill-blue100 transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#FFFFFF"/>
-    </svg>
-</a>
                 </div>
             </div>
         </div>
@@ -573,27 +313,30 @@
     <div class="rounded-full w-[91px] h-[91px] md:w-[72px] md:h-[72px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
         <i class="icon-40 Consultation-icon48"></i>
     </div>
-    <span class="text-center font-bold block mb-4 text-Top2 md:text-base md:mb-3">Consultattion</span>
-    <p class="text-center text-base text-DarkBlue50 md:text-body">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
+    <span class="text-center font-bold block mb-4 text-Top2 md:text-base md:mb-3 max-w-[213px]">Post your private prescription to us</span>
+    <p class="text-center text-base text-DarkBlue50 md:text-body">Sign up to our website, upload a prescription and order your medication.</p>
 </article>
+
                 </div>
                 <div class="col-span-4 lg:col-span-12">
                     <article class="flex flex-col w-full h-full items-center py-8 px-6 md:px-4 md:py-5 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl ">
     <div class="rounded-full w-[91px] h-[91px] md:w-[72px] md:h-[72px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
         <i class="icon-40 Digestion-icon48"></i>
     </div>
-    <span class="text-center font-bold block mb-4 text-Top2 md:text-base md:mb-3">Delivery</span>
-    <p class="text-center text-base text-DarkBlue50 md:text-body">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
+    <span class="text-center font-bold block mb-4 text-Top2 md:text-base md:mb-3 max-w-[213px]">Dedicated Customer Support</span>
+    <p class="text-center text-base text-DarkBlue50 md:text-body">We are ready to help any of our customers!</p>
 </article>
+
                 </div>
                 <div class="col-span-4 lg:col-span-12">
                     <article class="flex flex-col w-full h-full items-center py-8 px-6 md:px-4 md:py-5 rounded-[20px] bg-white border border-DarkBlue10 transition-all hover:shadow-3xl ">
     <div class="rounded-full w-[91px] h-[91px] md:w-[72px] md:h-[72px] flex items-center justify-center mb-5 bg-LightBlue overflow-hidden">
         <i class="icon-40 Approve-icon48"></i>
     </div>
-    <span class="text-center font-bold block mb-4 text-Top2 md:text-base md:mb-3">Approve</span>
-    <p class="text-center text-base text-DarkBlue50 md:text-body">Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque egestas.</p>
+    <span class="text-center font-bold block mb-4 text-Top2 md:text-base md:mb-3 max-w-[213px]">Delivery to Your Door</span>
+    <p class="text-center text-base text-DarkBlue50 md:text-body">Get a notification to pick up your medicine from us, or get it delivered. Done!</p>
 </article>
+
                 </div>
             </div>
             <span class="Border-wave"></span>
@@ -753,333 +496,6 @@
                     </div>
                     <a class="button group btn-icons mr-auto w-full mt-12 minmd:hidden" href="FAQs.html">
     <span class="">More Questions</span>
-    <svg class="ml-2 block" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
-        <path class="group-hover:fill-white transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#3D65FF"/>
-    </svg>
-    <svg class="ml-2 hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
-        <path class="group-hover:fill-blue100 transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#FFFFFF"/>
-    </svg>
-</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-span-12">
-                    <div class="flex flex-col">
-                        <span class="block mx-auto text-center mb-10 md:mb-8 text-Top1 font-bold">Shop by Top manyfacturers</span>
-                    </div>
-                    <div class="col-span-12">
-                        <div class="swiper swiper-brands pb-2">
-                            <div class="swiper-wrapper py-2">
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Viatrix.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Viatrix</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/AstraZeneca.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">AstraZeneca</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Menarini.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Menarini</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Galderma.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Galderma</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Almus.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Almus</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Novo-Nordisk.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Novo Nordisk</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Roche.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Roche</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Bayer.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Bayer</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Viatrix.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Viatrix</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/AstraZeneca.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">AstraZeneca</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Menarini.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Menarini</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Galderma.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Galderma</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Almus.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Almus</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Novo-Nordisk.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Novo Nordisk</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Roche.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Roche</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a class="flex flex-col gap-y-4 md:gap-y-3 " href="#" target="_blank">
-    <span class="h-[136px] min-w-[136px] md:min-w-[136px] md:h-[108px] w-full flex items-center justify-center overflow-hidden bg-white rounded-xl shadow-5xl p-2">
-        <img class="object-center object-cover max-h-full" src="img/icons/Bayer.png" alt="Alt Image text">
-    </span>
-    <div class="flex flex-col">
-        <p class="text-base font-semibold text-DarkBlue100 block mb-2">Bayer</p>
-        <span class="-tracking-018 text-base md:text-body text-DarkBlue50 font-medium">0 drugs</span>
-    </div>
-</a>
-                                </div>
-                            </div>
-                            <div class="swiper-custom relative h-12 w-[128px] mt-10 md:mt-8 mx-auto">
-                                <div class="swiper-button-arrow swiper-button-next">
-                                    <svg class="swiper-button-icon swiper-button-icon--white"
-                                         xmlns="http://www.w3.org/2000/svg"
-                                         width="20" height="20" viewBox="0 0 20 20"
-                                         fill="none">
-                                        <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
-                                              fill="white"/>
-                                    </svg>
-                                    <svg class="swiper-button-icon swiper-button-icon--grey"
-                                         xmlns="http://www.w3.org/2000/svg"
-                                         width="20" height="20" viewBox="0 0 20 20"
-                                         fill="none">
-                                        <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
-                                              fill="#BFC6D6"/>
-                                    </svg>
-                                </div>
-                                <div class="swiper-button-arrow swiper-button-prev">
-                                    <svg class="swiper-button-icon rotate-180 swiper-button-icon--white"
-                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                         fill="none">
-                                        <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
-                                              fill="white"/>
-                                    </svg>
-                                    <svg class="swiper-button-icon rotate-180 swiper-button-icon--grey"
-                                         xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                         fill="none">
-                                        <path d="M10.5497 19.0359C10.3331 19.0359 10.1415 18.9839 9.97491 18.8799C9.80831 18.7759 9.68753 18.6319 9.61256 18.4479C9.53759 18.2639 9.52093 18.0759 9.56258 17.8839C9.60423 17.6919 9.69169 17.5319 9.82497 17.4039L17.5719 9.93989L9.82497 2.49989C9.72501 2.40389 9.65004 2.29589 9.60006 2.17589C9.55008 2.05589 9.52509 1.93189 9.52509 1.80389C9.52509 1.67589 9.55008 1.55589 9.60006 1.44389C9.65004 1.33189 9.72501 1.22789 9.82497 1.13189C9.92493 1.03589 10.0374 0.96389 10.1623 0.91589C10.2873 0.867889 10.4039 0.843889 10.5122 0.843889C10.6205 0.843889 10.7579 0.875891 10.9245 0.93989C11.0412 0.98789 11.1494 1.05989 11.2494 1.15589L19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.8959 10.4439 19.696 10.6359L11.2494 18.7479C11.0495 18.9399 10.8162 19.0359 10.5497 19.0359ZM18.9963 10.8999H1.00351C0.720286 10.8999 0.482881 10.8079 0.291291 10.6239C0.0997012 10.4399 0.00390625 10.2159 0.00390625 9.95189C0.00390625 9.68789 0.103866 9.45989 0.303786 9.26789C0.503706 9.07589 0.736946 8.97989 1.00351 8.97989H18.9963C19.2629 8.97989 19.4961 9.07589 19.696 9.26789C19.8959 9.45989 19.9959 9.68789 19.9959 9.95189C19.9959 10.2159 19.9001 10.4399 19.7085 10.6239C19.5169 10.8079 19.2795 10.8999 18.9963 10.8999Z"
-                                              fill="#BFC6D6"/>
-                                    </svg>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-span-12">
-                    <div class="flex items-center w-full">
-                        <div class="flex flex-col">
-                            <span class="uppercase text-body2 text-blue100 font-bold block mb-3">BLOG</span>
-                            <h3 class="main-title mb-10">
-                                Browse our <br>
-                                latest articles
-                            </h3>
-                        </div>
-
-                        <a class="button group btn-icons ml-auto md:hidden" href="#">
-    <span class="">More Posts</span>
-    <svg class="ml-2 block" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
-        <path class="group-hover:fill-white transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#3D65FF"/>
-    </svg>
-    <svg class="ml-2 hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
-        <path class="group-hover:fill-blue100 transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#FFFFFF"/>
-    </svg>
-</a>
-                    </div>
-                </div>
-                <div class="col-span-12">
-                    <div class="swiper swiper-blog">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <article class="rounded-[20px] w-full min-h-[552px] md:min-h-[443px] flex h-full border border-blue20 bg-white transition-all hover:shadow-3xl lg:max-w-[320px] md:max-w-[288px]">
-    <a href="Blog-post.html" class="flex flex-col">
-        <div class="h-[290px] min-h-[290px] md:h-[250px] md:min-h-[250px] rounded-t-[20px] overflow-hidden flex items-center justify-center">
-            <img src="img/doctor-team-meeting.jpg" class="object-cover w-full h-full" alt="Text Img" />
-        </div>
-        <div class="flex flex-col px-6 py-8 h-full">
-            <span class="text-Top2 font-bold block md:text-base mb-3">5 steps to prepare for a Pediatrician appointment</span>
-            <p class="text-DarkBlue50 text-base md:text-body mb-8">
-                Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque.
-            </p>
-            <span class="flex items-center gap-x-3 mt-auto">
-                <span class="px-4 py-3 h-[38px] w-fit bg-LightBlue rounded-5xl text-body text-blue100 font-semibold flex items-center justify-center">News</span>
-                <time class="md:text-body" datetime="2023-07-17">July 17, 2023</time>
-            </span>
-        </div>
-    </a>
-</article>
-                            </div>
-                            <div class="swiper-slide">
-                                <article class="rounded-[20px] w-full min-h-[552px] md:min-h-[443px] flex h-full border border-blue20 bg-white transition-all hover:shadow-3xl lg:max-w-[320px] md:max-w-[288px]">
-    <a href="Blog-post.html" class="flex flex-col">
-        <div class="h-[290px] min-h-[290px] md:h-[250px] md:min-h-[250px] rounded-t-[20px] overflow-hidden flex items-center justify-center">
-            <img src="img/doctor-team-meeting.jpg" class="object-cover w-full h-full" alt="Text Img" />
-        </div>
-        <div class="flex flex-col px-6 py-8 h-full">
-            <span class="text-Top2 font-bold block md:text-base mb-3">5 steps to prepare for a Pediatrician appointment</span>
-            <p class="text-DarkBlue50 text-base md:text-body mb-8">
-                Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque.
-            </p>
-            <span class="flex items-center gap-x-3 mt-auto">
-                <span class="px-4 py-3 h-[38px] w-fit bg-LightBlue rounded-5xl text-body text-blue100 font-semibold flex items-center justify-center">News</span>
-                <time class="md:text-body" datetime="2023-07-17">July 17, 2023</time>
-            </span>
-        </div>
-    </a>
-</article>
-                            </div>
-                            <div class="swiper-slide">
-                                <article class="rounded-[20px] w-full min-h-[552px] md:min-h-[443px] flex h-full border border-blue20 bg-white transition-all hover:shadow-3xl lg:max-w-[320px] md:max-w-[288px]">
-    <a href="Blog-post.html" class="flex flex-col">
-        <div class="h-[290px] min-h-[290px] md:h-[250px] md:min-h-[250px] rounded-t-[20px] overflow-hidden flex items-center justify-center">
-            <img src="img/doctor-team-meeting.jpg" class="object-cover w-full h-full" alt="Text Img" />
-        </div>
-        <div class="flex flex-col px-6 py-8 h-full">
-            <span class="text-Top2 font-bold block md:text-base mb-3">5 steps to prepare for a Pediatrician appointment</span>
-            <p class="text-DarkBlue50 text-base md:text-body mb-8">
-                Lorem ipsum dolor sit amet consectetur sit dignissim pellentesque.
-            </p>
-            <span class="flex items-center gap-x-3 mt-auto">
-                <span class="px-4 py-3 h-[38px] w-fit bg-LightBlue rounded-5xl text-body text-blue100 font-semibold flex items-center justify-center">News</span>
-                <time class="md:text-body" datetime="2023-07-17">July 17, 2023</time>
-            </span>
-        </div>
-    </a>
-</article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-12">
-                    <a class="button group btn-icons mt-8 w-full minmd:hidden" href="#">
-    <span class="">More Posts</span>
     <svg class="ml-2 block" xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
         <path class="group-hover:fill-white transition-all" d="M1 6.59985C0.585786 6.59985 0.25 6.26407 0.25 5.84985C0.25 5.43564 0.585786 5.09985 1 5.09985L1 6.59985ZM15.5303 5.31952C15.8232 5.61242 15.8232 6.08729 15.5303 6.38018L10.7574 11.1532C10.4645 11.446 9.98959 11.446 9.6967 11.1532C9.40381 10.8603 9.40381 10.3854 9.6967 10.0925L13.9393 5.84985L9.6967 1.60721C9.40381 1.31432 9.40381 0.839445 9.6967 0.546552C9.98959 0.253658 10.4645 0.253658 10.7574 0.546552L15.5303 5.31952ZM1 5.09985L15 5.09985L15 6.59985L1 6.59985L1 5.09985Z" fill="#3D65FF"/>
     </svg>
