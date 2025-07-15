@@ -6482,17 +6482,11 @@ p{
   .lg\:gap-y-14{
     row-gap: 3.5rem;
   }
-  .lg\:gap-y-2{
-    row-gap: 0.5rem;
-  }
   .lg\:gap-y-4{
     row-gap: 1rem;
   }
   .lg\:gap-y-5{
     row-gap: 1.25rem;
-  }
-  .lg\:gap-y-6{
-    row-gap: 1.5rem;
   }
   .lg\:gap-y-8{
     row-gap: 2rem;
@@ -6824,9 +6818,6 @@ p{
   }
   .md\:gap-y-6{
     row-gap: 1.5rem;
-  }
-  .md\:gap-y-2{
-    row-gap: 0.5rem;
   }
   .md\:self-start{
     align-self: flex-start;
