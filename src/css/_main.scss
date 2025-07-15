@@ -141,6 +141,16 @@
   a {
     @apply text-blue100
   }
+
+  &.text-content--PP {
+    p {
+      @apply text-body text-DarkBlue50
+    }
+  }
+
+  ul {
+    @apply list-disc text-body text-DarkBlue50 pl-6
+  }
 }
 
 .text-content--tou {
@@ -148,6 +158,8 @@
     @apply text-DarkBlue100 font-semibold
   }
 }
+
+
 // Text Content End
 
 //

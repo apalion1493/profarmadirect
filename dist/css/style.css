@@ -5417,6 +5417,18 @@ p{
   --tw-text-opacity: 1;
   color: rgb(61 101 255 / var(--tw-text-opacity));
 }
+.text-content.text-content--PP p{
+  font-size: 16px;
+  line-height: 130%;
+  color: #05093E80;
+}
+.text-content ul{
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 16px;
+  line-height: 130%;
+  color: #05093E80;
+}
 
 .text-content--tou h1, .text-content--tou h2, .text-content--tou h3, .text-content--tou h4, .text-content--tou h5, .text-content--tou h6, .text-content--tou .h1, .text-content--tou .h2, .text-content--tou .h3, .text-content--tou .h4, .text-content--tou .h5, .text-content--tou .h6{
   font-weight: 600;
