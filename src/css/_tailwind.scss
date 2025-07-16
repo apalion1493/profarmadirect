@@ -134,11 +134,12 @@ input[type='search']::-webkit-search-results-decoration {
 .custom-checkbox .checkmark {
   position: absolute;
   display: none;
-  top: 0;
+  top: 50%;
   left: 0;
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  transform: translateY(-50%);
 }
 
 
